@@ -1,0 +1,54 @@
+Name,Type,Category,Power,Accuracy,Source
+Acid Armor,Poison,Status,0,0,Level
+Acid Spray,Poison,Special,40,100,"Level, TM"
+Ancient Power,Rock,Special,60,100,Level
+Attract,Normal,Status,0,100,TM
+Confuse Ray,Ghost,Status,0,100,TM
+Dazzling Gleam,Fairy,Special,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Earth Power,Ground,Special,90,100,TM
+Endure,Normal,Status,0,0,TM
+Energy Ball,Grass,Special,90,100,TM
+Facade,Normal,Physical,70,100,TM
+Flash Cannon,Steel,Special,80,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Gunk Shot,Poison,Physical,120,80,TM
+Harden,Normal,Status,0,0,Level
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Iron Defense,Steel,Status,0,0,TM
+Light Screen,Psychic,Status,0,0,TM
+Meteor Beam,Rock,Special,120,90,TM
+Mortal Spin,Poison,Physical,30,100,Level
+Mud Shot,Ground,Special,55,95,TM
+Power Gem,Rock,Special,80,100,"Level, TM"
+Protect,Normal,Status,0,0,TM
+Rain Dance,Water,Status,0,0,TM
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Rock Blast,Rock,Physical,25,90,TM
+Rock Polish,Rock,Status,0,0,"Level, TM"
+Rock Slide,Rock,Physical,75,90,"Level, TM"
+Rock Throw,Rock,Physical,50,90,Level
+Rock Tomb,Rock,Physical,60,95,TM
+Sand Tomb,Ground,Physical,35,85,TM
+Sandstorm,Rock,Status,0,0,"Level, TM"
+Secret Power,Normal,Physical,70,100,TM
+Self-Destruct,Normal,Physical,200,100,"Level, TM"
+Sleep Talk,Normal,Status,0,0,TM
+Sludge Bomb,Poison,Special,90,100,TM
+Sludge Wave,Poison,Special,95,100,"Level, TM"
+Smack Down,Rock,Physical,50,100,"Level, TM"
+Solar Beam,Grass,Special,120,100,TM
+Spikes,Ground,Status,0,0,TM
+Spiky Shield,Grass,Status,0,0,Level
+Stealth Rock,Rock,Status,0,0,"Level, TM"
+Stone Edge,Rock,Physical,100,80,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Tera Blast,Normal,Special,80,100,TM
+Toxic,Poison,Status,0,90,TM
+Toxic Spikes,Poison,Status,0,0,"Level, TM"
+Venoshock,Poison,Special,65,100,"Level, TM"

@@ -1,0 +1,69 @@
+Name,Type,Category,Power,Accuracy,Source
+Ally Switch,Psychic,Status,0,0,TM
+Astonish,Ghost,Physical,30,100,Level
+Attract,Normal,Status,0,100,TM
+Burning Jealousy,Fire,Special,70,100,TM
+Calm Mind,Psychic,Status,0,0,TM
+Confide,Normal,Status,0,0,TM
+Confuse Ray,Ghost,Status,0,100,"Level, TM"
+Curse,Ghost,Status,0,0,"Level, TM"
+Dark Pulse,Dark,Special,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Dream Eater,Psychic,Special,100,100,TM
+Embargo,Dark,Status,0,100,TM
+Ember,Fire,Special,40,100,Level
+Endure,Normal,Status,0,0,TM
+Energy Ball,Grass,Special,90,100,TM
+Facade,Normal,Physical,70,100,TM
+Fire Blast,Fire,Special,110,85,TM
+Fire Spin,Fire,Special,35,85,"Level, TM"
+Flame Charge,Fire,Physical,50,100,TM
+Flamethrower,Fire,Special,90,100,TM
+Flare Blitz,Fire,Physical,120,100,TM
+Flash,Normal,Status,0,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Haze,Ice,Status,0,0,TM
+Heat Wave,Fire,Special,95,90,TM
+Hex,Ghost,Special,65,100,"Level, TM"
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Imprison,Psychic,Status,0,100,"Level, TM"
+Incinerate,Fire,Special,60,100,TM
+Inferno,Fire,Special,100,50,Level
+Lash Out,Dark,Physical,75,100,TM
+Memento,Dark,Status,0,100,Level
+Minimize,Normal,Status,0,0,Level
+Mystical Fire,Fire,Special,75,100,TM
+Night Shade,Ghost,Special,0,100,"Level, TM"
+Overheat,Fire,Special,130,90,"Level, TM"
+Pain Split,Normal,Status,0,0,"Level, TM"
+Payback,Dark,Physical,50,100,TM
+Poltergeist,Ghost,Physical,110,90,TM
+Protect,Normal,Status,0,0,TM
+Psych Up,Normal,Status,0,0,TM
+Psychic,Psychic,Special,90,100,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Round,Normal,Special,60,100,TM
+Safeguard,Normal,Status,0,0,TM
+Secret Power,Normal,Physical,70,100,TM
+Shadow Ball,Ghost,Special,80,100,"Level, TM"
+Skitter Smack,Bug,Physical,70,90,TM
+Sleep Talk,Normal,Status,0,0,TM
+Smog,Poison,Special,30,70,Level
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Spite,Ghost,Status,0,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Taunt,Dark,Status,0,100,TM
+Temper Flare,Fire,Physical,75,100,TM
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Toxic,Poison,Status,0,90,TM
+Trailblaze,Grass,Physical,50,100,TM
+Trick,Psychic,Status,0,100,TM
+Trick Room,Psychic,Status,0,0,TM
+Will-O-Wisp,Fire,Status,0,85,"Level, TM"

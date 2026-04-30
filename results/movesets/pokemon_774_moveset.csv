@@ -1,0 +1,62 @@
+Name,Type,Category,Power,Accuracy,Source
+Acrobatics,Flying,Physical,55,100,TM
+Ancient Power,Rock,Special,60,100,Level
+Attract,Normal,Status,0,100,TM
+Autotomize,Steel,Status,0,0,Level
+Bulldoze,Ground,Physical,60,100,TM
+Calm Mind,Psychic,Status,0,0,TM
+Charge Beam,Electric,Special,50,90,TM
+Confide,Normal,Status,0,0,TM
+Confuse Ray,Ghost,Status,0,100,"Level, TM"
+Cosmic Power,Psychic,Status,0,0,"Level, TM"
+Dazzling Gleam,Fairy,Special,80,100,TM
+Defense Curl,Normal,Status,0,0,Level
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,"Level, TM"
+Earth Power,Ground,Special,90,100,TM
+Earthquake,Ground,Physical,100,100,TM
+Endeavor,Normal,Physical,0,100,TM
+Explosion,Normal,Physical,250,100,"Level, TM"
+Facade,Normal,Physical,70,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Gravity,Psychic,Status,0,0,TM
+Gyro Ball,Steel,Physical,0,100,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Iron Head,Steel,Physical,80,100,TM
+Light Screen,Psychic,Status,0,0,TM
+Meteor Beam,Rock,Special,120,90,TM
+Power Gem,Rock,Special,80,100,"Level, TM"
+Protect,Normal,Status,0,0,TM
+Psych Up,Normal,Status,0,0,TM
+Psychic,Psychic,Special,90,100,TM
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Rock Blast,Rock,Physical,25,90,TM
+Rock Polish,Rock,Status,0,0,TM
+Rock Slide,Rock,Physical,75,90,TM
+Rock Tomb,Rock,Physical,60,95,TM
+Rollout,Rock,Physical,30,90,Level
+Round,Normal,Special,60,100,TM
+Safeguard,Normal,Status,0,0,TM
+Sandstorm,Rock,Status,0,0,TM
+Scorching Sands,Ground,Special,70,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Self-Destruct,Normal,Physical,200,100,"Level, TM"
+Shell Smash,Normal,Status,0,0,Level
+Sleep Talk,Normal,Status,0,0,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Stealth Rock,Rock,Status,0,0,"Level, TM"
+Stone Edge,Rock,Physical,100,80,TM
+Substitute,Normal,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,"Level, TM"
+Tackle,Normal,Physical,40,100,Level
+Take Down,Normal,Physical,90,85,"Level, TM"
+Tera Blast,Normal,Special,80,100,TM
+Toxic,Poison,Status,0,90,TM
+U-Turn,Bug,Physical,70,100,TM
+Zen Headbutt,Psychic,Physical,80,90,TM

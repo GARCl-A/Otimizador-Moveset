@@ -1,0 +1,107 @@
+Relatório de Otimização de Time
+Gerado em: 2026-04-29 03:32:11
+Fontes: L, e, v, e, l
+Score Total: 6120.81
+
+==================================================
+MOVESETS DO TIME
+==================================================
+
+Decidueye:
+  Brave Bird(SD)            (Flying     Physical  ) contrib: 634.83
+  Leaf Blade                (Grass      Physical  ) contrib: 872.96
+  U-Turn                    (Bug        Physical  ) contrib: 288.65
+  Spirit Shackle            (Ghost      Physical  ) contrib: 566.15
+
+Torterra:
+  Wood Hammer(SD)           (Grass      Physical  ) contrib: 0.00
+  Headlong Rush             (Ground     Physical  ) contrib: 2519.52
+  Crunch                    (Dark       Physical  ) contrib: 0.00
+  Leaf Storm(-2ST)          (Grass      Special   ) contrib: 0.00
+
+Cradily:
+  Acid                      (Poison     Special   ) contrib: 0.00
+  Ancient Power             (Rock       Special   ) contrib: 1104.97
+  Brine                     (Water      Special   ) contrib: 0.00
+  Energy Ball               (Grass      Special   ) contrib: 133.73
+
+==================================================
+COBERTURA POR ALVO
+==================================================
+  Venusaur        (Grass/Poison   ) -> Torterra     usa Headlong Rush         64.16%  [2º (vida: 59.8%)]
+  Charizard       (Fire/Flying    ) -> Cradily      usa Ancient Power        100.00%  [2º (vida: 62.2%)]
+  Blastoise       (Water          ) -> Decidueye    usa Leaf Blade            82.36%  [2º (vida: 61.8%)]
+  Pidgeot         (Normal/Flying  ) -> Cradily      usa Ancient Power         57.36%  [2º (vida: 78.5%)]
+  Nidoking        (Poison/Ground  ) -> Torterra     usa Headlong Rush        100.00%  [2º (vida: 56.2%)]
+  Alakazam        (Psychic        ) -> Decidueye    usa Spirit Shackle       100.00%  [2º (vida: 49.5%)]
+  Victreebel      (Grass/Poison   ) -> Torterra     usa Headlong Rush         77.86%  [2º (vida: 64.8%)]
+  Slowbro         (Water/Psychic  ) -> Cradily      usa Energy Ball           71.03%  [1º]
+  Gengar          (Ghost/Poison   ) -> Decidueye    usa Spirit Shackle       100.00%  [2º (vida: 12.8%)]
+  Exeggcute       (Grass/Psychic  ) -> Decidueye    usa U-Turn               100.00%  [1º]
+  Exeggutor       (Grass/Psychic  ) -> Decidueye    usa U-Turn                88.65%  [1º]
+  Scyther         (Bug/Flying     ) -> Cradily      usa Ancient Power        100.00%  [2º (vida: 26.4%)]
+  Pinsir          (Bug            ) -> Cradily      usa Ancient Power         64.98%  [2º (vida: 18.0%)]
+  Gyarados        (Water/Flying   ) -> Decidueye    usa Leaf Blade            45.06%  [2º (vida: 29.1%)]
+  Lapras          (Water/Ice      ) -> Decidueye    usa Leaf Blade            73.64%  [1º]
+  Aerodactyl      (Rock/Flying    ) -> Decidueye    usa Leaf Blade            57.74%  [2º (vida: 30.6%)]
+  Ariados         (Bug/Poison     ) -> Torterra     usa Headlong Rush         78.72%  [1º]
+  Azumarill       (Water/Fairy    ) -> Decidueye    usa Leaf Blade            86.59%  [1º]
+  Scizor          (Bug/Steel      ) -> Torterra     usa Headlong Rush         58.98%  [2º (vida: 24.9%)]
+  Heracross       (Bug/Fighting   ) -> Decidueye    usa Brave Bird           100.00%  [2º (vida: 29.1%)]
+  Skarmory        (Steel/Flying   ) -> Cradily      usa Ancient Power         32.49%  [2º (vida: 59.5%)]
+  Blissey         (Normal         ) -> Torterra     usa Headlong Rush        100.00%  [1º]
+  Sceptile        (Grass          ) -> Decidueye    usa Brave Bird            72.74%  [2º (vida: 61.1%)]
+  Gardevoir       (Psychic/Fairy  ) -> Decidueye    usa Spirit Shackle       100.00%  [2º (vida: 47.2%)]
+  Breloom         (Grass/Fighting ) -> Decidueye    usa Brave Bird           100.00%  [2º (vida: 72.5%)]
+  Aggron          (Steel/Rock     ) -> Torterra     usa Headlong Rush        100.00%  [1º]
+  Illumise        (Bug            ) -> Decidueye    usa Brave Bird            67.47%  [2º (vida: 69.5%)]
+  Claydol         (Ground/Psychic ) -> Decidueye    usa Leaf Blade            90.61%  [2º (vida: 73.7%)]
+  Cradily         (Rock/Grass     ) -> Torterra     usa Headlong Rush         54.31%  [1º]
+  Metagross       (Steel/Psychic  ) -> Torterra     usa Headlong Rush         88.20%  [2º (vida: 61.5%)]
+  Rayquaza        (Dragon/Flying  ) -> Cradily      usa Ancient Power         41.20%  [2º (vida: 28.5%)]
+  Torterra        (Grass/Ground   ) -> Decidueye    usa Brave Bird            42.06%  [1º]
+  Infernape       (Fire/Fighting  ) -> Torterra     usa Headlong Rush        100.00%  [2º (vida: 17.0%)]
+  Empoleon        (Water/Steel    ) -> Torterra     usa Headlong Rush        100.00%  [2º (vida: 60.5%)]
+  Kricketune      (Bug            ) -> Decidueye    usa Brave Bird            83.07%  [1º]
+  Roserade        (Grass/Poison   ) -> Torterra     usa Headlong Rush         89.79%  [2º (vida: 51.5%)]
+  Rampardos       (Rock           ) -> Decidueye    usa Leaf Blade           100.00%  [1º]
+  Vespiqueen      (Bug/Flying     ) -> Cradily      usa Ancient Power         93.05%  [1º]
+  Garchomp        (Dragon/Ground  ) -> Torterra     usa Headlong Rush         48.44%  [2º (vida: 62.5%)]
+  Toxicroak       (Poison/Fighting) -> Torterra     usa Headlong Rush        100.00%  [2º (vida: 61.9%)]
+  Weavile         (Dark/Ice       ) -> Torterra     usa Headlong Rush         83.40%  [2º (vida: 28.0%)]
+  Magnezone       (Electric/Steel ) -> Torterra     usa Headlong Rush        100.00%  [2º (vida: 55.3%)]
+  Electivire      (Electric       ) -> Torterra     usa Headlong Rush        100.00%  [2º (vida: 81.8%)]
+  Rhyperior       (Ground/Rock    ) -> Decidueye    usa Leaf Blade           100.00%  [1º]
+  Yanmega         (Bug/Flying     ) -> Cradily      usa Ancient Power        100.00%  [2º (vida: 20.4%)]
+  Gallade         (Psychic/Fighting) -> Decidueye    usa Spirit Shackle       100.00%  [2º (vida: 37.8%)]
+  Emboar          (Fire/Fighting  ) -> Torterra     usa Headlong Rush        100.00%  [2º (vida: 19.7%)]
+  Conkeldurr      (Fighting       ) -> Torterra     usa Headlong Rush         49.27%  [1º]
+  Archeops        (Rock/Flying    ) -> Cradily      usa Ancient Power         64.04%  [2º (vida: 47.1%)]
+  Crustle         (Bug/Rock       ) -> Cradily      usa Ancient Power         59.41%  [2º (vida: 29.2%)]
+  Chandelure      (Ghost/Fire     ) -> Torterra     usa Headlong Rush        100.00%  [2º (vida: 19.0%)]
+  Haxorus         (Dragon         ) -> Torterra     usa Headlong Rush         61.71%  [2º (vida: 53.1%)]
+  Durant          (Bug/Steel      ) -> Torterra     usa Headlong Rush         58.64%  [2º (vida: 35.3%)]
+  Volcarona       (Bug/Fire       ) -> Cradily      usa Ancient Power         82.12%  [2º (vida: 9.4%)]
+  Hawlucha        (Fighting/Flying) -> Decidueye    usa Brave Bird            61.56%  [2º (vida: 19.0%)]
+  Carbink         (Rock/Fairy     ) -> Torterra     usa Headlong Rush         97.34%  [1º]
+  Avalugg         (Ice            ) -> Cradily      usa Ancient Power         72.47%  [1º]
+  Decidueye       (Grass/Ghost    ) -> Decidueye    usa Spirit Shackle        93.26%  [2º (vida: 6.7%)]
+  Vikavolt        (Bug/Electric   ) -> Torterra     usa Headlong Rush         61.29%  [1º]
+  Lycanroc        (Rock           ) -> Decidueye    usa Leaf Blade           100.00%  [2º (vida: 33.9%)]
+  Lurantis        (Grass          ) -> Decidueye    usa Brave Bird            56.23%  [1º]
+  Tsareena        (Grass          ) -> Decidueye    usa Brave Bird            51.71%  [2º (vida: 72.3%)]
+  Golisopod       (Bug/Water      ) -> Cradily      usa Ancient Power         49.69%  [1º]
+  Minior          (Rock/Flying    ) -> Cradily      usa Ancient Power         50.90%  [2º (vida: 78.9%)]
+  Tapu Fini       (Water/Fairy    ) -> Decidueye    usa Leaf Blade            77.99%  [2º (vida: 60.4%)]
+  Sirfetch'd      (Fighting       ) -> Torterra     usa Headlong Rush         65.26%  [2º (vida: 48.8%)]
+  Eternatus       (Poison/Dragon  ) -> Torterra     usa Headlong Rush         82.15%  [2º (vida: 26.5%)]
+  Kleavor         (Bug/Rock       ) -> Cradily      usa Ancient Power         62.67%  [2º (vida: 12.4%)]
+  Ursaluna        (Ground/Normal  ) -> Decidueye    usa Leaf Blade            58.97%  [1º]
+  Sneasler        (Fighting/Poison) -> Torterra     usa Headlong Rush        100.00%  [2º (vida: 44.1%)]
+  Meowscarada     (Dark/Grass     ) -> Decidueye    usa U-Turn               100.00%  [2º (vida: 16.2%)]
+  Lokix           (Bug/Dark       ) -> Cradily      usa Ancient Power         74.58%  [2º (vida: 30.9%)]
+  Pawmot          (Fighting/Electric) -> Torterra     usa Headlong Rush        100.00%  [2º (vida: 49.7%)]
+  Tinkaton        (Steel/Fairy    ) -> Torterra     usa Headlong Rush        100.00%  [2º (vida: 53.0%)]
+  Glimmora        (Poison/Rock    ) -> Torterra     usa Headlong Rush        100.00%  [2º (vida: 47.1%)]
+  Dondozo         (Water          ) -> Cradily      usa Energy Ball           62.70%  [1º]
+  Annihilape      (Fighting/Ghost ) -> Decidueye    usa Spirit Shackle        72.89%  [2º (vida: 37.3%)]

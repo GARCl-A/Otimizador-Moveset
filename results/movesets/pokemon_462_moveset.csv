@@ -1,0 +1,76 @@
+Name,Type,Category,Power,Accuracy,Source
+Ally Switch,Psychic,Status,0,0,TM
+Barrier,Psychic,Status,0,0,Level
+Body Press,Fighting,Physical,80,100,TM
+Body Slam,Normal,Physical,85,100,TM
+Charge,Electric,Status,0,0,TM
+Charge Beam,Electric,Special,50,90,TM
+Confide,Normal,Status,0,0,TM
+Confuse Ray,Ghost,Status,0,100,TM
+Curse,Ghost,Status,0,0,TM
+Discharge,Electric,Special,80,100,Level
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Eerie Impulse,Electric,Status,0,100,TM
+Electric Terrain,Electric,Status,0,0,"Level, TM"
+Electro Ball,Electric,Special,0,100,"Level, TM"
+Electroweb,Electric,Special,55,95,TM
+Endure,Normal,Status,0,0,TM
+Explosion,Normal,Physical,250,100,TM
+Facade,Normal,Physical,70,100,TM
+Flash,Normal,Status,0,100,TM
+Flash Cannon,Steel,Special,80,100,"Level, TM"
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Gravity,Psychic,Status,0,0,TM
+Gyro Ball,Steel,Physical,0,100,"Level, TM"
+Hard Press,Steel,Physical,0,100,TM
+Heavy Slam,Steel,Physical,0,100,TM
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Iron Defense,Steel,Status,0,0,TM
+Iron Head,Steel,Physical,80,100,TM
+Light Screen,Psychic,Status,0,0,"Level, TM"
+Lock-On,Normal,Status,0,0,Level
+Magnet Rise,Electric,Status,0,0,Level
+Magnetic Flux,Electric,Status,0,0,Level
+Metal Sound,Steel,Status,0,85,"Level, TM"
+Mirror Coat,Psychic,Special,0,100,Level
+Protect,Normal,Status,0,0,TM
+Psych Up,Normal,Status,0,0,TM
+Rain Dance,Water,Status,0,0,TM
+Recycle,Normal,Status,0,0,TM
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Rising Voltage,Electric,Special,70,100,TM
+Round,Normal,Special,60,100,TM
+Sandstorm,Rock,Status,0,0,TM
+Screech,Normal,Status,0,85,"Level, TM"
+Secret Power,Normal,Physical,70,100,TM
+Self-Destruct,Normal,Physical,200,100,TM
+Signal Beam,Bug,Special,75,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snore,Normal,Special,50,100,TM
+Spark,Electric,Physical,65,100,Level
+Steel Beam,Steel,Special,140,95,TM
+Steel Roller,Steel,Physical,130,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Supercell Slam,Electric,Physical,100,95,TM
+Supersonic,Normal,Status,0,55,Level
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,TM
+Tackle,Normal,Physical,40,100,Level
+Take Down,Normal,Physical,90,85,TM
+Tera Blast,Normal,Special,80,100,TM
+Thunder,Electric,Special,110,70,TM
+Thunder Shock,Electric,Special,40,100,Level
+Thunder Wave,Electric,Status,0,90,"Level, TM"
+Thunderbolt,Electric,Special,90,100,TM
+Toxic,Poison,Status,0,90,TM
+Tri Attack,Normal,Special,80,100,"Level, TM"
+Volt Switch,Electric,Special,70,100,TM
+Wild Charge,Electric,Physical,90,100,TM
+Zap Cannon,Electric,Special,120,50,Level

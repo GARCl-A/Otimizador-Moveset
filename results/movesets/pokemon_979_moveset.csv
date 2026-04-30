@@ -1,0 +1,92 @@
+Name,Type,Category,Power,Accuracy,Source
+Acrobatics,Flying,Physical,55,100,TM
+Assurance,Dark,Physical,60,100,"Level, TM"
+Attract,Normal,Status,0,100,TM
+Beat Up,Dark,Physical,0,100,TM
+Body Slam,Normal,Physical,85,100,TM
+Brick Break,Fighting,Physical,75,100,TM
+Bulk Up,Fighting,Status,0,0,TM
+Bulldoze,Ground,Physical,60,100,TM
+Close Combat,Fighting,Physical,120,100,"Level, TM"
+Coaching,Fighting,Status,0,0,TM
+Counter,Fighting,Physical,0,100,Level
+Covet,Normal,Physical,60,100,"Level, TM"
+Cross Chop,Fighting,Physical,100,80,Level
+Curse,Ghost,Status,0,0,TM
+Dig,Ground,Physical,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Drain Punch,Fighting,Physical,75,100,TM
+Earthquake,Ground,Physical,100,100,TM
+Encore,Normal,Status,0,100,TM
+Endeavor,Normal,Physical,0,100,TM
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Final Gambit,Fighting,Special,0,100,Level
+Fire Punch,Fire,Physical,75,100,TM
+Fling,Dark,Physical,0,100,"Level, TM"
+Focus Blast,Fighting,Special,120,70,TM
+Focus Energy,Normal,Status,0,0,"Level, TM"
+Focus Punch,Fighting,Physical,150,100,TM
+Frustration,Normal,Physical,0,100,TM
+Fury Swipes,Normal,Physical,18,80,Level
+Giga Impact,Normal,Physical,150,90,TM
+Gunk Shot,Poison,Physical,120,80,TM
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Ice Punch,Ice,Physical,75,100,TM
+Iron Tail,Steel,Physical,100,75,TM
+Lash Out,Dark,Physical,75,100,TM
+Leer,Normal,Status,0,100,Level
+Low Kick,Fighting,Physical,0,100,"Level, TM"
+Low Sweep,Fighting,Physical,65,100,TM
+Metronome,Normal,Status,0,0,TM
+Night Shade,Ghost,Special,0,100,TM
+Outrage,Dragon,Physical,120,100,"Level, TM"
+Overheat,Fire,Special,130,90,TM
+Pay Day,Normal,Physical,40,100,TM
+Phantom Force,Ghost,Physical,90,100,TM
+Poison Jab,Poison,Physical,80,100,TM
+Power-Up Punch,Fighting,Physical,40,100,TM
+Protect,Normal,Status,0,0,TM
+Rage Fist,Ghost,Physical,50,100,Level
+Rain Dance,Water,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Revenge,Fighting,Physical,60,100,TM
+Reversal,Fighting,Physical,0,100,TM
+Rock Climb,Normal,Physical,90,85,TM
+Rock Slide,Rock,Physical,75,90,TM
+Rock Smash,Fighting,Physical,40,100,TM
+Rock Tomb,Rock,Physical,60,95,TM
+Scary Face,Normal,Status,0,100,TM
+Scratch,Normal,Physical,40,100,Level
+Screech,Normal,Status,0,85,"Level, TM"
+Secret Power,Normal,Physical,70,100,TM
+Seed Bomb,Grass,Physical,80,100,TM
+Seismic Toss,Fighting,Physical,0,100,Level
+Shadow Ball,Ghost,Special,80,100,TM
+Shadow Claw,Ghost,Physical,70,100,TM
+Shadow Punch,Ghost,Physical,60,0,Level
+Sleep Talk,Normal,Status,0,0,TM
+Smack Down,Rock,Physical,50,100,TM
+Spite,Ghost,Status,0,100,TM
+Stealth Rock,Rock,Status,0,0,TM
+Stomping Tantrum,Ground,Physical,75,100,"Level, TM"
+Stone Edge,Rock,Physical,100,80,TM
+Strength,Normal,Physical,80,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,"Level, TM"
+Swift,Normal,Special,60,0,TM
+Take Down,Normal,Physical,90,85,TM
+Taunt,Dark,Status,0,100,TM
+Thief,Dark,Physical,60,100,TM
+Thrash,Normal,Physical,120,100,Level
+Thunder,Electric,Special,110,70,TM
+Thunder Punch,Electric,Physical,75,100,TM
+Thunderbolt,Electric,Special,90,100,TM
+U-Turn,Bug,Physical,70,100,TM
+Uproar,Normal,Special,90,100,TM
+Vacuum Wave,Fighting,Special,40,100,TM

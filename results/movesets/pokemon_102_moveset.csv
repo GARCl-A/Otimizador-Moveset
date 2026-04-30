@@ -1,0 +1,64 @@
+Name,Type,Category,Power,Accuracy,Source
+Absorb,Grass,Special,20,100,Level
+Attract,Normal,Status,0,100,TM
+Barrage,Normal,Physical,15,85,Level
+Bullet Seed,Grass,Physical,25,100,"Level, TM"
+Confide,Normal,Status,0,0,TM
+Confusion,Psychic,Special,50,100,Level
+Curse,Ghost,Status,0,0,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Dream Eater,Psychic,Special,100,100,TM
+Endure,Normal,Status,0,0,TM
+Energy Ball,Grass,Special,90,100,TM
+Explosion,Normal,Physical,250,100,TM
+Extrasensory,Psychic,Special,80,100,Level
+Facade,Normal,Physical,70,100,TM
+Flash,Normal,Status,0,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Drain,Grass,Special,75,100,"Level, TM"
+Grass Knot,Grass,Special,0,100,TM
+Grassy Glide,Grass,Physical,55,100,TM
+Grassy Terrain,Grass,Status,0,0,TM
+Gravity,Psychic,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hypnosis,Psychic,Status,0,60,Level
+Infestation,Bug,Special,20,100,TM
+Leaf Storm,Grass,Special,130,90,TM
+Leech Seed,Grass,Status,0,90,Level
+Light Screen,Psychic,Status,0,0,TM
+Mega Drain,Grass,Special,40,100,Level
+Nature Power,Normal,Status,0,0,TM
+Power Swap,Psychic,Status,0,0,TM
+Protect,Normal,Status,0,0,TM
+Psybeam,Psychic,Special,65,100,TM
+Psych Up,Normal,Status,0,0,TM
+Psychic,Psychic,Special,90,100,TM
+Psychic Noise,Psychic,Special,75,100,TM
+Psyshock,Psychic,Special,80,100,TM
+Reflect,Psychic,Status,0,0,"Level, TM"
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Round,Normal,Special,60,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Seed Bomb,Grass,Physical,80,100,TM
+Self-Destruct,Normal,Physical,200,100,TM
+Skill Swap,Psychic,Status,0,0,TM
+Sleep Talk,Normal,Status,0,0,TM
+Sludge Bomb,Poison,Special,90,100,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,"Level, TM"
+Stored Power,Psychic,Special,20,100,TM
+Strength,Normal,Physical,80,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Swords Dance,Normal,Status,0,0,TM
+Synthesis,Grass,Status,0,0,"Level, TM"
+Take Down,Normal,Physical,90,85,TM
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Toxic,Poison,Status,0,90,TM
+Trick Room,Psychic,Status,0,0,TM
+Uproar,Normal,Special,90,100,"Level, TM"
+Worry Seed,Grass,Status,0,100,"Level, TM"

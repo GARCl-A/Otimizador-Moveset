@@ -1,0 +1,89 @@
+Name,Type,Category,Power,Accuracy,Source
+Aqua Tail,Water,Physical,90,90,Level
+Attract,Normal,Status,0,100,TM
+Avalanche,Ice,Physical,60,100,TM
+Bite,Dark,Physical,60,100,Level
+Blizzard,Ice,Special,110,70,TM
+Body Slam,Normal,Physical,85,100,TM
+Bounce,Flying,Physical,85,85,TM
+Brine,Water,Special,65,100,"Level, TM"
+Brutal Swing,Dark,Physical,60,100,TM
+Bulldoze,Ground,Physical,60,100,TM
+Chilling Water,Water,Special,50,100,TM
+Confide,Normal,Status,0,0,TM
+Crunch,Dark,Physical,80,100,"Level, TM"
+Curse,Ghost,Status,0,0,TM
+Dark Pulse,Dark,Special,80,100,TM
+Dive,Water,Physical,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Dragon Cheer,Dragon,Status,0,0,TM
+Dragon Dance,Dragon,Status,0,0,"Level, TM"
+Dragon Pulse,Dragon,Special,85,100,TM
+Dragon Tail,Dragon,Physical,60,90,TM
+Earthquake,Ground,Physical,100,100,TM
+Endeavor,Normal,Physical,0,100,TM
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Fire Blast,Fire,Special,110,85,TM
+Flail,Normal,Physical,0,100,Level
+Flamethrower,Fire,Special,90,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Hail,Ice,Status,0,0,TM
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hurricane,Flying,Special,110,70,"Level, TM"
+Hydro Pump,Water,Special,110,80,"Level, TM"
+Hyper Beam,Normal,Special,150,90,"Level, TM"
+Ice Beam,Ice,Special,90,100,TM
+Ice Fang,Ice,Physical,65,95,"Level, TM"
+Icy Wind,Ice,Special,55,95,TM
+Incinerate,Fire,Special,60,100,TM
+Iron Head,Steel,Physical,80,100,TM
+Iron Tail,Steel,Physical,100,75,TM
+Lash Out,Dark,Physical,75,100,TM
+Leer,Normal,Status,0,100,Level
+Muddy Water,Water,Special,90,85,TM
+Outrage,Dragon,Physical,120,100,TM
+Payback,Dark,Physical,50,100,TM
+Power Whip,Grass,Physical,120,85,TM
+Protect,Normal,Status,0,0,TM
+Rain Dance,Water,Status,0,0,"Level, TM"
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Roar,Normal,Status,0,0,TM
+Rock Smash,Fighting,Physical,40,100,TM
+Round,Normal,Special,60,100,TM
+Sandstorm,Rock,Status,0,0,TM
+Scald,Water,Special,80,100,TM
+Scale Shot,Dragon,Physical,25,90,TM
+Scary Face,Normal,Status,0,100,"Level, TM"
+Secret Power,Normal,Physical,70,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snore,Normal,Special,50,100,TM
+Spite,Ghost,Status,0,100,TM
+Splash,Normal,Status,0,0,Level
+Stone Edge,Rock,Physical,100,80,TM
+Strength,Normal,Physical,80,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Surf,Water,Special,90,100,TM
+Swagger,Normal,Status,0,85,TM
+Tackle,Normal,Physical,40,100,Level
+Take Down,Normal,Physical,90,85,TM
+Taunt,Dark,Status,0,100,TM
+Temper Flare,Fire,Physical,75,100,TM
+Tera Blast,Normal,Special,80,100,TM
+Thrash,Normal,Physical,120,100,Level
+Thunder,Electric,Special,110,70,TM
+Thunder Wave,Electric,Status,0,90,TM
+Thunderbolt,Electric,Special,90,100,TM
+Torment,Dark,Status,0,100,TM
+Toxic,Poison,Status,0,90,TM
+Twister,Dragon,Special,40,100,Level
+Uproar,Normal,Special,90,100,TM
+Water Pulse,Water,Special,60,100,TM
+Waterfall,Water,Physical,80,100,"Level, TM"
+Whirlpool,Water,Special,35,85,"Level, TM"

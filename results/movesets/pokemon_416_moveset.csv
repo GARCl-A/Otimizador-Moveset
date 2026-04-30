@@ -1,0 +1,86 @@
+Name,Type,Category,Power,Accuracy,Source
+Acrobatics,Flying,Physical,55,100,TM
+Aerial Ace,Flying,Physical,60,0,TM
+Agility,Psychic,Status,0,0,TM
+Air Cutter,Flying,Special,60,95,TM
+Air Slash,Flying,Special,75,95,"Level, TM"
+Aromatic Mist,Fairy,Status,0,0,Level
+Assurance,Dark,Physical,60,100,TM
+Attack Order,Bug,Physical,90,100,Level
+Attract,Normal,Status,0,100,TM
+Beat Up,Dark,Physical,0,100,TM
+Bug Bite,Bug,Physical,60,100,"Level, TM"
+Bug Buzz,Bug,Special,90,100,TM
+Confide,Normal,Status,0,0,TM
+Confuse Ray,Ghost,Status,0,100,"Level, TM"
+Cross Poison,Poison,Physical,70,100,TM
+Cut,Normal,Physical,50,95,TM
+Defend Order,Bug,Status,0,0,Level
+Defog,Flying,Status,0,0,TM
+Destiny Bond,Ghost,Status,0,0,Level
+Double Team,Normal,Status,0,0,TM
+Dual Wingbeat,Flying,Physical,40,90,TM
+Endeavor,Normal,Physical,0,100,TM
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Fell Stinger,Bug,Physical,50,100,Level
+Flash,Normal,Status,0,100,TM
+Fling,Dark,Physical,0,100,TM
+Frustration,Normal,Physical,0,100,TM
+Fury Cutter,Bug,Physical,40,95,Level
+Fury Swipes,Normal,Physical,18,80,Level
+Giga Impact,Normal,Physical,150,90,TM
+Gust,Flying,Special,40,100,Level
+Heal Order,Bug,Status,0,0,Level
+Helping Hand,Normal,Status,0,0,TM
+Hex,Ghost,Special,65,100,TM
+Hidden Power,Normal,Special,60,100,TM
+Hone Claws,Dark,Status,0,0,TM
+Hurricane,Flying,Special,110,70,TM
+Hyper Beam,Normal,Special,150,90,TM
+Infestation,Bug,Special,20,100,TM
+Lunge,Bug,Physical,80,100,TM
+Mud-Slap,Ground,Special,20,100,TM
+Pin Missile,Bug,Physical,25,95,TM
+Poison Sting,Poison,Physical,15,100,Level
+Pollen Puff,Bug,Special,90,100,TM
+Pounce,Bug,Physical,50,100,TM
+Power Gem,Rock,Special,80,100,"Level, TM"
+Protect,Normal,Status,0,0,TM
+Psychic Noise,Psychic,Special,75,100,TM
+Quash,Dark,Status,0,100,TM
+Rain Dance,Water,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Revenge,Fighting,Physical,60,100,TM
+Reversal,Fighting,Physical,0,100,TM
+Roost,Flying,Status,0,0,"Level, TM"
+Round,Normal,Special,60,100,TM
+Scary Face,Normal,Status,0,100,TM
+Screech,Normal,Status,0,85,TM
+Secret Power,Normal,Physical,70,100,TM
+Signal Beam,Bug,Special,75,100,TM
+Skitter Smack,Bug,Physical,70,90,TM
+Slash,Normal,Physical,70,100,Level
+Sleep Talk,Normal,Status,0,0,TM
+Sludge Bomb,Poison,Special,90,100,TM
+Snore,Normal,Special,50,100,TM
+Spikes,Ground,Status,0,0,TM
+Spite,Ghost,Status,0,100,TM
+Struggle Bug,Bug,Special,50,100,"Level, TM"
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,"Level, TM"
+Sweet Scent,Normal,Status,0,100,Level
+Swift,Normal,Special,60,0,TM
+Tailwind,Flying,Status,0,0,TM
+Take Down,Normal,Physical,90,85,TM
+Taunt,Dark,Status,0,100,TM
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Toxic,Poison,Status,0,90,"Level, TM"
+Toxic Spikes,Poison,Status,0,0,TM
+U-Turn,Bug,Physical,70,100,TM
+Uproar,Normal,Special,90,100,TM
+Venoshock,Poison,Special,65,100,TM
+X-Scissor,Bug,Physical,80,100,TM

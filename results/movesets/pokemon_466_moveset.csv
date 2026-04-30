@@ -1,0 +1,86 @@
+Name,Type,Category,Power,Accuracy,Source
+Attract,Normal,Status,0,100,TM
+Body Slam,Normal,Physical,85,100,TM
+Brick Break,Fighting,Physical,75,100,TM
+Bulk Up,Fighting,Status,0,0,TM
+Bulldoze,Ground,Physical,60,100,TM
+Charge,Electric,Status,0,0,"Level, TM"
+Charge Beam,Electric,Special,50,90,TM
+Confide,Normal,Status,0,0,TM
+Covet,Normal,Physical,60,100,TM
+Curse,Ghost,Status,0,0,TM
+Darkest Lariat,Dark,Physical,85,100,TM
+Dig,Ground,Physical,80,100,TM
+Discharge,Electric,Special,80,100,Level
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Earthquake,Ground,Physical,100,100,TM
+Electric Terrain,Electric,Status,0,0,TM
+Electro Ball,Electric,Special,0,100,TM
+Electroweb,Electric,Special,55,95,TM
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Fire Punch,Fire,Physical,75,100,TM
+Flamethrower,Fire,Special,90,100,TM
+Flash,Normal,Status,0,100,TM
+Fling,Dark,Physical,0,100,TM
+Focus Blast,Fighting,Special,120,70,TM
+Focus Punch,Fighting,Physical,150,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,"Level, TM"
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Ice Punch,Ice,Physical,75,100,TM
+Ion Deluge,Electric,Status,0,0,Level
+Iron Tail,Steel,Physical,100,75,TM
+Knock Off,Dark,Physical,65,100,TM
+Leer,Normal,Status,0,100,Level
+Light Screen,Psychic,Status,0,0,"Level, TM"
+Low Kick,Fighting,Physical,0,100,"Level, TM"
+Low Sweep,Fighting,Physical,65,100,TM
+Mega Kick,Normal,Physical,120,75,TM
+Mega Punch,Normal,Physical,80,85,TM
+Metal Sound,Steel,Status,0,85,TM
+Mud-Slap,Ground,Special,20,100,TM
+Power-Up Punch,Fighting,Physical,40,100,TM
+Protect,Normal,Status,0,0,TM
+Psychic,Psychic,Special,90,100,TM
+Quick Attack,Normal,Physical,40,100,Level
+Rain Dance,Water,Status,0,0,TM
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Rising Voltage,Electric,Special,70,100,TM
+Rock Climb,Normal,Physical,90,85,TM
+Rock Slide,Rock,Physical,75,90,TM
+Rock Smash,Fighting,Physical,40,100,TM
+Rock Tomb,Rock,Physical,60,95,TM
+Round,Normal,Special,60,100,TM
+Screech,Normal,Status,0,85,"Level, TM"
+Secret Power,Normal,Physical,70,100,TM
+Shock Wave,Electric,Special,60,0,Level
+Signal Beam,Bug,Special,75,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snore,Normal,Special,50,100,TM
+Stomping Tantrum,Ground,Physical,75,100,TM
+Strength,Normal,Physical,80,100,TM
+Substitute,Normal,Status,0,0,TM
+Supercell Slam,Electric,Physical,100,95,TM
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,"Level, TM"
+Taunt,Dark,Status,0,100,TM
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Thunder,Electric,Special,110,70,"Level, TM"
+Thunder Punch,Electric,Physical,75,100,"Level, TM"
+Thunder Shock,Electric,Special,40,100,Level
+Thunder Wave,Electric,Status,0,90,"Level, TM"
+Thunderbolt,Electric,Special,90,100,"Level, TM"
+Torment,Dark,Status,0,100,TM
+Toxic,Poison,Status,0,90,TM
+Trailblaze,Grass,Physical,50,100,TM
+Uproar,Normal,Special,90,100,TM
+Volt Switch,Electric,Special,70,100,TM
+Weather Ball,Normal,Special,50,100,TM
+Wild Charge,Electric,Physical,90,100,TM

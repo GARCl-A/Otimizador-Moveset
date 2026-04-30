@@ -1,0 +1,73 @@
+Name,Type,Category,Power,Accuracy,Source
+Acid,Poison,Special,40,100,Level
+Amnesia,Psychic,Status,0,0,"Level, TM"
+Ancient Power,Rock,Special,60,100,Level
+Astonish,Ghost,Physical,30,100,Level
+Attract,Normal,Status,0,100,TM
+Body Slam,Normal,Physical,85,100,TM
+Brine,Water,Special,65,100,"Level, TM"
+Bulldoze,Ground,Physical,60,100,TM
+Bullet Seed,Grass,Physical,25,100,TM
+Confide,Normal,Status,0,0,TM
+Confuse Ray,Ghost,Status,0,100,"Level, TM"
+Constrict,Normal,Physical,10,100,Level
+Dig,Ground,Physical,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Earth Power,Ground,Special,90,100,TM
+Earthquake,Ground,Physical,100,100,TM
+Endure,Normal,Status,0,0,TM
+Energy Ball,Grass,Special,90,100,"Level, TM"
+Facade,Normal,Physical,70,100,TM
+Flash,Normal,Status,0,100,TM
+Frustration,Normal,Physical,0,100,TM
+Gastro Acid,Poison,Status,0,100,"Level, TM"
+Giga Drain,Grass,Special,75,100,"Level, TM"
+Giga Impact,Normal,Physical,150,90,TM
+Grass Knot,Grass,Special,0,100,TM
+Grassy Terrain,Grass,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Infestation,Bug,Special,20,100,TM
+Ingrain,Grass,Status,0,0,Level
+Leech Seed,Grass,Status,0,90,Level
+Mega Drain,Grass,Special,40,100,Level
+Meteor Beam,Rock,Special,120,90,TM
+Mud Shot,Ground,Special,55,95,TM
+Mud-Slap,Ground,Special,20,100,TM
+Pain Split,Normal,Status,0,0,TM
+Power Whip,Grass,Physical,120,85,TM
+Protect,Normal,Status,0,0,TM
+Psych Up,Normal,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Rock Blast,Rock,Physical,25,90,TM
+Rock Polish,Rock,Status,0,0,TM
+Rock Slide,Rock,Physical,75,90,TM
+Rock Smash,Fighting,Physical,40,100,TM
+Rock Tomb,Rock,Physical,60,95,TM
+Round,Normal,Special,60,100,TM
+Sandstorm,Rock,Status,0,0,TM
+Secret Power,Normal,Physical,70,100,TM
+Seed Bomb,Grass,Physical,80,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Sludge Bomb,Poison,Special,90,100,TM
+Sludge Wave,Poison,Special,95,100,TM
+Smack Down,Rock,Physical,50,100,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Spit Up,Normal,Special,0,0,Level
+Stealth Rock,Rock,Status,0,0,TM
+Stockpile,Normal,Status,0,0,Level
+Stone Edge,Rock,Physical,100,80,TM
+Strength,Normal,Physical,80,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Swallow,Normal,Status,0,0,Level
+Swords Dance,Normal,Status,0,0,TM
+Synthesis,Grass,Status,0,0,TM
+Tera Blast,Normal,Special,80,100,TM
+Toxic,Poison,Status,0,90,TM
+Worry Seed,Grass,Status,0,100,TM
+Wrap,Normal,Physical,15,90,Level

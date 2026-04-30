@@ -1,0 +1,63 @@
+Name,Type,Category,Power,Accuracy,Source
+Aerial Ace,Flying,Physical,60,0,TM
+Agility,Psychic,Status,0,0,"Level, TM"
+Attract,Normal,Status,0,100,TM
+Baton Pass,Normal,Status,0,0,TM
+Beat Up,Dark,Physical,0,100,"Level, TM"
+Bite,Dark,Physical,60,100,Level
+Bug Bite,Bug,Physical,60,100,"Level, TM"
+Confide,Normal,Status,0,0,TM
+Crunch,Dark,Physical,80,100,"Level, TM"
+Cut,Normal,Physical,50,95,TM
+Dig,Ground,Physical,80,100,"Level, TM"
+Double Team,Normal,Status,0,0,TM
+Endeavor,Normal,Physical,0,100,TM
+Endure,Normal,Status,0,0,TM
+Energy Ball,Grass,Special,90,100,TM
+Entrainment,Normal,Status,0,100,Level
+Facade,Normal,Physical,70,100,TM
+Flash Cannon,Steel,Special,80,100,TM
+Frustration,Normal,Physical,0,100,TM
+Fury Cutter,Bug,Physical,40,95,Level
+Giga Impact,Normal,Physical,150,90,TM
+Guillotine,Normal,Physical,200,30,Level
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hone Claws,Dark,Status,0,0,TM
+Infestation,Bug,Special,20,100,TM
+Iron Defense,Steel,Status,0,0,"Level, TM"
+Iron Head,Steel,Physical,80,100,"Level, TM"
+Metal Claw,Steel,Physical,50,95,"Level, TM"
+Metal Sound,Steel,Status,0,85,"Level, TM"
+Protect,Normal,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Retaliate,Normal,Physical,70,100,TM
+Return,Normal,Physical,0,100,TM
+Rock Climb,Normal,Physical,90,85,TM
+Rock Polish,Rock,Status,0,0,TM
+Rock Slide,Rock,Physical,75,90,TM
+Rock Smash,Fighting,Physical,40,100,TM
+Rock Tomb,Rock,Physical,60,95,TM
+Round,Normal,Special,60,100,TM
+Sand Attack,Ground,Status,0,100,Level
+Sandstorm,Rock,Status,0,0,TM
+Screech,Normal,Status,0,85,TM
+Secret Power,Normal,Physical,70,100,TM
+Shadow Claw,Ghost,Physical,70,100,TM
+Skitter Smack,Bug,Physical,70,90,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snore,Normal,Special,50,100,TM
+Steel Beam,Steel,Special,140,95,TM
+Stomping Tantrum,Ground,Physical,75,100,TM
+Stone Edge,Rock,Physical,100,80,TM
+Strength,Normal,Physical,80,100,TM
+Struggle Bug,Bug,Special,50,100,TM
+Substitute,Normal,Status,0,0,TM
+Superpower,Fighting,Physical,120,100,TM
+Swagger,Normal,Status,0,85,TM
+Tera Blast,Normal,Special,80,100,TM
+Thunder Fang,Electric,Physical,65,95,TM
+Thunder Wave,Electric,Status,0,90,TM
+Toxic,Poison,Status,0,90,TM
+Vise Grip,Normal,Physical,55,100,Level
+X-Scissor,Bug,Physical,80,100,"Level, TM"

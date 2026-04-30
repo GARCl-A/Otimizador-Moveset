@@ -1,0 +1,67 @@
+Name,Type,Category,Power,Accuracy,Source
+Absorb,Grass,Special,20,100,Level
+Aromatherapy,Grass,Status,0,0,Level
+Attract,Normal,Status,0,100,TM
+Body Slam,Normal,Physical,85,100,TM
+Bullet Seed,Grass,Physical,25,100,TM
+Confide,Normal,Status,0,0,TM
+Covet,Normal,Physical,60,100,TM
+Cut,Normal,Physical,50,95,TM
+Dazzling Gleam,Fairy,Special,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Endure,Normal,Status,0,0,TM
+Energy Ball,Grass,Special,90,100,TM
+Facade,Normal,Physical,70,100,TM
+Flash,Normal,Status,0,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Drain,Grass,Special,75,100,"Level, TM"
+Giga Impact,Normal,Physical,150,90,TM
+Grass Knot,Grass,Special,0,100,TM
+Grassy Glide,Grass,Physical,55,100,TM
+Grassy Terrain,Grass,Status,0,0,"Level, TM"
+Growth,Normal,Status,0,0,Level
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Ingrain,Grass,Status,0,0,Level
+Leaf Storm,Grass,Special,130,90,TM
+Leech Seed,Grass,Status,0,90,Level
+Magical Leaf,Grass,Special,60,0,"Level, TM"
+Mega Drain,Grass,Special,40,100,Level
+Mud-Slap,Ground,Special,20,100,TM
+Nature Power,Normal,Status,0,0,TM
+Petal Blizzard,Grass,Physical,90,100,"Level, TM"
+Petal Dance,Grass,Special,120,100,Level
+Pin Missile,Bug,Physical,25,95,TM
+Poison Jab,Poison,Physical,80,100,TM
+Poison Sting,Poison,Physical,15,100,Level
+Power Whip,Grass,Physical,120,85,TM
+Protect,Normal,Status,0,0,TM
+Psych Up,Normal,Status,0,0,TM
+Rain Dance,Water,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Round,Normal,Special,60,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Seed Bomb,Grass,Physical,80,100,TM
+Shadow Ball,Ghost,Special,80,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Sludge Bomb,Poison,Special,90,100,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Spikes,Ground,Status,0,0,TM
+Stun Spore,Grass,Status,0,75,Level
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Sweet Scent,Normal,Status,0,100,Level
+Swift,Normal,Special,60,0,TM
+Swords Dance,Normal,Status,0,0,TM
+Synthesis,Grass,Status,0,0,"Level, TM"
+Tera Blast,Normal,Special,80,100,TM
+Toxic,Poison,Status,0,90,"Level, TM"
+Toxic Spikes,Poison,Status,0,0,"Level, TM"
+Uproar,Normal,Special,90,100,TM
+Venom Drench,Poison,Status,0,100,"Level, TM"
+Venoshock,Poison,Special,65,100,TM
+Weather Ball,Normal,Special,50,100,TM
+Worry Seed,Grass,Status,0,100,"Level, TM"

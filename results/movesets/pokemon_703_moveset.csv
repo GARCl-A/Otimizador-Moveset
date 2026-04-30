@@ -1,0 +1,74 @@
+Name,Type,Category,Power,Accuracy,Source
+Ally Switch,Psychic,Status,0,0,TM
+Ancient Power,Rock,Special,60,100,Level
+Body Press,Fighting,Physical,80,100,TM
+Body Slam,Normal,Physical,85,100,TM
+Calm Mind,Psychic,Status,0,0,TM
+Charm,Fairy,Status,0,100,TM
+Confide,Normal,Status,0,0,TM
+Covet,Normal,Physical,60,100,TM
+Dazzling Gleam,Fairy,Special,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Earth Power,Ground,Special,90,100,TM
+Endeavor,Normal,Physical,0,100,TM
+Endure,Normal,Status,0,0,TM
+Explosion,Normal,Physical,250,100,TM
+Facade,Normal,Physical,70,100,TM
+Flail,Normal,Physical,0,100,Level
+Flash,Normal,Status,0,100,TM
+Flash Cannon,Steel,Special,80,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Gravity,Psychic,Status,0,0,TM
+Guard Split,Psychic,Status,0,0,Level
+Guard Swap,Psychic,Status,0,0,TM
+Gyro Ball,Steel,Physical,0,100,TM
+Hail,Ice,Status,0,0,TM
+Harden,Normal,Status,0,0,Level
+Heavy Slam,Steel,Physical,0,100,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Iron Defense,Steel,Status,0,0,TM
+Iron Head,Steel,Physical,80,100,TM
+Light Screen,Psychic,Status,0,0,"Level, TM"
+Meteor Beam,Rock,Special,120,90,TM
+Misty Explosion,Fairy,Special,100,100,TM
+Misty Terrain,Fairy,Status,0,0,TM
+Moonblast,Fairy,Special,95,100,Level
+Nature Power,Normal,Status,0,0,TM
+Power Gem,Rock,Special,80,100,"Level, TM"
+Protect,Normal,Status,0,0,TM
+Psych Up,Normal,Status,0,0,TM
+Psychic,Psychic,Special,90,100,TM
+Rain Dance,Water,Status,0,0,TM
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Rock Blast,Rock,Physical,25,90,TM
+Rock Polish,Rock,Status,0,0,"Level, TM"
+Rock Slide,Rock,Physical,75,90,"Level, TM"
+Rock Tomb,Rock,Physical,60,95,TM
+Round,Normal,Special,60,100,TM
+Safeguard,Normal,Status,0,0,TM
+Sand Tomb,Ground,Physical,35,85,TM
+Sandstorm,Rock,Status,0,0,TM
+Secret Power,Normal,Physical,70,100,TM
+Skill Swap,Psychic,Status,0,0,"Level, TM"
+Sleep Talk,Normal,Status,0,0,TM
+Smack Down,Rock,Physical,50,100,"Level, TM"
+Snore,Normal,Special,50,100,TM
+Spikes,Ground,Status,0,0,TM
+Stealth Rock,Rock,Status,0,0,"Level, TM"
+Stomping Tantrum,Ground,Physical,75,100,TM
+Stone Edge,Rock,Physical,100,80,"Level, TM"
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Tackle,Normal,Physical,40,100,Level
+Take Down,Normal,Physical,90,85,TM
+Tera Blast,Normal,Special,80,100,TM
+Terrain Pulse,Normal,Special,50,100,TM
+Toxic,Poison,Status,0,90,TM
+Trick Room,Psychic,Status,0,0,TM
+Wonder Room,Psychic,Status,0,0,TM

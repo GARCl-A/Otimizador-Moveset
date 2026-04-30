@@ -1,0 +1,107 @@
+Relatório de Otimização de Time
+Gerado em: 2026-04-30 01:59:36
+Fontes: L, e, v, e, l
+Score Total: 6603.83
+
+==================================================
+MOVESETS DO TIME
+==================================================
+
+Infernape:
+  Close Combat              (Fighting   Physical  ) contrib: 900.00
+  Raging Fury(LOCK)         (Fire       Physical  ) contrib: 2028.97
+  Flamethrower              (Fire       Special   ) contrib: 761.78
+  Acrobatics                (Flying     Physical  ) contrib: 0.00
+
+Gallade:
+  Night Slash               (Dark       Physical  ) contrib: 161.19
+  Close Combat              (Fighting   Physical  ) contrib: 525.44
+  Psycho Cut                (Psychic    Physical  ) contrib: 1124.85
+  Leaf Blade                (Grass      Physical  ) contrib: 204.86
+
+Pawmot:
+  Discharge                 (Electric   Special   ) contrib: 164.84
+  Close Combat              (Fighting   Physical  ) contrib: 0.00
+  Bite                      (Dark       Physical  ) contrib: 0.00
+  Spark                     (Electric   Physical  ) contrib: 731.89
+
+==================================================
+COBERTURA POR ALVO
+==================================================
+  Venusaur        (Grass/Poison   ) -> Infernape    usa Raging Fury           93.01%  [1º]
+  Charizard       (Fire/Flying    ) -> Pawmot       usa Spark                 78.43%  [1º]
+  Blastoise       (Water          ) -> Pawmot       usa Spark                 63.75%  [1º]
+  Pidgeot         (Normal/Flying  ) -> Pawmot       usa Spark                 78.26%  [1º]
+  Nidoking        (Poison/Ground  ) -> Gallade      usa Psycho Cut            89.61%  [2º (vida: 46.3%)]
+  Alakazam        (Psychic        ) -> Gallade      usa Night Slash          100.00%  [2º (vida: 51.8%)]
+  Victreebel      (Grass/Poison   ) -> Infernape    usa Raging Fury          100.00%  [1º]
+  Slowbro         (Water/Psychic  ) -> Pawmot       usa Discharge             56.50%  [1º]
+  Gengar          (Ghost/Poison   ) -> Gallade      usa Psycho Cut           100.00%  [2º (vida: 16.8%)]
+  Exeggcute       (Grass/Psychic  ) -> Infernape    usa Raging Fury          100.00%  [1º]
+  Exeggutor       (Grass/Psychic  ) -> Infernape    usa Flamethrower          91.70%  [1º]
+  Scyther         (Bug/Flying     ) -> Infernape    usa Raging Fury          100.00%  [1º]
+  Pinsir          (Bug            ) -> Infernape    usa Flamethrower         100.00%  [1º]
+  Gyarados        (Water/Flying   ) -> Pawmot       usa Spark                100.00%  [1º]
+  Lapras          (Water/Ice      ) -> Gallade      usa Close Combat         100.00%  [1º]
+  Aerodactyl      (Rock/Flying    ) -> Pawmot       usa Spark                 89.19%  [2º (vida: 61.3%)]
+  Ariados         (Bug/Poison     ) -> Infernape    usa Raging Fury          100.00%  [1º]
+  Azumarill       (Water/Fairy    ) -> Pawmot       usa Spark                 66.95%  [1º]
+  Scizor          (Bug/Steel      ) -> Infernape    usa Raging Fury          100.00%  [1º]
+  Heracross       (Bug/Fighting   ) -> Infernape    usa Raging Fury          100.00%  [1º]
+  Skarmory        (Steel/Flying   ) -> Infernape    usa Flamethrower         100.00%  [1º]
+  Blissey         (Normal         ) -> Infernape    usa Close Combat         100.00%  [1º]
+  Sceptile        (Grass          ) -> Infernape    usa Raging Fury          100.00%  [2º (vida: 72.7%)]
+  Gardevoir       (Psychic/Fairy  ) -> Infernape    usa Raging Fury           61.26%  [1º]
+  Breloom         (Grass/Fighting ) -> Infernape    usa Raging Fury          100.00%  [1º]
+  Aggron          (Steel/Rock     ) -> Infernape    usa Close Combat         100.00%  [1º]
+  Illumise        (Bug            ) -> Infernape    usa Raging Fury          100.00%  [1º]
+  Claydol         (Ground/Psychic ) -> Gallade      usa Leaf Blade            68.88%  [1º]
+  Cradily         (Rock/Grass     ) -> Infernape    usa Close Combat         100.00%  [1º]
+  Metagross       (Steel/Psychic  ) -> Infernape    usa Flamethrower          87.11%  [1º]
+  Rayquaza        (Dragon/Flying  ) -> Pawmot       usa Spark                 29.59%  [1º]
+  Torterra        (Grass/Ground   ) -> Infernape    usa Flamethrower          82.97%  [1º]
+  Infernape       (Fire/Fighting  ) -> Gallade      usa Psycho Cut            98.78%  [2º (vida: 38.7%)]
+  Empoleon        (Water/Steel    ) -> Infernape    usa Close Combat         100.00%  [1º]
+  Kricketune      (Bug            ) -> Infernape    usa Raging Fury          100.00%  [1º]
+  Roserade        (Grass/Poison   ) -> Infernape    usa Raging Fury          100.00%  [1º]
+  Rampardos       (Rock           ) -> Infernape    usa Close Combat         100.00%  [1º]
+  Vespiqueen      (Bug/Flying     ) -> Infernape    usa Raging Fury           84.19%  [1º]
+  Garchomp        (Dragon/Ground  ) -> Gallade      usa Close Combat          54.44%  [2º (vida: 34.0%)]
+  Toxicroak       (Poison/Fighting) -> Gallade      usa Psycho Cut           100.00%  [2º (vida: 44.6%)]
+  Weavile         (Dark/Ice       ) -> Infernape    usa Close Combat         100.00%  [2º (vida: 68.2%)]
+  Magnezone       (Electric/Steel ) -> Infernape    usa Close Combat         100.00%  [1º]
+  Electivire      (Electric       ) -> Gallade      usa Close Combat          88.44%  [2º (vida: 41.0%)]
+  Rhyperior       (Ground/Rock    ) -> Gallade      usa Leaf Blade            80.91%  [1º]
+  Yanmega         (Bug/Flying     ) -> Infernape    usa Flamethrower         100.00%  [1º]
+  Gallade         (Psychic/Fighting) -> Infernape    usa Raging Fury           61.26%  [1º]
+  Emboar          (Fire/Fighting  ) -> Gallade      usa Psycho Cut            85.85%  [1º]
+  Conkeldurr      (Fighting       ) -> Gallade      usa Psycho Cut            65.31%  [1º]
+  Archeops        (Rock/Flying    ) -> Pawmot       usa Spark                 92.26%  [2º (vida: 50.6%)]
+  Crustle         (Bug/Rock       ) -> Gallade      usa Close Combat          54.88%  [1º]
+  Chandelure      (Ghost/Fire     ) -> Gallade      usa Night Slash           61.19%  [2º (vida: 8.6%)]
+  Haxorus         (Dragon         ) -> Gallade      usa Close Combat          69.35%  [2º (vida: 17.5%)]
+  Durant          (Bug/Steel      ) -> Infernape    usa Raging Fury          100.00%  [2º (vida: 65.9%)]
+  Volcarona       (Bug/Fire       ) -> Infernape    usa Raging Fury           54.56%  [1º]
+  Hawlucha        (Fighting/Flying) -> Gallade      usa Psycho Cut            93.35%  [2º (vida: 19.0%)]
+  Carbink         (Rock/Fairy     ) -> Gallade      usa Leaf Blade            55.06%  [1º]
+  Avalugg         (Ice            ) -> Infernape    usa Flamethrower         100.00%  [1º]
+  Decidueye       (Grass/Ghost    ) -> Infernape    usa Raging Fury          100.00%  [1º]
+  Vikavolt        (Bug/Electric   ) -> Infernape    usa Flamethrower         100.00%  [1º]
+  Lycanroc        (Rock           ) -> Infernape    usa Close Combat         100.00%  [2º (vida: 58.2%)]
+  Lurantis        (Grass          ) -> Infernape    usa Raging Fury           93.31%  [1º]
+  Tsareena        (Grass          ) -> Infernape    usa Raging Fury           85.80%  [1º]
+  Golisopod       (Bug/Water      ) -> Pawmot       usa Discharge             58.51%  [1º]
+  Minior          (Rock/Flying    ) -> Pawmot       usa Spark                 73.04%  [1º]
+  Tapu Fini       (Water/Fairy    ) -> Pawmot       usa Spark                 60.43%  [1º]
+  Sirfetch'd      (Fighting       ) -> Gallade      usa Psycho Cut            86.50%  [1º]
+  Eternatus       (Poison/Dragon  ) -> Gallade      usa Psycho Cut            54.45%  [2º (vida: 43.2%)]
+  Kleavor         (Bug/Rock       ) -> Gallade      usa Close Combat          69.16%  [2º (vida: 31.5%)]
+  Ursaluna        (Ground/Normal  ) -> Gallade      usa Close Combat          89.17%  [1º]
+  Sneasler        (Fighting/Poison) -> Gallade      usa Psycho Cut           100.00%  [2º (vida: 34.0%)]
+  Meowscarada     (Dark/Grass     ) -> Infernape    usa Close Combat         100.00%  [2º (vida: 69.4%)]
+  Lokix           (Bug/Dark       ) -> Infernape    usa Raging Fury          100.00%  [1º]
+  Pawmot          (Fighting/Electric) -> Gallade      usa Psycho Cut           100.00%  [2º (vida: 51.5%)]
+  Tinkaton        (Steel/Fairy    ) -> Infernape    usa Raging Fury           95.58%  [1º]
+  Glimmora        (Poison/Rock    ) -> Gallade      usa Psycho Cut            78.03%  [2º (vida: 50.8%)]
+  Dondozo         (Water          ) -> Pawmot       usa Discharge             49.83%  [1º]
+  Annihilape      (Fighting/Ghost ) -> Gallade      usa Psycho Cut            72.96%  [2º (vida: 24.9%)]

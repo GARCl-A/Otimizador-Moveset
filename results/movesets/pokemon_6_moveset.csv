@@ -1,0 +1,108 @@
+Name,Type,Category,Power,Accuracy,Source
+Acrobatics,Flying,Physical,55,100,TM
+Aerial Ace,Flying,Physical,60,0,TM
+Air Cutter,Flying,Special,60,95,TM
+Air Slash,Flying,Special,75,95,"Level, TM"
+Attract,Normal,Status,0,100,TM
+Beat Up,Dark,Physical,0,100,TM
+Blast Burn,Fire,Special,150,90,TM
+Blaze Kick,Fire,Physical,85,90,TM
+Body Slam,Normal,Physical,85,100,TM
+Breaking Swipe,Dragon,Physical,60,100,TM
+Brick Break,Fighting,Physical,75,100,TM
+Brutal Swing,Dark,Physical,60,100,TM
+Bulldoze,Ground,Physical,60,100,TM
+Confide,Normal,Status,0,0,TM
+Counter,Fighting,Physical,0,100,TM
+Crunch,Dark,Physical,80,100,TM
+Curse,Ghost,Status,0,0,TM
+Cut,Normal,Physical,50,95,TM
+Defog,Flying,Status,0,0,TM
+Dig,Ground,Physical,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Dragon Breath,Dragon,Special,60,100,Level
+Dragon Cheer,Dragon,Status,0,0,TM
+Dragon Claw,Dragon,Physical,80,100,"Level, TM"
+Dragon Dance,Dragon,Status,0,0,TM
+Dragon Pulse,Dragon,Special,85,100,TM
+Dragon Tail,Dragon,Physical,60,90,TM
+Dual Wingbeat,Flying,Physical,40,90,TM
+Earthquake,Ground,Physical,100,100,TM
+Echoed Voice,Normal,Special,40,100,TM
+Ember,Fire,Special,40,100,Level
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+False Swipe,Normal,Physical,40,100,TM
+Fire Blast,Fire,Special,110,85,TM
+Fire Fang,Fire,Physical,65,95,"Level, TM"
+Fire Pledge,Fire,Special,80,100,TM
+Fire Punch,Fire,Physical,75,100,TM
+Fire Spin,Fire,Special,35,85,"Level, TM"
+Flame Charge,Fire,Physical,50,100,TM
+Flamethrower,Fire,Special,90,100,"Level, TM"
+Flare Blitz,Fire,Physical,120,100,"Level, TM"
+Fling,Dark,Physical,0,100,TM
+Fly,Flying,Physical,90,95,TM
+Focus Blast,Fighting,Special,120,70,TM
+Focus Punch,Fighting,Physical,150,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Growl,Normal,Status,0,100,Level
+Heat Crash,Fire,Physical,0,100,TM
+Heat Wave,Fire,Special,95,90,"Level, TM"
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hone Claws,Dark,Status,0,0,TM
+Hurricane,Flying,Special,110,70,TM
+Hyper Beam,Normal,Special,150,90,TM
+Incinerate,Fire,Special,60,100,TM
+Inferno,Fire,Special,100,50,Level
+Iron Tail,Steel,Physical,100,75,TM
+Mega Kick,Normal,Physical,120,75,TM
+Mega Punch,Normal,Physical,80,85,TM
+Metal Claw,Steel,Physical,50,95,TM
+Mud-Slap,Ground,Special,20,100,TM
+Mystical Fire,Fire,Special,75,100,TM
+Outrage,Dragon,Physical,120,100,TM
+Overheat,Fire,Special,130,90,TM
+Power-Up Punch,Fighting,Physical,40,100,TM
+Protect,Normal,Status,0,0,TM
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Roar,Normal,Status,0,0,TM
+Rock Slide,Rock,Physical,75,90,TM
+Rock Smash,Fighting,Physical,40,100,TM
+Rock Tomb,Rock,Physical,60,95,TM
+Roost,Flying,Status,0,0,TM
+Round,Normal,Special,60,100,TM
+Sandstorm,Rock,Status,0,0,TM
+Scale Shot,Dragon,Physical,25,90,TM
+Scary Face,Normal,Status,0,100,"Level, TM"
+Scorching Sands,Ground,Special,70,100,TM
+Scratch,Normal,Physical,40,100,Level
+Secret Power,Normal,Physical,70,100,TM
+Shadow Claw,Ghost,Physical,70,100,TM
+Sky Drop,Flying,Physical,60,100,TM
+Slash,Normal,Physical,70,100,Level
+Sleep Talk,Normal,Status,0,0,TM
+Smokescreen,Normal,Status,0,100,Level
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Steel Wing,Steel,Physical,70,90,TM
+Strength,Normal,Physical,80,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,TM
+Swords Dance,Normal,Status,0,0,TM
+Tailwind,Flying,Status,0,0,TM
+Take Down,Normal,Physical,90,85,TM
+Temper Flare,Fire,Physical,75,100,TM
+Tera Blast,Normal,Special,80,100,TM
+Thunder Punch,Electric,Physical,75,100,TM
+Toxic,Poison,Status,0,90,TM
+Weather Ball,Normal,Special,50,100,TM
+Will-O-Wisp,Fire,Status,0,85,TM
+Work Up,Normal,Status,0,0,TM

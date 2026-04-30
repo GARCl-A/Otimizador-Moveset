@@ -1,0 +1,75 @@
+Name,Type,Category,Power,Accuracy,Source
+Acrobatics,Flying,Physical,55,100,TM
+Agility,Psychic,Status,0,0,"Level, TM"
+Air Slash,Flying,Special,75,95,TM
+Attract,Normal,Status,0,100,TM
+Baton Pass,Normal,Status,0,0,TM
+Bite,Dark,Physical,60,100,Level
+Bug Bite,Bug,Physical,60,100,"Level, TM"
+Bug Buzz,Bug,Special,90,100,"Level, TM"
+Bulldoze,Ground,Physical,60,100,TM
+Charge,Electric,Status,0,0,"Level, TM"
+Charge Beam,Electric,Special,50,90,TM
+Confide,Normal,Status,0,0,TM
+Crunch,Dark,Physical,80,100,"Level, TM"
+Dig,Ground,Physical,80,100,"Level, TM"
+Discharge,Electric,Special,80,100,Level
+Double Team,Normal,Status,0,0,TM
+Dual Wingbeat,Flying,Physical,40,90,TM
+Eerie Impulse,Electric,Status,0,100,TM
+Electric Terrain,Electric,Status,0,0,TM
+Electro Ball,Electric,Special,0,100,TM
+Electroweb,Electric,Special,55,95,TM
+Endure,Normal,Status,0,0,TM
+Energy Ball,Grass,Special,90,100,TM
+Facade,Normal,Physical,70,100,TM
+Flash Cannon,Steel,Special,80,100,TM
+Fly,Flying,Physical,90,95,"Level, TM"
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Guillotine,Normal,Physical,200,30,Level
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Iron Defense,Steel,Status,0,0,"Level, TM"
+Light Screen,Psychic,Status,0,0,TM
+Lunge,Bug,Physical,80,100,TM
+Mud Shot,Ground,Special,55,95,TM
+Mud-Slap,Ground,Special,20,100,"Level, TM"
+Poison Jab,Poison,Physical,80,100,TM
+Pounce,Bug,Physical,50,100,TM
+Protect,Normal,Status,0,0,TM
+Rain Dance,Water,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Rising Voltage,Electric,Special,70,100,TM
+Roost,Flying,Status,0,0,TM
+Round,Normal,Special,60,100,TM
+Screech,Normal,Status,0,85,TM
+Secret Power,Normal,Physical,70,100,TM
+Signal Beam,Bug,Special,75,100,TM
+Skitter Smack,Bug,Physical,70,90,TM
+Sky Drop,Flying,Physical,60,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Spark,Electric,Physical,65,100,Level
+Sticky Web,Bug,Status,0,0,Level
+String Shot,Bug,Status,0,95,Level
+Struggle Bug,Bug,Special,50,100,TM
+Substitute,Normal,Status,0,0,TM
+Supercell Slam,Electric,Physical,100,95,TM
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,TM
+Take Down,Normal,Physical,90,85,TM
+Tera Blast,Normal,Special,80,100,TM
+Thunder,Electric,Special,110,70,TM
+Thunder Wave,Electric,Status,0,90,TM
+Thunderbolt,Electric,Special,90,100,"Level, TM"
+Toxic,Poison,Status,0,90,TM
+Vise Grip,Normal,Physical,55,100,Level
+Volt Switch,Electric,Special,70,100,TM
+Wild Charge,Electric,Physical,90,100,TM
+X-Scissor,Bug,Physical,80,100,"Level, TM"
+Zap Cannon,Electric,Special,120,50,Level
+Earth Power,Ground,Special,90,100,Egg
+Thunderclap,Electric,Special,70,100,Egg

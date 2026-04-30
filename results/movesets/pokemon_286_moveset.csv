@@ -1,0 +1,95 @@
+Name,Type,Category,Power,Accuracy,Source
+Absorb,Grass,Special,20,100,Level
+Aerial Ace,Flying,Physical,60,0,TM
+Attract,Normal,Status,0,100,TM
+Body Slam,Normal,Physical,85,100,TM
+Brick Break,Fighting,Physical,75,100,"Level, TM"
+Bulk Up,Fighting,Status,0,0,TM
+Bulldoze,Ground,Physical,60,100,TM
+Bullet Seed,Grass,Physical,25,100,TM
+Charm,Fairy,Status,0,100,TM
+Close Combat,Fighting,Physical,120,100,TM
+Confide,Normal,Status,0,0,TM
+Counter,Fighting,Physical,0,100,"Level, TM"
+Cut,Normal,Physical,50,95,TM
+Dig,Ground,Physical,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Drain Punch,Fighting,Physical,75,100,TM
+Dynamic Punch,Fighting,Physical,100,50,Level
+Endure,Normal,Status,0,0,TM
+Energy Ball,Grass,Special,90,100,TM
+Facade,Normal,Physical,70,100,TM
+Fake Tears,Dark,Status,0,100,TM
+False Swipe,Normal,Physical,40,100,TM
+Feint,Normal,Physical,30,100,Level
+Flash,Normal,Status,0,100,TM
+Fling,Dark,Physical,0,100,TM
+Focus Blast,Fighting,Special,120,70,TM
+Focus Punch,Fighting,Physical,150,100,"Level, TM"
+Force Palm,Fighting,Physical,60,100,Level
+Frustration,Normal,Physical,0,100,TM
+Giga Drain,Grass,Special,75,100,"Level, TM"
+Giga Impact,Normal,Physical,150,90,TM
+Grass Knot,Grass,Special,0,100,TM
+Grassy Terrain,Grass,Status,0,0,TM
+Growth,Normal,Status,0,0,Level
+Gunk Shot,Poison,Physical,120,80,TM
+Headbutt,Normal,Physical,70,100,Level
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Iron Tail,Steel,Physical,100,75,TM
+Leaf Storm,Grass,Special,130,90,TM
+Leech Seed,Grass,Status,0,90,Level
+Low Kick,Fighting,Physical,0,100,TM
+Low Sweep,Fighting,Physical,65,100,TM
+Mach Punch,Fighting,Physical,40,100,Level
+Magical Leaf,Grass,Special,60,0,TM
+Mega Drain,Grass,Special,40,100,Level
+Mega Kick,Normal,Physical,120,75,TM
+Mega Punch,Normal,Physical,80,85,TM
+Mud Shot,Ground,Special,55,95,TM
+Mud-Slap,Ground,Special,20,100,TM
+Poison Jab,Poison,Physical,80,100,TM
+Poison Powder,Poison,Status,0,75,Level
+Pounce,Bug,Physical,50,100,TM
+Power-Up Punch,Fighting,Physical,40,100,TM
+Protect,Normal,Status,0,0,TM
+Rain Dance,Water,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Retaliate,Normal,Physical,70,100,TM
+Return,Normal,Physical,0,100,TM
+Reversal,Fighting,Physical,0,100,TM
+Rock Slide,Rock,Physical,75,90,TM
+Rock Smash,Fighting,Physical,40,100,TM
+Rock Tomb,Rock,Physical,60,95,TM
+Round,Normal,Special,60,100,TM
+Safeguard,Normal,Status,0,0,TM
+Secret Power,Normal,Physical,70,100,TM
+Seed Bomb,Grass,Physical,80,100,"Level, TM"
+Sleep Talk,Normal,Status,0,0,TM
+Sludge Bomb,Poison,Special,90,100,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Spore,Grass,Status,0,100,Level
+Stone Edge,Rock,Physical,100,80,TM
+Strength,Normal,Physical,80,100,TM
+Stun Spore,Grass,Status,0,75,Level
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Superpower,Fighting,Physical,120,100,TM
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,TM
+Swords Dance,Normal,Status,0,0,TM
+Synthesis,Grass,Status,0,0,TM
+Tackle,Normal,Physical,40,100,Level
+Take Down,Normal,Physical,90,85,TM
+Tera Blast,Normal,Special,80,100,TM
+Thunder Punch,Electric,Physical,75,100,TM
+Toxic,Poison,Status,0,90,"Level, TM"
+Vacuum Wave,Fighting,Special,40,100,TM
+Venoshock,Poison,Special,65,100,TM
+Work Up,Normal,Status,0,0,TM
+Worry Seed,Grass,Status,0,100,"Level, TM"
+Zen Headbutt,Psychic,Physical,80,90,TM

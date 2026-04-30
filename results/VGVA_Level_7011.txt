@@ -1,0 +1,113 @@
+Relatório de Otimização de Time
+Gerado em: 2026-04-30 02:48:32
+Fontes: L, e, v, e, l
+Score Total: 7011.16
+
+==================================================
+MOVESETS DO TIME
+==================================================
+
+Vikavolt:
+  Bug Buzz                  (Bug        Special   ) contrib: 1440.01
+  Dig(2T)                   (Ground     Physical  ) contrib: 0.00
+  Fly(2T)                   (Flying     Physical  ) contrib: 0.00
+  Thunderbolt               (Electric   Special   ) contrib: 2092.55
+
+Golisopod:
+  Bug Bite                  (Bug        Physical  ) contrib: 0.00
+  Liquidation               (Water      Physical  ) contrib: 1595.87
+  Mud Shot                  (Ground     Special   ) contrib: 0.00
+  Sucker Punch(P1)          (Dark       Physical  ) contrib: 84.14
+
+Volcarona:
+  Bug Buzz                  (Bug        Special   ) contrib: 0.00
+  Fiery Dance               (Fire       Special   ) contrib: 1620.80
+  Flare Blitz(SD)           (Fire       Physical  ) contrib: 0.00
+  Hurricane                 (Flying     Special   ) contrib: 0.00
+
+Ariados:
+  Bug Bite                  (Bug        Physical  ) contrib: 0.00
+  Poison Jab                (Poison     Physical  ) contrib: 0.00
+  Psychic                   (Psychic    Special   ) contrib: 177.79
+  Sucker Punch(P1)          (Dark       Physical  ) contrib: 0.00
+
+==================================================
+COBERTURA POR ALVO
+==================================================
+  Venusaur        (Grass/Poison   ) -> Volcarona    usa Fiery Dance           88.84%  [1º]
+  Charizard       (Fire/Flying    ) -> Golisopod    usa Liquidation          100.00%  [2º, tomou Air Slash 70.8%]
+  Blastoise       (Water          ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou Wave Crash 48.9%]
+  Pidgeot         (Normal/Flying  ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou Air Slash 28.3%]
+  Nidoking        (Poison/Ground  ) -> Golisopod    usa Liquidation          100.00%  [2º, tomou Sludge Wave 40.3%]
+  Alakazam        (Psychic        ) -> Vikavolt     usa Bug Buzz             100.00%  [2º, tomou Psychic 64.3%]
+  Victreebel      (Grass/Poison   ) -> Volcarona    usa Fiery Dance          100.00%  [1º]
+  Slowbro         (Water/Psychic  ) -> Vikavolt     usa Bug Buzz             100.00%  [1º]
+  Gengar          (Ghost/Poison   ) -> Golisopod    usa Sucker Punch        [P1]  84.14%  [2º, tomou Sucker Punch(P1) 11.3%]
+  Exeggcute       (Grass/Psychic  ) -> Vikavolt     usa Bug Buzz             100.00%  [1º]
+  Exeggutor       (Grass/Psychic  ) -> Vikavolt     usa Bug Buzz             100.00%  [2º, tomou Extrasensory 53.6%]
+  Scyther         (Bug/Flying     ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou X-Scissor 41.5%]
+  Pinsir          (Bug            ) -> Volcarona    usa Fiery Dance          100.00%  [1º]
+  Gyarados        (Water/Flying   ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou Waterfall 46.3%]
+  Lapras          (Water/Ice      ) -> Vikavolt     usa Thunderbolt           83.08%  [2º, tomou Ice Beam 43.6%]
+  Aerodactyl      (Rock/Flying    ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou Stone Edge 63.6%]
+  Ariados         (Bug/Poison     ) -> Volcarona    usa Fiery Dance          100.00%  [2º, tomou Sucker Punch(P1) 25.2%]
+  Azumarill       (Water/Fairy    ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou Hydro Pump 25.9%]
+  Scizor          (Bug/Steel      ) -> Volcarona    usa Fiery Dance          100.00%  [1º]
+  Heracross       (Bug/Fighting   ) -> Volcarona    usa Fiery Dance           92.68%  [1º]
+  Skarmory        (Steel/Flying   ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou Drill Peck 32.0%]
+  Blissey         (Normal         ) -> Golisopod    usa Liquidation           84.48%  [2º, tomou Echoed Voice 15.9%]
+  Sceptile        (Grass          ) -> Vikavolt     usa Bug Buzz             100.00%  [2º, tomou Energy Ball 25.9%]
+  Gardevoir       (Psychic/Fairy  ) -> Golisopod    usa Liquidation           67.70%  [2º, tomou Moonblast 55.5%]
+  Breloom         (Grass/Fighting ) -> Volcarona    usa Fiery Dance          100.00%  [1º]
+  Aggron          (Steel/Rock     ) -> Vikavolt     usa Thunderbolt           85.40%  [2º, tomou Rock Slide 63.2%]
+  Illumise        (Bug            ) -> Volcarona    usa Fiery Dance          100.00%  [2º, tomou Quick Attack(P1) 9.1%]
+  Claydol         (Ground/Psychic ) -> Vikavolt     usa Bug Buzz             100.00%  [2º, tomou Earth Power 37.4%]
+  Cradily         (Rock/Grass     ) -> Vikavolt     usa Bug Buzz              96.40%  [2º, tomou Ancient Power 56.6%]
+  Metagross       (Steel/Psychic  ) -> Volcarona    usa Fiery Dance           96.88%  [1º]
+  Rayquaza        (Dragon/Flying  ) -> Vikavolt     usa Thunderbolt           49.62%  [2º, tomou Dragon Ascent 80.7%]
+  Torterra        (Grass/Ground   ) -> Vikavolt     usa Bug Buzz             100.00%  [2º, tomou Headlong Rush 61.3%]
+  Infernape       (Fire/Fighting  ) -> Golisopod    usa Liquidation          100.00%  [2º, tomou Flamethrower 45.1%]
+  Empoleon        (Water/Steel    ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou Wave Crash 50.4%]
+  Kricketune      (Bug            ) -> Volcarona    usa Fiery Dance          100.00%  [1º]
+  Roserade        (Grass/Poison   ) -> Volcarona    usa Fiery Dance           98.38%  [1º]
+  Rampardos       (Rock           ) -> Golisopod    usa Liquidation          100.00%  [2º, tomou Head Smash 64.0%]
+  Vespiqueen      (Bug/Flying     ) -> Vikavolt     usa Thunderbolt          100.00%  [1º]
+  Garchomp        (Dragon/Ground  ) -> Vikavolt     usa Bug Buzz              51.11%  [2º, tomou Dragon Claw 47.8%]
+  Toxicroak       (Poison/Fighting) -> Ariados      usa Psychic               95.17%  [2º, tomou Sucker Punch(P1) 30.2%]
+  Weavile         (Dark/Ice       ) -> Vikavolt     usa Bug Buzz             100.00%  [2º, tomou Night Slash 39.2%]
+  Magnezone       (Electric/Steel ) -> Volcarona    usa Fiery Dance          100.00%  [1º]
+  Electivire      (Electric       ) -> Golisopod    usa Liquidation           62.95%  [2º, tomou Thunderbolt 83.6%]
+  Rhyperior       (Ground/Rock    ) -> Golisopod    usa Liquidation          100.00%  [2º, tomou Stone Edge 56.7%]
+  Yanmega         (Bug/Flying     ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou Bug Buzz 56.4%]
+  Gallade         (Psychic/Fighting) -> Golisopod    usa Liquidation           67.70%  [2º, tomou Psychic 31.0%]
+  Emboar          (Fire/Fighting  ) -> Golisopod    usa Liquidation          100.00%  [2º, tomou Head Smash 50.3%]
+  Conkeldurr      (Fighting       ) -> Vikavolt     usa Thunderbolt           64.30%  [2º, tomou Stone Edge 54.2%]
+  Archeops        (Rock/Flying    ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou Rock Slide 77.6%]
+  Crustle         (Bug/Rock       ) -> Golisopod    usa Liquidation           78.36%  [2º, tomou Rock Slide 42.6%]
+  Chandelure      (Ghost/Fire     ) -> Golisopod    usa Liquidation          100.00%  [2º, tomou Shadow Ball 53.3%]
+  Haxorus         (Dragon         ) -> Vikavolt     usa Bug Buzz              72.71%  [2º, tomou Outrage 59.7%]
+  Durant          (Bug/Steel      ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou X-Scissor 41.2%]
+  Volcarona       (Bug/Fire       ) -> Golisopod    usa Liquidation          100.00%  [2º, tomou Bug Buzz 56.2%]
+  Hawlucha        (Fighting/Flying) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou Sky Attack 50.2%]
+  Carbink         (Rock/Fairy     ) -> Golisopod    usa Liquidation           78.14%  [2º, tomou Power Gem 45.7%]
+  Avalugg         (Ice            ) -> Volcarona    usa Fiery Dance          100.00%  [1º]
+  Decidueye       (Grass/Ghost    ) -> Volcarona    usa Fiery Dance           90.03%  [2º, tomou Sucker Punch(P1) 29.1%]
+  Vikavolt        (Bug/Electric   ) -> Volcarona    usa Fiery Dance          100.00%  [1º]
+  Lycanroc        (Rock           ) -> Golisopod    usa Liquidation          100.00%  [2º, tomou Stone Edge 48.0%]
+  Lurantis        (Grass          ) -> Vikavolt     usa Bug Buzz             100.00%  [2º, tomou X-Scissor 26.6%]
+  Tsareena        (Grass          ) -> Vikavolt     usa Bug Buzz             100.00%  [2º, tomou Stomp 24.3%]
+  Golisopod       (Bug/Water      ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou Sucker Punch(P1) 27.1%]
+  Minior          (Rock/Flying    ) -> Vikavolt     usa Thunderbolt          100.00%  [2º, tomou Power Gem 59.4%]
+  Tapu Fini       (Water/Fairy    ) -> Vikavolt     usa Thunderbolt           91.03%  [2º, tomou Moonblast 50.3%]
+  Sirfetch'd      (Fighting       ) -> Vikavolt     usa Thunderbolt           70.88%  [2º, tomou Brave Bird 32.6%]
+  Eternatus       (Poison/Dragon  ) -> Vikavolt     usa Bug Buzz              19.78%  [2º, tomou Flamethrower 91.2%]
+  Kleavor         (Bug/Rock       ) -> Golisopod    usa Liquidation           98.60%  [2º, tomou Rock Slide 52.6%]
+  Ursaluna        (Ground/Normal  ) -> Golisopod    usa Liquidation           63.60%  [2º, tomou Thrash 40.0%]
+  Sneasler        (Fighting/Poison) -> Ariados      usa Psychic               82.62%  [2º, tomou Slash 35.9%]
+  Meowscarada     (Dark/Grass     ) -> Vikavolt     usa Bug Buzz             100.00%  [2º, tomou Night Slash 36.5%]
+  Lokix           (Bug/Dark       ) -> Vikavolt     usa Bug Buzz             100.00%  [2º, tomou Lunge 39.0%]
+  Pawmot          (Fighting/Electric) -> Volcarona    usa Fiery Dance           71.43%  [2º, tomou Spark 43.2%]
+  Tinkaton        (Steel/Fairy    ) -> Volcarona    usa Fiery Dance           82.56%  [1º]
+  Glimmora        (Poison/Rock    ) -> Golisopod    usa Liquidation           94.34%  [2º, tomou Power Gem 97.0%]
+  Dondozo         (Water          ) -> Vikavolt     usa Thunderbolt          100.00%  [1º]
+  Annihilape      (Fighting/Ghost ) -> Vikavolt     usa Thunderbolt           48.24%  [2º, tomou Outrage 32.2%]

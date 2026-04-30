@@ -1,0 +1,70 @@
+Name,Type,Category,Power,Accuracy,Source
+Acrobatics,Flying,Physical,55,100,TM
+Aerial Ace,Flying,Physical,60,0,TM
+Agility,Psychic,Status,0,0,"Level, TM"
+Air Cutter,Flying,Special,60,95,TM
+Air Slash,Flying,Special,75,95,"Level, TM"
+Attract,Normal,Status,0,100,TM
+Baton Pass,Normal,Status,0,0,TM
+Brick Break,Fighting,Physical,75,100,TM
+Brutal Swing,Dark,Physical,60,100,TM
+Bug Bite,Bug,Physical,60,100,TM
+Bug Buzz,Bug,Special,90,100,TM
+Close Combat,Fighting,Physical,120,100,TM
+Cross Poison,Poison,Physical,70,100,TM
+Curse,Ghost,Status,0,0,TM
+Defog,Flying,Status,0,0,TM
+Double Hit,Normal,Physical,35,90,Level
+Double Team,Normal,Status,0,0,"Level, TM"
+Double-Edge,Normal,Physical,120,100,TM
+Dual Wingbeat,Flying,Physical,40,90,TM
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+False Swipe,Normal,Physical,40,100,"Level, TM"
+Focus Energy,Normal,Status,0,0,"Level, TM"
+Frustration,Normal,Physical,0,100,TM
+Fury Cutter,Bug,Physical,40,95,Level
+Giga Impact,Normal,Physical,150,90,TM
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Leer,Normal,Status,0,100,Level
+Light Screen,Psychic,Status,0,0,TM
+Lunge,Bug,Physical,80,100,TM
+Pounce,Bug,Physical,50,100,TM
+Protect,Normal,Status,0,0,TM
+Psycho Cut,Psychic,Physical,70,100,TM
+Quick Attack,Normal,Physical,40,100,Level
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Reversal,Fighting,Physical,0,100,TM
+Rock Blast,Rock,Physical,25,90,TM
+Rock Slide,Rock,Physical,75,90,"Level, TM"
+Rock Smash,Fighting,Physical,40,100,TM
+Rock Tomb,Rock,Physical,60,95,TM
+Roost,Flying,Status,0,0,TM
+Sandstorm,Rock,Status,0,0,TM
+Scary Face,Normal,Status,0,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Skitter Smack,Bug,Physical,70,90,TM
+Slash,Normal,Physical,70,100,Level
+Sleep Talk,Normal,Status,0,0,TM
+Smack Down,Rock,Physical,50,100,"Level, TM"
+Stealth Rock,Rock,Status,0,0,TM
+Steel Wing,Steel,Physical,70,90,Level
+Stone Axe,Rock,Physical,65,90,Level
+Stone Edge,Rock,Physical,100,80,TM
+Struggle Bug,Bug,Special,50,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swift,Normal,Special,60,0,TM
+Swords Dance,Normal,Status,0,0,"Level, TM"
+Tailwind,Flying,Status,0,0,TM
+Take Down,Normal,Physical,90,85,TM
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Trailblaze,Grass,Physical,50,100,TM
+U-Turn,Bug,Physical,70,100,TM
+Vacuum Wave,Fighting,Special,40,100,TM
+Wing Attack,Flying,Physical,60,100,Level
+X-Scissor,Bug,Physical,80,100,"Level, TM"
