@@ -8,12 +8,14 @@ import ConfigPanel from './components/ConfigPanel'
 import CandidatosList from './components/CandidatosList'
 import ResultPanel from './components/ResultPanel'
 import UpgradeEditor from './UpgradeEditor'
+import TeamAnalyzer from './components/TeamAnalyzer'
 
 export default function App() {
   const [dadosCarregados, setDadosCarregados] = useState(false)
   const [todosNomes, setTodosNomes] = useState<string[]>([])
   const [upgrades, setUpgrades] = useState<Upgrades>({})
   const [editando, setEditando] = useState<string | null>(null)
+  const [aba, setAba] = useState<'otimizador' | 'analisador'>('otimizador')
 
   useEffect(() => {
     Promise.all([loadData(), loadTypeChart()]).then(() => {
@@ -45,7 +47,14 @@ export default function App() {
       <div style={{ width: 420, flexShrink: 0 }}>
         <h2 style={{ marginTop: 0 }}>Otimizador Moveset</h2>
 
-        <ConfigPanel config={config} onChange={setConfigField} />
+        <div style={{ display: 'flex', gap: 8, marginBottom: 16 }}>
+          <button onClick={() => setAba('otimizador')} style={{ fontWeight: aba === 'otimizador' ? 'bold' : 'normal', textDecoration: aba === 'otimizador' ? 'underline' : 'none', background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', fontSize: 13 }}>Otimizador</button>
+          <button onClick={() => setAba('analisador')} style={{ fontWeight: aba === 'analisador' ? 'bold' : 'normal', textDecoration: aba === 'analisador' ? 'underline' : 'none', background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', fontSize: 13 }}>Analisar Substituição</button>
+        </div>
+
+        {aba === 'analisador' && <TeamAnalyzer />}
+
+        {aba === 'otimizador' && <><ConfigPanel config={config} onChange={setConfigField} />
 
         <CandidatosList candidatos={candidatos} upgrades={upgrades} onEditarUpgrade={setEditando} />
 
@@ -62,6 +71,8 @@ export default function App() {
             <div style={{ fontSize: 12, marginTop: 4, color: '#aaa' }}>{status}</div>
           </div>
         )}
+        </>
+        }
       </div>
 
       {/* DIREITA */}
