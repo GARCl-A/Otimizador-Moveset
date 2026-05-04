@@ -38,6 +38,41 @@ BANIDOS = {
 }  # IA não consegue garantir que não vai tomar dano no turno de preparo
 TRAVAMENTO_E_CONFUSAO = {"Outrage", "Thrash", "Petal Dance", "Raging Fury"}
 
+# moves com hits variaveis: cada hit tem chance acc de continuar, de min a max hits
+# effective_power sera ajustado pelo valor esperado de hits
+MULTI_HIT = {
+    "Population Bomb": (1, 10),
+    "Bullet Seed":     (2, 5),
+    "Rock Blast":      (2, 5),
+    "Icicle Spear":    (2, 5),
+    "Pin Missile":     (2, 5),
+    "Bone Rush":       (2, 5),
+    "Fury Attack":     (2, 5),
+    "Fury Swipes":     (2, 5),
+    "Comet Punch":     (2, 5),
+    "Tail Slap":       (2, 5),
+    "Water Shuriken":  (2, 5),
+    "Bonemerang":      (2, 2),
+    "Gear Grind":      (2, 2),
+    "Twineedle":       (2, 2),
+}
+
+
+def _hits_esperados(min_hits: int, max_hits: int, acc: float) -> float:
+    """Valor esperado de hits para um move multi-hit com acc por hit."""
+    p = acc / 100.0
+    ev = 0.0
+    prob_chegou = 1.0
+    for k in range(1, max_hits + 1):
+        if k < max_hits:
+            prob_exato = prob_chegou * p * (1 - p)
+        else:
+            prob_exato = prob_chegou * p
+        if k >= min_hits:
+            ev += k * prob_exato
+        prob_chegou *= p
+    return ev
+
 
 def normalizar_dano_por_turno(movepool):
     """Ajusta effective_power para refletir o custo real por turno e remove moves banidos."""
@@ -61,6 +96,12 @@ def normalizar_dano_por_turno(movepool):
         elif move.name in DANO_EM_SI_MESMO:
             move.effective_power = move.power * 0.66
             if "SD" not in move.tags: move.tags.append("SD")
+        elif move.name in MULTI_HIT:
+            min_h, max_h = MULTI_HIT[move.name]
+            hits = _hits_esperados(min_h, max_h, move.acc)
+            move.effective_power = move.power * hits
+            tag = f"x{min_h}-{max_h}" if min_h != max_h else f"x{min_h}"
+            if tag not in move.tags: move.tags.append(tag)
         resultado.append(move)
     return resultado
 

@@ -1,0 +1,170 @@
+{
+  "Gallade": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Psyblade",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "No Retreat",
+        "type": "Fighting",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0
+      }
+    ]
+  },
+  "Gardevoir": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Psyblade",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "No Retreat",
+        "type": "Fighting",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0
+      }
+    ]
+  },
+  "Hoopa": {
+    "custoReducoes": 1,
+    "eggMoves": []
+  },
+  "Slowbro": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Splishy Splash",
+        "type": "Water",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Musharna": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Aura Sphere",
+        "type": "Fighting",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Stored Power",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Orbeetle": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Luster Purge",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 95,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Metagross": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Headlong Rush",
+        "type": "Ground",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 100
+      },
+      {
+        "name": "Ice Spinner",
+        "type": "Ice",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Exeggutor": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Fickle Beam",
+        "type": "Dragon",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Apple Acid",
+        "type": "Grass",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Heat Wave",
+        "type": "Fire",
+        "category": "Special",
+        "power": 95,
+        "accuracy": 90
+      }
+    ]
+  },
+  "Jynx": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Luster Purge",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 95,
+        "accuracy": 100
+      },
+      {
+        "name": "Aura Sphere",
+        "type": "Fighting",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Malamar": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Power Trip",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 20,
+        "accuracy": 100
+      },
+      {
+        "name": "Spin Out",
+        "type": "Steel",
+        "category": "Physical",
+        "power": 100,
+        "accuracy": 100
+      }
+    ]
+  }
+}

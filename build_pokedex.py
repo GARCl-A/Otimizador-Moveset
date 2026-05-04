@@ -53,8 +53,8 @@ def build():
 
         print(f"  [OK] {nome} — {len(moves)} moves")
 
-    os.makedirs("typescript", exist_ok=True)
-    out_path = os.path.join("typescript", "pokedex.json")
+    os.makedirs(os.path.join("typescript", "app", "public"), exist_ok=True)
+    out_path = os.path.join("typescript", "app", "public", "pokedex.json")
     with open(out_path, "w", encoding="utf-8") as f:
         json.dump(pokedex, f, ensure_ascii=False, indent=2)
 

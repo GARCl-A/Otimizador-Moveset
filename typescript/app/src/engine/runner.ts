@@ -1,7 +1,7 @@
 import { Pokemon } from './pokemon'
 import { Move } from './move'
 import type { Priorities } from './loader'
-import { construirCaches, otimizar, otimizarTimeSA } from './optimizer'
+import { construirCaches, otimizar, otimizarTimeSA, calcularScoreTime } from './optimizer'
 import type { WarmStart, ProgressCallback } from './optimizer'
 
 export interface RunnerConfig {
@@ -13,6 +13,8 @@ export interface RunnerConfig {
   saIteracoes: number
   banlist: string[]
   typeFilter: string[]
+  gruposExclusao: string[][]
+  timeFixo: Pokemon[]  // já entram no time, otimizador preenche os slots restantes
 }
 
 export interface MemberResult {
@@ -42,32 +44,45 @@ export async function rodarOtimizador(
   config: RunnerConfig,
   callbacks: RunnerCallbacks = {}
 ): Promise<RunnerResult> {
-  const { tamanhoTime, budget, saTemperatura, saCooling, saIteracoes } = config
+  const { tamanhoTime, budget, saTemperatura, saCooling, saIteracoes, gruposExclusao, timeFixo } = config
   const { onLog = () => {}, onProgress } = callbacks
   const scoreMaximo = metaInimigos.length * 100.0
 
-  // Otimiza movesets individuais (warm start)
-  const scoresIndividuais: WarmStart = {}
-
   for (const p of candidatos) p.optimizeMoveset()
-  const arraysGlobal = construirCaches(candidatos, metaInimigos, priorities)
+  // time fixo também precisa de optimize
+  for (const p of timeFixo) p.optimizeMoveset()
 
-  for (const pokemon of candidatos) {
+  const todosParaCache = [...candidatos, ...timeFixo.filter(p => !candidatos.some(c => c.name === p.name))]
+
+  const arraysGlobal = construirCaches(todosParaCache, metaInimigos, priorities)
+
+  const scoresIndividuais: WarmStart = {}
+  for (const pokemon of todosParaCache) {
     const { moveset, score } = otimizar(pokemon, arraysGlobal)
     scoresIndividuais[pokemon.name] = { moveset, score }
   }
 
-  const timeAtual: Pokemon[] = []
-  const movesetsAtual: Move[][] = []
-  let scoreAtual = 0.0
-  let budgetRestante = budget
+  // Inicializa time com os fixos, descontando budget
+  const timeAtual: Pokemon[] = [...timeFixo]
+  const movesetsAtual: Move[][] = timeFixo.map(p => scoresIndividuais[p.name]?.moveset ?? p.moveset.slice(0, 4))
+  let budgetRestante = timeFixo.reduce((acc, p) => acc - (custos[p.name] ?? 0), budget)
+  let scoreAtual = timeFixo.length > 0
+    ? calcularScoreTime(timeFixo.map(p => arraysGlobal.pokeIdx.get(p.name)!), movesetsAtual.map((ms, i) => ms.map(m => arraysGlobal.moveIdx[arraysGlobal.pokeIdx.get(timeFixo[i].name)!].get(m.name) ?? 0)), arraysGlobal)
+    : 0.0
 
-  for (let rodada = 0; rodada < tamanhoTime; rodada++) {
+  const slotsRestantes = tamanhoTime - timeFixo.length
+
+  for (let rodada = 0; rodada < slotsRestantes; rodada++) {
     onLog(`\n=== Rodada ${rodada + 1} ===`)
 
-    const candidatosValidos = candidatos.filter(
-      p => !timeAtual.includes(p) && (custos[p.name] ?? 999) <= budgetRestante
-    )
+    const candidatosValidos = candidatos.filter(p => {
+      if (timeAtual.includes(p)) return false
+      if ((custos[p.name] ?? 999) > budgetRestante) return false
+      for (const grupo of gruposExclusao) {
+        if (grupo.includes(p.name) && timeAtual.some(t => grupo.includes(t.name))) return false
+      }
+      return true
+    })
 
     if (!candidatosValidos.length) {
       onLog(`Sem candidatos válidos no budget restante (${budgetRestante}pt). Encerrando.`)
@@ -82,13 +97,16 @@ export async function rodarOtimizador(
       let scoreTeste: number
       let movesetsTeste: Move[][]
 
-      if (rodada === 0) {
+      const timeTeste = [...timeAtual, poke]
+
+      if (timeAtual.length === 0) {
+        // sem fixos e primeira rodada: usa score individual
         const ind = scoresIndividuais[poke.name]
         scoreTeste = ind.score
         movesetsTeste = [ind.moveset]
       } else {
+        // sempre usa SA quando há fixos ou já tem membros no time
         onLog(`  Testando ${poke.name}...`)
-        const timeTeste = [...timeAtual, poke]
         const result = otimizarTimeSA(timeTeste, metaInimigos, priorities, {
           maxIteracoes: saIteracoes,
           temperaturaInicial: saTemperatura,
@@ -115,7 +133,9 @@ export async function rodarOtimizador(
     const custoEscolhido = custos[melhorPokemon.name] ?? 0
     budgetRestante -= custoEscolhido
     timeAtual.push(melhorPokemon)
-    movesetsAtual.splice(0, movesetsAtual.length, ...melhorMovesets)
+    melhorMovesets.forEach((ms, i) => { movesetsAtual[i] = ms })
+    while (movesetsAtual.length < melhorMovesets.length) movesetsAtual.push([])
+    movesetsAtual.length = melhorMovesets.length
     scoreAtual = melhorScore
 
     if (scoreAtual >= scoreMaximo) {

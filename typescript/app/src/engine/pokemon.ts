@@ -2,6 +2,7 @@ import { Move } from './move'
 import type { MoveData } from './move'
 import { getTypeMultiplier } from './moveDict'
 import { normalizarDanoPorTurno, podarEstritamenteDominados } from './moveUtils'
+import type { EggMoveUpgrade } from './loader'
 
 export interface PokemonStats {
   HP: number
@@ -46,13 +47,24 @@ export class Pokemon {
     this.moveset = []
   }
 
-  loadMoves(moves: MoveData[], fontes: string[]): void {
+  loadMoves(moves: MoveData[], fontes: string[], eggMovesDesbloqueados: EggMoveUpgrade[] = []): void {
     const seen = new Set<string>()
+    const incluirEgg = fontes.includes('Egg')
     for (const m of moves) {
       if (seen.has(m.name)) continue
-      if (!fontes.some(f => m.source.includes(f))) continue
+      const fonteOk = fontes.some(f => m.source.includes(f))
+      if (!fonteOk) continue
+      // se a única fonte é Egg e Egg não está marcado, pula
+      if (m.source.trim() === 'Egg' && !incluirEgg) continue
       seen.add(m.name)
       this.moveset.push(new Move(m))
+    }
+    if (incluirEgg) {
+      for (const em of eggMovesDesbloqueados) {
+        if (seen.has(em.name)) continue
+        seen.add(em.name)
+        this.moveset.push(new Move({ name: em.name, type: em.type, category: em.category, power: em.power, accuracy: em.accuracy, source: 'Egg' }))
+      }
     }
   }
 

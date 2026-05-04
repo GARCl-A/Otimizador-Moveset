@@ -1,0 +1,69 @@
+Name,Type,Category,Power,Accuracy,Source
+After You,Normal,Status,0,0,Level
+Alluring Voice,Fairy,Special,80,100,TM
+Ally Switch,Psychic,Status,0,0,"TM, TM"
+Attract,Normal,Status,0,100,"TM, TM"
+Baton Pass,Normal,Status,0,0,"Level, TM"
+Body Slam,Normal,Physical,85,100,"TM, TM"
+Calm Mind,Psychic,Status,0,0,"Level, Level, TM, TM"
+Charm,Fairy,Status,0,100,TM
+Dazzling Gleam,Fairy,Special,80,100,"TM, TM"
+Disarming Voice,Fairy,Special,40,0,"Level, Level, TM, TM"
+Double Team,Normal,Status,0,0,"TM, TM"
+Drain Punch,Fighting,Physical,75,100,"TM, TM"
+Draining Kiss,Fairy,Special,50,100,"TM, TM"
+Encore,Normal,Status,0,100,Level
+Endure,Normal,Status,0,0,"TM, TM"
+Energy Ball,Grass,Special,90,100,"TM, TM"
+Expanding Force,Psychic,Special,80,100,"TM, TM"
+Facade,Normal,Physical,70,100,"TM, TM"
+Follow Me,Normal,Status,0,0,Level
+Frustration,Normal,Physical,0,100,"TM, TM"
+Future Sight,Psychic,Special,120,100,"TM, TM"
+Gravity,Psychic,Status,0,0,"TM, TM"
+Guard Split,Psychic,Status,0,0,Level
+Guard Swap,Psychic,Status,0,0,TM
+Healing Wish,Psychic,Status,0,0,"Level, Level"
+Helping Hand,Normal,Status,0,0,"Level, Level, TM, TM"
+Hidden Power,Normal,Special,60,100,"TM, TM"
+Hyper Voice,Normal,Special,90,100,"TM, TM"
+Imprison,Psychic,Status,0,100,"TM, TM"
+Last Resort,Normal,Physical,140,100,Level
+Light Screen,Psychic,Status,0,0,TM
+Magic Room,Psychic,Status,0,0,"TM, TM"
+Magical Leaf,Grass,Special,60,0,"TM, TM"
+Metronome,Normal,Status,0,0,"TM, TM"
+Mystical Fire,Fire,Special,75,100,"TM, TM"
+Pay Day,Normal,Physical,40,100,"TM, TM"
+Play Nice,Normal,Status,0,0,"Level, Level"
+Play Rough,Fairy,Physical,90,90,"TM, TM"
+Power Split,Psychic,Status,0,0,Level
+Power Swap,Psychic,Status,0,0,"TM, TM"
+Protect,Normal,Status,0,0,"TM, TM"
+Psybeam,Psychic,Special,65,100,"Level, Level, TM, TM"
+Psych Up,Normal,Status,0,0,"TM, TM"
+Psychic,Psychic,Special,90,100,"Level, Level, TM, TM"
+Psychic Noise,Psychic,Special,75,100,"TM, TM"
+Psychic Terrain,Psychic,Status,0,0,"Level, Level, TM, TM"
+Psyshock,Psychic,Special,80,100,"TM, TM"
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,"TM, TM"
+Return,Normal,Physical,0,100,"TM, TM"
+Round,Normal,Special,60,100,"TM, TM"
+Safeguard,Normal,Status,0,0,TM
+Secret Power,Normal,Physical,70,100,"TM, TM"
+Shadow Ball,Ghost,Special,80,100,"TM, TM"
+Skill Swap,Psychic,Status,0,0,"TM, TM"
+Sleep Talk,Normal,Status,0,0,"TM, TM"
+Snore,Normal,Special,50,100,"TM, TM"
+Stored Power,Psychic,Special,20,100,"Level, Level, TM, TM"
+Substitute,Normal,Status,0,0,"TM, TM"
+Swift,Normal,Special,60,0,"TM, TM"
+Take Down,Normal,Physical,90,85,"TM, TM"
+Tera Blast,Normal,Special,80,100,"TM, TM"
+Terrain Pulse,Normal,Special,50,100,"TM, TM"
+Tri Attack,Normal,Special,80,100,"TM, TM"
+Trick,Psychic,Status,0,100,"TM, TM"
+Trick Room,Psychic,Status,0,0,"TM, TM"
+Wonder Room,Psychic,Status,0,0,"TM, TM"
+Zen Headbutt,Psychic,Physical,80,90,"TM, TM"

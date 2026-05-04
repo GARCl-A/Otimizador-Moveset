@@ -1,0 +1,69 @@
+Name,Type,Category,Power,Accuracy,Source
+Aerial Ace,Flying,Physical,60,0,TM
+Agility,Psychic,Status,0,0,"Level, TM"
+Attract,Normal,Status,0,100,TM
+Baby-Doll Eyes,Fairy,Status,0,100,Level
+Baton Pass,Normal,Status,0,0,TM
+Body Slam,Normal,Physical,85,100,TM
+Brave Bird,Flying,Physical,120,100,TM
+Calm Mind,Psychic,Status,0,0,TM
+Confuse Ray,Ghost,Status,0,100,TM
+Confusion,Psychic,Special,50,100,Level
+Dazzling Gleam,Fairy,Special,80,100,"Level, TM"
+Disarming Voice,Fairy,Special,40,0,"Level, TM"
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Drill Peck,Flying,Physical,80,100,Level
+Endure,Normal,Status,0,0,TM
+Energy Ball,Grass,Special,90,100,TM
+Expanding Force,Psychic,Special,80,100,TM
+Facade,Normal,Physical,70,100,TM
+Feather Dance,Flying,Status,0,100,"Level, TM"
+Flash Cannon,Steel,Special,80,100,TM
+Foul Play,Dark,Physical,95,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Growl,Normal,Status,0,100,Level
+Helping Hand,Normal,Status,0,0,TM
+Hex,Ghost,Special,65,100,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Hyper Voice,Normal,Special,90,100,TM
+Last Resort,Normal,Physical,140,100,Level
+Light Screen,Psychic,Status,0,0,TM
+Low Kick,Fighting,Physical,0,100,TM
+Lumina Crash,Psychic,Special,80,100,Level
+Mud-Slap,Ground,Special,20,100,TM
+Night Shade,Ghost,Special,0,100,TM
+Peck,Flying,Physical,35,100,Level
+Pluck,Flying,Physical,60,100,"Level, TM"
+Pounce,Bug,Physical,50,100,TM
+Protect,Normal,Status,0,0,TM
+Psybeam,Psychic,Special,65,100,"Level, TM"
+Psychic,Psychic,Special,90,100,"Level, TM"
+Psychic Terrain,Psychic,Status,0,0,TM
+Psyshock,Psychic,Special,80,100,TM
+Quick Attack,Normal,Physical,40,100,Level
+Rain Dance,Water,Status,0,0,TM
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Roost,Flying,Status,0,0,TM
+Sandstorm,Rock,Status,0,0,TM
+Secret Power,Normal,Physical,70,100,TM
+Seed Bomb,Grass,Physical,80,100,TM
+Shadow Ball,Ghost,Special,80,100,TM
+Skill Swap,Psychic,Status,0,0,TM
+Sleep Talk,Normal,Status,0,0,TM
+Stored Power,Psychic,Special,20,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swift,Normal,Special,60,0,TM
+Take Down,Normal,Physical,90,85,TM
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Trick,Psychic,Status,0,100,TM
+Trick Room,Psychic,Status,0,0,TM
+U-Turn,Bug,Physical,70,100,TM
+Uproar,Normal,Special,90,100,"Level, TM"
+Zen Headbutt,Psychic,Physical,80,90,TM

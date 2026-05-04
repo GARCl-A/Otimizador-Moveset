@@ -1,0 +1,59 @@
+Name,Type,Category,Power,Accuracy,Source
+After You,Normal,Status,0,0,Level
+Agility,Psychic,Status,0,0,"Level, TM"
+Ally Switch,Psychic,Status,0,0,"Level, TM"
+Attract,Normal,Status,0,100,TM
+Baton Pass,Normal,Status,0,0,TM
+Body Press,Fighting,Physical,80,100,TM
+Bug Buzz,Bug,Special,90,100,"Level, TM"
+Calm Mind,Psychic,Status,0,0,"Level, TM"
+Confuse Ray,Ghost,Status,0,100,"Level, TM"
+Confusion,Psychic,Special,50,100,Level
+Double Team,Normal,Status,0,0,TM
+Endure,Normal,Status,0,0,TM
+Energy Ball,Grass,Special,90,100,TM
+Expanding Force,Psychic,Special,80,100,TM
+Facade,Normal,Physical,70,100,TM
+Frustration,Normal,Physical,0,100,TM
+Future Sight,Psychic,Special,120,100,TM
+Giga Drain,Grass,Special,75,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Guard Swap,Psychic,Status,0,0,TM
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Hypnosis,Psychic,Status,0,60,Level
+Imprison,Psychic,Status,0,100,TM
+Iron Defense,Steel,Status,0,0,TM
+Leech Life,Bug,Physical,80,100,TM
+Light Screen,Psychic,Status,0,0,"Level, TM"
+Magic Coat,Psychic,Status,0,0,Level
+Magic Room,Psychic,Status,0,0,TM
+Mirror Coat,Psychic,Special,0,100,Level
+Payback,Dark,Physical,50,100,TM
+Power Swap,Psychic,Status,0,0,TM
+Protect,Normal,Status,0,0,TM
+Psybeam,Psychic,Special,65,100,"Level, TM"
+Psychic,Psychic,Special,90,100,"Level, TM"
+Psychic Terrain,Psychic,Status,0,0,"Level, TM"
+Psycho Cut,Psychic,Physical,70,100,TM
+Psyshock,Psychic,Special,80,100,TM
+Reflect,Psychic,Status,0,0,"Level, TM"
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Round,Normal,Special,60,100,TM
+Safeguard,Normal,Status,0,0,TM
+Secret Power,Normal,Physical,70,100,TM
+Shadow Ball,Ghost,Special,80,100,TM
+Skill Swap,Psychic,Status,0,0,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Stored Power,Psychic,Special,20,100,TM
+Struggle Bug,Bug,Special,50,100,"Level, TM"
+Substitute,Normal,Status,0,0,TM
+Trick,Psychic,Status,0,100,TM
+Trick Room,Psychic,Status,0,0,TM
+U-Turn,Bug,Physical,70,100,TM
+Wonder Room,Psychic,Status,0,0,TM
+Zen Headbutt,Psychic,Physical,80,90,TM
