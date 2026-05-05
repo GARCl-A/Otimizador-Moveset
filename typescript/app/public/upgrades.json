@@ -166,5 +166,24 @@
         "accuracy": 100
       }
     ]
+  },
+  "Veluza": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Psyblade",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Ceaseless Edge",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 65,
+        "accuracy": 90
+      }
+    ]
   }
 }

@@ -94,6 +94,7 @@ META = [
     (956, "Espathra", "Psychic", None),
     (959, "Tinkaton", "Steel", "Fairy"),
     (970, "Glimmora", "Poison", "Rock"),
+    (976, "Veluza", "Water", "Psychic"),
     (977, "Dondozo", "Water", None),
     (979, "Annihilape", "Fighting", "Ghost"),
     (981, "Farigiraf", "Psychic", "Normal"),

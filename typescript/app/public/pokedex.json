@@ -63023,6 +63023,438 @@
       }
     ]
   },
+  "Veluza": {
+    "number": 976,
+    "type1": "Water",
+    "type2": "Psychic",
+    "cost": 4,
+    "stats": {
+      "HP": 90,
+      "Attack": 102,
+      "Defense": 73,
+      "SpAtk": 78,
+      "SpDef": 65,
+      "Speed": 70
+    },
+    "moves": [
+      {
+        "name": "Agility",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Aqua Cutter",
+        "type": "Water",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Aqua Jet",
+        "type": "Water",
+        "category": "Physical",
+        "power": 40,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Attract",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Blizzard",
+        "type": "Ice",
+        "category": "Special",
+        "power": 110,
+        "accuracy": 70,
+        "source": "TM"
+      },
+      {
+        "name": "Body Slam",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 85,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Chilling Water",
+        "type": "Water",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Crunch",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Double-Edge",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Drill Run",
+        "type": "Ground",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Endeavor",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Endure",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Expanding Force",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Fillet Away",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Final Gambit",
+        "type": "Fighting",
+        "category": "Special",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Flip Turn",
+        "type": "Water",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Focus Energy",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Frustration",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Giga Impact",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Hidden Power",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Hydro Pump",
+        "type": "Water",
+        "category": "Special",
+        "power": 110,
+        "accuracy": 80,
+        "source": "TM"
+      },
+      {
+        "name": "Hyper Beam",
+        "type": "Normal",
+        "category": "Special",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Ice Beam",
+        "type": "Ice",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Ice Fang",
+        "type": "Ice",
+        "category": "Physical",
+        "power": 65,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Icy Wind",
+        "type": "Ice",
+        "category": "Special",
+        "power": 55,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Liquidation",
+        "type": "Water",
+        "category": "Physical",
+        "power": 85,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Night Slash",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Pain Split",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Pluck",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Protect",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psychic",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Psychic Fangs",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 85,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Psychic Terrain",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psycho Cut",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Rain Dance",
+        "type": "Water",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Rest",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Return",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Scale Shot",
+        "type": "Dragon",
+        "category": "Physical",
+        "power": 25,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Secret Power",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Slash",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Sleep Talk",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Snowscape",
+        "type": "Ice",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Stored Power",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Substitute",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Surf",
+        "type": "Water",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Tackle",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 40,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Take Down",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 90,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Tera Blast",
+        "type": "Normal",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Water Pulse",
+        "type": "Water",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Waterfall",
+        "type": "Water",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Zen Headbutt",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 90,
+        "source": "TM"
+      }
+    ]
+  },
   "Dondozo": {
     "number": 977,
     "type1": "Water",
