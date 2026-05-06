@@ -68,7 +68,7 @@ export function otimizarTimeGA(
       const parent1 = selecaoTorneio(population, 3)
       const parent2 = selecaoTorneio(population, 3)
 
-      let child = crossover(parent1, parent2, custos, budget, gruposExclusao, timeFixo)
+      let child = crossover(parent1, parent2, custos, budget, gruposExclusao, timeFixo, tamanhoTime)
 
       if (Math.random() < mutationRate) {
         child = mutacao(child, candidatos, custos, budget, gruposExclusao, timeFixo)
@@ -221,7 +221,8 @@ function crossover(
   custos: Record<string, number>,
   budget: number,
   gruposExclusao: string[][],
-  timeFixo: Pokemon[]
+  timeFixo: Pokemon[],
+  tamanhoTime: number
 ): Individual {
   const childPokemons: Pokemon[] = [...timeFixo]
   const childMovesets: Move[][] = []
@@ -243,6 +244,7 @@ function crossover(
   const seen = new Set<string>(timeFixo.map(p => p.name))
 
   for (const poke of allParentPokemons) {
+    if (childPokemons.length >= tamanhoTime) break
     if (seen.has(poke.name)) continue
     seen.add(poke.name)
 

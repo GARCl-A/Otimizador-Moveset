@@ -1,0 +1,107 @@
+Name,Type,Category,Power,Accuracy,Source
+Ally Switch,Psychic,Status,0,0,TM
+Amnesia,Psychic,Status,0,0,TM
+Attract,Normal,Status,0,100,TM
+Belch,Poison,Special,120,90,Level
+Body Press,Fighting,Physical,80,100,TM
+Body Slam,Normal,Physical,85,100,TM
+Bounce,Flying,Physical,85,85,"Level, TM"
+Brick Break,Fighting,Physical,75,100,TM
+Bulldoze,Ground,Physical,60,100,TM
+Calm Mind,Psychic,Status,0,0,TM
+Charge Beam,Electric,Special,50,90,TM
+Chilling Water,Water,Special,50,100,TM
+Confide,Normal,Status,0,0,TM
+Confuse Ray,Ghost,Status,0,100,"Level, TM"
+Confusion,Psychic,Special,50,100,Level
+Counter,Fighting,Physical,0,100,TM
+Covet,Normal,Physical,60,100,TM
+Dazzling Gleam,Fairy,Special,80,100,TM
+Dig,Ground,Physical,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Drain Punch,Fighting,Physical,75,100,TM
+Dream Eater,Psychic,Special,100,100,TM
+Earth Power,Ground,Special,90,100,TM
+Encore,Normal,Status,0,100,TM
+Endeavor,Normal,Physical,0,100,TM
+Endure,Normal,Status,0,0,TM
+Energy Ball,Grass,Special,90,100,TM
+Expanding Force,Psychic,Special,80,100,TM
+Facade,Normal,Physical,70,100,TM
+Fire Punch,Fire,Physical,75,100,TM
+Flash,Normal,Status,0,100,TM
+Flash Cannon,Steel,Special,80,100,TM
+Fling,Dark,Physical,0,100,TM
+Focus Blast,Fighting,Special,120,70,TM
+Focus Punch,Fighting,Physical,150,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Grass Knot,Grass,Special,0,100,TM
+Growl,Normal,Status,0,100,Level
+Heal Bell,Normal,Status,0,0,TM
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Hyper Voice,Normal,Special,90,100,TM
+Ice Punch,Ice,Physical,75,100,TM
+Icy Wind,Ice,Special,55,95,TM
+Imprison,Psychic,Status,0,100,TM
+Iron Tail,Steel,Physical,100,75,TM
+Light Screen,Psychic,Status,0,0,TM
+Low Kick,Fighting,Physical,0,100,TM
+Low Sweep,Fighting,Physical,65,100,TM
+Lunge,Bug,Physical,80,100,TM
+Mega Kick,Normal,Physical,120,75,TM
+Mega Punch,Normal,Physical,80,85,TM
+Metronome,Normal,Status,0,0,TM
+Mud Shot,Ground,Special,55,95,TM
+Mud-Slap,Ground,Special,20,100,TM
+Nasty Plot,Dark,Status,0,0,TM
+Night Shade,Ghost,Special,0,100,TM
+Payback,Dark,Physical,50,100,"Level, TM"
+Power Gem,Rock,Special,80,100,"Level, TM"
+Power-Up Punch,Fighting,Physical,40,100,TM
+Protect,Normal,Status,0,0,TM
+Psybeam,Psychic,Special,65,100,"Level, TM"
+Psych Up,Normal,Status,0,0,"Level, TM"
+Psychic,Psychic,Special,90,100,"Level, TM"
+Psychic Noise,Psychic,Special,75,100,TM
+Psychic Terrain,Psychic,Status,0,0,TM
+Psyshock,Psychic,Special,80,100,"Level, TM"
+Rain Dance,Water,Status,0,0,TM
+Recycle,Normal,Status,0,0,TM
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,"Level, TM"
+Return,Normal,Physical,0,100,TM
+Round,Normal,Special,60,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Seed Bomb,Grass,Physical,80,100,TM
+Shadow Ball,Ghost,Special,80,100,TM
+Signal Beam,Bug,Special,75,100,TM
+Skill Swap,Psychic,Status,0,0,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snarl,Dark,Special,55,95,TM
+Snore,Normal,Special,50,100,"Level, TM"
+Snowscape,Ice,Status,0,0,TM
+Splash,Normal,Status,0,0,Level
+Stomping Tantrum,Ground,Physical,75,100,TM
+Stored Power,Psychic,Special,20,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,TM
+Take Down,Normal,Physical,90,85,TM
+Taunt,Dark,Status,0,100,TM
+Teeter Dance,Normal,Status,0,100,Level
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Thunder Punch,Electric,Physical,75,100,TM
+Thunder Wave,Electric,Status,0,90,TM
+Torment,Dark,Status,0,100,TM
+Toxic,Poison,Status,0,90,TM
+Trailblaze,Grass,Physical,50,100,TM
+Trick,Psychic,Status,0,100,TM
+Trick Room,Psychic,Status,0,0,TM
+Uproar,Normal,Special,90,100,TM
+Zen Headbutt,Psychic,Physical,80,90,"Level, TM"

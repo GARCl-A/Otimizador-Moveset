@@ -199,7 +199,7 @@
     ]
   },
   "Starmie": {
-    "custoReducoes": 1,
+    "custoReducoes": 2,
     "eggMoves": [
       {
         "name": "Bouncy Bubble",
@@ -213,6 +213,96 @@
         "type": "Fairy",
         "category": "Special",
         "power": 90,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Lunatone": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Revelation Dance (Rock)",
+        "type": "Rock",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100
+      },
+      {
+        "name": "Moongeist Beam",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 100,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Alakazam": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Aura Sphere",
+        "type": "Fighting",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Baddy Bad",
+        "type": "Dark",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 95
+      },
+      {
+        "name": "Ice Beam",
+        "type": "Ice",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Hatterene": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Moonblast",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 95,
+        "accuracy": 100
+      },
+      {
+        "name": "Buzzy Buzz",
+        "type": "Electric",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Indeedee": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Matcha Gotcha",
+        "type": "Grass",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 90
+      },
+      {
+        "name": "Expanding Force",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Moonblast",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 95,
         "accuracy": 100
       }
     ]

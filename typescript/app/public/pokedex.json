@@ -5015,6 +5015,622 @@
       }
     ]
   },
+  "Tentacruel": {
+    "number": 73,
+    "type1": "Water",
+    "type2": "Poison",
+    "cost": 3,
+    "stats": {
+      "HP": 80,
+      "Attack": 70,
+      "Defense": 65,
+      "SpAtk": 80,
+      "SpDef": 120,
+      "Speed": 100
+    },
+    "moves": [
+      {
+        "name": "Acid",
+        "type": "Poison",
+        "category": "Special",
+        "power": 40,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Acid Armor",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Acid Spray",
+        "type": "Poison",
+        "category": "Special",
+        "power": 40,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Attract",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Blizzard",
+        "type": "Ice",
+        "category": "Special",
+        "power": 110,
+        "accuracy": 70,
+        "source": "TM"
+      },
+      {
+        "name": "Brine",
+        "type": "Water",
+        "category": "Special",
+        "power": 65,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Brutal Swing",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Bubble Beam",
+        "type": "Water",
+        "category": "Special",
+        "power": 65,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Chilling Water",
+        "type": "Water",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Confide",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Confuse Ray",
+        "type": "Ghost",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Corrosive Gas",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Cross Poison",
+        "type": "Poison",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Curse",
+        "type": "Ghost",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Cut",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 50,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Dazzling Gleam",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Dive",
+        "type": "Water",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Double-Edge",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Endure",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Facade",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Flip Turn",
+        "type": "Water",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Frustration",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Giga Drain",
+        "type": "Grass",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Giga Impact",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Hail",
+        "type": "Ice",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Haze",
+        "type": "Ice",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Hex",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 65,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Hidden Power",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Hydro Pump",
+        "type": "Water",
+        "category": "Special",
+        "power": 110,
+        "accuracy": 80,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Hyper Beam",
+        "type": "Normal",
+        "category": "Special",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Ice Beam",
+        "type": "Ice",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Icy Wind",
+        "type": "Ice",
+        "category": "Special",
+        "power": 55,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Infestation",
+        "type": "Bug",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Knock Off",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 65,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Liquidation",
+        "type": "Water",
+        "category": "Physical",
+        "power": 85,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Muddy Water",
+        "type": "Water",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Payback",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Poison Jab",
+        "type": "Poison",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Poison Sting",
+        "type": "Poison",
+        "category": "Physical",
+        "power": 15,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Protect",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Rain Dance",
+        "type": "Water",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Reflect",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Reflect Type",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Rest",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Return",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Round",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Safeguard",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Scald",
+        "type": "Water",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Screech",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 85,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Secret Power",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Skitter Smack",
+        "type": "Bug",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Sleep Talk",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sludge Bomb",
+        "type": "Poison",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Sludge Wave",
+        "type": "Poison",
+        "category": "Special",
+        "power": 95,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Snore",
+        "type": "Normal",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Substitute",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Supersonic",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 55,
+        "source": "Level"
+      },
+      {
+        "name": "Surf",
+        "type": "Water",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Swagger",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Swords Dance",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Take Down",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 90,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Tera Blast",
+        "type": "Normal",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thief",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Toxic",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Toxic Spikes",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Venom Drench",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Venoshock",
+        "type": "Poison",
+        "category": "Special",
+        "power": 65,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Water Gun",
+        "type": "Water",
+        "category": "Special",
+        "power": 40,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Water Pulse",
+        "type": "Water",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Waterfall",
+        "type": "Water",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Weather Ball",
+        "type": "Normal",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Whirlpool",
+        "type": "Water",
+        "category": "Special",
+        "power": 35,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Wrap",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 15,
+        "accuracy": 90,
+        "source": "Level"
+      },
+      {
+        "name": "Wring Out",
+        "type": "Normal",
+        "category": "Special",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level"
+      }
+    ]
+  },
   "Slowbro": {
     "number": 80,
     "type1": "Water",
@@ -15047,6 +15663,646 @@
       }
     ]
   },
+  "Xatu": {
+    "number": 178,
+    "type1": "Psychic",
+    "type2": "Flying",
+    "cost": 2,
+    "stats": {
+      "HP": 65,
+      "Attack": 75,
+      "Defense": 70,
+      "SpAtk": 95,
+      "SpDef": 70,
+      "Speed": 95
+    },
+    "moves": [
+      {
+        "name": "Aerial Ace",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Air Cutter",
+        "type": "Flying",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Air Slash",
+        "type": "Flying",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 95,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Ally Switch",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Attract",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Baton Pass",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Calm Mind",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Confide",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Confuse Ray",
+        "type": "Ghost",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Cosmic Power",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Curse",
+        "type": "Ghost",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Dazzling Gleam",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Defog",
+        "type": "Flying",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Double-Edge",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Dream Eater",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 100,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Dual Wingbeat",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 40,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Endure",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Expanding Force",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Facade",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Feather Dance",
+        "type": "Flying",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Flash",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Fly",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 90,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Foul Play",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 95,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Frustration",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Future Sight",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Giga Drain",
+        "type": "Grass",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Giga Impact",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Grass Knot",
+        "type": "Grass",
+        "category": "Special",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Guard Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Haze",
+        "type": "Ice",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Heat Wave",
+        "type": "Fire",
+        "category": "Special",
+        "power": 95,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Hidden Power",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Hyper Beam",
+        "type": "Normal",
+        "category": "Special",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Imprison",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Leer",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Light Screen",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Magic Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Night Shade",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Pain Split",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Peck",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 35,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Pluck",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Power Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Protect",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psych Up",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psychic",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psycho Shift",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Psyshock",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Rain Dance",
+        "type": "Water",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Reflect",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Rest",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Return",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Roost",
+        "type": "Flying",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Round",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Secret Power",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Shadow Ball",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Signal Beam",
+        "type": "Bug",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Skill Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sleep Talk",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Snore",
+        "type": "Normal",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Solar Beam",
+        "type": "Grass",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Steel Wing",
+        "type": "Steel",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Stored Power",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Substitute",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sunny Day",
+        "type": "Fire",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Swagger",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Swift",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Tailwind",
+        "type": "Flying",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Teleport",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Tera Blast",
+        "type": "Normal",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thief",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thunder Wave",
+        "type": "Electric",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Toxic",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Trick",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Trick Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "U-Turn",
+        "type": "Bug",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Wish",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Zen Headbutt",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 90,
+        "source": "TM"
+      }
+    ]
+  },
   "Azumarill": {
     "number": 184,
     "type1": "Water",
@@ -23559,6 +24815,798 @@
       }
     ]
   },
+  "Medicham": {
+    "number": 308,
+    "type1": "Psychic",
+    "type2": "Fighting",
+    "cost": 3,
+    "stats": {
+      "HP": 60,
+      "Attack": 60,
+      "Defense": 75,
+      "SpAtk": 60,
+      "SpDef": 75,
+      "Speed": 80
+    },
+    "moves": [
+      {
+        "name": "Acupressure",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Aerial Ace",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Attract",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Aura Sphere",
+        "type": "Fighting",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Axe Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 90,
+        "source": "Level"
+      },
+      {
+        "name": "Baton Pass",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Bide",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Body Slam",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 85,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Brick Break",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Bulk Up",
+        "type": "Fighting",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Calm Mind",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Close Combat",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Confide",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Confusion",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Counter",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Detect",
+        "type": "Fighting",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Double-Edge",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Drain Punch",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Dream Eater",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 100,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Endure",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Energy Ball",
+        "type": "Grass",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Expanding Force",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Facade",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Feint",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 30,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Fire Punch",
+        "type": "Fire",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Flash",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Fling",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Focus Blast",
+        "type": "Fighting",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 70,
+        "source": "TM"
+      },
+      {
+        "name": "Focus Punch",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 150,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Force Palm",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Frustration",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Giga Impact",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Grass Knot",
+        "type": "Grass",
+        "category": "Special",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Gravity",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Helping Hand",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Hidden Power",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "High Jump Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 130,
+        "accuracy": 90,
+        "source": "Level"
+      },
+      {
+        "name": "Hyper Beam",
+        "type": "Normal",
+        "category": "Special",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Ice Punch",
+        "type": "Ice",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Imprison",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Light Screen",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Low Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Low Sweep",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 65,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Mega Kick",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 75,
+        "source": "TM"
+      },
+      {
+        "name": "Mega Punch",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Metronome",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Mud-Slap",
+        "type": "Ground",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Night Shade",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Pain Split",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Poison Jab",
+        "type": "Poison",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Power Trick",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Power-Up Punch",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 40,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Protect",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psybeam",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 65,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psych Up",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psychic",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Psychic Terrain",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psycho Cut",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Psyshock",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Rain Dance",
+        "type": "Water",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Recover",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Recycle",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Reflect",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Rest",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Retaliate",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Return",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Reversal",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Rock Slide",
+        "type": "Rock",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Rock Smash",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 40,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Rock Tomb",
+        "type": "Rock",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Round",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Secret Power",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Shadow Ball",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Signal Beam",
+        "type": "Bug",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Skill Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sleep Talk",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Snore",
+        "type": "Normal",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Stored Power",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Strength",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Substitute",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sunny Day",
+        "type": "Fire",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Swagger",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Swift",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Take Down",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 90,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Taunt",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Tera Blast",
+        "type": "Normal",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thief",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thunder Punch",
+        "type": "Electric",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Toxic",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Trailblaze",
+        "type": "Grass",
+        "category": "Physical",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Trick",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Trick Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Upper Hand",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 65,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Vacuum Wave",
+        "type": "Fighting",
+        "category": "Special",
+        "power": 40,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Work Up",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Zen Headbutt",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 90,
+        "source": "Level, TM"
+      }
+    ]
+  },
   "Illumise": {
     "number": 314,
     "type1": "Bug",
@@ -24244,6 +26292,1566 @@
         "power": 80,
         "accuracy": 96,
         "source": "Egg"
+      }
+    ]
+  },
+  "Grumpig": {
+    "number": 326,
+    "type1": "Psychic",
+    "type2": null,
+    "cost": 2,
+    "stats": {
+      "HP": 80,
+      "Attack": 45,
+      "Defense": 65,
+      "SpAtk": 90,
+      "SpDef": 110,
+      "Speed": 80
+    },
+    "moves": [
+      {
+        "name": "Ally Switch",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Amnesia",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Attract",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Belch",
+        "type": "Poison",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 90,
+        "source": "Level"
+      },
+      {
+        "name": "Body Press",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Body Slam",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 85,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Bounce",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 85,
+        "accuracy": 85,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Brick Break",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Bulldoze",
+        "type": "Ground",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Calm Mind",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Charge Beam",
+        "type": "Electric",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Chilling Water",
+        "type": "Water",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Confide",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Confuse Ray",
+        "type": "Ghost",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Confusion",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Counter",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Covet",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Dazzling Gleam",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Dig",
+        "type": "Ground",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Double-Edge",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Drain Punch",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Dream Eater",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 100,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Earth Power",
+        "type": "Ground",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Encore",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Endeavor",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Endure",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Energy Ball",
+        "type": "Grass",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Expanding Force",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Facade",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Fire Punch",
+        "type": "Fire",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Flash",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Flash Cannon",
+        "type": "Steel",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Fling",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Focus Blast",
+        "type": "Fighting",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 70,
+        "source": "TM"
+      },
+      {
+        "name": "Focus Punch",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 150,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Frustration",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Giga Impact",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Grass Knot",
+        "type": "Grass",
+        "category": "Special",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Growl",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Heal Bell",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Helping Hand",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Hidden Power",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Hyper Beam",
+        "type": "Normal",
+        "category": "Special",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Hyper Voice",
+        "type": "Normal",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Ice Punch",
+        "type": "Ice",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Icy Wind",
+        "type": "Ice",
+        "category": "Special",
+        "power": 55,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Imprison",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Iron Tail",
+        "type": "Steel",
+        "category": "Physical",
+        "power": 100,
+        "accuracy": 75,
+        "source": "TM"
+      },
+      {
+        "name": "Light Screen",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Low Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Low Sweep",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 65,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Lunge",
+        "type": "Bug",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Mega Kick",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 75,
+        "source": "TM"
+      },
+      {
+        "name": "Mega Punch",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Metronome",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Mud Shot",
+        "type": "Ground",
+        "category": "Special",
+        "power": 55,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Mud-Slap",
+        "type": "Ground",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Nasty Plot",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Night Shade",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Payback",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 50,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Power Gem",
+        "type": "Rock",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Power-Up Punch",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 40,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Protect",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psybeam",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 65,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psych Up",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psychic",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psychic Noise",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Psychic Terrain",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psyshock",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Rain Dance",
+        "type": "Water",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Recycle",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Reflect",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Rest",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Return",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Round",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Secret Power",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Seed Bomb",
+        "type": "Grass",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Shadow Ball",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Signal Beam",
+        "type": "Bug",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Skill Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sleep Talk",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Snarl",
+        "type": "Dark",
+        "category": "Special",
+        "power": 55,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Snore",
+        "type": "Normal",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Snowscape",
+        "type": "Ice",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Splash",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Stomping Tantrum",
+        "type": "Ground",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Stored Power",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Substitute",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sunny Day",
+        "type": "Fire",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Swagger",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Swift",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Take Down",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 90,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Taunt",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Teeter Dance",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Tera Blast",
+        "type": "Normal",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thief",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thunder Punch",
+        "type": "Electric",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thunder Wave",
+        "type": "Electric",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Torment",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Toxic",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Trailblaze",
+        "type": "Grass",
+        "category": "Physical",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Trick",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Trick Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Uproar",
+        "type": "Normal",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Zen Headbutt",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 90,
+        "source": "Level, TM"
+      }
+    ]
+  },
+  "Lunatone": {
+    "number": 337,
+    "type1": "Rock",
+    "type2": "Psychic",
+    "cost": 3,
+    "stats": {
+      "HP": 90,
+      "Attack": 55,
+      "Defense": 65,
+      "SpAtk": 95,
+      "SpDef": 85,
+      "Speed": 70
+    },
+    "moves": [
+      {
+        "name": "Acrobatics",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 55,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Ally Switch",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Baton Pass",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Blizzard",
+        "type": "Ice",
+        "category": "Special",
+        "power": 110,
+        "accuracy": 70,
+        "source": "TM"
+      },
+      {
+        "name": "Body Slam",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 85,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Bulldoze",
+        "type": "Ground",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Calm Mind",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Charge Beam",
+        "type": "Electric",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Confide",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Confusion",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Cosmic Power",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Double-Edge",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Dream Eater",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 100,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Earth Power",
+        "type": "Ground",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Earthquake",
+        "type": "Ground",
+        "category": "Physical",
+        "power": 100,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Embargo",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Endure",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Explosion",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 250,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Facade",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Flash",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Frustration",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Future Sight",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Giga Impact",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Grass Knot",
+        "type": "Grass",
+        "category": "Special",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Gravity",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Gyro Ball",
+        "type": "Steel",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Hail",
+        "type": "Ice",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Harden",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Helping Hand",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Hidden Power",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Hyper Beam",
+        "type": "Normal",
+        "category": "Special",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Hypnosis",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 60,
+        "source": "Level"
+      },
+      {
+        "name": "Ice Beam",
+        "type": "Ice",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Icy Wind",
+        "type": "Ice",
+        "category": "Special",
+        "power": 55,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Iron Head",
+        "type": "Steel",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Light Screen",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Magic Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Meteor Beam",
+        "type": "Rock",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Moonblast",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 95,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Moonlight",
+        "type": "Fairy",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Nasty Plot",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Pain Split",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Power Gem",
+        "type": "Rock",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Power Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Protect",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psych Up",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psychic",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psychic Terrain",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psyshock",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Rain Dance",
+        "type": "Water",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Recycle",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Reflect",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Rest",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Return",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Rock Blast",
+        "type": "Rock",
+        "category": "Physical",
+        "power": 25,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Rock Polish",
+        "type": "Rock",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Rock Slide",
+        "type": "Rock",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 90,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Rock Throw",
+        "type": "Rock",
+        "category": "Physical",
+        "power": 50,
+        "accuracy": 90,
+        "source": "Level"
+      },
+      {
+        "name": "Rock Tomb",
+        "type": "Rock",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Round",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Safeguard",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sand Tomb",
+        "type": "Ground",
+        "category": "Physical",
+        "power": 35,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Sandstorm",
+        "type": "Rock",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Secret Power",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Self-Destruct",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 200,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Shadow Ball",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Signal Beam",
+        "type": "Bug",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Skill Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sleep Talk",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Smack Down",
+        "type": "Rock",
+        "category": "Physical",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Snore",
+        "type": "Normal",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Stealth Rock",
+        "type": "Rock",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Stomping Tantrum",
+        "type": "Ground",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Stone Edge",
+        "type": "Rock",
+        "category": "Physical",
+        "power": 100,
+        "accuracy": 80,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Stored Power",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Substitute",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Swagger",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Swift",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Tackle",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 40,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Tera Blast",
+        "type": "Normal",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Toxic",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Trick Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Weather Ball",
+        "type": "Normal",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Zen Headbutt",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 90,
+        "source": "TM"
       }
     ]
   },
@@ -44839,6 +48447,678 @@
       }
     ]
   },
+  "Swoobat": {
+    "number": 528,
+    "type1": "Flying",
+    "type2": "Psychic",
+    "cost": 3,
+    "stats": {
+      "HP": 67,
+      "Attack": 57,
+      "Defense": 55,
+      "SpAtk": 77,
+      "SpDef": 55,
+      "Speed": 114
+    },
+    "moves": [
+      {
+        "name": "Acrobatics",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 55,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Aerial Ace",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Air Cutter",
+        "type": "Flying",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 95,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Air Slash",
+        "type": "Flying",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 95,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Ally Switch",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Amnesia",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Assurance",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Attract",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Baton Pass",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Calm Mind",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Charge Beam",
+        "type": "Electric",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Charm",
+        "type": "Fairy",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Confide",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Confusion",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Defog",
+        "type": "Flying",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Dream Eater",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 100,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Dual Wingbeat",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 40,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Embargo",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Endeavor",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Endure",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Energy Ball",
+        "type": "Grass",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Expanding Force",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Facade",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Fake Tears",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Flash",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Fly",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 90,
+        "accuracy": 95,
+        "source": "TM"
+      },
+      {
+        "name": "Frustration",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Future Sight",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Giga Drain",
+        "type": "Grass",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Giga Impact",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Gust",
+        "type": "Flying",
+        "category": "Special",
+        "power": 40,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Gyro Ball",
+        "type": "Steel",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Heat Wave",
+        "type": "Fire",
+        "category": "Special",
+        "power": 95,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Helping Hand",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Hidden Power",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Hyper Beam",
+        "type": "Normal",
+        "category": "Special",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Imprison",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Knock Off",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 65,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Light Screen",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Nasty Plot",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Pluck",
+        "type": "Flying",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Protect",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psych Up",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psychic",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psychic Fangs",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 85,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Psycho Cut",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Psyshock",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Rain Dance",
+        "type": "Water",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Reflect",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Rest",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Return",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Roost",
+        "type": "Flying",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Round",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Safeguard",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Secret Power",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Shadow Ball",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Signal Beam",
+        "type": "Bug",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Simple Beam",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Skill Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sleep Talk",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Snore",
+        "type": "Normal",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Speed Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Steel Wing",
+        "type": "Steel",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Stored Power",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Substitute",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Super Fang",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Swagger",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Swift",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Tailwind",
+        "type": "Flying",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Taunt",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Tera Blast",
+        "type": "Normal",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thief",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thunder Wave",
+        "type": "Electric",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Torment",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Toxic",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Trick",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Trick Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "U-Turn",
+        "type": "Bug",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Uproar",
+        "type": "Normal",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Venom Drench",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Zen Headbutt",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 90,
+        "source": "TM"
+      }
+    ]
+  },
   "Conkeldurr": {
     "number": 534,
     "type1": "Fighting",
@@ -58839,6 +63119,694 @@
       }
     ]
   },
+  "Oranguru": {
+    "number": 765,
+    "type1": "Normal",
+    "type2": "Psychic",
+    "cost": 4,
+    "stats": {
+      "HP": 90,
+      "Attack": 60,
+      "Defense": 80,
+      "SpAtk": 90,
+      "SpDef": 110,
+      "Speed": 60
+    },
+    "moves": [
+      {
+        "name": "After You",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Ally Switch",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Attract",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Body Slam",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 85,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Brick Break",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Brutal Swing",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Bulldoze",
+        "type": "Ground",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Calm Mind",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Charge Beam",
+        "type": "Electric",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Chilling Water",
+        "type": "Water",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Confide",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Confusion",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Covet",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Dream Eater",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 100,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Earthquake",
+        "type": "Ground",
+        "category": "Physical",
+        "power": 100,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Embargo",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Encore",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Endeavor",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Endure",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Energy Ball",
+        "type": "Grass",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Expanding Force",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Facade",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Fling",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Focus Blast",
+        "type": "Fighting",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 70,
+        "source": "TM"
+      },
+      {
+        "name": "Foul Play",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 95,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Frustration",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Future Sight",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Giga Impact",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Gravity",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Hidden Power",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Hyper Beam",
+        "type": "Normal",
+        "category": "Special",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Hyper Voice",
+        "type": "Normal",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Imprison",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Instruct",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Knock Off",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 65,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Light Screen",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Magic Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Mega Kick",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 75,
+        "source": "TM"
+      },
+      {
+        "name": "Mega Punch",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Nasty Plot",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Nature Power",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Pain Split",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Payback",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Protect",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psybeam",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 65,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Psych Up",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psychic",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psychic Noise",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Psychic Terrain",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psyshock",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Quash",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Rain Dance",
+        "type": "Water",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Reflect",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Rest",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Return",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Rock Slide",
+        "type": "Rock",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Round",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Safeguard",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Scary Face",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Secret Power",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Shadow Ball",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Skill Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sleep Talk",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Snore",
+        "type": "Normal",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Spite",
+        "type": "Ghost",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Stored Power",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Substitute",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sunny Day",
+        "type": "Fire",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Swagger",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Swift",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Take Down",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 90,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Taunt",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Tera Blast",
+        "type": "Normal",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Terrain Pulse",
+        "type": "Normal",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thunder",
+        "type": "Electric",
+        "category": "Special",
+        "power": 110,
+        "accuracy": 70,
+        "source": "TM"
+      },
+      {
+        "name": "Thunderbolt",
+        "type": "Electric",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Toxic",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Trailblaze",
+        "type": "Grass",
+        "category": "Physical",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Trick",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Trick Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Wonder Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Work Up",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Zen Headbutt",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 90,
+        "source": "Level, TM"
+      }
+    ]
+  },
   "Golisopod": {
     "number": 768,
     "type1": "Bug",
@@ -61603,6 +66571,574 @@
         "category": "Physical",
         "power": 80,
         "accuracy": 90,
+        "source": "TM"
+      }
+    ]
+  },
+  "Hatterene": {
+    "number": 858,
+    "type1": "Psychic",
+    "type2": "Fairy",
+    "cost": 3,
+    "stats": {
+      "HP": 57,
+      "Attack": 90,
+      "Defense": 95,
+      "SpAtk": 136,
+      "SpDef": 103,
+      "Speed": 29
+    },
+    "moves": [
+      {
+        "name": "Agility",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Aromatic Mist",
+        "type": "Fairy",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Attract",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Baton Pass",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Brutal Swing",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Calm Mind",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Charm",
+        "type": "Fairy",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Confusion",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Dark Pulse",
+        "type": "Dark",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Dazzling Gleam",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Disarming Voice",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 40,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Draining Kiss",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Endure",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Expanding Force",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Facade",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Frustration",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Future Sight",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Giga Drain",
+        "type": "Grass",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Giga Impact",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Gravity",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Guard Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Heal Pulse",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Healing Wish",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Helping Hand",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Hidden Power",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Hyper Beam",
+        "type": "Normal",
+        "category": "Special",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Imprison",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Life Dew",
+        "type": "Water",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Light Screen",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Magic Powder",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Magic Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Magical Leaf",
+        "type": "Grass",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Metronome",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Misty Explosion",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 100,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Misty Terrain",
+        "type": "Fairy",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Mystical Fire",
+        "type": "Fire",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Pain Split",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Play Nice",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Play Rough",
+        "type": "Fairy",
+        "category": "Physical",
+        "power": 90,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Power Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Power Whip",
+        "type": "Grass",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 85,
+        "source": "TM"
+      },
+      {
+        "name": "Protect",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psybeam",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 65,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psychic",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psychic Noise",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Psychic Terrain",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psycho Cut",
+        "type": "Psychic",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psyshock",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Reflect",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Rest",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Return",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Round",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Safeguard",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Secret Power",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Shadow Ball",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Shadow Claw",
+        "type": "Ghost",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Skill Swap",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sleep Talk",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Snore",
+        "type": "Normal",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Stored Power",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Substitute",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Swift",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Swords Dance",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Tera Blast",
+        "type": "Normal",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thunder Wave",
+        "type": "Electric",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Trick",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Trick Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Wonder Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
         "source": "TM"
       }
     ]
@@ -70339,6 +75875,510 @@
         "category": "Physical",
         "power": 80,
         "accuracy": 90,
+        "source": "TM"
+      }
+    ]
+  },
+  "Munkidori": {
+    "number": 1015,
+    "type1": "Psychic",
+    "type2": "Poison",
+    "cost": 6,
+    "stats": {
+      "HP": 88,
+      "Attack": 75,
+      "Defense": 66,
+      "SpAtk": 130,
+      "SpDef": 90,
+      "Speed": 106
+    },
+    "moves": [
+      {
+        "name": "Acid Spray",
+        "type": "Poison",
+        "category": "Special",
+        "power": 40,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Attract",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Baton Pass",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Calm Mind",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Clear Smog",
+        "type": "Poison",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 0,
+        "source": "Level"
+      },
+      {
+        "name": "Confuse Ray",
+        "type": "Ghost",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Confusion",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 50,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Double Team",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Endure",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Facade",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Fake Out",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 40,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Flatter",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Fling",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Focus Blast",
+        "type": "Fighting",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 70,
+        "source": "TM"
+      },
+      {
+        "name": "Frustration",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Future Sight",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Giga Impact",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Grass Knot",
+        "type": "Grass",
+        "category": "Special",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Gunk Shot",
+        "type": "Poison",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 80,
+        "source": "TM"
+      },
+      {
+        "name": "Helping Hand",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Hex",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 65,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Hidden Power",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Hyper Beam",
+        "type": "Normal",
+        "category": "Special",
+        "power": 150,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Imprison",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Lash Out",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Light Screen",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Metronome",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Mud-Slap",
+        "type": "Ground",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Nasty Plot",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Night Shade",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Parting Shot",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Poison Jab",
+        "type": "Poison",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Poltergeist",
+        "type": "Ghost",
+        "category": "Physical",
+        "power": 110,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Protect",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psybeam",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 65,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psychic",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Psychic Noise",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Psychic Terrain",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Psyshock",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Rest",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Return",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Scratch",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 40,
+        "accuracy": 100,
+        "source": "Level"
+      },
+      {
+        "name": "Secret Power",
+        "type": "Normal",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Shadow Ball",
+        "type": "Ghost",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Shadow Claw",
+        "type": "Ghost",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Sleep Talk",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Sludge Bomb",
+        "type": "Poison",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Sludge Wave",
+        "type": "Poison",
+        "category": "Special",
+        "power": 95,
+        "accuracy": 100,
+        "source": "Level, TM"
+      },
+      {
+        "name": "Spite",
+        "type": "Ghost",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Stored Power",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 20,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Substitute",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Swift",
+        "type": "Normal",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 0,
+        "source": "TM"
+      },
+      {
+        "name": "Taunt",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Tera Blast",
+        "type": "Normal",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Thief",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 60,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Toxic",
+        "type": "Poison",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 90,
+        "source": "TM"
+      },
+      {
+        "name": "Trailblaze",
+        "type": "Grass",
+        "category": "Physical",
+        "power": 50,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Trick",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "U-Turn",
+        "type": "Bug",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Uproar",
+        "type": "Normal",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100,
+        "source": "TM"
+      },
+      {
+        "name": "Venoshock",
+        "type": "Poison",
+        "category": "Special",
+        "power": 65,
+        "accuracy": 100,
         "source": "TM"
       }
     ]

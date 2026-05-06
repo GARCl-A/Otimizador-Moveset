@@ -1,0 +1,86 @@
+Name,Type,Category,Power,Accuracy,Source
+Acrobatics,Flying,Physical,55,100,TM
+Ally Switch,Psychic,Status,0,0,TM
+Baton Pass,Normal,Status,0,0,TM
+Blizzard,Ice,Special,110,70,TM
+Body Slam,Normal,Physical,85,100,TM
+Bulldoze,Ground,Physical,60,100,TM
+Calm Mind,Psychic,Status,0,0,TM
+Charge Beam,Electric,Special,50,90,TM
+Confide,Normal,Status,0,0,TM
+Confusion,Psychic,Special,50,100,Level
+Cosmic Power,Psychic,Status,0,0,"Level, TM"
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Dream Eater,Psychic,Special,100,100,TM
+Earth Power,Ground,Special,90,100,TM
+Earthquake,Ground,Physical,100,100,TM
+Embargo,Dark,Status,0,100,TM
+Endure,Normal,Status,0,0,TM
+Explosion,Normal,Physical,250,100,"Level, TM"
+Facade,Normal,Physical,70,100,TM
+Flash,Normal,Status,0,100,TM
+Frustration,Normal,Physical,0,100,TM
+Future Sight,Psychic,Special,120,100,"Level, TM"
+Giga Impact,Normal,Physical,150,90,TM
+Grass Knot,Grass,Special,0,100,TM
+Gravity,Psychic,Status,0,0,TM
+Gyro Ball,Steel,Physical,0,100,TM
+Hail,Ice,Status,0,0,TM
+Harden,Normal,Status,0,0,Level
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Hypnosis,Psychic,Status,0,60,Level
+Ice Beam,Ice,Special,90,100,TM
+Icy Wind,Ice,Special,55,95,TM
+Iron Head,Steel,Physical,80,100,TM
+Light Screen,Psychic,Status,0,0,TM
+Magic Room,Psychic,Status,0,0,"Level, TM"
+Meteor Beam,Rock,Special,120,90,TM
+Moonblast,Fairy,Special,95,100,Level
+Moonlight,Fairy,Status,0,0,Level
+Nasty Plot,Dark,Status,0,0,TM
+Pain Split,Normal,Status,0,0,TM
+Power Gem,Rock,Special,80,100,TM
+Power Swap,Psychic,Status,0,0,TM
+Protect,Normal,Status,0,0,TM
+Psych Up,Normal,Status,0,0,TM
+Psychic,Psychic,Special,90,100,"Level, TM"
+Psychic Terrain,Psychic,Status,0,0,TM
+Psyshock,Psychic,Special,80,100,"Level, TM"
+Rain Dance,Water,Status,0,0,TM
+Recycle,Normal,Status,0,0,TM
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Rock Blast,Rock,Physical,25,90,TM
+Rock Polish,Rock,Status,0,0,"Level, TM"
+Rock Slide,Rock,Physical,75,90,"Level, TM"
+Rock Throw,Rock,Physical,50,90,Level
+Rock Tomb,Rock,Physical,60,95,TM
+Round,Normal,Special,60,100,TM
+Safeguard,Normal,Status,0,0,TM
+Sand Tomb,Ground,Physical,35,85,TM
+Sandstorm,Rock,Status,0,0,TM
+Secret Power,Normal,Physical,70,100,TM
+Self-Destruct,Normal,Physical,200,100,TM
+Shadow Ball,Ghost,Special,80,100,TM
+Signal Beam,Bug,Special,75,100,TM
+Skill Swap,Psychic,Status,0,0,TM
+Sleep Talk,Normal,Status,0,0,TM
+Smack Down,Rock,Physical,50,100,TM
+Snore,Normal,Special,50,100,TM
+Stealth Rock,Rock,Status,0,0,TM
+Stomping Tantrum,Ground,Physical,75,100,TM
+Stone Edge,Rock,Physical,100,80,"Level, TM"
+Stored Power,Psychic,Special,20,100,TM
+Substitute,Normal,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,TM
+Tackle,Normal,Physical,40,100,Level
+Tera Blast,Normal,Special,80,100,TM
+Toxic,Poison,Status,0,90,TM
+Trick Room,Psychic,Status,0,0,TM
+Weather Ball,Normal,Special,50,100,TM
+Zen Headbutt,Psychic,Physical,80,90,TM

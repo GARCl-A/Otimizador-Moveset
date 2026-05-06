@@ -13,7 +13,7 @@ const DANO_EM_SI_MESMO = new Set([
 ])
 const BANIDOS = new Set([
   'Focus Punch', 'First Impression', 'Fake Out', 'Explosion',
-  'Self-Destruct', 'Steel Roller', 'Dream Eater', 'Misty Explosion',
+  'Self-Destruct', 'Steel Roller', 'Dream Eater', 'Misty Explosion','Foul Play', 'Psystrike'
 ])
 const TRAVAMENTO_E_CONFUSAO = new Set(['Outrage', 'Thrash', 'Petal Dance', 'Raging Fury'])
 

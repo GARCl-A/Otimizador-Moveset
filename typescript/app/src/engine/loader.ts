@@ -18,6 +18,7 @@ export interface Upgrade {
 export type Upgrades = Record<string, Upgrade>
 
 let pokedex: Pokedex | null = null
+let pokedexNormalized: Map<string, string> | null = null
 let priorities: Priorities | null = null
 let upgrades: Upgrades = {}
 
@@ -28,10 +29,16 @@ export async function loadData(): Promise<void> {
     fetch('/upgrades.json'),
   ])
   pokedex = await pdRes.json()
+  pokedexNormalized = new Map(Object.keys(pokedex!).map(k => [k.toLowerCase(), k]))
   priorities = await prioRes.json()
-  // localStorage sobrescreve o arquivo se existir
   const stored = localStorage.getItem('upgrades')
   upgrades = stored ? JSON.parse(stored) : await upgRes.json()
+}
+
+function resolveNome(name: string): string {
+  if (!pokedex || !pokedexNormalized) throw new Error('Data not loaded')
+  if (pokedex[name]) return name
+  return pokedexNormalized.get(name.toLowerCase()) ?? name
 }
 
 export function getPriorities(): Priorities {
@@ -58,8 +65,9 @@ export function exportUpgradesJson(): void {
 const CUSTO_SEQUENCIA = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0.5, 0.25]
 
 export function getCustoEfetivo(name: string): number {
-  const data = getPokemonData(name)
-  const upgrade = upgrades[name]
+  const resolved = resolveNome(name)
+  const data = getPokemonData(resolved)
+  const upgrade = upgrades[resolved]
   const reducoes = upgrade?.custoReducoes ?? 0
   const idxOriginal = CUSTO_SEQUENCIA.indexOf(data.cost)
   if (idxOriginal === -1) return data.cost
@@ -69,11 +77,11 @@ export function getCustoEfetivo(name: string): number {
 
 export function buildPokemon(name: string, fontes: string[]): Pokemon {
   if (!pokedex) throw new Error('Data not loaded')
-  const data = pokedex[name]
+  const resolved = resolveNome(name)
+  const data = pokedex[resolved]
   if (!data) throw new Error(`Pokemon not found: ${name}`)
-  const p = new Pokemon(name, data)
-  // fontes base + egg moves desbloqueados do upgrade
-  const upgrade = upgrades[name]
+  const p = new Pokemon(resolved, data)
+  const upgrade = upgrades[resolved]
   const eggMovesDesbloqueados = upgrade?.eggMoves ?? []
   p.loadMoves(data.moves, fontes, eggMovesDesbloqueados)
   return p
@@ -86,5 +94,27 @@ export function getAllNames(): string[] {
 
 export function getPokemonData(name: string): PokemonData {
   if (!pokedex) throw new Error('Data not loaded')
-  return pokedex[name]
+  const resolved = resolveNome(name)
+  const data = pokedex[resolved]
+  if (!data) throw new Error(`Pokemon not found: ${name}`)
+  return data
+}
+
+export function findMoveByName(moveName: string): import('./move').MoveData | null {
+  if (!pokedex) throw new Error('Data not loaded')
+  const lower = moveName.toLowerCase()
+  for (const data of Object.values(pokedex)) {
+    const found = data.moves.find(m => m.name.toLowerCase() === lower)
+    if (found) return found
+  }
+  return null
+}
+
+export function getAllMoveNames(): string[] {
+  if (!pokedex) throw new Error('Data not loaded')
+  const seen = new Set<string>()
+  for (const data of Object.values(pokedex)) {
+    for (const m of data.moves) seen.add(m.name)
+  }
+  return [...seen].sort()
 }

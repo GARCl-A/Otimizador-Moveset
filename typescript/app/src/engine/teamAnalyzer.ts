@@ -1,12 +1,12 @@
 import { Pokemon } from './pokemon'
 import { Move } from './move'
 import type { Priorities } from './loader'
-import { calcularScoreCombate, otimizarTimeSA } from './optimizer'
+import { construirCaches, otimizarTimeSA } from './optimizer'
 
 export interface MembroTime {
   pokemon: Pokemon
-  moveset: Move[]       // se otimizar=false: os 4 moves fixos (pokemon.moveset também restrito a eles)
-  otimizar?: boolean    // se true: SA pode alterar o moveset deste membro
+  moveset: Move[]
+  otimizar?: boolean
 }
 
 export interface ConfrontoDetalhe {
@@ -24,7 +24,17 @@ export interface ResultadoSubstituicao {
   scoreAfter: number
   delta: number
   movesetCandidato: Move[]
-  movesetTimeBase: { nome: string; moveset: Move[] }[]  // movesets resolvidos do time original
+  movesetTimeBase: { nome: string; moveset: Move[] }[]
+  melhora: ConfrontoDetalhe[]
+  piora: ConfrontoDetalhe[]
+}
+
+export interface ResultadoTM {
+  pokemon: string
+  moveSubstituido: string
+  scoreBefore: number
+  scoreAfter: number
+  delta: number
   melhora: ConfrontoDetalhe[]
   piora: ConfrontoDetalhe[]
 }
@@ -32,17 +42,35 @@ export interface ResultadoSubstituicao {
 interface CoberturaEntry { score: number; pokemon: string; move: string }
 
 function scoreTimeDetalhado(time: MembroTime[], meta: Pokemon[], priorities: Priorities): Map<string, CoberturaEntry> {
+  const arrays = construirCaches(time.map(m => m.pokemon), meta, priorities)
+  const pokeIndices = time.map(m => arrays.pokeIdx.get(m.pokemon.name)!)
+  const estadoIndices = time.map((m, i) => {
+    const iPoke = pokeIndices[i]
+    const moveIdxMap = arrays.moveIdx[iPoke]
+    return m.moveset.map(mv => moveIdxMap.get(mv.name) ?? -1).filter(j => j >= 0)
+  })
+
   const porInimigo = new Map<string, CoberturaEntry>()
-  for (const inimigo of meta) {
+  const { danoEfetivo, Mmax, I } = arrays
+
+  for (let k = 0; k < I; k++) {
     let melhor: CoberturaEntry = { score: 0, pokemon: '', move: '' }
-    for (const { pokemon, moveset } of time) {
-      for (const move of moveset) {
-        const s = calcularScoreCombate(pokemon, inimigo, move, priorities).score
-        if (s > melhor.score) melhor = { score: s, pokemon: pokemon.name, move: move.name }
+    for (let pi = 0; pi < pokeIndices.length; pi++) {
+      const iPoke = pokeIndices[pi]
+      for (const j of estadoIndices[pi]) {
+        const dano = danoEfetivo[iPoke * Mmax * I + j * I + k]
+        if (dano > 0 && melhor.score === 0) {
+          melhor = {
+            score: 1,
+            pokemon: time[pi].pokemon.name,
+            move: arrays.moveLists[iPoke][j].name,
+          }
+        }
       }
     }
-    porInimigo.set(inimigo.name, melhor)
+    porInimigo.set(meta[k].name, melhor)
   }
+
   return porInimigo
 }
 
@@ -50,11 +78,8 @@ function resolverTime(time: MembroTime[], meta: Pokemon[], priorities: Prioritie
   const temOtimizar = time.some(m => m.otimizar)
   if (!temOtimizar) return time
 
-  // Membros estáticos: restringe pokemon.moveset aos 4 fixos antes de passar pro SA
-  // Membros dinâmicos: pokemon.moveset já tem o pool completo
   const pokemonsParaSA = time.map(m => {
     if (!m.otimizar) {
-      // clona o pokemon com moveset restrito para o SA não mexer
       const clone = Object.create(Object.getPrototypeOf(m.pokemon))
       Object.assign(clone, m.pokemon)
       clone.moveset = [...m.moveset]
@@ -73,6 +98,41 @@ function resolverTime(time: MembroTime[], meta: Pokemon[], priorities: Prioritie
   return time.map((m, i) => ({ ...m, moveset: movesets[i] }))
 }
 
+function diffMaps(
+  baseMap: Map<string, CoberturaEntry>,
+  novoMap: Map<string, CoberturaEntry>,
+  meta: Pokemon[]
+): { melhora: ConfrontoDetalhe[]; piora: ConfrontoDetalhe[] } {
+  const melhora: ConfrontoDetalhe[] = []
+  const piora: ConfrontoDetalhe[] = []
+
+  for (const inimigo of meta) {
+    const antes = baseMap.get(inimigo.name)!
+    const depois = novoMap.get(inimigo.name)!
+    const delta = depois.score - antes.score
+    if (Math.abs(delta) < 0.01) continue
+    const entry: ConfrontoDetalhe = {
+      inimigo: inimigo.name,
+      scoreOriginal: antes.score,
+      scoreNovo: depois.score,
+      delta,
+      cobertoAntesPor: antes.pokemon ? { pokemon: antes.pokemon, move: antes.move } : null,
+      cobertoDepoisPor: depois.pokemon ? { pokemon: depois.pokemon, move: depois.move } : null,
+    }
+    if (delta > 0) melhora.push(entry)
+    else piora.push(entry)
+  }
+
+  melhora.sort((a, b) => b.delta - a.delta)
+  piora.sort((a, b) => a.delta - b.delta)
+
+  return { melhora, piora }
+}
+
+export function resolverTimeMembros(time: MembroTime[], meta: Pokemon[], priorities: Priorities): MembroTime[] {
+  return resolverTime(time, meta, priorities)
+}
+
 export function analisarSubstituicao(
   timeAtual: MembroTime[],
   candidato: MembroTime,
@@ -83,7 +143,6 @@ export function analisarSubstituicao(
   const baseMap = scoreTimeDetalhado(timeResolvido, meta, priorities)
   const baseTotal = [...baseMap.values()].reduce((a, b) => a + b.score, 0)
   const movesetTimeBase = timeResolvido.map(m => ({ nome: m.pokemon.name, moveset: m.moveset }))
-
   return timeAtual.map((membroOriginal, idx) => {
     const timeNovo: MembroTime[] = [
       ...timeAtual.filter((_, i) => i !== idx),
@@ -94,29 +153,7 @@ export function analisarSubstituicao(
 
     const novoMap = scoreTimeDetalhado(timeNovoResolvido, meta, priorities)
     const novoTotal = [...novoMap.values()].reduce((a, b) => a + b.score, 0)
-
-    const melhora: ConfrontoDetalhe[] = []
-    const piora: ConfrontoDetalhe[] = []
-
-    for (const inimigo of meta) {
-      const antes = baseMap.get(inimigo.name)!
-      const depois = novoMap.get(inimigo.name)!
-      const delta = depois.score - antes.score
-      if (Math.abs(delta) < 0.01) continue
-      const entry: ConfrontoDetalhe = {
-        inimigo: inimigo.name,
-        scoreOriginal: antes.score,
-        scoreNovo: depois.score,
-        delta,
-        cobertoAntesPor: antes.pokemon ? { pokemon: antes.pokemon, move: antes.move } : null,
-        cobertoDepoisPor: depois.pokemon ? { pokemon: depois.pokemon, move: depois.move } : null,
-      }
-      if (delta > 0) melhora.push(entry)
-      else piora.push(entry)
-    }
-
-    melhora.sort((a, b) => b.delta - a.delta)
-    piora.sort((a, b) => a.delta - b.delta)
+    const { melhora, piora } = diffMaps(baseMap, novoMap, meta)
 
     return {
       substitui: membroOriginal.pokemon.name,
@@ -129,4 +166,54 @@ export function analisarSubstituicao(
       piora,
     }
   })
+}
+
+export function analisarTM(
+  timeAtual: MembroTime[],
+  tmMove: Move,
+  meta: Pokemon[],
+  priorities: Priorities
+): ResultadoTM[] {
+  const timeResolvido = resolverTime(timeAtual, meta, priorities)
+  const baseMap = scoreTimeDetalhado(timeResolvido, meta, priorities)
+  const baseTotal = [...baseMap.values()].reduce((a, b) => a + b.score, 0)
+
+  const resultados: ResultadoTM[] = []
+
+  for (let pi = 0; pi < timeResolvido.length; pi++) {
+    const membro = timeResolvido[pi]
+    const moveset = membro.moveset
+    const podeAprender = membro.pokemon.moveset.some(m => m.name.toLowerCase() === tmMove.name.toLowerCase())
+    if (!podeAprender) continue
+
+    for (let mi = 0; mi < moveset.length; mi++) {
+      const moveSubstituido = moveset[mi]
+      if (moveSubstituido.name === tmMove.name) continue
+
+      const novoMoveset = moveset.map((m, i) => i === mi ? tmMove : m)
+      const timeNovo: MembroTime[] = timeResolvido.map((m, i) =>
+        i === pi ? { ...m, moveset: novoMoveset } : m
+      )
+
+      const novoMap = scoreTimeDetalhado(timeNovo, meta, priorities)
+      const novoTotal = [...novoMap.values()].reduce((a, b) => a + b.score, 0)
+      const delta = novoTotal - baseTotal
+
+      if (delta === 0) continue
+
+      const { melhora, piora } = diffMaps(baseMap, novoMap, meta)
+
+      resultados.push({
+        pokemon: membro.pokemon.name,
+        moveSubstituido: moveSubstituido.name,
+        scoreBefore: baseTotal,
+        scoreAfter: novoTotal,
+        delta,
+        melhora,
+        piora,
+      })
+    }
+  }
+
+  return resultados.sort((a, b) => b.delta - a.delta)
 }
