@@ -1,6 +1,6 @@
 import { useState, useEffect, useRef } from 'react'
 import { getPriorities, getAllNames, buildPokemon } from '../engine/loader'
-import { analisarSubstituicao, analisarTM, resolverTimeMembros } from '../engine/teamAnalyzer'
+import { analisarSubstituicao, analisarTM, resolverTime } from '../engine/teamAnalyzer'
 import type { MembroTime, ResultadoSubstituicao, ResultadoTM } from '../engine/teamAnalyzer'
 import { gerarRelatorio } from '../engine/reporter'
 import {
@@ -72,7 +72,7 @@ export default function TeamAnalyzer() {
         return p
       })
 
-      const timeResolvido = resolverTimeMembros(timeBuilt, meta, priorities)
+      const timeResolvido = resolverTime(timeBuilt, meta, priorities)
       const rel = gerarRelatorio(
         timeResolvido.map(m => ({ pokemon: m.pokemon, moveset: m.moveset, custo: 0, scoreIndividual: 0 })),
         meta, priorities, 0, meta.length, 0, 0, []

@@ -53,7 +53,6 @@ export function buildMembro(m: MembroInput): MembroTime | null {
     const pokemon = buildPokemon(m.nome.trim(), m.fontes)
 
     if (m.otimizar) {
-      pokemon.optimizeMoveset()
       return { pokemon, moveset: pokemon.moveset, otimizar: true }
     }
 

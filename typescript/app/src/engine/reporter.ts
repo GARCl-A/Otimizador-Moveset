@@ -2,8 +2,8 @@ import { Pokemon } from './pokemon'
 import { Move } from './move'
 import type { Priorities } from './loader'
 import type { MemberResult } from './runner'
-import { calcularScoreCombate } from './optimizer'
-import type { CombatResult } from './optimizer'
+import { calcularScoreCombate } from './combat'
+import type { CombatResult } from './combat'
 
 const SEP = '='.repeat(50)
 

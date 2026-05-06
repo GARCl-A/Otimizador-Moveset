@@ -74,7 +74,7 @@ function scoreTimeDetalhado(time: MembroTime[], meta: Pokemon[], priorities: Pri
   return porInimigo
 }
 
-function resolverTime(time: MembroTime[], meta: Pokemon[], priorities: Priorities): MembroTime[] {
+export function resolverTime(time: MembroTime[], meta: Pokemon[], priorities: Priorities): MembroTime[] {
   const temOtimizar = time.some(m => m.otimizar)
   if (!temOtimizar) return time
 
@@ -129,10 +129,6 @@ function diffMaps(
   return { melhora, piora }
 }
 
-export function resolverTimeMembros(time: MembroTime[], meta: Pokemon[], priorities: Priorities): MembroTime[] {
-  return resolverTime(time, meta, priorities)
-}
-
 export function analisarSubstituicao(
   timeAtual: MembroTime[],
   candidato: MembroTime,
@@ -143,15 +139,16 @@ export function analisarSubstituicao(
   const baseMap = scoreTimeDetalhado(timeResolvido, meta, priorities)
   const baseTotal = [...baseMap.values()].reduce((a, b) => a + b.score, 0)
   const movesetTimeBase = timeResolvido.map(m => ({ nome: m.pokemon.name, moveset: m.moveset }))
+
+  const candidatoResolvido = resolverTime([candidato], meta, priorities)[0]
+
   return timeAtual.map((membroOriginal, idx) => {
     const timeNovo: MembroTime[] = [
-      ...timeAtual.filter((_, i) => i !== idx),
-      candidato,
+      ...timeResolvido.filter((_, i) => i !== idx),
+      candidatoResolvido,
     ]
-    const timeNovoResolvido = resolverTime(timeNovo, meta, priorities)
-    const candidatoResolvido = timeNovoResolvido[timeNovoResolvido.length - 1]
 
-    const novoMap = scoreTimeDetalhado(timeNovoResolvido, meta, priorities)
+    const novoMap = scoreTimeDetalhado(timeNovo, meta, priorities)
     const novoTotal = [...novoMap.values()].reduce((a, b) => a + b.score, 0)
     const { melhora, piora } = diffMaps(baseMap, novoMap, meta)
 

@@ -5,6 +5,11 @@ import { gerarRelatorio } from '../engine/reporter'
 import { parseList, resolveNome } from './useCandidatos'
 import type { MemberResult } from '../engine/runner'
 
+const LENDARIOS = [
+  'Mewtwo', 'Rayquaza', 'Deoxys', 'Latios', 'Palkia', 'Cresselia',
+  'Victini', 'Hoopa', 'Tapu Fini', 'Buzzwole', 'Eternatus', 'Victini'
+]
+
 export interface Config {
   algoritmo: 'simulated-annealing' | 'genetic'
   fontes: string[]
@@ -12,6 +17,7 @@ export interface Config {
   budget: number
   whitelist: string
   banlist: string
+  banirLendarios: boolean
   typeFilter: string
   timeFixoInput: string
   gruposExclusao: string[]
@@ -38,11 +44,12 @@ export interface ResultadoOtimizacao {
 
 const CONFIG_INICIAL: Config = {
   algoritmo: 'simulated-annealing',
-  fontes: ['Level'],
+  fontes: ['Level','Egg'],
   tamanhoTime: 6,
   budget: 10,
   whitelist: '',
-  banlist: 'Rayquaza, Eternatus, Tapu Fini',
+  banlist: '',
+  banirLendarios: false,
   typeFilter: '',
   timeFixoInput: '',
   gruposExclusao: [],
@@ -50,8 +57,8 @@ const CONFIG_INICIAL: Config = {
   saCooling: 0.9995,
   saIteracoes: 10000,
   gaPopulacao: 100,
-  gaGeracoes: 50,
-  gaMutacao: 0.2,
+  gaGeracoes: 80,
+  gaMutacao: 0.05,
 }
 
 export function useOtimizador(todosNomes: string[]) {
@@ -74,6 +81,11 @@ export function useOtimizador(todosNomes: string[]) {
     try {
       const priorities = getPriorities()
       const banlistArr = parseList(config.banlist)
+      if (config.banirLendarios) {
+        for (const nome of LENDARIOS) {
+          if (!banlistArr.includes(nome)) banlistArr.push(nome)
+        }
+      }
       const typeFilterArr = parseList(config.typeFilter)
 
       const custos: Record<string, number> = {}
@@ -103,7 +115,6 @@ export function useOtimizador(todosNomes: string[]) {
         priorities,
         {
           algoritmo: config.algoritmo,
-          fontes: config.fontes,
           tamanhoTime: config.tamanhoTime,
           budget: config.budget,
           saTemperatura: config.saTemperatura,

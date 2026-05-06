@@ -7,7 +7,6 @@ import { otimizarTimeGA } from './geneticOptimizer'
 
 export interface RunnerConfig {
   algoritmo: 'simulated-annealing' | 'genetic'
-  fontes: string[]
   tamanhoTime: number
   budget: number
   saTemperatura: number
@@ -68,11 +67,9 @@ export async function rodarOtimizador(
 
   if (algoritmo === 'genetic') {
     onLog('Iniciando otimização com Algoritmo Genético...')
-    
-    const candidatosComFixos = [...candidatos, ...timeFixo.filter(p => !candidatos.some(c => c.name === p.name))]
-    
+
     const result = otimizarTimeGA(
-      candidatosComFixos,
+      todosParaCache,
       metaInimigos,
       custos,
       priorities,
@@ -174,9 +171,7 @@ export async function rodarOtimizador(
     const custoEscolhido = custos[melhorPokemon.name] ?? 0
     budgetRestante -= custoEscolhido
     timeAtual.push(melhorPokemon)
-    melhorMovesets.forEach((ms, i) => { movesetsAtual[i] = ms })
-    while (movesetsAtual.length < melhorMovesets.length) movesetsAtual.push([])
-    movesetsAtual.length = melhorMovesets.length
+    movesetsAtual.splice(0, movesetsAtual.length, ...melhorMovesets)
     scoreAtual = melhorScore
 
     if (scoreAtual >= scoreMaximo) {
