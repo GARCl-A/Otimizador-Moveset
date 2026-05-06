@@ -3,18 +3,23 @@ import { Move } from './move'
 import type { Priorities } from './loader'
 import { construirCaches, otimizar, otimizarTimeSA, calcularScoreTime } from './optimizer'
 import type { WarmStart, ProgressCallback } from './optimizer'
+import { otimizarTimeGA } from './geneticOptimizer'
 
 export interface RunnerConfig {
+  algoritmo: 'simulated-annealing' | 'genetic'
   fontes: string[]
   tamanhoTime: number
   budget: number
   saTemperatura: number
   saCooling: number
   saIteracoes: number
+  gaPopulacao: number
+  gaGeracoes: number
+  gaMutacao: number
   banlist: string[]
   typeFilter: string[]
   gruposExclusao: string[][]
-  timeFixo: Pokemon[]  // já entram no time, otimizador preenche os slots restantes
+  timeFixo: Pokemon[]
 }
 
 export interface MemberResult {
@@ -44,12 +49,11 @@ export async function rodarOtimizador(
   config: RunnerConfig,
   callbacks: RunnerCallbacks = {}
 ): Promise<RunnerResult> {
-  const { tamanhoTime, budget, saTemperatura, saCooling, saIteracoes, gruposExclusao, timeFixo } = config
+  const { algoritmo, tamanhoTime, budget, saTemperatura, saCooling, saIteracoes, gaPopulacao, gaGeracoes, gaMutacao, gruposExclusao, timeFixo } = config
   const { onLog = () => {}, onProgress } = callbacks
-  const scoreMaximo = metaInimigos.length * 100.0
+  const scoreMaximo = metaInimigos.length
 
   for (const p of candidatos) p.optimizeMoveset()
-  // time fixo também precisa de optimize
   for (const p of timeFixo) p.optimizeMoveset()
 
   const todosParaCache = [...candidatos, ...timeFixo.filter(p => !candidatos.some(c => c.name === p.name))]
@@ -62,7 +66,44 @@ export async function rodarOtimizador(
     scoresIndividuais[pokemon.name] = { moveset, score }
   }
 
-  // Inicializa time com os fixos, descontando budget
+  if (algoritmo === 'genetic') {
+    onLog('Iniciando otimização com Algoritmo Genético...')
+    
+    const candidatosComFixos = [...candidatos, ...timeFixo.filter(p => !candidatos.some(c => c.name === p.name))]
+    
+    const result = otimizarTimeGA(
+      candidatosComFixos,
+      metaInimigos,
+      custos,
+      priorities,
+      tamanhoTime,
+      budget,
+      gruposExclusao,
+      timeFixo,
+      {
+        populationSize: gaPopulacao,
+        generations: gaGeracoes,
+        mutationRate: gaMutacao,
+        warmStart: scoresIndividuais,
+        onProgress,
+      }
+    )
+
+    const custoTotal = result.time.reduce((acc, p) => acc + (custos[p.name] ?? 0), 0)
+
+    return {
+      time: result.time.map((p, i) => ({
+        pokemon: p,
+        moveset: result.movesets[i],
+        custo: custos[p.name] ?? 0,
+        scoreIndividual: scoresIndividuais[p.name]?.score ?? 0,
+      })),
+      score: result.score,
+      scoreMaximo,
+      custoTotal,
+    }
+  }
+
   const timeAtual: Pokemon[] = [...timeFixo]
   const movesetsAtual: Move[][] = timeFixo.map(p => scoresIndividuais[p.name]?.moveset ?? p.moveset.slice(0, 4))
   let budgetRestante = timeFixo.reduce((acc, p) => acc - (custos[p.name] ?? 0), budget)

@@ -15,6 +15,8 @@ export default function ConfigPanel({ config, onChange }: Props) {
     onChange('fontes', next)
   }
 
+  const isGA = config.algoritmo === 'genetic'
+
   function setGrupo(i: number, value: string) {
     onChange('gruposExclusao', config.gruposExclusao.map((g, idx) => idx === i ? value : g))
   }
@@ -31,6 +33,15 @@ export default function ConfigPanel({ config, onChange }: Props) {
     <>
       <table style={{ borderCollapse: 'collapse', width: '100%' }}>
         <tbody>
+          <tr>
+            <td style={tdLabel}>Algoritmo</td>
+            <td style={tdValue}>
+              <select value={config.algoritmo} onChange={e => onChange('algoritmo', e.target.value as 'simulated-annealing' | 'genetic')} style={inputStyle}>
+                <option value="simulated-annealing">Simulated Annealing</option>
+                <option value="genetic">Genetic Algorithm</option>
+              </select>
+            </td>
+          </tr>
           <tr>
             <td style={tdLabel}>Fontes</td>
             <td style={tdValue}>
@@ -77,24 +88,50 @@ export default function ConfigPanel({ config, onChange }: Props) {
               <input type="text" value={config.timeFixoInput} onChange={e => onChange('timeFixoInput', e.target.value)} placeholder="Gardevoir, Metagross, ..." style={{ ...inputStyle, width: '100%' }} />
             </td>
           </tr>
-          <tr>
-            <td style={tdLabel}>SA Temperatura</td>
-            <td style={tdValue}>
-              <input type="number" value={config.saTemperatura} step={10} onChange={e => onChange('saTemperatura', +e.target.value)} style={inputStyle} />
-            </td>
-          </tr>
-          <tr>
-            <td style={tdLabel}>SA Cooling</td>
-            <td style={tdValue}>
-              <input type="number" value={config.saCooling} step={0.0001} min={0} max={1} onChange={e => onChange('saCooling', +e.target.value)} style={inputStyle} />
-            </td>
-          </tr>
-          <tr>
-            <td style={tdLabel}>SA Iterações</td>
-            <td style={tdValue}>
-              <input type="number" value={config.saIteracoes} step={1000} min={1000} onChange={e => onChange('saIteracoes', +e.target.value)} style={inputStyle} />
-            </td>
-          </tr>
+          {!isGA && (
+            <>
+              <tr>
+                <td style={tdLabel}>SA Temperatura</td>
+                <td style={tdValue}>
+                  <input type="number" value={config.saTemperatura} step={10} onChange={e => onChange('saTemperatura', +e.target.value)} style={inputStyle} />
+                </td>
+              </tr>
+              <tr>
+                <td style={tdLabel}>SA Cooling</td>
+                <td style={tdValue}>
+                  <input type="number" value={config.saCooling} step={0.0001} min={0} max={1} onChange={e => onChange('saCooling', +e.target.value)} style={inputStyle} />
+                </td>
+              </tr>
+              <tr>
+                <td style={tdLabel}>SA Iterações</td>
+                <td style={tdValue}>
+                  <input type="number" value={config.saIteracoes} step={1000} min={1000} onChange={e => onChange('saIteracoes', +e.target.value)} style={inputStyle} />
+                </td>
+              </tr>
+            </>
+          )}
+          {isGA && (
+            <>
+              <tr>
+                <td style={tdLabel}>GA População</td>
+                <td style={tdValue}>
+                  <input type="number" value={config.gaPopulacao} step={10} min={10} onChange={e => onChange('gaPopulacao', +e.target.value)} style={inputStyle} />
+                </td>
+              </tr>
+              <tr>
+                <td style={tdLabel}>GA Gerações</td>
+                <td style={tdValue}>
+                  <input type="number" value={config.gaGeracoes} step={10} min={10} onChange={e => onChange('gaGeracoes', +e.target.value)} style={inputStyle} />
+                </td>
+              </tr>
+              <tr>
+                <td style={tdLabel}>GA Taxa Mutação</td>
+                <td style={tdValue}>
+                  <input type="number" value={config.gaMutacao} step={0.05} min={0} max={1} onChange={e => onChange('gaMutacao', +e.target.value)} style={inputStyle} />
+                </td>
+              </tr>
+            </>
+          )}
         </tbody>
       </table>
 

@@ -3,13 +3,21 @@ import { Move } from './move'
 import type { Priorities } from './loader'
 import type { MemberResult } from './runner'
 import { calcularScoreCombate } from './optimizer'
+import type { CombatResult } from './optimizer'
+
+const SEP = '='.repeat(50)
 
 interface CoberturaEntry {
   pokemon: Pokemon
   move: Move
-  ev: number
-  moveInimigoAntes: Move | null
-  danoInimigoAntes: number
+  combat: CombatResult
+  inimigoNome: string
+}
+
+interface AmeacaEntry {
+  inimigo: Pokemon
+  combat: CombatResult
+  melhorPokemon: Pokemon
 }
 
 export function gerarRelatorio(
@@ -20,109 +28,130 @@ export function gerarRelatorio(
   scoreMaximo: number,
   budget: number,
   custoTotal: number,
-  fontes: string[]
+  _fontes: string[]
 ): string {
   const pokemons = time.map(m => m.pokemon)
   const movesets = time.map(m => m.moveset)
 
-  // Cobertura: para cada inimigo, qual pokemon+move vence
   const cobertura = new Map<string, CoberturaEntry>()
   for (const inimigo of meta) {
-    let melhorEv = 0.0
+    let melhorRank = -Infinity
     let melhorPokemon: Pokemon | null = null
     let melhorMove: Move | null = null
+    let melhorCombat: CombatResult | null = null
 
     for (let j = 0; j < pokemons.length; j++) {
       for (const move of movesets[j]) {
-        const ev = calcularScoreCombate(pokemons[j], inimigo, move, priorities)
-        if (ev > melhorEv) {
-          melhorEv = ev
+        const combat = calcularScoreCombate(pokemons[j], inimigo, move, priorities)
+        const rank = combat.vencedor === 'eu'
+          ? combat.score + 1000
+          : combat.ttkInimigo === Infinity ? 500
+          : combat.ttkMeu === Infinity ? -combat.ttkInimigo
+          : combat.ttkInimigo - combat.ttkMeu
+        if (rank > melhorRank) {
+          melhorRank = rank
           melhorPokemon = pokemons[j]
           melhorMove = move
+          melhorCombat = combat
         }
       }
     }
 
-    let moveInimigoAntes: Move | null = null
-    let danoInimigoAntes = 0.0
-    if (melhorPokemon && melhorMove) {
-      const prioMeuMove = priorities[melhorMove.name] ?? 0
-      const movesAntes = inimigo.moveset.filter(m => {
-        const prioIni = priorities[m.name] ?? 0
-        return prioIni > prioMeuMove || (prioIni === prioMeuMove && inimigo.speed >= melhorPokemon!.speed)
-      })
-      if (movesAntes.length) {
-        moveInimigoAntes = movesAntes.reduce((best, m) =>
-          inimigo.calcularDanoEsperado(m, melhorPokemon!) > inimigo.calcularDanoEsperado(best, melhorPokemon!) ? m : best
-        )
-        danoInimigoAntes = inimigo.calcularDanoEsperado(moveInimigoAntes, melhorPokemon)
-      }
-    }
-
-    cobertura.set(inimigo.name, { pokemon: melhorPokemon!, move: melhorMove!, ev: melhorEv, moveInimigoAntes, danoInimigoAntes })
+    cobertura.set(inimigo.name, { pokemon: melhorPokemon!, move: melhorMove!, combat: melhorCombat!, inimigoNome: inimigo.name })
   }
 
-  // Contribuição por move
-  const contribuicao = new Map<string, number>()
+  // KOs por move e por pokemon
+  const kosPorMove = new Map<string, number>()
+  const kosPorPoke = new Map<string, number>()
+  const vitoriasDeInimigo = new Map<string, CoberturaEntry[]>()
+
   for (const [, entry] of cobertura) {
-    if (!entry.pokemon) continue
-    const chave = `${entry.pokemon.name}|${entry.move.name}`
-    contribuicao.set(chave, (contribuicao.get(chave) ?? 0) + entry.ev)
+    if (entry.combat.vencedor !== 'eu') continue
+    const chaveMove = `${entry.pokemon.name}|${entry.move.name}`
+    kosPorMove.set(chaveMove, (kosPorMove.get(chaveMove) ?? 0) + 1)
+    kosPorPoke.set(entry.pokemon.name, (kosPorPoke.get(entry.pokemon.name) ?? 0) + 1)
+    const lista = vitoriasDeInimigo.get(entry.pokemon.name) ?? []
+    lista.push(entry)
+    vitoriasDeInimigo.set(entry.pokemon.name, lista)
   }
+
+  const vitorias = [...cobertura.values()].filter(e => e.combat.vencedor === 'eu').length
+  const ameacas: AmeacaEntry[] = []
+  for (const [nomeInimigo, entry] of cobertura) {
+    if (entry.combat.vencedor === 'eu') continue
+    const inimigo = meta.find(m => m.name === nomeInimigo)!
+    ameacas.push({ inimigo, combat: entry.combat, melhorPokemon: entry.pokemon })
+  }
+
+  const mvpNome = [...kosPorPoke.entries()].sort((a, b) => b[1] - a[1])[0]
+  const coberturaPct = scoreMaximo > 0 ? (vitorias / meta.length) * 100 : 0
 
   const linhas: string[] = []
 
-  // Time resumo
-  linhas.push('='.repeat(50))
-  linhas.push('TIME SELECIONADO')
-  linhas.push('='.repeat(50))
-  for (const m of time) {
-    linhas.push(`  ${m.pokemon.name.padEnd(15)} custo: ${String(m.custo).padStart(2)}  score individual: ${m.scoreIndividual.toFixed(2)}`)
+  // ── RESUMO ──────────────────────────────────────────────────────────────────
+  linhas.push(SEP)
+  linhas.push(`RESUMO DO TIME (Score: ${score.toFixed(2)} | Cobertura: ${coberturaPct.toFixed(1)}%)`)
+  linhas.push(SEP)
+  linhas.push(`Custos: ${custoTotal}/${budget} Budget`)
+  linhas.push(`Vitórias: ${vitorias} | Ameaças: ${ameacas.length}`)
+  if (mvpNome) linhas.push(`MVP: ${mvpNome[0]} (${mvpNome[1]} abates)`)
+
+  // ── AMEAÇAS ─────────────────────────────────────────────────────────────────
+  linhas.push('')
+  linhas.push(SEP)
+  linhas.push(`[!] AMEAÇAS SEM COBERTURA (${ameacas.length})`)
+  linhas.push(SEP)
+
+  if (ameacas.length === 0) {
+    linhas.push('  Nenhuma ameaça! Cobertura total.')
+  } else {
+    for (const { inimigo, combat } of ameacas) {
+      const moveIni = combat.melhorMoveInimigo?.name ?? '?'
+      const ttkIni = combat.ttkInimigo === Infinity ? '∞' : `${combat.ttkInimigo}`
+      linhas.push(`- ${inimigo.name.padEnd(15)} | Derrota nossa melhor opção em ${ttkIni}T com ${moveIni}`)
+    }
   }
 
-  // Movesets
+  // ── PERFIL TÁTICO ────────────────────────────────────────────────────────────
   linhas.push('')
-  linhas.push('='.repeat(50))
-  linhas.push('MOVESETS DO TIME')
-  linhas.push('='.repeat(50))
+  linhas.push(SEP)
+  linhas.push('PERFIL TÁTICO E COBERTURA')
+  linhas.push(SEP)
+
   for (let i = 0; i < time.length; i++) {
-    linhas.push(`\n${pokemons[i].name} (custo ${time[i].custo}):`)
+    const membro = time[i]
+    const poke = pokemons[i]
+    const kos = kosPorPoke.get(poke.name) ?? 0
+    const alvos = vitoriasDeInimigo.get(poke.name) ?? []
+
+    linhas.push('')
+    linhas.push(`🟢 ${poke.name.toUpperCase()} [Custo: ${membro.custo} | KOs: ${kos}]`)
+    linhas.push('  Moves:')
+
     for (const move of movesets[i]) {
-      const contrib = contribuicao.get(`${pokemons[i].name}|${move.name}`) ?? 0
+      const chave = `${poke.name}|${move.name}`
+      const k = kosPorMove.get(chave) ?? 0
       const prio = priorities[move.name] ?? 0
       const tags = [...(prio !== 0 ? [`P${prio}`] : []), ...move.tags]
-      const tagStr = tags.length ? `(${tags.join(',')})` : ''
-      const nomeComTag = `${move.name}${tagStr}`.padEnd(25)
-      linhas.push(`  ${nomeComTag} (${move.type.padEnd(10)} ${move.category.padEnd(10)}) contrib: ${contrib.toFixed(2)}`)
+      const tagStr = tags.length ? ` (${tags.join(',')})` : ''
+      linhas.push(`  - ${move.name}${tagStr} (${k} KOs)`)
     }
-  }
 
-  // Cobertura por alvo
-  linhas.push('')
-  linhas.push('='.repeat(50))
-  linhas.push('COBERTURA POR ALVO')
-  linhas.push('='.repeat(50))
-  for (const inimigo of meta) {
-    const entry = cobertura.get(inimigo.name)!
-    const tiposInimigo = inimigo.type2 ? `${inimigo.type1}/${inimigo.type2}` : inimigo.type1
-    if (!entry?.pokemon) {
-      linhas.push(`  ${inimigo.name.padEnd(15)} (${tiposInimigo.padEnd(15)}) -> [sem cobertura]  0.00%`)
-      continue
-    }
-    const prio = priorities[entry.move.name] ?? 0
-    const prioTag = prio !== 0 ? `[P${prio}]` : ''
-    let ordem: string
-    if (entry.moveInimigoAntes && entry.danoInimigoAntes > 0) {
-      const prioIni = priorities[entry.moveInimigoAntes.name] ?? 0
-      const prioIniTag = prioIni !== 0 ? `(P${prioIni})` : ''
-      ordem = `2º, tomou ${entry.moveInimigoAntes.name}${prioIniTag} ${entry.danoInimigoAntes.toFixed(1)}%`
+    linhas.push('')
+    linhas.push('  Alvos Derrotados:')
+
+    if (alvos.length === 0) {
+      linhas.push('  (nenhum)')
     } else {
-      ordem = '1º'
+      alvos.sort((a, b) => b.combat.vidaRestanteVencedor - a.combat.vidaRestanteVencedor)
+      for (const entry of alvos) {
+        const inimigoNome = entry.inimigoNome
+        const c = entry.combat
+        const ttk = c.ttkMeu === Infinity ? '∞' : `${c.ttkMeu}`
+        const hp = c.vidaRestanteVencedor.toFixed(0).padStart(3)
+        linhas.push(`  - ${inimigoNome.padEnd(16)} (${entry.move.name.padEnd(16)}) -> KO em ${ttk}T | HP Restante: ${hp}%`)
+      }
     }
-    linhas.push(
-      `  ${inimigo.name.padEnd(15)} (${tiposInimigo.padEnd(15)}) ` +
-      `-> ${entry.pokemon.name.padEnd(12)} usa ${entry.move.name.padEnd(20)}${prioTag} ${entry.ev.toFixed(2).padStart(6)}%  [${ordem}]`
-    )
   }
 
   return linhas.join('\n')

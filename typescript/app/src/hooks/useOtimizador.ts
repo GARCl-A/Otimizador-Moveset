@@ -6,6 +6,7 @@ import { parseList, resolveNome } from './useCandidatos'
 import type { MemberResult } from '../engine/runner'
 
 export interface Config {
+  algoritmo: 'simulated-annealing' | 'genetic'
   fontes: string[]
   tamanhoTime: number
   budget: number
@@ -17,6 +18,9 @@ export interface Config {
   saTemperatura: number
   saCooling: number
   saIteracoes: number
+  gaPopulacao: number
+  gaGeracoes: number
+  gaMutacao: number
 }
 
 export interface ScoreInfo {
@@ -33,6 +37,7 @@ export interface ResultadoOtimizacao {
 }
 
 const CONFIG_INICIAL: Config = {
+  algoritmo: 'simulated-annealing',
   fontes: ['Level'],
   tamanhoTime: 6,
   budget: 10,
@@ -44,6 +49,9 @@ const CONFIG_INICIAL: Config = {
   saTemperatura: 200.0,
   saCooling: 0.9995,
   saIteracoes: 10000,
+  gaPopulacao: 100,
+  gaGeracoes: 50,
+  gaMutacao: 0.2,
 }
 
 export function useOtimizador(todosNomes: string[]) {
@@ -94,12 +102,16 @@ export function useOtimizador(todosNomes: string[]) {
         custos,
         priorities,
         {
+          algoritmo: config.algoritmo,
           fontes: config.fontes,
           tamanhoTime: config.tamanhoTime,
           budget: config.budget,
           saTemperatura: config.saTemperatura,
           saCooling: config.saCooling,
           saIteracoes: config.saIteracoes,
+          gaPopulacao: config.gaPopulacao,
+          gaGeracoes: config.gaGeracoes,
+          gaMutacao: config.gaMutacao,
           banlist: banlistArr,
           typeFilter: typeFilterArr,
           gruposExclusao: config.gruposExclusao.map(g => parseList(g)),

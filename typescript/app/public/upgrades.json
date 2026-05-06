@@ -185,5 +185,36 @@
         "accuracy": 90
       }
     ]
+  },
+  "Victini": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Luster Purge",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 95,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Starmie": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Bouncy Bubble",
+        "type": "Water",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 100
+      },
+      {
+        "name": "Moonblast",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100
+      }
+    ]
   }
 }

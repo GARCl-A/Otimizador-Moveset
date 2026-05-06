@@ -32,7 +32,6 @@ export function construirCaches(time: Pokemon[], meta: Pokemon[], priorities: Pr
   const moveIdx = time.map(p => new Map(p.moveset.map((m, j) => [m.name, j])))
   const moveLists = time.map(p => [...p.moveset])
 
-  // danoArray[i][j][k] = dano do poke i, move j, contra inimigo k
   const danoArray = new Float32Array(P * Mmax * I)
   for (let i = 0; i < P; i++) {
     for (let j = 0; j < time[i].moveset.length; j++) {
@@ -42,45 +41,62 @@ export function construirCaches(time: Pokemon[], meta: Pokemon[], priorities: Pr
     }
   }
 
-  // speedPoke[i], speedInimigo[k]
   const speedPoke = time.map(p => p.speed)
   const speedInimigo = meta.map(e => e.speed)
 
-  // prioMove[i][j]
   const prioMove: number[][] = time.map(p => p.moveset.map(m => priorities[m.name] ?? 0))
 
-  // bulk_contextual[i][j][k]: maior dano do inimigo k que age antes do move j do poke i
-  const bulkContextual = new Float32Array(P * Mmax * I)
+  const danoEfetivo = new Float32Array(P * Mmax * I)
   for (let k = 0; k < I; k++) {
     const inimigo = meta[k]
     const priosInimigo = inimigo.moveset.map(m => priorities[m.name] ?? 0)
     const speedI = speedInimigo[k]
 
+    let melhorDanoInimigo = 0.0
+    for (let mi = 0; mi < inimigo.moveset.length; mi++) {
+      const d = inimigo.calcularDanoEsperado(inimigo.moveset[mi], time[0])
+      if (d > melhorDanoInimigo) melhorDanoInimigo = d
+    }
+
     for (let i = 0; i < P; i++) {
       const speedP = speedPoke[i]
+      
+      let maxDanoInimigoContraMim = 0.0
+      for (let mi = 0; mi < inimigo.moveset.length; mi++) {
+        const d = inimigo.calcularDanoEsperado(inimigo.moveset[mi], time[i])
+        if (d > maxDanoInimigoContraMim) maxDanoInimigoContraMim = d
+      }
+
       for (let j = 0; j < time[i].moveset.length; j++) {
+        const danoMeu = danoArray[i * Mmax * I + j * I + k]
         const prioMeuMove = prioMove[i][j]
-        let maxDano = 0.0
-        for (let mi = 0; mi < inimigo.moveset.length; mi++) {
-          const prioIni = priosInimigo[mi]
-          const ageAntes =
-            prioIni > prioMeuMove ? true :
-            prioMeuMove > prioIni ? false :
-            speedI >= speedP
-          if (ageAntes) {
-            const d = inimigo.calcularDanoEsperado(inimigo.moveset[mi], time[i])
-            if (d > maxDano) maxDano = d
-          }
+
+        if (danoMeu <= 0) {
+          danoEfetivo[i * Mmax * I + j * I + k] = 0.0
+          continue
         }
-        bulkContextual[i * Mmax * I + j * I + k] = maxDano
+
+        const ttkMeu = Math.ceil(100.0 / danoMeu)
+        const ttkInimigo = maxDanoInimigoContraMim > 0 ? Math.ceil(100.0 / maxDanoInimigoContraMim) : Infinity
+
+        let prioMaxInimigo = -Infinity
+        for (let mi = 0; mi < inimigo.moveset.length; mi++) {
+          const p = priosInimigo[mi]
+          if (p > prioMaxInimigo) prioMaxInimigo = p
+        }
+
+        const euAtaqueiPrimeiro =
+          prioMeuMove > prioMaxInimigo ? true :
+          prioMaxInimigo > prioMeuMove ? false :
+          speedP > speedI
+
+        const euVenco =
+          ttkMeu < ttkInimigo ||
+          (ttkMeu === ttkInimigo && euAtaqueiPrimeiro)
+
+        danoEfetivo[i * Mmax * I + j * I + k] = euVenco ? danoMeu : 0.0
       }
     }
-  }
-
-  // danoEfetivo: zera onde inimigo mata antes
-  const danoEfetivo = new Float32Array(P * Mmax * I)
-  for (let idx = 0; idx < danoEfetivo.length; idx++) {
-    danoEfetivo[idx] = bulkContextual[idx] >= 100.0 ? 0.0 : danoArray[idx]
   }
 
   return { danoEfetivo, pokeIdx, moveIdx, moveLists, Mmax, P, I }
@@ -91,23 +107,28 @@ export function construirCaches(time: Pokemon[], meta: Pokemon[], priorities: Pr
 // ---------------------------------------------------------------------------
 export function calcularScoreTime(pokeIndices: number[], estadoIndices: number[][], arrays: Arrays): number {
   const { danoEfetivo, Mmax, I } = arrays
-  // Para cada inimigo k, pega o max de dano entre todos os moves ativos de todos os pokes
-  const maxPorInimigo = new Float32Array(I)
+  let vitorias = 0
 
-  for (let pi = 0; pi < pokeIndices.length; pi++) {
-    const iPoke = pokeIndices[pi]
-    for (const j of estadoIndices[pi]) {
-      const base = iPoke * Mmax * I + j * I
-      for (let k = 0; k < I; k++) {
-        const d = danoEfetivo[base + k]
-        if (d > maxPorInimigo[k]) maxPorInimigo[k] = d
+  for (let k = 0; k < I; k++) {
+    let venceuInimigo = false
+
+    for (let pi = 0; pi < pokeIndices.length; pi++) {
+      const iPoke = pokeIndices[pi]
+      for (const j of estadoIndices[pi]) {
+        const dano = danoEfetivo[iPoke * Mmax * I + j * I + k]
+        
+        if (dano > 0) {
+          venceuInimigo = true
+          break
+        }
       }
+      if (venceuInimigo) break
     }
+
+    if (venceuInimigo) vitorias++
   }
 
-  let total = 0.0
-  for (let k = 0; k < I; k++) total += maxPorInimigo[k]
-  return total
+  return vitorias
 }
 
 // ---------------------------------------------------------------------------
@@ -239,37 +260,72 @@ export function otimizarTimeSA(
 }
 
 // ---------------------------------------------------------------------------
-// calcularScoreCombate — equivalente ao calcular_score_combate (sem cache)
+// calcularScoreCombate — TTK-based combat evaluation
 // ---------------------------------------------------------------------------
+export interface CombatResult {
+  score: number
+  vencedor: 'eu' | 'inimigo' | 'empate'
+  moveDecisivo: Move
+  melhorMoveInimigo: Move | null
+  euAtaqueiPrimeiro: boolean
+  vidaRestanteVencedor: number
+  ttkMeu: number
+  ttkInimigo: number
+  danoMeu: number
+  danoInimigo: number
+}
+
 export function calcularScoreCombate(
   meuPoke: Pokemon,
   inimigo: Pokemon,
   meuAtaque: Move,
   priorities: Priorities
-): number {
+): CombatResult {
   const danoMeu = meuPoke.calcularDanoEsperado(meuAtaque, inimigo)
 
-  const prioMeu = priorities[meuAtaque.name] ?? 0
-  const prioInimigo = Math.max(0, ...inimigo.moveset.map(m => priorities[m.name] ?? 0))
-
-  let inimigoAgePrimeiro: boolean
-  if (prioMeu > prioInimigo) return danoMeu
-  else if (prioInimigo > prioMeu) inimigoAgePrimeiro = true
-  else inimigoAgePrimeiro = inimigo.speed >= meuPoke.speed
-
-  if (!inimigoAgePrimeiro) return danoMeu
-
-  const maiorDanoInimigo = Math.max(
-    0,
-    ...inimigo.moveset
-      .filter(m => {
-        const prioIni = priorities[m.name] ?? 0
-        return prioIni > prioMeu || (prioIni === prioMeu && inimigo.speed >= meuPoke.speed)
-      })
-      .map(m => inimigo.calcularDanoEsperado(m, meuPoke))
+  const melhorMoveInimigo = inimigo.moveset.reduce<Move>(
+    (best, m) => inimigo.calcularDanoEsperado(m, meuPoke) >= inimigo.calcularDanoEsperado(best, meuPoke) ? m : best,
+    inimigo.moveset[0]
   )
+  const danoInimigo = melhorMoveInimigo ? inimigo.calcularDanoEsperado(melhorMoveInimigo, meuPoke) : 0
 
-  return maiorDanoInimigo >= 100.0 ? 0.0 : danoMeu
+  const ttkMeu = danoMeu > 0 ? Math.ceil(100 / danoMeu) : Infinity
+  const ttkInimigo = danoInimigo > 0 ? Math.ceil(100 / danoInimigo) : Infinity
+
+  const prioMeu = priorities[meuAtaque.name] ?? 0
+  const prioInimigo = melhorMoveInimigo ? (priorities[melhorMoveInimigo.name] ?? 0) : 0
+  const euAtaqueiPrimeiro =
+    prioMeu > prioInimigo ? true :
+    prioInimigo > prioMeu ? false :
+    meuPoke.speed > inimigo.speed
+
+  const euVenco =
+    ttkMeu < ttkInimigo ||
+    (ttkMeu === ttkInimigo && euAtaqueiPrimeiro)
+
+  const vencedor = ttkMeu === Infinity && ttkInimigo === Infinity
+    ? 'empate'
+    : euVenco ? 'eu' : 'inimigo'
+
+  const hitsRecebidos = euVenco ? ttkMeu - 1 + (euAtaqueiPrimeiro ? 0 : 1) : ttkInimigo
+  const vidaRestanteVencedor = euVenco
+    ? Math.max(0, 100 - hitsRecebidos * danoInimigo)
+    : Math.max(0, 100 - hitsRecebidos * danoMeu)
+
+  const score = euVenco ? vidaRestanteVencedor : 0
+
+  return {
+    score,
+    vencedor,
+    moveDecisivo: euVenco ? meuAtaque : melhorMoveInimigo,
+    melhorMoveInimigo: melhorMoveInimigo ?? null,
+    euAtaqueiPrimeiro,
+    vidaRestanteVencedor,
+    ttkMeu,
+    ttkInimigo,
+    danoMeu,
+    danoInimigo,
+  }
 }
 
 // ---------------------------------------------------------------------------

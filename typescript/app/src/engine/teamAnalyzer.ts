@@ -37,7 +37,7 @@ function scoreTimeDetalhado(time: MembroTime[], meta: Pokemon[], priorities: Pri
     let melhor: CoberturaEntry = { score: 0, pokemon: '', move: '' }
     for (const { pokemon, moveset } of time) {
       for (const move of moveset) {
-        const s = calcularScoreCombate(pokemon, inimigo, move, priorities)
+        const s = calcularScoreCombate(pokemon, inimigo, move, priorities).score
         if (s > melhor.score) melhor = { score: s, pokemon: pokemon.name, move: move.name }
       }
     }
