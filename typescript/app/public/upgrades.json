@@ -306,5 +306,31 @@
         "accuracy": 100
       }
     ]
+  },
+  "Delphox": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Twin Beam",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 40,
+        "accuracy": 100
+      },
+      {
+        "name": "Fiery Dance",
+        "type": "Fire",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Thunderbolt",
+        "type": "Electric",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100
+      }
+    ]
   }
 }

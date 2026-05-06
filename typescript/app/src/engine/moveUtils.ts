@@ -51,6 +51,7 @@ const MULTI_HIT: Record<string, MultiHitConfig> = {
   'Gear Grind':      { type: 'fixed', min: 2, max: 2 },
   'Twineedle':       { type: 'fixed', min: 2, max: 2 },
   'Dual Chop':       { type: 'fixed', min: 2, max: 2 },
+  'Twin Beam':        { type: 'fixed', min: 2, max: 2 },
 }
 
 // Progressão geométrica: Retorna a média de hits antes de errar
