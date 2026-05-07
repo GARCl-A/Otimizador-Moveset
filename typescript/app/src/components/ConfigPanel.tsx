@@ -74,10 +74,20 @@ export default function ConfigPanel({ config, onChange }: Props) {
             <td style={tdLabel}>Banlist</td>
             <td style={tdValue}>
               <input type="text" value={config.banlist} onChange={e => onChange('banlist', e.target.value)} style={{ ...inputStyle, width: '100%' }} />
-              <label style={{ fontSize: 11, marginTop: 3, display: 'flex', alignItems: 'center', gap: 4, cursor: 'pointer' }}>
-                <input type="checkbox" checked={config.banirLendarios} onChange={e => onChange('banirLendarios', e.target.checked)} />
-                Banir lendários
-              </label>
+              <div style={{ fontSize: 11, marginTop: 3, display: 'flex', flexDirection: 'column', gap: 2 }}>
+                <label style={{ display: 'flex', alignItems: 'center', gap: 4, cursor: 'pointer' }}>
+                  <input type="checkbox" checked={config.banirLendarios} onChange={e => onChange('banirLendarios', e.target.checked)} />
+                  Banir lendários
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: 4, cursor: 'pointer' }}>
+                  <input type="checkbox" checked={config.banirRecoil} onChange={e => onChange('banirRecoil', e.target.checked)} />
+                  Banir moves com recoil
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: 4, cursor: 'pointer' }}>
+                  <input type="checkbox" checked={config.banirLock} onChange={e => onChange('banirLock', e.target.checked)} />
+                  Banir moves com lock
+                </label>
+              </div>
             </td>
           </tr>
           <tr>

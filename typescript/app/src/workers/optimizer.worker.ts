@@ -12,7 +12,7 @@ self.onmessage = async (event: MessageEvent<WorkerInput>) => {
 
   const candidatos = candidatosNomes.map(nome => buildPokemon(nome, fontes))
   const metaInimigos = todosNomes.map(nome => buildPokemon(nome, ['Level', 'TM']))
-  for (const p of metaInimigos) p.optimizeMoveset()
+  for (const p of metaInimigos) p.optimizeMoveset(config.banirRecoil, config.banirLock)
   const timeFixo = timeFixoNomes.map(nome => buildPokemon(nome, fontes))
 
   let etapaAtual = 0

@@ -1,0 +1,76 @@
+Name,Type,Category,Power,Accuracy,Source
+Agility,Psychic,Status,0,0,"Level, TM"
+Assurance,Dark,Physical,60,100,TM
+Attract,Normal,Status,0,100,TM
+Aura Wheel,Electric,Physical,110,100,Level
+Baton Pass,Normal,Status,0,0,TM
+Bite,Dark,Physical,60,100,Level
+Brick Break,Fighting,Physical,75,100,TM
+Bullet Seed,Grass,Physical,25,100,"Level, TM"
+Charge,Electric,Status,0,0,TM
+Charge Beam,Electric,Special,50,90,TM
+Crunch,Dark,Physical,80,100,"Level, TM"
+Dark Pulse,Dark,Special,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Eerie Impulse,Electric,Status,0,100,TM
+Electric Terrain,Electric,Status,0,0,TM
+Electro Ball,Electric,Special,0,100,TM
+Electroweb,Electric,Special,55,95,TM
+Endeavor,Normal,Physical,0,100,TM
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Fake Tears,Dark,Status,0,100,TM
+Fire Fang,Fire,Physical,65,95,TM
+Flatter,Dark,Status,0,100,Level
+Fling,Dark,Physical,0,100,TM
+Foul Play,Dark,Physical,95,100,TM
+Frustration,Normal,Physical,0,100,TM
+Hidden Power,Normal,Special,60,100,TM
+Ice Fang,Ice,Physical,65,95,TM
+Knock Off,Dark,Physical,65,100,TM
+Lash Out,Dark,Physical,75,100,TM
+Leer,Normal,Status,0,100,Level
+Nasty Plot,Dark,Status,0,0,TM
+Outrage,Dragon,Physical,120,100,TM
+Payback,Dark,Physical,50,100,TM
+Power Trip,Dark,Physical,20,100,Level
+Protect,Normal,Status,0,0,TM
+Psychic Fangs,Psychic,Physical,85,100,TM
+Quash,Dark,Status,0,100,TM
+Quick Attack,Normal,Physical,40,100,Level
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Revenge,Fighting,Physical,60,100,TM
+Reversal,Fighting,Physical,0,100,TM
+Rising Voltage,Electric,Special,70,100,TM
+Round,Normal,Special,60,100,TM
+Scary Face,Normal,Status,0,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Seed Bomb,Grass,Physical,80,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snarl,Dark,Special,55,95,TM
+Snore,Normal,Special,50,100,TM
+Spark,Electric,Physical,65,100,Level
+Spite,Ghost,Status,0,100,TM
+Stomping Tantrum,Ground,Physical,75,100,TM
+Substitute,Normal,Status,0,0,TM
+Super Fang,Normal,Physical,0,90,TM
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,TM
+Tail Whip,Normal,Status,0,100,Level
+Take Down,Normal,Physical,90,85,TM
+Taunt,Dark,Status,0,100,TM
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Thrash,Normal,Physical,120,100,Level
+Thunder,Electric,Special,110,70,TM
+Thunder Fang,Electric,Physical,65,95,TM
+Thunder Punch,Electric,Physical,75,100,TM
+Thunder Shock,Electric,Special,40,100,Level
+Thunder Wave,Electric,Status,0,90,TM
+Thunderbolt,Electric,Special,90,100,TM
+Torment,Dark,Status,0,100,"Level, TM"
+Uproar,Normal,Special,90,100,TM
+Volt Switch,Electric,Special,70,100,TM
+Wild Charge,Electric,Physical,90,100,TM

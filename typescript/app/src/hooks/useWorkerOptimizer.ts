@@ -2,24 +2,22 @@ import { useState, useRef, useCallback, useEffect } from 'react'
 import { buildPokemon, getPriorities, getCustoEfetivo, getUpgrades } from '../engine/loader'
 import { gerarRelatorio } from '../engine/reporter'
 import { parseList, resolveNome } from './useCandidatos'
+import { LENDARIOS } from '../engine/lendarios'
 import type { Config, ResultadoOtimizacao, ScoreInfo } from './useOtimizador'
 import type { WorkerInput, WorkerOutput, SerializedRunnerResult } from '../workers/workerTypes'
 import type { MemberResult } from '../engine/runner'
-
-const LENDARIOS = [
-  'Mewtwo', 'Rayquaza', 'Deoxys', 'Latios', 'Palkia', 'Cresselia',
-  'Victini', 'Hoopa', 'Tapu Fini', 'Buzzwole', 'Eternatus',
-]
 
 function reconstruirResultado(
   serialized: SerializedRunnerResult,
   todosNomes: string[],
   fontes: string[],
   budget: number,
-  priorities: ReturnType<typeof getPriorities>
+  priorities: ReturnType<typeof getPriorities>,
+  banirRecoil: boolean,
+  banirLock: boolean
 ): ResultadoOtimizacao {
   const metaInimigos = todosNomes.map(nome => buildPokemon(nome, ['Level', 'TM']))
-  for (const p of metaInimigos) p.optimizeMoveset()
+  for (const p of metaInimigos) p.optimizeMoveset(banirRecoil, banirLock)
 
   const time: MemberResult[] = serialized.time.map(m => {
     const pokemon = buildPokemon(m.pokemonName, fontes)
@@ -116,6 +114,8 @@ export function useWorkerOptimizer(todosNomes: string[]) {
         banlist: banlistArr,
         typeFilter: parseList(config.typeFilter),
         gruposExclusao: config.gruposExclusao.map(g => parseList(g)),
+        banirRecoil: config.banirRecoil,
+        banirLock: config.banirLock,
       },
     }
 
@@ -138,7 +138,7 @@ export function useWorkerOptimizer(todosNomes: string[]) {
       }
 
       if (msg.type === 'SUCCESS') {
-        const res = reconstruirResultado(msg.result, todosNomes, config.fontes, config.budget, priorities)
+        const res = reconstruirResultado(msg.result, todosNomes, config.fontes, config.budget, priorities, config.banirRecoil, config.banirLock)
         setProgresso(100)
         setStatus('Concluído!')
         setResultado(res)

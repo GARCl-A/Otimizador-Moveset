@@ -19,6 +19,8 @@ export interface RunnerConfig {
   typeFilter: string[]
   gruposExclusao: string[][]
   timeFixo: Pokemon[]
+  banirRecoil: boolean
+  banirLock: boolean
 }
 
 export interface MemberResult {
@@ -48,12 +50,12 @@ export async function rodarOtimizador(
   config: RunnerConfig,
   callbacks: RunnerCallbacks = {}
 ): Promise<RunnerResult> {
-  const { algoritmo, tamanhoTime, budget, saTemperatura, saCooling, saIteracoes, gaPopulacao, gaGeracoes, gaMutacao, gruposExclusao, timeFixo } = config
+  const { algoritmo, tamanhoTime, budget, saTemperatura, saCooling, saIteracoes, gaPopulacao, gaGeracoes, gaMutacao, gruposExclusao, timeFixo, banirRecoil, banirLock } = config
   const { onLog = () => {}, onProgress } = callbacks
   const scoreMaximo = metaInimigos.length
 
-  for (const p of candidatos) p.optimizeMoveset()
-  for (const p of timeFixo) p.optimizeMoveset()
+  for (const p of candidatos) p.optimizeMoveset(banirRecoil, banirLock)
+  for (const p of timeFixo) p.optimizeMoveset(banirRecoil, banirLock)
 
   const todosParaCache = [...candidatos, ...timeFixo.filter(p => !candidatos.some(c => c.name === p.name))]
 

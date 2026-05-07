@@ -20,6 +20,8 @@ const CONFIG_INICIAL: Config = {
   whitelist: '',
   banlist: '',
   banirLendarios: false,
+  banirRecoil: false,
+  banirLock: false,
   typeFilter: '',
   timeFixoInput: '',
   gruposExclusao: [],

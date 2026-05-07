@@ -14,6 +14,8 @@ export interface Config {
   whitelist: string
   banlist: string
   banirLendarios: boolean
+  banirRecoil: boolean
+  banirLock: boolean
   typeFilter: string
   timeFixoInput: string
   gruposExclusao: string[]
@@ -46,6 +48,8 @@ const CONFIG_INICIAL: Config = {
   whitelist: '',
   banlist: '',
   banirLendarios: false,
+  banirRecoil: false,
+  banirLock: false,
   typeFilter: '',
   timeFixoInput: '',
   gruposExclusao: [],
@@ -123,6 +127,8 @@ export function useOtimizador(todosNomes: string[]) {
           typeFilter: typeFilterArr,
           gruposExclusao: config.gruposExclusao.map(g => parseList(g)),
           timeFixo,
+          banirRecoil: config.banirRecoil,
+          banirLock: config.banirLock,
         },
         {
           onLog: (msg) => {

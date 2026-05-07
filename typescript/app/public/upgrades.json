@@ -476,7 +476,7 @@
     ]
   },
   "Skuntank": {
-    "custoReducoes": 0,
+    "custoReducoes": 1,
     "eggMoves": [
       {
         "name": "Dire Claw",
@@ -734,6 +734,84 @@
         "type": "Water",
         "category": "Physiccal",
         "power": 60,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Scrafty": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Gunk Shot",
+        "type": "Poison",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 80
+      },
+      {
+        "name": "Sucker Punch",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 70,
+        "accuracy": 100
+      },
+      {
+        "name": "Slack Off",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Thievul": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Baddy Bad",
+        "type": "Dark",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 95
+      },
+      {
+        "name": "Mystical Fire",
+        "type": "Fire",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100
+      },
+      {
+        "name": "Sparkly Swirl",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 85
+      }
+    ]
+  },
+  "Mightyena": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Knock Off",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 65,
+        "accuracy": 100
+      },
+      {
+        "name": "Close Combat",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 100
+      },
+      {
+        "name": "Dire Claw",
+        "type": "Poison",
+        "category": "Physical",
+        "power": 80,
         "accuracy": 100
       }
     ]

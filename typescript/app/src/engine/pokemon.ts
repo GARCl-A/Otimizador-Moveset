@@ -68,8 +68,8 @@ export class Pokemon {
     }
   }
 
-  optimizeMoveset(): void {
-    this.moveset = normalizarDanoPorTurno(this.moveset)
+  optimizeMoveset(banirRecoil: boolean = false, banirLock: boolean = false): void {
+    this.moveset = normalizarDanoPorTurno(this.moveset, banirRecoil, banirLock)
     this.moveset = podarEstritamenteDominados(this.moveset)
   }
 

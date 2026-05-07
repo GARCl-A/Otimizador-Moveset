@@ -67,11 +67,13 @@ function hitsEsperadosContinuos(minHits: number, maxHits: number, acc: number): 
   return ev
 }
 
-export function normalizarDanoPorTurno(movepool: Move[]): Move[] {
+export function normalizarDanoPorTurno(movepool: Move[], banirRecoil: boolean = false, banirLock: boolean = false): Move[] {
   const resultado: Move[] = []
 
   for (const move of movepool) {
     if (BANIDOS.has(move.name) || move.power <= 0) continue
+    if (banirRecoil && DANO_EM_SI_MESMO.has(move.name)) continue
+    if (banirLock && TRAVAMENTO_E_CONFUSAO.has(move.name)) continue
 
     if (ATAQUES_DOIS_TURNOS.has(move.name)) {
       move.effectivePower = move.power / 2.0
