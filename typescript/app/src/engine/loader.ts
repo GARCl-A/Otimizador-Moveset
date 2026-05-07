@@ -22,7 +22,7 @@ let pokedexNormalized: Map<string, string> | null = null
 let priorities: Priorities | null = null
 let upgrades: Upgrades = {}
 
-export async function loadData(): Promise<void> {
+export async function loadData(upgradesOverride?: Upgrades): Promise<void> {
   const [pdRes, prioRes, upgRes] = await Promise.all([
     fetch('/pokedex.json'),
     fetch('/priority.json'),
@@ -31,8 +31,12 @@ export async function loadData(): Promise<void> {
   pokedex = await pdRes.json()
   pokedexNormalized = new Map(Object.keys(pokedex!).map(k => [k.toLowerCase(), k]))
   priorities = await prioRes.json()
-  const stored = localStorage.getItem('upgrades')
-  upgrades = stored ? JSON.parse(stored) : await upgRes.json()
+  if (upgradesOverride) {
+    upgrades = upgradesOverride
+  } else {
+    const stored = typeof localStorage !== 'undefined' ? localStorage.getItem('upgrades') : null
+    upgrades = stored ? JSON.parse(stored) : await upgRes.json()
+  }
 }
 
 function resolveNome(name: string): string {

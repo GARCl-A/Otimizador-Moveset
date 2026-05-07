@@ -1,5 +1,6 @@
-import { useState } from 'react'
+import { useState, useMemo } from 'react'
 import type { Upgrade, Upgrades } from './engine/loader'
+import { findMoveByName, getAllMoveNames } from './engine/loader'
 import type { PokemonData } from './engine/pokemon'
 
 const CUSTO_SEQUENCIA = [10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 0.5, 0.25]
@@ -29,6 +30,31 @@ export default function UpgradeEditor({ nome, data, upgrades, onSave, onClose }:
   const [reducoes, setReducoes] = useState(upgrade.custoReducoes)
   const [eggMoves, setEggMoves] = useState<EggMove[]>(upgrade.eggMoves)
   const [novo, setNovo] = useState<EggMove>(emptyMove())
+  const [showSuggestions, setShowSuggestions] = useState(false)
+
+  const allMoves = useMemo(() => getAllMoveNames(), [])
+  
+  const suggestions = useMemo(() => {
+    if (!novo.name.trim() || novo.name.length < 2) return []
+    const lower = novo.name.toLowerCase()
+    return allMoves.filter(m => m.toLowerCase().includes(lower)).slice(0, 10)
+  }, [novo.name, allMoves])
+
+  function selectMove(moveName: string) {
+    const moveData = findMoveByName(moveName)
+    if (moveData) {
+      setNovo({
+        name: moveData.name,
+        type: moveData.type,
+        category: moveData.category,
+        power: moveData.power || 0,
+        accuracy: moveData.accuracy || 100
+      })
+    } else {
+      setNovo(p => ({ ...p, name: moveName }))
+    }
+    setShowSuggestions(false)
+  }
 
   const custoBase = data.cost
   const custoAtual = custoEfetivo(custoBase, reducoes)
@@ -97,11 +123,23 @@ export default function UpgradeEditor({ nome, data, upgrades, onSave, onClose }:
         <div style={{ borderTop: '1px solid #ddd', paddingTop: 12 }}>
           <div style={sectionLabel}>Adicionar egg move</div>
           <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 6, marginBottom: 6 }}>
-            <div>
+            <div style={{ position: 'relative' }}>
               <div style={fieldLabel}>Nome</div>
-              <input value={novo.name} onChange={e => setNovo(p => ({ ...p, name: e.target.value }))}
+              <input value={novo.name} 
+                onChange={e => { setNovo(p => ({ ...p, name: e.target.value })); setShowSuggestions(true); }}
+                onFocus={() => setShowSuggestions(true)}
+                onBlur={() => setTimeout(() => setShowSuggestions(false), 200)}
                 onKeyDown={e => e.key === 'Enter' && addMove()}
                 style={{ ...inputStyle, width: '100%' }} placeholder="Ex: Wish" />
+              {showSuggestions && suggestions.length > 0 && (
+                <div style={suggestionsBox}>
+                  {suggestions.map(m => (
+                    <div key={m} style={suggestionItem} onClick={() => selectMove(m)}>
+                      {m}
+                    </div>
+                  ))}
+                </div>
+              )}
             </div>
             <div>
               <div style={fieldLabel}>Tipo</div>
@@ -149,3 +187,5 @@ const selectStyle: React.CSSProperties = { ...inputStyle, width: '100%' }
 const btnToggle: React.CSSProperties = { border: '1px solid #333', borderRadius: 3, padding: '4px 12px', cursor: 'pointer', fontFamily: 'monospace', fontSize: 12, background: 'transparent' }
 const btnToggleActive: React.CSSProperties = { background: '#333', color: '#fff' }
 const btnIcon: React.CSSProperties = { background: 'none', border: 'none', cursor: 'pointer', fontSize: 14, padding: '0 4px' }
+const suggestionsBox: React.CSSProperties = { position: 'absolute', top: '100%', left: 0, right: 0, background: '#fff', border: '1px solid #ccc', borderRadius: 3, maxHeight: 200, overflowY: 'auto', zIndex: 10, marginTop: 2, boxShadow: '0 2px 8px rgba(0,0,0,0.15)' }
+const suggestionItem: React.CSSProperties = { padding: '6px 8px', cursor: 'pointer', fontSize: 12, borderBottom: '1px solid #eee' }

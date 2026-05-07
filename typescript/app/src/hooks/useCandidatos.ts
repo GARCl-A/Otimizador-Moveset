@@ -1,5 +1,6 @@
 import { useMemo } from 'react'
 import { getAllNames, getPokemonData, getCustoEfetivo } from '../engine/loader'
+import { LENDARIOS } from '../engine/lendarios'
 
 export function parseList(s: string): string[] {
   return s.split(',').map(x => x.trim()).filter(Boolean)
@@ -25,16 +26,22 @@ interface Props {
   todosNomes: string[]
   whitelist: string
   banlist: string
+  banirLendarios: boolean
   typeFilter: string
   budget: number
-  upgrades: object  // só pra forçar recompute quando upgrades mudam
+  upgrades: object
 }
 
-export function useCandidatos({ dadosCarregados, todosNomes, whitelist, banlist, typeFilter, budget, upgrades }: Props): Candidato[] {
+export function useCandidatos({ dadosCarregados, todosNomes, whitelist, banlist, banirLendarios, typeFilter, budget, upgrades }: Props): Candidato[] {
   return useMemo(() => {
     if (!dadosCarregados) return []
     const whitelistArr = parseList(whitelist)
     const banlistArr = parseList(banlist)
+    if (banirLendarios) {
+      for (const lendario of LENDARIOS) {
+        if (!banlistArr.includes(lendario)) banlistArr.push(lendario)
+      }
+    }
     const typeFilterArr = parseList(typeFilter)
 
     const nomes = whitelistArr.length
@@ -53,5 +60,5 @@ export function useCandidatos({ dadosCarregados, todosNomes, whitelist, banlist,
         const data = getPokemonData(nome)
         return { nome, type1: data.type1, type2: data.type2, custo: getCustoEfetivo(nome) }
       })
-  }, [dadosCarregados, whitelist, banlist, typeFilter, budget, todosNomes, upgrades])
+  }, [dadosCarregados, whitelist, banlist, banirLendarios, typeFilter, budget, todosNomes, upgrades])
 }

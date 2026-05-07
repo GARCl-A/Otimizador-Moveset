@@ -42,12 +42,18 @@ export interface ResultadoTM {
 interface CoberturaEntry { score: number; pokemon: string; move: string }
 
 function scoreTimeDetalhado(time: MembroTime[], meta: Pokemon[], priorities: Priorities): Map<string, CoberturaEntry> {
-  const arrays = construirCaches(time.map(m => m.pokemon), meta, priorities)
-  const pokeIndices = time.map(m => arrays.pokeIdx.get(m.pokemon.name)!)
-  const estadoIndices = time.map((m, i) => {
-    const iPoke = pokeIndices[i]
-    const moveIdxMap = arrays.moveIdx[iPoke]
-    return m.moveset.map(mv => moveIdxMap.get(mv.name) ?? -1).filter(j => j >= 0)
+  const pokemonsComMoveset = time.map(m => {
+    const clone = Object.create(Object.getPrototypeOf(m.pokemon)) as Pokemon
+    Object.assign(clone, m.pokemon)
+    clone.moveset = m.moveset
+    return clone
+  })
+
+  const arrays = construirCaches(pokemonsComMoveset, meta, priorities)
+  const pokeIndices = pokemonsComMoveset.map(p => arrays.pokeIdx.get(p.name)!)
+  const estadoIndices = pokemonsComMoveset.map((p, i) => {
+    const moveIdxMap = arrays.moveIdx[pokeIndices[i]]
+    return p.moveset.map(mv => moveIdxMap.get(mv.name) ?? -1).filter(j => j >= 0)
   })
 
   const porInimigo = new Map<string, CoberturaEntry>()
@@ -62,7 +68,7 @@ function scoreTimeDetalhado(time: MembroTime[], meta: Pokemon[], priorities: Pri
         if (dano > 0 && melhor.score === 0) {
           melhor = {
             score: 1,
-            pokemon: time[pi].pokemon.name,
+            pokemon: pokemonsComMoveset[pi].name,
             move: arrays.moveLists[iPoke][j].name,
           }
         }
@@ -195,8 +201,6 @@ export function analisarTM(
       const novoMap = scoreTimeDetalhado(timeNovo, meta, priorities)
       const novoTotal = [...novoMap.values()].reduce((a, b) => a + b.score, 0)
       const delta = novoTotal - baseTotal
-
-      if (delta === 0) continue
 
       const { melhora, piora } = diffMaps(baseMap, novoMap, meta)
 

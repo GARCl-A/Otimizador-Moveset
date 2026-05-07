@@ -3,12 +3,8 @@ import { buildPokemon, getAllNames, getPriorities, getCustoEfetivo } from '../en
 import { rodarOtimizador } from '../engine/runner'
 import { gerarRelatorio } from '../engine/reporter'
 import { parseList, resolveNome } from './useCandidatos'
+import { LENDARIOS } from '../engine/lendarios'
 import type { MemberResult } from '../engine/runner'
-
-const LENDARIOS = [
-  'Mewtwo', 'Rayquaza', 'Deoxys', 'Latios', 'Palkia', 'Cresselia',
-  'Victini', 'Hoopa', 'Tapu Fini', 'Buzzwole', 'Eternatus', 'Victini'
-]
 
 export interface Config {
   algoritmo: 'simulated-annealing' | 'genetic'

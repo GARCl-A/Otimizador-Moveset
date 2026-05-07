@@ -1,4 +1,5 @@
-import { buildPokemon, findMoveByName, getAllMoveNames } from '../engine/loader'
+import { useState, useRef, useEffect } from 'react'
+import { buildPokemon, findMoveByName, getAllMoveNames, getAllNames } from '../engine/loader'
 import type { MembroTime } from '../engine/teamAnalyzer'
 import { Move } from '../engine/move'
 
@@ -75,22 +76,91 @@ export function buildTM(t: TMInput): Move | null {
   return new Move(data)
 }
 
+export function Autocomplete({
+  value, onChange, options, placeholder, inputStyle,
+}: {
+  value: string
+  onChange: (v: string) => void
+  options: string[]
+  placeholder?: string
+  inputStyle?: React.CSSProperties
+}) {
+  const [open, setOpen] = useState(false)
+  const [highlighted, setHighlighted] = useState(0)
+  const containerRef = useRef<HTMLDivElement>(null)
+
+  const filtered = value.trim().length === 0
+    ? []
+    : options.filter(o => o.toLowerCase().includes(value.toLowerCase())).slice(0, 12)
+
+  useEffect(() => { setHighlighted(0) }, [value])
+
+  useEffect(() => {
+    function handleClick(e: MouseEvent) {
+      if (containerRef.current && !containerRef.current.contains(e.target as Node)) {
+        setOpen(false)
+      }
+    }
+    document.addEventListener('mousedown', handleClick)
+    return () => document.removeEventListener('mousedown', handleClick)
+  }, [])
+
+  function handleKeyDown(e: React.KeyboardEvent) {
+    if (!open || filtered.length === 0) return
+    if (e.key === 'ArrowDown') { e.preventDefault(); setHighlighted(h => Math.min(h + 1, filtered.length - 1)) }
+    if (e.key === 'ArrowUp') { e.preventDefault(); setHighlighted(h => Math.max(h - 1, 0)) }
+    if (e.key === 'Enter') { e.preventDefault(); onChange(filtered[highlighted]); setOpen(false) }
+    if (e.key === 'Escape') setOpen(false)
+  }
+
+  return (
+    <div ref={containerRef} style={{ position: 'relative' }}>
+      <input
+        value={value}
+        placeholder={placeholder}
+        onChange={e => { onChange(e.target.value); setOpen(true) }}
+        onFocus={() => setOpen(true)}
+        onKeyDown={handleKeyDown}
+        style={{ width: '100%', boxSizing: 'border-box', ...inputStyle }}
+        autoComplete="off"
+      />
+      {open && filtered.length > 0 && (
+        <div style={{
+          position: 'absolute', zIndex: 100, top: '100%', left: 0, right: 0,
+          background: '#fff', border: '1px solid #555', borderRadius: 3,
+          maxHeight: 180, overflowY: 'auto',
+        }}>
+          {filtered.map((opt, i) => (
+            <div
+              key={opt}
+              onMouseDown={() => { onChange(opt); setOpen(false) }}
+              style={{
+                padding: '4px 8px', cursor: 'pointer', fontSize: 12,
+                color: '#111', background: i === highlighted ? '#ddd' : '#fff',
+              }}
+            >
+              {opt}
+            </div>
+          ))}
+        </div>
+      )}
+    </div>
+  )
+}
+
 export function TMEditor({ tmInput, onChange }: { tmInput: TMInput; onChange: (t: TMInput) => void }) {
   const allMoves = getAllMoveNames()
   const resolved = findMoveByName(tmInput.nome.trim())
 
   return (
     <div style={{ border: '1px solid #444', borderRadius: 4, padding: 8, marginBottom: 8 }}>
-      <input
-        list="move-list"
-        placeholder="Nome do move (ex: Ice Beam)"
+      <Autocomplete
         value={tmInput.nome}
-        onChange={e => onChange({ nome: e.target.value })}
-        style={{ width: '100%', fontSize: 12, boxSizing: 'border-box' }}
+        onChange={nome => onChange({ nome })}
+        options={allMoves}
+        placeholder="Nome do move (ex: Ice Beam)"
+        inputStyle={{ fontSize: 12 }}
       />
-      <datalist id="move-list">
-        {allMoves.map(m => <option key={m} value={m} />)}
-      </datalist>
       {resolved && (
         <div style={{ marginTop: 6, fontSize: 11, opacity: 0.75 }}>
           {resolved.type} / {resolved.category} / {resolved.power > 0 ? `${resolved.power} BP` : 'Status'} / {resolved.accuracy > 0 ? `${resolved.accuracy}% acc` : '—'}
@@ -111,6 +181,18 @@ export function MembroEditor({
   onChange: (m: MembroInput) => void
   onRemove?: () => void
 }) {
+  const allNames = getAllNames()
+
+  const moveOptions: string[] = (() => {
+    if (!membro.nome.trim()) return getAllMoveNames()
+    try {
+      const p = buildPokemon(membro.nome.trim(), membro.fontes)
+      return p.moveset.map(m => m.name)
+    } catch {
+      return getAllMoveNames()
+    }
+  })()
+
   const setMove = (i: number, v: string) => {
     const moves = [...membro.moves] as MembroInput['moves']
     moves[i] = v
@@ -130,13 +212,14 @@ export function MembroEditor({
         <span style={{ fontWeight: 'bold', fontSize: 12 }}>{label}</span>
         {onRemove && <button onClick={onRemove} style={{ fontSize: 10, padding: '2px 6px' }}>Remover</button>}
       </div>
-      <input
-        placeholder="Nome do Pokémon"
+      <Autocomplete
         value={membro.nome}
-        onChange={e => onChange({ ...membro, nome: e.target.value })}
-        style={{ width: '100%', marginBottom: 6, fontSize: 12, boxSizing: 'border-box' }}
+        onChange={nome => onChange({ ...membro, nome })}
+        options={allNames}
+        placeholder="Nome do Pokémon"
+        inputStyle={{ fontSize: 12, marginBottom: 6 }}
       />
-      <div style={{ marginBottom: 6 }}>
+      <div style={{ marginBottom: 6, marginTop: 6 }}>
         {FONTES_DISPONIVEIS.map(f => (
           <label key={f} style={{ fontSize: 11, marginRight: 10, cursor: 'pointer' }}>
             <input type="checkbox" checked={membro.fontes.includes(f)} onChange={() => toggleFonte(f)} style={{ marginRight: 3 }} />
@@ -155,12 +238,13 @@ export function MembroEditor({
       {!membro.otimizar && (
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 4 }}>
           {membro.moves.map((mv, i) => (
-            <input
+            <Autocomplete
               key={i}
-              placeholder={`Move ${i + 1}`}
               value={mv}
-              onChange={e => setMove(i, e.target.value)}
-              style={{ fontSize: 11 }}
+              onChange={v => setMove(i, v)}
+              options={moveOptions}
+              placeholder={`Move ${i + 1}`}
+              inputStyle={{ fontSize: 11 }}
             />
           ))}
         </div>

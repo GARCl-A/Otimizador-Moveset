@@ -1,0 +1,40 @@
+export type BiomeEdges = Record<string, number>;
+export type BiomeGraph = Record<string, BiomeEdges>;
+
+// O valor numérico é a probabilidade (0.5 = 50%, 0.33 = 33%, 1.0 = 100%)
+export const pokeRogueMap: BiomeGraph = {
+  "Town": { "Plains": 1.0 },
+  "Plains": { "Grassy Fields": 1/3, "Metropolis": 1/3, "Lake": 1/3},
+  "Grassy Fields": { "Tall Grass": 1},
+  "Tall Grass": { "Forest": 0.5, "Cave": 0.5 },
+  "Forest": { "Jungle": 0.5, "Meadow": 0.5 },
+  "Jungle": { "Temple": 1 },
+  "Temple": { "Desert": 1/3, "Swamp": 1/3, "Ancient Ruins": 1/3 },
+  "Desert": { "Ancient Ruins": 3/4, "Construction Site": 1/4 },
+  "Ancient Ruins": { "Mountain": 3/4, "Forest": 1/4 },
+  "Mountain": { "Volcano": 0.64, "Wasteland": 0.22, "Space": 0.14 },
+  "Volcano": { "Beach": 0.83, "Ice Cave": 0.17 },
+  "Beach": { "Sea": 0.75, "Island": 0.25 },
+  "Sea": { "Seabed": 0.5, "Ice Cave": 0.5 },
+  "Seabed": { "Volcano": 0.17, "Cave": 0.83 },
+  "Cave": { "Badlands": 0.42, "Lake": 0.42, "Laboratory": 0.17 },
+  "Badlands": { "Desert": 0.5, "Mountain": 0.5 },
+  "Lake": { "Beach": 1/3, "Swamp": 1/3, "Construction Site": 1/3 },
+  "Swamp": { "Graveyard": 0.5, "Tall Grass": 0.5 },
+  "Graveyard": { "Abyss": 1},
+  "Abyss": { "Cave": 0.58, "Space": 0.21, "Wasteland": 0.21 },
+  "Space": { "Ancient Ruins": 1 },
+  "Wasteland": { "Badlands": 1 },
+  "Construction Site": { "Power Plant": 0.75, "Dojo": 0.25 },
+  "Power Plant": { "Factory": 1 },
+  "Factory": { "Plains": 0.75, "Laboratory": 0.25 },
+  "Laboratory": { "Construction Site": 1 },
+  "Dojo": { "Plains": 0.58, "Jungle": 0.21, "Temple": 0.21},
+  "Ice Cave": { "Snowy Forest": 1 },
+  "Snowy Forest": { "Forest": 0.58, "Mountain": 0.21, "Lake": 0.21 },
+  "Island": { "Sea": 1 },
+  "Meadow": { "Fairy Cave": 0.5, "Plains": 0.5 },
+  "Fairy Cave": { "Space": 0.25, "Ice Cave": 0.75 },
+  "Metropolis": { "Slum": 1.0 },
+  "Slum": {"Construction Site": 0.75, "Swamp": 0.25 }
+};

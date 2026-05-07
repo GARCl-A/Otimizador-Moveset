@@ -3,7 +3,7 @@ import { Move } from './move'
 const ATAQUES_DOIS_TURNOS = new Set([
   'Solar Beam', 'Hyper Beam', 'Giga Impact', 'Bounce', 'Dive', 'Dig',
   'Frenzy Plant', 'Solar Blade', 'Future Sight', 'Rock Wrecker',
-  'Meteor Beam', 'Meteor Assault', 'Fly', 'Double Shock', 'Phantom Force',
+  'Meteor Beam', 'Meteor Assault', 'Fly', 'Double Shock', 'Phantom Force', 'Sky Attack'
 ])
 const MENOS_UM_STATS = new Set(['Superpower'])
 const MENOS_DOIS_STATS = new Set(['Overheat', 'Leaf Storm'])
@@ -13,7 +13,7 @@ const DANO_EM_SI_MESMO = new Set([
 ])
 const BANIDOS = new Set([
   'Focus Punch', 'First Impression', 'Fake Out', 'Explosion',
-  'Self-Destruct', 'Steel Roller', 'Dream Eater', 'Misty Explosion','Foul Play', 'Psystrike'
+  'Self-Destruct', 'Steel Roller', 'Dream Eater', 'Misty Explosion','Foul Play', 'Psystrike', "Last Resort", "Belch"
 ])
 const TRAVAMENTO_E_CONFUSAO = new Set(['Outrage', 'Thrash', 'Petal Dance', 'Raging Fury'])
 

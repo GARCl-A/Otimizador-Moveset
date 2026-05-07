@@ -1,0 +1,73 @@
+Name,Type,Category,Power,Accuracy,Source
+Ally Switch,Psychic,Status,0,0,TM
+Attract,Normal,Status,0,100,TM
+Body Slam,Normal,Physical,85,100,TM
+Burning Jealousy,Fire,Special,70,100,TM
+Calm Mind,Psychic,Status,0,0,TM
+Confide,Normal,Status,0,0,TM
+Confuse Ray,Ghost,Status,0,100,"Level, TM"
+Curse,Ghost,Status,0,0,"Level, TM"
+Dark Pulse,Dark,Special,80,100,"Level, TM"
+Double Team,Normal,Status,0,0,TM
+Dream Eater,Psychic,Special,100,100,"Level, TM"
+Embargo,Dark,Status,0,100,TM
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Flash,Normal,Status,0,100,TM
+Foul Play,Dark,Physical,95,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Helping Hand,Normal,Status,0,0,TM
+Hex,Ghost,Special,65,100,"Level, TM"
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Hypnosis,Psychic,Status,0,60,Level
+Icy Wind,Ice,Special,55,95,TM
+Imprison,Psychic,Status,0,100,TM
+Infestation,Bug,Special,20,100,TM
+Lash Out,Dark,Physical,75,100,TM
+Memento,Dark,Status,0,100,Level
+Nasty Plot,Dark,Status,0,0,"Level, TM"
+Night Shade,Ghost,Special,0,100,"Level, TM"
+Pain Split,Normal,Status,0,0,TM
+Payback,Dark,Physical,50,100,"Level, TM"
+Phantom Force,Ghost,Physical,90,100,TM
+Poltergeist,Ghost,Physical,110,90,TM
+Protect,Normal,Status,0,0,TM
+Psybeam,Psychic,Special,65,100,TM
+Psych Up,Normal,Status,0,0,TM
+Psychic,Psychic,Special,90,100,TM
+Psyshock,Psychic,Special,80,100,TM
+Pursuit,Dark,Physical,40,100,Level
+Quash,Dark,Status,0,100,TM
+Rain Dance,Water,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Retaliate,Normal,Physical,70,100,TM
+Return,Normal,Physical,0,100,TM
+Rock Tomb,Rock,Physical,60,95,TM
+Round,Normal,Special,60,100,TM
+Scary Face,Normal,Status,0,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Shadow Ball,Ghost,Special,80,100,"Level, TM"
+Shadow Sneak,Ghost,Physical,40,100,Level
+Skill Swap,Psychic,Status,0,0,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snarl,Dark,Special,55,95,TM
+Snore,Normal,Special,50,100,TM
+Spite,Ghost,Status,0,100,"Level, TM"
+Stored Power,Psychic,Special,20,100,TM
+Substitute,Normal,Status,0,0,TM
+Sucker Punch,Dark,Physical,70,100,Level
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Taunt,Dark,Status,0,100,TM
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Torment,Dark,Status,0,100,TM
+Toxic,Poison,Status,0,90,TM
+Trick,Psychic,Status,0,100,TM
+Trick Room,Psychic,Status,0,0,TM
+Uproar,Normal,Special,90,100,TM
+Water Pulse,Water,Special,60,100,TM
+Will-O-Wisp,Fire,Status,0,85,TM
+Wonder Room,Psychic,Status,0,0,TM

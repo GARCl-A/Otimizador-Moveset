@@ -1,0 +1,75 @@
+Name,Type,Category,Power,Accuracy,Source
+Acrobatics,Flying,Physical,55,100,TM
+Agility,Psychic,Status,0,0,"Level, TM"
+Ally Switch,Psychic,Status,0,0,TM
+Assurance,Dark,Physical,60,100,"Level, TM"
+Astonish,Ghost,Physical,30,100,Level
+Attract,Normal,Status,0,100,TM
+Baton Pass,Normal,Status,0,0,TM
+Beat Up,Dark,Physical,0,100,TM
+Bite,Dark,Physical,60,100,Level
+Body Slam,Normal,Physical,85,100,TM
+Breaking Swipe,Dragon,Physical,60,100,TM
+Brine,Water,Special,65,100,TM
+Confuse Ray,Ghost,Status,0,100,TM
+Curse,Ghost,Status,0,0,TM
+Dive,Water,Physical,80,100,TM
+Double Hit,Normal,Physical,35,90,Level
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,"Level, TM"
+Draco Meteor,Dragon,Special,130,90,TM
+Dragon Breath,Dragon,Special,60,100,Level
+Dragon Cheer,Dragon,Status,0,0,TM
+Dragon Claw,Dragon,Physical,80,100,TM
+Dragon Dance,Dragon,Status,0,0,"Level, TM"
+Dragon Darts,Dragon,Physical,50,100,Level
+Dragon Pulse,Dragon,Special,85,100,"Level, TM"
+Dragon Rush,Dragon,Physical,100,75,Level
+Dragon Tail,Dragon,Physical,60,90,TM
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Fire Blast,Fire,Special,110,85,TM
+Flamethrower,Fire,Special,90,100,TM
+Fly,Flying,Physical,90,95,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Helping Hand,Normal,Status,0,0,TM
+Hex,Ghost,Special,65,100,"Level, TM"
+Hidden Power,Normal,Special,60,100,TM
+Hydro Pump,Water,Special,110,80,TM
+Hyper Beam,Normal,Special,150,90,TM
+Infestation,Bug,Special,20,100,"Level, TM"
+Last Resort,Normal,Physical,140,100,Level
+Light Screen,Psychic,Status,0,0,TM
+Lock-On,Normal,Status,0,0,Level
+Night Shade,Ghost,Special,0,100,TM
+Outrage,Dragon,Physical,120,100,TM
+Phantom Force,Ghost,Physical,90,100,"Level, TM"
+Pounce,Bug,Physical,50,100,TM
+Protect,Normal,Status,0,0,TM
+Psychic Fangs,Psychic,Physical,85,100,TM
+Quick Attack,Normal,Physical,40,100,Level
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Round,Normal,Special,60,100,TM
+Scald,Water,Special,80,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Shadow Ball,Ghost,Special,80,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Steel Wing,Steel,Physical,70,90,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Surf,Water,Special,90,100,TM
+Swift,Normal,Special,60,0,TM
+Take Down,Normal,Physical,90,85,"Level, TM"
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Thunder,Electric,Special,110,70,TM
+Thunder Wave,Electric,Status,0,90,TM
+Thunderbolt,Electric,Special,90,100,TM
+Tri Attack,Normal,Special,80,100,TM
+U-Turn,Bug,Physical,70,100,"Level, TM"
+Will-O-Wisp,Fire,Status,0,85,TM
