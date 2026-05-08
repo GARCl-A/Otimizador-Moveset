@@ -308,7 +308,7 @@
     ]
   },
   "Delphox": {
-    "custoReducoes": 0,
+    "custoReducoes": 1,
     "eggMoves": [
       {
         "name": "Twin Beam",
@@ -812,6 +812,380 @@
         "type": "Poison",
         "category": "Physical",
         "power": 80,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Morpeko": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Obstruct",
+        "type": "Dark",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      },
+      {
+        "name": "Stuff Cheeks",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Cacturne": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Earth Power",
+        "type": "Ground",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100
+      },
+      {
+        "name": "Ceaseless Edge",
+        "type": "Dark",
+        "category": "Physical",
+        "power": 65,
+        "accuracy": 95
+      },
+      {
+        "name": "Night Daze",
+        "type": "Dark",
+        "category": "Special",
+        "power": 85,
+        "accuracy": 95
+      },
+      {
+        "name": "Ivy Cudgel",
+        "type": "Grass",
+        "category": "Physical",
+        "power": 100,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Shiftry": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Sacred Sword",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 90,
+        "accuracy": 100
+      },
+      {
+        "name": "Swords Dance",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Reshiram": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Eruption",
+        "type": "Fire",
+        "category": "Special",
+        "power": 150,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Rapidash": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Headlong Rush",
+        "type": "Ground",
+        "category": "Physical",
+        "power": 120,
+        "accuracy": 100
+      },
+      {
+        "name": "High Jump Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 130,
+        "accuracy": 90
+      },
+      {
+        "name": "Swords Dance",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Infernape": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Thunderbolt",
+        "type": "Electric",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100
+      },
+      {
+        "name": "Ice Punch",
+        "type": "Ice",
+        "category": "Physical",
+        "power": 75,
+        "accuracy": 100
+      },
+      {
+        "name": "Sacred Fire",
+        "type": "Fire",
+        "category": "Physical",
+        "power": 100,
+        "accuracy": 95
+      }
+    ]
+  },
+  "Magcargo": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Solar Beam",
+        "type": "Grass",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 100
+      },
+      {
+        "name": "Burning Bulkwark",
+        "type": "Fire",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      },
+      {
+        "name": "Power Gem",
+        "type": "Rock",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Camerupt": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Trick Room",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      },
+      {
+        "name": "Energy Ball",
+        "type": "Grass",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100
+      },
+      {
+        "name": "Slack Off",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Charizard": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Aeroblast",
+        "type": "Flying",
+        "category": "Special",
+        "power": 100,
+        "accuracy": 95
+      },
+      {
+        "name": "Earth Power",
+        "type": "Ground",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Volcarona": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Dazzling Gleam",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Scald",
+        "type": "Water",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Skeledirge": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Alluring Voice",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Slack Off",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      },
+      {
+        "name": "Overdrive",
+        "type": "Electric",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Blaziken": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Thunderous Kick",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 90,
+        "accuracy": 100
+      },
+      {
+        "name": "Burning Bulkwark",
+        "type": "Fire",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Aracanine": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Zing Zap",
+        "type": "Electric",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Dragon Dance",
+        "type": "Dragon",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      },
+      {
+        "name": "Morning Sun",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Salazzle": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Scald",
+        "type": "Water",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Malignant Chain",
+        "type": "Poison",
+        "category": "Special",
+        "power": 100,
+        "accuracy": 100
+      },
+      {
+        "name": "Core Enforcer",
+        "type": "Dragon",
+        "category": "Special",
+        "power": 100,
+        "accuracy": 100
+      },
+      {
+        "name": "Eruption",
+        "type": "Fire",
+        "category": "Special",
+        "power": 150,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Scovillain": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Strength Sap",
+        "type": "Grass",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      },
+      {
+        "name": "Fire Lash",
+        "type": "Fire",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Frost Breath",
+        "type": "Ice",
+        "category": "Special",
+        "power": 60,
+        "accuracy": 90
+      }
+    ]
+  },
+  "Chandelure": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Moonblast",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 95,
+        "accuracy": 100
+      },
+      {
+        "name": "Earth Power",
+        "type": "Ground",
+        "category": "Special",
+        "power": 90,
         "accuracy": 100
       }
     ]
