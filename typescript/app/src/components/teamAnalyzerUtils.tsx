@@ -29,7 +29,21 @@ const LS_KEY = 'teamAnalyzer_snapshot'
 export function loadSnapshot(): TeamSnapshot | null {
   try {
     const raw = localStorage.getItem(LS_KEY)
-    return raw ? JSON.parse(raw) : null
+    if (!raw) return null
+    const snap: TeamSnapshot = JSON.parse(raw)
+    const normalizarMembro = (m: MembroInput): MembroInput => ({
+      ...MEMBRO_VAZIO,
+      ...m,
+      fontes: m.fontes ?? MEMBRO_VAZIO.fontes,
+      moves: m.moves ?? MEMBRO_VAZIO.moves,
+    })
+    return {
+      ...snap,
+      modo: snap.modo ?? 'pokemon',
+      tmInput: snap.tmInput ?? TM_VAZIO,
+      membros: (snap.membros ?? [MEMBRO_VAZIO]).map(normalizarMembro),
+      candidato: normalizarMembro(snap.candidato ?? MEMBRO_VAZIO),
+    }
   } catch {
     return null
   }

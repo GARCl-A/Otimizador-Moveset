@@ -1,0 +1,52 @@
+Name,Type,Category,Power,Accuracy,Source
+Attract,Normal,Status,0,100,TM
+Bite,Dark,Physical,60,100,Level
+Brutal Swing,Dark,Physical,60,100,TM
+Bug Bite,Bug,Physical,60,100,"Level, TM"
+Bug Buzz,Bug,Special,90,100,TM
+Burn Up,Fire,Special,130,100,Level
+Coil,Poison,Status,0,0,Level
+Crunch,Dark,Physical,80,100,"Level, TM"
+Double Team,Normal,Status,0,0,TM
+Ember,Fire,Special,40,100,Level
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Fire Blast,Fire,Special,110,85,TM
+Fire Fang,Fire,Physical,65,95,TM
+Fire Lash,Fire,Physical,80,100,Level
+Fire Spin,Fire,Special,35,85,"Level, TM"
+Flame Wheel,Fire,Physical,60,100,Level
+Flamethrower,Fire,Special,90,100,TM
+Flare Blitz,Fire,Physical,120,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Heat Crash,Fire,Physical,0,100,TM
+Heat Wave,Fire,Special,95,90,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Inferno,Fire,Special,100,50,Level
+Leech Life,Bug,Physical,80,100,TM
+Lunge,Bug,Physical,80,100,"Level, TM"
+Mystical Fire,Fire,Special,75,100,TM
+Overheat,Fire,Special,130,90,TM
+Power Whip,Grass,Physical,120,85,TM
+Protect,Normal,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Round,Normal,Special,60,100,TM
+Scald,Water,Special,80,100,TM
+Scorching Sands,Ground,Special,70,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Skitter Smack,Bug,Physical,70,90,TM
+Slam,Normal,Physical,80,75,Level
+Sleep Talk,Normal,Status,0,0,TM
+Smokescreen,Normal,Status,0,100,Level
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Thunder Fang,Electric,Physical,65,95,TM
+Venoshock,Poison,Special,65,100,TM
+Will-O-Wisp,Fire,Status,0,85,TM
+Wrap,Normal,Physical,15,90,Level
+X-Scissor,Bug,Physical,80,100,TM

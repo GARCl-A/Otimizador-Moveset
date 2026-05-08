@@ -127,12 +127,13 @@ export function normalizarDanoPorTurno(movepool: Move[], banirRecoil: boolean = 
   return resultado
 }
 
-export function podarEstritamenteDominados(movepool: Move[]): Move[] {
+export function podarEstritamenteDominados(movepool: Move[], priorities: Record<string, number> = {}): Move[] {
   const ev = (m: Move) => m.effectivePower * (m.acc / 100) ** 2
 
   const melhorPorGrupo = new Map<string, { ev: number; name: string }>()
   for (const m of movepool) {
-    const chave = `${m.type}|${m.category}`
+    const prio = priorities[m.name] ?? 0
+    const chave = `${m.type}|${m.category}|${prio}`
     const evM = ev(m)
     const atual = melhorPorGrupo.get(chave)
     if (!atual || evM > atual.ev || (evM === atual.ev && m.name < atual.name)) {
@@ -140,5 +141,8 @@ export function podarEstritamenteDominados(movepool: Move[]): Move[] {
     }
   }
 
-  return movepool.filter(m => melhorPorGrupo.get(`${m.type}|${m.category}`)?.name === m.name)
+  return movepool.filter(m => {
+    const prio = priorities[m.name] ?? 0
+    return melhorPorGrupo.get(`${m.type}|${m.category}|${prio}`)?.name === m.name
+  })
 }

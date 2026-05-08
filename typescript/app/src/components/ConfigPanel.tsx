@@ -87,6 +87,14 @@ export default function ConfigPanel({ config, onChange }: Props) {
                   <input type="checkbox" checked={config.banirLock} onChange={e => onChange('banirLock', e.target.checked)} />
                   Banir moves com lock
                 </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: 4, cursor: 'pointer' }}>
+                  <input type="checkbox" checked={config.priorizarHP} onChange={e => onChange('priorizarHP', e.target.checked)} />
+                  Priorizar 100% de HP
+                </label>
+                <label style={{ display: 'flex', alignItems: 'center', gap: 4, cursor: 'pointer' }}>
+                  <input type="checkbox" checked={config.coberturasDupla} onChange={e => onChange('coberturasDupla', e.target.checked)} />
+                  Cobertura dupla
+                </label>
               </div>
             </td>
           </tr>

@@ -1,0 +1,65 @@
+Name,Type,Category,Power,Accuracy,Source
+Acrobatics,Flying,Physical,55,100,"Level, TM"
+Aerial Ace,Flying,Physical,60,0,"Level, TM"
+Agility,Psychic,Status,0,0,"Level, TM"
+Air Cutter,Flying,Special,60,95,TM
+Air Slash,Flying,Special,75,95,TM
+Attract,Normal,Status,0,100,TM
+Brave Bird,Flying,Physical,120,100,"Level, TM"
+Bulk Up,Fighting,Status,0,0,TM
+Confide,Normal,Status,0,0,TM
+Defog,Flying,Status,0,0,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Dual Wingbeat,Flying,Physical,40,90,TM
+Ember,Fire,Special,40,100,Level
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Feather Dance,Flying,Status,0,100,TM
+Feint,Normal,Physical,30,100,Level
+Fire Blast,Fire,Special,110,85,TM
+Fire Spin,Fire,Special,35,85,TM
+Flail,Normal,Physical,0,100,Level
+Flame Charge,Fire,Physical,50,100,"Level, TM"
+Flamethrower,Fire,Special,90,100,TM
+Flare Blitz,Fire,Physical,120,100,"Level, TM"
+Fly,Flying,Physical,90,95,"Level, TM"
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Growl,Normal,Status,0,100,Level
+Heat Wave,Fire,Special,95,90,TM
+Hidden Power,Normal,Special,60,100,TM
+Hone Claws,Dark,Status,0,0,TM
+Hurricane,Flying,Special,110,70,TM
+Hyper Beam,Normal,Special,150,90,TM
+Incinerate,Fire,Special,60,100,TM
+Overheat,Fire,Special,130,90,TM
+Peck,Flying,Physical,35,100,Level
+Protect,Normal,Status,0,0,TM
+Quick Attack,Normal,Physical,40,100,Level
+Rain Dance,Water,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Roost,Flying,Status,0,0,"Level, TM"
+Round,Normal,Special,60,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Steel Wing,Steel,Physical,70,90,"Level, TM"
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,TM
+Swords Dance,Normal,Status,0,0,TM
+Tailwind,Flying,Status,0,0,"Level, TM"
+Take Down,Normal,Physical,90,85,TM
+Taunt,Dark,Status,0,100,TM
+Temper Flare,Fire,Physical,75,100,TM
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Toxic,Poison,Status,0,90,TM
+U-Turn,Bug,Physical,70,100,TM
+Upper Hand,Fighting,Physical,65,100,TM
+Will-O-Wisp,Fire,Status,0,85,TM
+Work Up,Normal,Status,0,0,TM

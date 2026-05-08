@@ -22,6 +22,8 @@ const CONFIG_INICIAL: Config = {
   banirLendarios: false,
   banirRecoil: false,
   banirLock: false,
+  priorizarHP: false,
+  coberturasDupla: false,
   typeFilter: '',
   timeFixoInput: '',
   gruposExclusao: [],

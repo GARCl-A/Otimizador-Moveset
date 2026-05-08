@@ -68,9 +68,9 @@ export class Pokemon {
     }
   }
 
-  optimizeMoveset(banirRecoil: boolean = false, banirLock: boolean = false): void {
+  optimizeMoveset(banirRecoil: boolean = false, banirLock: boolean = false, priorities: Record<string, number> = {}): void {
     this.moveset = normalizarDanoPorTurno(this.moveset, banirRecoil, banirLock)
-    this.moveset = podarEstritamenteDominados(this.moveset)
+    this.moveset = podarEstritamenteDominados(this.moveset, priorities)
   }
 
   calcularDanoEsperado(move: Move, target: Pokemon): number {

@@ -2,8 +2,14 @@ import { Pokemon } from './pokemon'
 import { Move } from './move'
 import type { Priorities } from './loader'
 
+export interface EvalParams {
+  priorizarHP: boolean
+  coberturasDupla: boolean
+}
+
 export interface Arrays {
-  danoEfetivo: Float32Array  // flat [P * M_max * I], row-major
+  danoEfetivo: Float32Array
+  hpRestante: Float32Array
   pokeIdx: Map<string, number>
   moveIdx: Map<string, number>[]
   moveLists: Move[][]
@@ -47,20 +53,15 @@ export function construirCaches(time: Pokemon[], meta: Pokemon[], priorities: Pr
   const prioMove: number[][] = time.map(p => p.moveset.map(m => priorities[m.name] ?? 0))
 
   const danoEfetivo = new Float32Array(P * Mmax * I)
+  const hpRestante = new Float32Array(P * Mmax * I)
   for (let k = 0; k < I; k++) {
     const inimigo = meta[k]
     const priosInimigo = inimigo.moveset.map(m => priorities[m.name] ?? 0)
     const speedI = speedInimigo[k]
 
-    let melhorDanoInimigo = 0.0
-    for (let mi = 0; mi < inimigo.moveset.length; mi++) {
-      const d = inimigo.calcularDanoEsperado(inimigo.moveset[mi], time[0])
-      if (d > melhorDanoInimigo) melhorDanoInimigo = d
-    }
-
     for (let i = 0; i < P; i++) {
       const speedP = speedPoke[i]
-      
+
       let maxDanoInimigoContraMim = 0.0
       for (let mi = 0; mi < inimigo.moveset.length; mi++) {
         const d = inimigo.calcularDanoEsperado(inimigo.moveset[mi], time[i])
@@ -71,10 +72,7 @@ export function construirCaches(time: Pokemon[], meta: Pokemon[], priorities: Pr
         const danoMeu = danoArray[i * Mmax * I + j * I + k]
         const prioMeuMove = prioMove[i][j]
 
-        if (danoMeu <= 0) {
-          danoEfetivo[i * Mmax * I + j * I + k] = 0.0
-          continue
-        }
+        if (danoMeu <= 0) continue
 
         const ttkMeu = Math.ceil(100.0 / danoMeu)
         const ttkInimigo = maxDanoInimigoContraMim > 0 ? Math.ceil(100.0 / maxDanoInimigoContraMim) : Infinity
@@ -94,41 +92,70 @@ export function construirCaches(time: Pokemon[], meta: Pokemon[], priorities: Pr
           ttkMeu < ttkInimigo ||
           (ttkMeu === ttkInimigo && euAtaqueiPrimeiro)
 
-        danoEfetivo[i * Mmax * I + j * I + k] = euVenco ? danoMeu : 0.0
+        if (!euVenco) continue
+
+        const hitsRecebidos = ttkMeu - 1 + (euAtaqueiPrimeiro ? 0 : 1)
+        const hp = Math.max(0, 100 - hitsRecebidos * maxDanoInimigoContraMim)
+
+        danoEfetivo[i * Mmax * I + j * I + k] = danoMeu
+        hpRestante[i * Mmax * I + j * I + k] = hp
       }
     }
   }
 
-  return { danoEfetivo, pokeIdx, moveIdx, moveLists, Mmax, P, I }
+  return { danoEfetivo, hpRestante, pokeIdx, moveIdx, moveLists, Mmax, P, I }
 }
 
 // ---------------------------------------------------------------------------
 // calcularScoreTimeNp — equivalente ao calcular_score_time_np
 // ---------------------------------------------------------------------------
-export function calcularScoreTime(pokeIndices: number[], estadoIndices: number[][], arrays: Arrays): number {
-  const { danoEfetivo, Mmax, I } = arrays
-  let vitorias = 0
+export function calcularScoreTime(
+  pokeIndices: number[],
+  estadoIndices: number[][],
+  arrays: Arrays,
+  evalParams: EvalParams = { priorizarHP: false, coberturasDupla: false }
+): number {
+  const { danoEfetivo, hpRestante, Mmax, I } = arrays
+  const { priorizarHP, coberturasDupla } = evalParams
+  let total = 0
 
   for (let k = 0; k < I; k++) {
-    let venceuInimigo = false
+    const vencedores: { pi: number; dano: number; hp: number }[] = []
 
     for (let pi = 0; pi < pokeIndices.length; pi++) {
       const iPoke = pokeIndices[pi]
+      let melhorHP = -1
+      let melhorDano = 0
       for (const j of estadoIndices[pi]) {
-        const dano = danoEfetivo[iPoke * Mmax * I + j * I + k]
-        
-        if (dano > 0) {
-          venceuInimigo = true
-          break
+        const d = danoEfetivo[iPoke * Mmax * I + j * I + k]
+        if (d <= 0) continue
+        const hp = hpRestante[iPoke * Mmax * I + j * I + k]
+        if (hp > melhorHP || (hp === melhorHP && d > melhorDano)) {
+          melhorHP = hp
+          melhorDano = d
         }
       }
-      if (venceuInimigo) break
+      if (melhorHP < 0) continue
+      vencedores.push({ pi, dano: melhorDano, hp: melhorHP })
     }
 
-    if (venceuInimigo) vitorias++
+    if (vencedores.length === 0) continue
+
+    vencedores.sort((a, b) => b.hp - a.hp || b.dano - a.dano)
+
+    const primario = vencedores[0]
+    const pontoBase = priorizarHP ? 4 : 1
+    const bonusHP = priorizarHP && primario.hp === 100 ? 1 : 0
+    total += pontoBase + bonusHP
+
+    if (coberturasDupla && vencedores.length >= 2) {
+      const secundario = vencedores[1]
+      const bonusHPSec = priorizarHP && secundario.hp === 100 ? 1 : 0
+      total += 1 + bonusHPSec
+    }
   }
 
-  return vitorias
+  return total
 }
 
 // ---------------------------------------------------------------------------
@@ -137,6 +164,7 @@ export function calcularScoreTime(pokeIndices: number[], estadoIndices: number[]
 export function otimizar(
   pokemon: Pokemon,
   arrays: Arrays,
+  evalParams: EvalParams = { priorizarHP: false, coberturasDupla: false },
   onProgress?: (combinacao: number, total: number) => void
 ): { moveset: Move[]; score: number } {
   const iPoke = arrays.pokeIdx.get(pokemon.name)
@@ -155,7 +183,7 @@ export function otimizar(
     const combo = combinacoes[c]
     const indices = combo.map(idx => moveIdxMap.get(moves[idx].name) ?? -1).filter(i => i >= 0)
     if (!indices.length) continue
-    const score = calcularScoreTime([iPoke], [indices], arrays)
+    const score = calcularScoreTime([iPoke], [indices], arrays, evalParams)
     if (score > melhorScore) {
       melhorScore = score
       melhorMoveset = combo.map(idx => moves[idx])
@@ -179,27 +207,28 @@ export function otimizarTimeSA(
     coolingRate = 0.9995,
     warmStart,
     onProgress,
+    evalParams = { priorizarHP: false, coberturasDupla: false },
   }: {
     maxIteracoes?: number
     temperaturaInicial?: number
     coolingRate?: number
     warmStart?: WarmStart
     onProgress?: ProgressCallback
+    evalParams?: EvalParams
   } = {}
 ): { movesets: Move[][]; score: number } {
-  for (const p of time) p.optimizeMoveset()
+  for (const p of time) p.optimizeMoveset(false, false, priorities)
 
   const arrays = construirCaches(time, meta, priorities)
   const { pokeIdx, moveIdx } = arrays
 
-  // Estado inicial via warm start ou otimizar individual
   const estadoAtual: number[][] = []
   for (const p of time) {
     let melhorMoves: Move[]
     if (warmStart?.[p.name]) {
       melhorMoves = warmStart[p.name].moveset
     } else {
-      melhorMoves = otimizar(p, arrays).moveset
+      melhorMoves = otimizar(p, arrays, evalParams).moveset
     }
     const iPoke = pokeIdx.get(p.name)!
     const idxMap = moveIdx[iPoke]
@@ -207,7 +236,7 @@ export function otimizarTimeSA(
   }
 
   const pokeIndices = time.map(p => pokeIdx.get(p.name)!)
-  let scoreAtual = calcularScoreTime(pokeIndices, estadoAtual, arrays)
+  let scoreAtual = calcularScoreTime(pokeIndices, estadoAtual, arrays, evalParams)
   let bestEstado = estadoAtual.map(x => [...x])
   let bestScore = scoreAtual
 
@@ -236,7 +265,7 @@ export function otimizarTimeSA(
     const pos = indicesAtivos.indexOf(idxRemover)
     indicesAtivos[pos] = idxInserir
 
-    const novoScore = calcularScoreTime(pokeIndices, estadoAtual, arrays)
+    const novoScore = calcularScoreTime(pokeIndices, estadoAtual, arrays, evalParams)
     const delta = novoScore - scoreAtual
 
     if (delta > 0 || Math.random() < Math.exp(delta / T)) {

@@ -2,7 +2,7 @@ import { Pokemon } from './pokemon'
 import { Move } from './move'
 import type { Priorities } from './loader'
 import { construirCaches, otimizar, otimizarTimeSA, calcularScoreTime } from './optimizer'
-import type { WarmStart, ProgressCallback } from './optimizer'
+import type { WarmStart, ProgressCallback, EvalParams } from './optimizer'
 import { otimizarTimeGA } from './geneticOptimizer'
 
 export interface RunnerConfig {
@@ -21,6 +21,7 @@ export interface RunnerConfig {
   timeFixo: Pokemon[]
   banirRecoil: boolean
   banirLock: boolean
+  evalParams: EvalParams
 }
 
 export interface MemberResult {
@@ -42,6 +43,71 @@ export interface RunnerCallbacks {
   onProgress?: ProgressCallback
 }
 
+function refinarMovesInuteis(
+  time: Pokemon[],
+  movesets: Move[][],
+  meta: Pokemon[],
+  priorities: Priorities,
+  evalParams: EvalParams
+): { movesets: Move[][]; score: number } {
+  const arrays = construirCaches(time, meta, priorities)
+  const pokeIndices = time.map(p => arrays.pokeIdx.get(p.name)!)
+
+  const toIndices = (ms: Move[][], pis: number[]) =>
+    ms.map((moveset, i) =>
+      moveset.map(m => arrays.moveIdx[pis[i]].get(m.name) ?? -1).filter(j => j >= 0)
+    )
+
+  let estadoAtual = movesets.map(ms => [...ms])
+  let scoreAtual = calcularScoreTime(pokeIndices, toIndices(estadoAtual, pokeIndices), arrays, evalParams)
+
+  let melhorou = true
+  while (melhorou) {
+    melhorou = false
+
+    for (let pi = 0; pi < time.length; pi++) {
+      const iPoke = pokeIndices[pi]
+      const moveset = estadoAtual[pi]
+      const indicesAtivos = toIndices(estadoAtual, pokeIndices)
+
+      for (let mi = 0; mi < moveset.length; mi++) {
+        const jAtivo = arrays.moveIdx[iPoke].get(moveset[mi].name) ?? -1
+        if (jAtivo < 0) continue
+
+        const contribuicao = (() => {
+          const semEste = indicesAtivos.map((ids, k) =>
+            k === pi ? ids.filter(j => j !== jAtivo) : ids
+          )
+          return scoreAtual - calcularScoreTime(pokeIndices, semEste, arrays, evalParams)
+        })()
+
+        if (contribuicao > 0) continue
+
+        const movesNaPool = arrays.moveLists[iPoke]
+        const usados = new Set(moveset.map(m => arrays.moveIdx[iPoke].get(m.name) ?? -1))
+
+        for (let jNovo = 0; jNovo < movesNaPool.length; jNovo++) {
+          if (usados.has(jNovo)) continue
+
+          const novoMoveset = [...moveset]
+          novoMoveset[mi] = movesNaPool[jNovo]
+          const novoEstado = estadoAtual.map((ms, k) => k === pi ? novoMoveset : ms)
+          const novoScore = calcularScoreTime(pokeIndices, toIndices(novoEstado, pokeIndices), arrays, evalParams)
+
+          if (novoScore > scoreAtual) {
+            scoreAtual = novoScore
+            estadoAtual = novoEstado
+            melhorou = true
+            break
+          }
+        }
+      }
+    }
+  }
+
+  return { movesets: estadoAtual, score: scoreAtual }
+}
+
 export async function rodarOtimizador(
   candidatos: Pokemon[],
   metaInimigos: Pokemon[],
@@ -50,12 +116,13 @@ export async function rodarOtimizador(
   config: RunnerConfig,
   callbacks: RunnerCallbacks = {}
 ): Promise<RunnerResult> {
-  const { algoritmo, tamanhoTime, budget, saTemperatura, saCooling, saIteracoes, gaPopulacao, gaGeracoes, gaMutacao, gruposExclusao, timeFixo, banirRecoil, banirLock } = config
+  const { algoritmo, tamanhoTime, budget, saTemperatura, saCooling, saIteracoes, gaPopulacao, gaGeracoes, gaMutacao, gruposExclusao, timeFixo, banirRecoil, banirLock, evalParams } = config
   const { onLog = () => {}, onProgress } = callbacks
-  const scoreMaximo = metaInimigos.length
+  const pontosPorVitoria = (evalParams.priorizarHP ? 4 : 1) + (evalParams.priorizarHP ? 1 : 0) + (evalParams.coberturasDupla ? 2 : 0)
+  const scoreMaximo = metaInimigos.length * pontosPorVitoria
 
-  for (const p of candidatos) p.optimizeMoveset(banirRecoil, banirLock)
-  for (const p of timeFixo) p.optimizeMoveset(banirRecoil, banirLock)
+  for (const p of candidatos) p.optimizeMoveset(banirRecoil, banirLock, priorities)
+  for (const p of timeFixo) p.optimizeMoveset(banirRecoil, banirLock, priorities)
 
   const todosParaCache = [...candidatos, ...timeFixo.filter(p => !candidatos.some(c => c.name === p.name))]
 
@@ -63,7 +130,7 @@ export async function rodarOtimizador(
 
   const scoresIndividuais: WarmStart = {}
   for (const pokemon of todosParaCache) {
-    const { moveset, score } = otimizar(pokemon, arraysGlobal)
+    const { moveset, score } = otimizar(pokemon, arraysGlobal, evalParams)
     scoresIndividuais[pokemon.name] = { moveset, score }
   }
 
@@ -85,19 +152,23 @@ export async function rodarOtimizador(
         mutationRate: gaMutacao,
         warmStart: scoresIndividuais,
         onProgress,
+        evalParams,
       }
     )
 
     const custoTotal = result.time.reduce((acc, p) => acc + (custos[p.name] ?? 0), 0)
 
+    onLog('Refinando moves inúteis...')
+    const refinado = refinarMovesInuteis(result.time, result.movesets, metaInimigos, priorities, evalParams)
+
     return {
       time: result.time.map((p, i) => ({
         pokemon: p,
-        moveset: result.movesets[i],
+        moveset: refinado.movesets[i],
         custo: custos[p.name] ?? 0,
         scoreIndividual: scoresIndividuais[p.name]?.score ?? 0,
       })),
-      score: result.score,
+      score: refinado.score,
       scoreMaximo,
       custoTotal,
     }
@@ -153,6 +224,7 @@ export async function rodarOtimizador(
           coolingRate: saCooling,
           warmStart: scoresIndividuais,
           onProgress,
+          evalParams,
         })
         scoreTeste = result.score
         movesetsTeste = result.movesets
@@ -184,14 +256,17 @@ export async function rodarOtimizador(
 
   const custoTotal = timeAtual.reduce((acc, p) => acc + (custos[p.name] ?? 0), 0)
 
+  onLog('Refinando moves inúteis...')
+  const refinado = refinarMovesInuteis(timeAtual, movesetsAtual, metaInimigos, priorities, evalParams)
+
   return {
     time: timeAtual.map((p, i) => ({
       pokemon: p,
-      moveset: movesetsAtual[i],
+      moveset: refinado.movesets[i],
       custo: custos[p.name] ?? 0,
       scoreIndividual: scoresIndividuais[p.name]?.score ?? 0,
     })),
-    score: scoreAtual,
+    score: refinado.score,
     scoreMaximo,
     custoTotal,
   }

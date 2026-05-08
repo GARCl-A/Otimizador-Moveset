@@ -1,0 +1,81 @@
+Name,Type,Category,Power,Accuracy,Source
+Acrobatics,Flying,Physical,55,100,TM
+Agility,Psychic,Status,0,0,"Level, TM"
+Ally Switch,Psychic,Status,0,0,TM
+Assurance,Dark,Physical,60,100,TM
+Attract,Normal,Status,0,100,TM
+Baton Pass,Normal,Status,0,0,TM
+Blast Burn,Fire,Special,150,90,TM
+Blaze Kick,Fire,Physical,85,90,TM
+Bounce,Flying,Physical,85,85,"Level, TM"
+Bulk Up,Fighting,Status,0,0,TM
+Burning Jealousy,Fire,Special,70,100,TM
+Coaching,Fighting,Status,0,0,TM
+Counter,Fighting,Physical,0,100,"Level, TM"
+Court Change,Normal,Status,0,100,Level
+Double Kick,Fighting,Physical,30,100,Level
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,"Level, TM"
+Electro Ball,Electric,Special,0,100,TM
+Ember,Fire,Special,40,100,Level
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Feint,Normal,Physical,30,100,Level
+Fire Blast,Fire,Special,110,85,TM
+Fire Fang,Fire,Physical,65,95,TM
+Fire Pledge,Fire,Special,80,100,TM
+Fire Punch,Fire,Physical,75,100,TM
+Fire Spin,Fire,Special,35,85,TM
+Flame Charge,Fire,Physical,50,100,"Level, TM"
+Flamethrower,Fire,Special,90,100,TM
+Flare Blitz,Fire,Physical,120,100,TM
+Fling,Dark,Physical,0,100,TM
+Focus Blast,Fighting,Special,120,70,TM
+Focus Energy,Normal,Status,0,0,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Growl,Normal,Status,0,100,Level
+Gunk Shot,Poison,Physical,120,80,TM
+Headbutt,Normal,Physical,70,100,Level
+Heat Wave,Fire,Special,95,90,TM
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Iron Head,Steel,Physical,80,100,TM
+Low Kick,Fighting,Physical,0,100,TM
+Low Sweep,Fighting,Physical,65,100,TM
+Mega Kick,Normal,Physical,120,75,TM
+Mud Shot,Ground,Special,55,95,TM
+Mud-Slap,Ground,Special,20,100,TM
+Overheat,Fire,Special,130,90,TM
+Protect,Normal,Status,0,0,TM
+Pyro Ball,Fire,Physical,120,90,Level
+Quick Attack,Normal,Physical,40,100,Level
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Revenge,Fighting,Physical,60,100,TM
+Reversal,Fighting,Physical,0,100,TM
+Round,Normal,Special,60,100,TM
+Scorching Sands,Ground,Special,70,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Shadow Ball,Ghost,Special,80,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Smack Down,Rock,Physical,50,100,TM
+Snarl,Dark,Special,55,95,TM
+Snore,Normal,Special,50,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Super Fang,Normal,Physical,0,90,TM
+Swift,Normal,Special,60,0,TM
+Swords Dance,Normal,Status,0,0,TM
+Tackle,Normal,Physical,40,100,Level
+Take Down,Normal,Physical,90,85,TM
+Taunt,Dark,Status,0,100,TM
+Temper Flare,Fire,Physical,75,100,TM
+Tera Blast,Normal,Special,80,100,TM
+Trailblaze,Grass,Physical,50,100,TM
+U-Turn,Bug,Physical,70,100,TM
+Weather Ball,Normal,Special,50,100,TM
+Will-O-Wisp,Fire,Status,0,85,TM
+Work Up,Normal,Status,0,0,TM
+Zen Headbutt,Psychic,Physical,80,90,TM

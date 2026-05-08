@@ -57,7 +57,7 @@ function scoreTimeDetalhado(time: MembroTime[], meta: Pokemon[], priorities: Pri
   })
 
   const porInimigo = new Map<string, CoberturaEntry>()
-  const { danoEfetivo, Mmax, I } = arrays
+  const { danoEfetivo, hpRestante, Mmax, I } = arrays
 
   for (let k = 0; k < I; k++) {
     let melhor: CoberturaEntry = { score: 0, pokemon: '', move: '' }

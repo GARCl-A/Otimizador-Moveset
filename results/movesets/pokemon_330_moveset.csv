@@ -1,0 +1,98 @@
+Name,Type,Category,Power,Accuracy,Source
+Aerial Ace,Flying,Physical,60,0,TM
+Air Cutter,Flying,Special,60,95,TM
+Air Slash,Flying,Special,75,95,TM
+Alluring Voice,Fairy,Special,80,100,TM
+Astonish,Ghost,Physical,30,100,Level
+Attract,Normal,Status,0,100,TM
+Bide,Normal,Physical,0,0,Level
+Bite,Dark,Physical,60,100,Level
+Body Slam,Normal,Physical,85,100,TM
+Boomburst,Normal,Special,140,100,Level
+Breaking Swipe,Dragon,Physical,60,100,TM
+Brutal Swing,Dark,Physical,60,100,TM
+Bug Bite,Bug,Physical,60,100,TM
+Bug Buzz,Bug,Special,90,100,"Level, TM"
+Bulldoze,Ground,Physical,60,100,"Level, TM"
+Confide,Normal,Status,0,0,TM
+Crunch,Dark,Physical,80,100,"Level, TM"
+Defog,Flying,Status,0,0,TM
+Dig,Ground,Physical,80,100,"Level, TM"
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Draco Meteor,Dragon,Special,130,90,TM
+Dragon Breath,Dragon,Special,60,100,Level
+Dragon Cheer,Dragon,Status,0,0,TM
+Dragon Claw,Dragon,Physical,80,100,"Level, TM"
+Dragon Dance,Dragon,Status,0,0,"Level, TM"
+Dragon Pulse,Dragon,Special,85,100,TM
+Dragon Rush,Dragon,Physical,100,75,Level
+Dragon Tail,Dragon,Physical,60,90,"Level, TM"
+Dual Wingbeat,Flying,Physical,40,90,TM
+Earth Power,Ground,Special,90,100,"Level, TM"
+Earthquake,Ground,Physical,100,100,"Level, TM"
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Feint,Normal,Physical,30,100,Level
+Feint Attack,Dark,Physical,60,0,Level
+Fire Blast,Fire,Special,110,85,TM
+Fire Punch,Fire,Physical,75,100,TM
+Fire Spin,Fire,Special,35,85,TM
+Fissure,Ground,Physical,200,30,Level
+Flamethrower,Fire,Special,90,100,TM
+Fly,Flying,Physical,90,95,TM
+Focus Energy,Normal,Status,0,0,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Drain,Grass,Special,75,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Heat Wave,Fire,Special,95,90,TM
+Hidden Power,Normal,Special,60,100,TM
+Hone Claws,Dark,Status,0,0,TM
+Hyper Beam,Normal,Special,150,90,TM
+Incinerate,Fire,Special,60,100,TM
+Iron Tail,Steel,Physical,100,75,TM
+Mega Kick,Normal,Physical,120,75,TM
+Mega Punch,Normal,Physical,80,85,TM
+Mud Shot,Ground,Special,55,95,TM
+Mud-Slap,Ground,Special,20,100,"Level, TM"
+Outrage,Dragon,Physical,120,100,TM
+Power-Up Punch,Fighting,Physical,40,100,TM
+Protect,Normal,Status,0,0,TM
+Psychic Noise,Psychic,Special,75,100,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Rock Slide,Rock,Physical,75,90,TM
+Rock Smash,Fighting,Physical,40,100,TM
+Rock Tomb,Rock,Physical,60,95,TM
+Roost,Flying,Status,0,0,TM
+Round,Normal,Special,60,100,TM
+Sand Attack,Ground,Status,0,100,Level
+Sand Tomb,Ground,Physical,35,85,"Level, TM"
+Sandstorm,Rock,Status,0,0,"Level, TM"
+Scale Shot,Dragon,Physical,25,90,TM
+Scorching Sands,Ground,Special,70,100,TM
+Screech,Normal,Status,0,85,"Level, TM"
+Secret Power,Normal,Physical,70,100,TM
+Signal Beam,Bug,Special,75,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Stealth Rock,Rock,Status,0,0,TM
+Steel Wing,Steel,Physical,70,90,TM
+Stone Edge,Rock,Physical,100,80,TM
+Strength,Normal,Physical,80,100,TM
+Struggle Bug,Bug,Special,50,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Superpower,Fighting,Physical,120,100,"Level, TM"
+Supersonic,Normal,Status,0,55,Level
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,TM
+Tailwind,Flying,Status,0,0,TM
+Tera Blast,Normal,Special,80,100,TM
+Throat Chop,Dark,Physical,80,100,TM
+Thunder Punch,Electric,Physical,75,100,TM
+Toxic,Poison,Status,0,90,TM
+U-Turn,Bug,Physical,70,100,TM
+Uproar,Normal,Special,90,100,"Level, TM"
+Vacuum Wave,Fighting,Special,40,100,TM

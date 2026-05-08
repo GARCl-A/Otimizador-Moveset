@@ -16,6 +16,8 @@ export interface Config {
   banirLendarios: boolean
   banirRecoil: boolean
   banirLock: boolean
+  priorizarHP: boolean
+  coberturasDupla: boolean
   typeFilter: string
   timeFixoInput: string
   gruposExclusao: string[]
@@ -50,6 +52,8 @@ const CONFIG_INICIAL: Config = {
   banirLendarios: false,
   banirRecoil: false,
   banirLock: false,
+  priorizarHP: false,
+  coberturasDupla: false,
   typeFilter: '',
   timeFixoInput: '',
   gruposExclusao: [],
@@ -129,6 +133,7 @@ export function useOtimizador(todosNomes: string[]) {
           timeFixo,
           banirRecoil: config.banirRecoil,
           banirLock: config.banirLock,
+          evalParams: { priorizarHP: config.priorizarHP, coberturasDupla: config.coberturasDupla },
         },
         {
           onLog: (msg) => {
@@ -157,7 +162,8 @@ export function useOtimizador(todosNomes: string[]) {
         result.scoreMaximo,
         config.budget,
         result.custoTotal,
-        config.fontes
+        config.fontes,
+        { priorizarHP: config.priorizarHP, coberturasDupla: config.coberturasDupla }
       )
 
       setResultado({ scoreInfo, relatorio, time: result.time })

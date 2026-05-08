@@ -2,7 +2,7 @@ import { Pokemon } from './pokemon'
 import { Move } from './move'
 import type { Priorities } from './loader'
 import { construirCaches, calcularScoreTime, otimizar } from './optimizer'
-import type { WarmStart, ProgressCallback } from './optimizer'
+import type { WarmStart, ProgressCallback, EvalParams } from './optimizer'
 
 interface Individual {
   pokemons: Pokemon[]
@@ -18,6 +18,7 @@ interface GeneticConfig {
   eliteSize?: number
   warmStart?: WarmStart
   onProgress?: ProgressCallback
+  evalParams?: EvalParams
 }
 
 export function otimizarTimeGA(
@@ -36,22 +37,14 @@ export function otimizarTimeGA(
     eliteSize = 10,
     warmStart,
     onProgress,
+    evalParams = { priorizarHP: false, coberturasDupla: false },
   }: GeneticConfig = {}
 ): { movesets: Move[][]; score: number; time: Pokemon[] } {
   for (const p of candidatos) p.optimizeMoveset()
   for (const p of timeFixo) p.optimizeMoveset()
 
   const population = gerarPopulacaoInicial(
-    candidatos,
-    meta,
-    custos,
-    priorities,
-    tamanhoTime,
-    budget,
-    gruposExclusao,
-    timeFixo,
-    populationSize,
-    warmStart
+    candidatos, meta, custos, priorities, tamanhoTime, budget, gruposExclusao, timeFixo, populationSize, warmStart, evalParams
   )
 
   let bestIndividual = population.reduce((a, b) => a.fitness > b.fitness ? a : b)
@@ -74,7 +67,7 @@ export function otimizarTimeGA(
         child = mutacao(child, candidatos, custos, budget, gruposExclusao, timeFixo)
       }
 
-      child = avaliarIndividuo(child, meta, priorities)
+      child = avaliarIndividuo(child, meta, priorities, evalParams)
 
       if (child.fitness > bestIndividual.fitness) {
         bestIndividual = child
@@ -94,32 +87,15 @@ export function otimizarTimeGA(
 }
 
 function gerarPopulacaoInicial(
-  candidatos: Pokemon[],
-  meta: Pokemon[],
-  custos: Record<string, number>,
-  priorities: Priorities,
-  tamanhoTime: number,
-  budget: number,
-  gruposExclusao: string[][],
-  timeFixo: Pokemon[],
-  populationSize: number,
-  warmStart?: WarmStart
+  candidatos: Pokemon[], meta: Pokemon[], custos: Record<string, number>, priorities: Priorities,
+  tamanhoTime: number, budget: number, gruposExclusao: string[][], timeFixo: Pokemon[],
+  populationSize: number, warmStart?: WarmStart, evalParams: EvalParams = { priorizarHP: false, coberturasDupla: false }
 ): Individual[] {
   const population: Individual[] = []
-
   for (let i = 0; i < populationSize; i++) {
-    const individual = gerarIndividuoAleatorio(
-      candidatos,
-      custos,
-      tamanhoTime,
-      budget,
-      gruposExclusao,
-      timeFixo,
-      warmStart
-    )
-    population.push(avaliarIndividuo(individual, meta, priorities))
+    const individual = gerarIndividuoAleatorio(candidatos, custos, tamanhoTime, budget, gruposExclusao, timeFixo, warmStart)
+    population.push(avaliarIndividuo(individual, meta, priorities, evalParams))
   }
-
   return population
 }
 
@@ -185,11 +161,10 @@ function gerarIndividuoAleatorio(
 function avaliarIndividuo(
   individual: Individual,
   meta: Pokemon[],
-  priorities: Priorities
+  priorities: Priorities,
+  evalParams: EvalParams = { priorizarHP: false, coberturasDupla: false }
 ): Individual {
-  if (individual.pokemons.length === 0) {
-    return { ...individual, fitness: 0 }
-  }
+  if (individual.pokemons.length === 0) return { ...individual, fitness: 0 }
 
   const arrays = construirCaches(individual.pokemons, meta, priorities)
   const pokeIndices = individual.pokemons.map(p => arrays.pokeIdx.get(p.name)!)
@@ -199,9 +174,7 @@ function avaliarIndividuo(
     return moveset.map(m => moveIdxMap.get(m.name) ?? 0).filter(idx => idx >= 0)
   })
 
-  const fitness = calcularScoreTime(pokeIndices, estadoIndices, arrays)
-
-  return { ...individual, fitness }
+  return { ...individual, fitness: calcularScoreTime(pokeIndices, estadoIndices, arrays, evalParams) }
 }
 
 function selecaoTorneio(population: Individual[], tournamentSize: number): Individual {

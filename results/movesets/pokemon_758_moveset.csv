@@ -1,0 +1,89 @@
+Name,Type,Category,Power,Accuracy,Source
+Acid Spray,Poison,Special,40,100,TM
+Acrobatics,Flying,Physical,55,100,TM
+Agility,Psychic,Status,0,0,TM
+Attract,Normal,Status,0,100,TM
+Beat Up,Dark,Physical,0,100,TM
+Body Slam,Normal,Physical,85,100,TM
+Breaking Swipe,Dragon,Physical,60,100,TM
+Burning Jealousy,Fire,Special,70,100,TM
+Captivate,Normal,Status,0,100,Level
+Confide,Normal,Status,0,0,TM
+Corrosive Gas,Poison,Status,0,100,TM
+Covet,Normal,Physical,60,100,TM
+Cross Poison,Poison,Physical,70,100,TM
+Disable,Normal,Status,0,100,Level
+Double Team,Normal,Status,0,0,TM
+Dragon Cheer,Dragon,Status,0,0,TM
+Dragon Claw,Dragon,Physical,80,100,TM
+Dragon Dance,Dragon,Status,0,0,TM
+Dragon Pulse,Dragon,Special,85,100,"Level, TM"
+Dragon Tail,Dragon,Physical,60,90,TM
+Ember,Fire,Special,40,100,Level
+Encore,Normal,Status,0,100,"Level, TM"
+Endeavor,Normal,Physical,0,100,"Level, TM"
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Fake Tears,Dark,Status,0,100,TM
+Fire Blast,Fire,Special,110,85,TM
+Fire Fang,Fire,Physical,65,95,TM
+Fire Lash,Fire,Physical,80,100,Level
+Flame Charge,Fire,Physical,50,100,TM
+Flamethrower,Fire,Special,90,100,"Level, TM"
+Flare Blitz,Fire,Physical,120,100,TM
+Fling,Dark,Physical,0,100,TM
+Foul Play,Dark,Physical,95,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Gunk Shot,Poison,Physical,120,80,TM
+Heat Wave,Fire,Special,95,90,TM
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Hyper Voice,Normal,Special,90,100,TM
+Incinerate,Fire,Special,60,100,"Level, TM"
+Iron Tail,Steel,Physical,100,75,TM
+Knock Off,Dark,Physical,65,100,"Level, TM"
+Leech Life,Bug,Physical,80,100,TM
+Mud-Slap,Ground,Special,20,100,TM
+Nasty Plot,Dark,Status,0,0,"Level, TM"
+Overheat,Fire,Special,130,90,TM
+Payback,Dark,Physical,50,100,TM
+Poison Fang,Poison,Physical,50,100,Level
+Poison Gas,Poison,Status,0,90,Level
+Poison Jab,Poison,Physical,80,100,TM
+Poison Tail,Poison,Physical,50,100,TM
+Pound,Normal,Physical,40,100,Level
+Protect,Normal,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Round,Normal,Special,60,100,TM
+Scale Shot,Dragon,Physical,25,90,TM
+Scary Face,Normal,Status,0,100,TM
+Scratch,Normal,Physical,40,100,Level
+Secret Power,Normal,Physical,70,100,TM
+Shadow Claw,Ghost,Physical,70,100,TM
+Skitter Smack,Bug,Physical,70,90,TM
+Sleep Talk,Normal,Status,0,0,TM
+Sludge Bomb,Poison,Special,90,100,TM
+Sludge Wave,Poison,Special,95,100,TM
+Smog,Poison,Special,30,70,Level
+Snore,Normal,Special,50,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,"Level, TM"
+Sweet Scent,Normal,Status,0,100,Level
+Swift,Normal,Special,60,0,TM
+Take Down,Normal,Physical,90,85,TM
+Taunt,Dark,Status,0,100,TM
+Temper Flare,Fire,Physical,75,100,TM
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Thunder Wave,Electric,Status,0,90,TM
+Torment,Dark,Status,0,100,"Level, TM"
+Toxic,Poison,Status,0,90,"Level, TM"
+Toxic Spikes,Poison,Status,0,0,TM
+Trailblaze,Grass,Physical,50,100,TM
+Venom Drench,Poison,Status,0,100,TM
+Venoshock,Poison,Special,65,100,"Level, TM"
+Will-O-Wisp,Fire,Status,0,85,TM

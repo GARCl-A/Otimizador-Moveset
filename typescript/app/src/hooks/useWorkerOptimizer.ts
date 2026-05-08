@@ -14,10 +14,12 @@ function reconstruirResultado(
   budget: number,
   priorities: ReturnType<typeof getPriorities>,
   banirRecoil: boolean,
-  banirLock: boolean
+  banirLock: boolean,
+  priorizarHP: boolean,
+  coberturasDupla: boolean
 ): ResultadoOtimizacao {
   const metaInimigos = todosNomes.map(nome => buildPokemon(nome, ['Level', 'TM']))
-  for (const p of metaInimigos) p.optimizeMoveset(banirRecoil, banirLock)
+  for (const p of metaInimigos) p.optimizeMoveset(banirRecoil, banirLock, priorities)
 
   const time: MemberResult[] = serialized.time.map(m => {
     const pokemon = buildPokemon(m.pokemonName, fontes)
@@ -40,7 +42,8 @@ function reconstruirResultado(
     serialized.scoreMaximo,
     budget,
     serialized.custoTotal,
-    fontes
+    fontes,
+    { priorizarHP, coberturasDupla }
   )
 
   return { scoreInfo, relatorio, time }
@@ -116,6 +119,7 @@ export function useWorkerOptimizer(todosNomes: string[]) {
         gruposExclusao: config.gruposExclusao.map(g => parseList(g)),
         banirRecoil: config.banirRecoil,
         banirLock: config.banirLock,
+        evalParams: { priorizarHP: config.priorizarHP, coberturasDupla: config.coberturasDupla },
       },
     }
 
@@ -138,7 +142,11 @@ export function useWorkerOptimizer(todosNomes: string[]) {
       }
 
       if (msg.type === 'SUCCESS') {
-        const res = reconstruirResultado(msg.result, todosNomes, config.fontes, config.budget, priorities, config.banirRecoil, config.banirLock)
+        const res = reconstruirResultado(
+          msg.result, todosNomes, config.fontes, config.budget, priorities,
+          config.banirRecoil, config.banirLock,
+          config.priorizarHP ?? false, config.coberturasDupla ?? false
+        )
         setProgresso(100)
         setStatus('Concluído!')
         setResultado(res)

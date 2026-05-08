@@ -1,0 +1,70 @@
+Name,Type,Category,Power,Accuracy,Source
+Acrobatics,Flying,Physical,55,100,TM
+Attract,Normal,Status,0,100,TM
+Body Slam,Normal,Physical,85,100,TM
+Bounce,Flying,Physical,85,85,TM
+Bulldoze,Ground,Physical,60,100,TM
+Burning Jealousy,Fire,Special,70,100,TM
+Confide,Normal,Status,0,0,TM
+Crunch,Dark,Physical,80,100,"Level, TM"
+Dark Pulse,Dark,Special,80,100,TM
+Dig,Ground,Physical,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Echoed Voice,Normal,Special,40,100,"Level, TM"
+Ember,Fire,Special,40,100,Level
+Endeavor,Normal,Physical,0,100,"Level, TM"
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Fire Blast,Fire,Special,110,85,TM
+Fire Fang,Fire,Physical,65,95,"Level, TM"
+Fire Spin,Fire,Special,35,85,TM
+Flame Charge,Fire,Physical,50,100,TM
+Flamethrower,Fire,Special,90,100,"Level, TM"
+Flare Blitz,Fire,Physical,120,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Headbutt,Normal,Physical,70,100,Level
+Heat Wave,Fire,Special,95,90,TM
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,"Level, TM"
+Hyper Voice,Normal,Special,90,100,"Level, TM"
+Incinerate,Fire,Special,60,100,"Level, TM"
+Iron Tail,Steel,Physical,100,75,TM
+Leer,Normal,Status,0,100,Level
+Mud-Slap,Ground,Special,20,100,TM
+Noble Roar,Normal,Status,0,100,Level
+Overheat,Fire,Special,130,90,"Level, TM"
+Payback,Dark,Physical,50,100,TM
+Protect,Normal,Status,0,0,TM
+Psychic Fangs,Psychic,Physical,85,100,TM
+Rain Dance,Water,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Retaliate,Normal,Physical,70,100,TM
+Return,Normal,Physical,0,100,TM
+Roar,Normal,Status,0,0,TM
+Rock Smash,Fighting,Physical,40,100,TM
+Round,Normal,Special,60,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snarl,Dark,Special,55,95,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Strength,Normal,Physical,80,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,TM
+Tackle,Normal,Physical,40,100,Level
+Take Down,Normal,Physical,90,85,"Level, TM"
+Taunt,Dark,Status,0,100,TM
+Temper Flare,Fire,Physical,75,100,TM
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Thunder Fang,Electric,Physical,65,95,TM
+Toxic,Poison,Status,0,90,TM
+Trailblaze,Grass,Physical,50,100,TM
+Wild Charge,Electric,Physical,90,100,TM
+Will-O-Wisp,Fire,Status,0,85,TM
+Work Up,Normal,Status,0,0,"Level, TM"
