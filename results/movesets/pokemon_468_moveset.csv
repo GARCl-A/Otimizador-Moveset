@@ -1,0 +1,105 @@
+Name,Type,Category,Power,Accuracy,Source
+Aerial Ace,Flying,Physical,60,0,TM
+After You,Normal,Status,0,0,Level
+Air Cutter,Flying,Special,60,95,TM
+Air Slash,Flying,Special,75,95,"Level, TM"
+Ally Switch,Psychic,Status,0,0,TM
+Amnesia,Psychic,Status,0,0,TM
+Ancient Power,Rock,Special,60,100,Level
+Attract,Normal,Status,0,100,TM
+Aura Sphere,Fighting,Special,80,0,"Level, TM"
+Baton Pass,Normal,Status,0,0,"Level, TM"
+Body Slam,Normal,Physical,85,100,TM
+Brick Break,Fighting,Physical,75,100,TM
+Charm,Fairy,Status,0,100,"Level, TM"
+Confide,Normal,Status,0,0,TM
+Covet,Normal,Physical,60,100,TM
+Curse,Ghost,Status,0,0,TM
+Dazzling Gleam,Fairy,Special,80,100,TM
+Defog,Flying,Status,0,0,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,Level
+Drain Punch,Fighting,Physical,75,100,TM
+Draining Kiss,Fairy,Special,50,100,TM
+Dream Eater,Psychic,Special,100,100,TM
+Dual Wingbeat,Flying,Physical,40,90,TM
+Echoed Voice,Normal,Special,40,100,TM
+Encore,Normal,Status,0,100,TM
+Endeavor,Normal,Physical,0,100,TM
+Endure,Normal,Status,0,0,TM
+Extreme Speed,Normal,Physical,80,100,Level
+Facade,Normal,Physical,70,100,TM
+Fairy Wind,Fairy,Special,40,100,Level
+Fire Blast,Fire,Special,110,85,TM
+Flamethrower,Fire,Special,90,100,TM
+Flash,Normal,Status,0,100,TM
+Fling,Dark,Physical,0,100,TM
+Fly,Flying,Physical,90,95,TM
+Focus Punch,Fighting,Physical,150,100,TM
+Follow Me,Normal,Status,0,0,Level
+Frustration,Normal,Physical,0,100,TM
+Future Sight,Psychic,Special,120,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Grass Knot,Grass,Special,0,100,TM
+Growl,Normal,Status,0,100,Level
+Heal Bell,Normal,Status,0,0,TM
+Heat Wave,Fire,Special,95,90,TM
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Hyper Voice,Normal,Special,90,100,TM
+Imprison,Psychic,Status,0,100,TM
+Incinerate,Fire,Special,60,100,TM
+Last Resort,Normal,Physical,140,100,Level
+Life Dew,Water,Status,0,0,Level
+Light Screen,Psychic,Status,0,0,TM
+Magical Leaf,Grass,Special,60,0,TM
+Mega Kick,Normal,Physical,120,75,TM
+Mega Punch,Normal,Physical,80,85,TM
+Metronome,Normal,Status,0,0,"Level, TM"
+Mud-Slap,Ground,Special,20,100,TM
+Mystical Fire,Fire,Special,75,100,TM
+Nasty Plot,Dark,Status,0,0,TM
+Play Rough,Fairy,Physical,90,90,TM
+Pluck,Flying,Physical,60,100,TM
+Pound,Normal,Physical,40,100,Level
+Protect,Normal,Status,0,0,TM
+Psych Up,Normal,Status,0,0,TM
+Psychic,Psychic,Special,90,100,TM
+Psyshock,Psychic,Special,80,100,TM
+Rain Dance,Water,Status,0,0,TM
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Retaliate,Normal,Physical,70,100,TM
+Return,Normal,Physical,0,100,TM
+Rock Smash,Fighting,Physical,40,100,TM
+Roost,Flying,Status,0,0,TM
+Round,Normal,Special,60,100,TM
+Safeguard,Normal,Status,0,0,"Level, TM"
+Secret Power,Normal,Physical,70,100,TM
+Shadow Ball,Ghost,Special,80,100,TM
+Signal Beam,Bug,Special,75,100,TM
+Sky Attack,Flying,Physical,140,90,Level
+Sleep Talk,Normal,Status,0,0,TM
+Smart Strike,Steel,Physical,70,0,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,TM
+Steel Wing,Steel,Physical,70,90,TM
+Stored Power,Psychic,Special,20,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Sweet Kiss,Fairy,Status,0,75,Level
+Swift,Normal,Special,60,0,TM
+Tailwind,Flying,Status,0,0,TM
+Tera Blast,Normal,Special,80,100,TM
+Thunder Wave,Electric,Status,0,90,TM
+Toxic,Poison,Status,0,90,TM
+Tri Attack,Normal,Special,80,100,"Level, TM"
+Trick,Psychic,Status,0,100,TM
+Uproar,Normal,Special,90,100,TM
+Water Pulse,Water,Special,60,100,TM
+Wish,Normal,Status,0,0,Level
+Work Up,Normal,Status,0,0,TM
+Yawn,Normal,Status,0,0,Level
+Zen Headbutt,Psychic,Physical,80,90,TM

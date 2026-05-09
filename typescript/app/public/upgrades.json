@@ -1189,5 +1189,102 @@
         "accuracy": 100
       }
     ]
+  },
+  "Primarina": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Psychic Noise",
+        "type": "Psychic",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100
+      },
+      {
+        "name": "Moonlight",
+        "type": "Fairy",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      },
+      {
+        "name": "Overdrive",
+        "type": "Electric",
+        "category": "Special",
+        "power": 80,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Tinkaton": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Ivy Cudgel",
+        "type": "Grass",
+        "category": "Physical",
+        "power": 100,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Clefable": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Calm Mind",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      },
+      {
+        "name": "Earth Power",
+        "type": "Ground",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100
+      },
+      {
+        "name": "Lunar Blessing",
+        "type": "Psychic",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      },
+      {
+        "name": "Light of Ruin",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 140,
+        "accuracy": 90
+      }
+    ]
+  },
+  "Carbink": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Body Press",
+        "type": "Fighting",
+        "category": "Physical",
+        "power": 80,
+        "accuracy": 100
+      },
+      {
+        "name": "Recover",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      },
+      {
+        "name": "Sparkling Swirl",
+        "type": "Normal",
+        "category": "Special",
+        "power": 120,
+        "accuracy": 85
+      }
+    ]
   }
 }

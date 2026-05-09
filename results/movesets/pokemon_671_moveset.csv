@@ -1,0 +1,71 @@
+Name,Type,Category,Power,Accuracy,Source
+Alluring Voice,Fairy,Special,80,100,TM
+Ally Switch,Psychic,Status,0,0,TM
+Attract,Normal,Status,0,100,TM
+Baton Pass,Normal,Status,0,0,TM
+Calm Mind,Psychic,Status,0,0,TM
+Charm,Fairy,Status,0,100,TM
+Chilling Water,Water,Special,50,100,TM
+Confide,Normal,Status,0,0,TM
+Covet,Normal,Physical,60,100,TM
+Dazzling Gleam,Fairy,Special,80,100,TM
+Defog,Flying,Status,0,0,TM
+Disarming Voice,Fairy,Special,40,0,"Level, TM"
+Double Team,Normal,Status,0,0,TM
+Draining Kiss,Fairy,Special,50,100,TM
+Echoed Voice,Normal,Special,40,100,TM
+Endeavor,Normal,Physical,0,100,TM
+Endure,Normal,Status,0,0,TM
+Energy Ball,Grass,Special,90,100,TM
+Facade,Normal,Physical,70,100,TM
+Fairy Wind,Fairy,Special,40,100,Level
+Flash,Normal,Status,0,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Drain,Grass,Special,75,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Grass Knot,Grass,Special,0,100,"Level, TM"
+Grassy Terrain,Grass,Status,0,0,"Level, TM"
+Heal Bell,Normal,Status,0,0,TM
+Helping Hand,Normal,Status,0,0,TM
+Hidden Power,Normal,Special,60,100,TM
+Hyper Beam,Normal,Special,150,90,TM
+Light Screen,Psychic,Status,0,0,TM
+Lucky Chant,Normal,Status,0,0,Level
+Magical Leaf,Grass,Special,60,0,"Level, TM"
+Metronome,Normal,Status,0,0,TM
+Misty Explosion,Fairy,Special,100,100,TM
+Misty Terrain,Fairy,Status,0,0,"Level, TM"
+Moonblast,Fairy,Special,95,100,Level
+Nature Power,Normal,Status,0,0,TM
+Petal Blizzard,Grass,Physical,90,100,"Level, TM"
+Petal Dance,Grass,Special,120,100,Level
+Pollen Puff,Bug,Special,90,100,TM
+Protect,Normal,Status,0,0,TM
+Psychic,Psychic,Special,90,100,TM
+Psychic Noise,Psychic,Special,75,100,TM
+Rain Dance,Water,Status,0,0,TM
+Razor Leaf,Grass,Physical,55,95,Level
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Round,Normal,Special,60,100,TM
+Safeguard,Normal,Status,0,0,"Level, TM"
+Secret Power,Normal,Physical,70,100,TM
+Seed Bomb,Grass,Physical,80,100,TM
+Skill Swap,Psychic,Status,0,0,TM
+Sleep Talk,Normal,Status,0,0,TM
+Snore,Normal,Special,50,100,TM
+Solar Beam,Grass,Special,120,100,"Level, TM"
+Stored Power,Psychic,Special,20,100,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,TM
+Swift,Normal,Special,60,0,TM
+Synthesis,Grass,Status,0,0,"Level, TM"
+Tackle,Normal,Physical,40,100,Level
+Tera Blast,Normal,Special,80,100,TM
+Toxic,Poison,Status,0,90,TM
+Trailblaze,Grass,Physical,50,100,TM
+Trick,Psychic,Status,0,100,TM
+Vine Whip,Grass,Physical,45,100,Level
+Wish,Normal,Status,0,0,Level
+Worry Seed,Grass,Status,0,100,TM

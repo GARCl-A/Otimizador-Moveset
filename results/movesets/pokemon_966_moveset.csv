@@ -1,0 +1,67 @@
+Name,Type,Category,Power,Accuracy,Source
+Acid Spray,Poison,Special,40,100,TM
+Assurance,Dark,Physical,60,100,"Level, Level, Level, Level, Level, Level, TM"
+Attract,Normal,Status,0,100,TM
+Blazing Torque,Fire,Physical,80,100,Level
+Body Slam,Normal,Physical,85,100,TM
+Bulldoze,Ground,Physical,60,100,TM
+Combat Torque,Fighting,Physical,100,100,Level
+Curse,Ghost,Status,0,0,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Endeavor,Normal,Physical,0,100,TM
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Flash Cannon,Steel,Special,80,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Gunk Shot,Poison,Physical,120,80,"Level, Level, Level, Level, Level, Level, TM"
+Gyro Ball,Steel,Physical,0,100,"Level, Level, Level, Level, Level, Level, TM"
+Hard Press,Steel,Physical,0,100,TM
+Haze,Ice,Status,0,0,TM
+Headbutt,Normal,Physical,70,100,"Level, Level, Level, Level, Level, Level"
+Heavy Slam,Steel,Physical,0,100,TM
+Hidden Power,Normal,Special,60,100,TM
+High Horsepower,Ground,Physical,95,95,TM
+Hyper Beam,Normal,Special,150,90,TM
+Iron Defense,Steel,Status,0,0,TM
+Iron Head,Steel,Physical,80,100,"Level, Level, Level, Level, Level, Level, TM"
+Lash Out,Dark,Physical,75,100,TM
+Lick,Ghost,Physical,30,100,"Level, Level, Level, Level, Level, Level"
+Magical Torque,Fairy,Physical,100,100,Level
+Magnet Rise,Electric,Status,0,0,"Level, Level, Level, Level, Level, Level"
+Metal Sound,Steel,Status,0,85,TM
+Noxious Torque,Poison,Physical,100,100,Level
+Overheat,Fire,Special,130,90,TM
+Poison Gas,Poison,Status,0,90,"Level, Level, Level, Level, Level, Level"
+Poison Jab,Poison,Physical,80,100,"Level, Level, Level, Level, Level, Level, TM"
+Protect,Normal,Status,0,0,TM
+Rain Dance,Water,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Sandstorm,Rock,Status,0,0,TM
+Scary Face,Normal,Status,0,100,TM
+Screech,Normal,Status,0,85,"Level, Level, Level, Level, Level, Level, TM"
+Secret Power,Normal,Physical,70,100,TM
+Shift Gear,Steel,Status,0,0,"Level, Level, Level, Level, Level, Level"
+Sleep Talk,Normal,Status,0,0,TM
+Sludge,Poison,Special,65,100,"Level, Level, Level, Level, Level, Level"
+Sludge Bomb,Poison,Special,90,100,TM
+Sludge Wave,Poison,Special,95,100,TM
+Smog,Poison,Special,30,70,"Level, Level, Level, Level, Level, Level"
+Spin Out,Steel,Physical,100,100,"Level, Level, Level, Level, Level, Level"
+Steel Beam,Steel,Special,140,95,TM
+Substitute,Normal,Status,0,0,TM
+Sunny Day,Fire,Status,0,0,TM
+Swagger,Normal,Status,0,85,"Level, Level, Level, Level, Level, Level, TM"
+Take Down,Normal,Physical,90,85,TM
+Taunt,Dark,Status,0,100,"Level, Level, Level, Level, Level, Level, TM"
+Temper Flare,Fire,Physical,75,100,TM
+Tera Blast,Normal,Special,80,100,TM
+Thief,Dark,Physical,60,100,TM
+Toxic,Poison,Status,0,90,TM
+Toxic Spikes,Poison,Status,0,0,TM
+Uproar,Normal,Special,90,100,"Level, Level, Level, Level, Level, Level, TM"
+Venoshock,Poison,Special,65,100,TM
+Wicked Torque,Dark,Physical,80,100,Level
+Zen Headbutt,Psychic,Physical,80,90,TM

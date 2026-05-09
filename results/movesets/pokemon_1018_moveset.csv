@@ -1,0 +1,66 @@
+Name,Type,Category,Power,Accuracy,Source
+Attract,Normal,Status,0,100,TM
+Aura Sphere,Fighting,Special,80,0,TM
+Body Press,Fighting,Physical,80,100,TM
+Body Slam,Normal,Physical,85,100,TM
+Breaking Swipe,Dragon,Physical,60,100,"Level, TM"
+Brick Break,Fighting,Physical,75,100,TM
+Dark Pulse,Dark,Special,80,100,TM
+Double Team,Normal,Status,0,0,TM
+Double-Edge,Normal,Physical,120,100,TM
+Draco Meteor,Dragon,Special,130,90,TM
+Dragon Cheer,Dragon,Status,0,0,TM
+Dragon Claw,Dragon,Physical,80,100,"Level, TM"
+Dragon Pulse,Dragon,Special,85,100,TM
+Dragon Tail,Dragon,Physical,60,90,"Level, TM"
+Earthquake,Ground,Physical,100,100,TM
+Electro Shot,Electric,Special,130,100,Level
+Endure,Normal,Status,0,0,TM
+Facade,Normal,Physical,70,100,TM
+Flash Cannon,Steel,Special,80,100,"Level, TM"
+Focus Energy,Normal,Status,0,0,Level
+Foul Play,Dark,Physical,95,100,TM
+Frustration,Normal,Physical,0,100,TM
+Giga Impact,Normal,Physical,150,90,TM
+Gyro Ball,Steel,Physical,0,100,TM
+Hard Press,Steel,Physical,0,100,TM
+Heavy Slam,Steel,Physical,0,100,TM
+Hidden Power,Normal,Special,60,100,TM
+Hone Claws,Dark,Status,0,0,"Level, TM"
+Hyper Beam,Normal,Special,150,90,"Level, TM"
+Iron Defense,Steel,Status,0,0,"Level, TM"
+Iron Head,Steel,Physical,80,100,TM
+Laser Focus,Normal,Status,0,0,Level
+Lash Out,Dark,Physical,75,100,TM
+Leer,Normal,Status,0,100,Level
+Light Screen,Psychic,Status,0,0,TM
+Metal Burst,Steel,Physical,0,100,Level
+Metal Claw,Steel,Physical,50,95,"Level, TM"
+Metal Sound,Steel,Status,0,85,"Level, TM"
+Meteor Beam,Rock,Special,120,90,TM
+Outrage,Dragon,Physical,120,100,TM
+Protect,Normal,Status,0,0,TM
+Reflect,Psychic,Status,0,0,TM
+Rest,Psychic,Status,0,0,TM
+Return,Normal,Physical,0,100,TM
+Roar,Normal,Status,0,0,TM
+Rock Slide,Rock,Physical,75,90,TM
+Rock Smash,Fighting,Physical,40,100,"Level, TM"
+Rock Tomb,Rock,Physical,60,95,TM
+Scary Face,Normal,Status,0,100,TM
+Secret Power,Normal,Physical,70,100,TM
+Sleep Talk,Normal,Status,0,0,TM
+Smack Down,Rock,Physical,50,100,TM
+Snarl,Dark,Special,55,95,TM
+Solar Beam,Grass,Special,120,100,TM
+Stealth Rock,Rock,Status,0,0,TM
+Steel Beam,Steel,Special,140,95,TM
+Steel Roller,Steel,Physical,130,100,TM
+Stone Edge,Rock,Physical,100,80,TM
+Substitute,Normal,Status,0,0,TM
+Swords Dance,Normal,Status,0,0,TM
+Take Down,Normal,Physical,90,85,TM
+Tera Blast,Normal,Special,80,100,TM
+Thunder,Electric,Special,110,70,TM
+Thunder Wave,Electric,Status,0,90,TM
+Thunderbolt,Electric,Special,90,100,TM
