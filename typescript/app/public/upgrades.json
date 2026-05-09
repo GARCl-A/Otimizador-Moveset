@@ -34,6 +34,13 @@
         "category": "Status",
         "power": 0,
         "accuracy": 0
+      },
+      {
+        "name": "Bitter Blade",
+        "type": "Fire",
+        "category": "Physical",
+        "power": 90,
+        "accuracy": 100
       }
     ]
   },
@@ -1217,7 +1224,7 @@
     ]
   },
   "Tinkaton": {
-    "custoReducoes": 0,
+    "custoReducoes": 1,
     "eggMoves": [
       {
         "name": "Ivy Cudgel",
@@ -1284,6 +1291,70 @@
         "category": "Special",
         "power": 120,
         "accuracy": 85
+      }
+    ]
+  },
+  "Alolan Ninetales": {
+    "custoReducoes": 0,
+    "eggMoves": [
+      {
+        "name": "Moonblast",
+        "type": "Fairy",
+        "category": "Special",
+        "power": 95,
+        "accuracy": 100
+      },
+      {
+        "name": "Glare",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      },
+      {
+        "name": "Mystical Fire",
+        "type": "Fire",
+        "category": "Special",
+        "power": 75,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Tapu Fini": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Earth Power",
+        "type": "Ground",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100
+      },
+      {
+        "name": "Recover",
+        "type": "Normal",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 100
+      }
+    ]
+  },
+  "Whimsicott": {
+    "custoReducoes": 1,
+    "eggMoves": [
+      {
+        "name": "Pollen Puff",
+        "type": "Bug",
+        "category": "Special",
+        "power": 90,
+        "accuracy": 100
+      },
+      {
+        "name": "Sleep Powder",
+        "type": "Grass",
+        "category": "Status",
+        "power": 0,
+        "accuracy": 75
       }
     ]
   }

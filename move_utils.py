@@ -14,6 +14,7 @@ ATAQUES_DOIS_TURNOS = {
     "Fly",
     "Double Shock",
     "Phantom Force",
+    "Gigaton Hammer",
 }
 MENOS_UM_STATS = {"Superpower"}
 MENOS_DOIS_STATS = {"Overheat", "Leaf Storm"}
@@ -25,6 +26,7 @@ DANO_EM_SI_MESMO = {
     "Wild Charge",
     "Wood Hammer",
     "Supercell Slam",
+    "Light of Ruin",
 }
 BANIDOS = {
     "Focus Punch",
@@ -42,19 +44,19 @@ TRAVAMENTO_E_CONFUSAO = {"Outrage", "Thrash", "Petal Dance", "Raging Fury"}
 # effective_power sera ajustado pelo valor esperado de hits
 MULTI_HIT = {
     "Population Bomb": (1, 10),
-    "Bullet Seed":     (2, 5),
-    "Rock Blast":      (2, 5),
-    "Icicle Spear":    (2, 5),
-    "Pin Missile":     (2, 5),
-    "Bone Rush":       (2, 5),
-    "Fury Attack":     (2, 5),
-    "Fury Swipes":     (2, 5),
-    "Comet Punch":     (2, 5),
-    "Tail Slap":       (2, 5),
-    "Water Shuriken":  (2, 5),
-    "Bonemerang":      (2, 2),
-    "Gear Grind":      (2, 2),
-    "Twineedle":       (2, 2),
+    "Bullet Seed": (2, 5),
+    "Rock Blast": (2, 5),
+    "Icicle Spear": (2, 5),
+    "Pin Missile": (2, 5),
+    "Bone Rush": (2, 5),
+    "Fury Attack": (2, 5),
+    "Fury Swipes": (2, 5),
+    "Comet Punch": (2, 5),
+    "Tail Slap": (2, 5),
+    "Water Shuriken": (2, 5),
+    "Bonemerang": (2, 2),
+    "Gear Grind": (2, 2),
+    "Twineedle": (2, 2),
 }
 
 
@@ -83,25 +85,31 @@ def normalizar_dano_por_turno(movepool):
         if move.name in ATAQUES_DOIS_TURNOS:
             move.effective_power = move.power / 2.0
             move.turns = 2
-            if "2T" not in move.tags: move.tags.append("2T")
+            if "2T" not in move.tags:
+                move.tags.append("2T")
         elif move.name in MENOS_UM_STATS:
             move.effective_power = move.power * 0.835
-            if "-1ST" not in move.tags: move.tags.append("-1ST")
+            if "-1ST" not in move.tags:
+                move.tags.append("-1ST")
         elif move.name in MENOS_DOIS_STATS:
             move.effective_power = move.power * 0.75
-            if "-2ST" not in move.tags: move.tags.append("-2ST")
+            if "-2ST" not in move.tags:
+                move.tags.append("-2ST")
         elif move.name in TRAVAMENTO_E_CONFUSAO:
             move.effective_power = move.power * 0.75
-            if "LOCK" not in move.tags: move.tags.append("LOCK")
+            if "LOCK" not in move.tags:
+                move.tags.append("LOCK")
         elif move.name in DANO_EM_SI_MESMO:
             move.effective_power = move.power * 0.66
-            if "SD" not in move.tags: move.tags.append("SD")
+            if "SD" not in move.tags:
+                move.tags.append("SD")
         elif move.name in MULTI_HIT:
             min_h, max_h = MULTI_HIT[move.name]
             hits = _hits_esperados(min_h, max_h, move.acc)
             move.effective_power = move.power * hits
             tag = f"x{min_h}-{max_h}" if min_h != max_h else f"x{min_h}"
-            if tag not in move.tags: move.tags.append(tag)
+            if tag not in move.tags:
+                move.tags.append(tag)
         resultado.append(move)
     return resultado
 
