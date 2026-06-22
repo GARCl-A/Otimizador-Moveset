@@ -4,9 +4,12 @@ import type { Priorities } from './loader'
 import { construirCaches, otimizar, otimizarTimeSA, calcularScoreTime } from './optimizer'
 import type { WarmStart, ProgressCallback, EvalParams } from './optimizer'
 import { otimizarTimeGA } from './geneticOptimizer'
+import { buildContext, greedyConstruct } from './greedyConstruct'
+import { MLP } from './mlp'
+import type { ModelWeights } from './mlp'
 
 export interface RunnerConfig {
-  algoritmo: 'simulated-annealing' | 'genetic'
+  algoritmo: 'simulated-annealing' | 'genetic' | 'greedy-nn'
   tamanhoTime: number
   budget: number
   saTemperatura: number
@@ -22,6 +25,7 @@ export interface RunnerConfig {
   banirRecoil: boolean
   banirLock: boolean
   evalParams: EvalParams
+  modelWeights?: ModelWeights | null
 }
 
 export interface MemberResult {
@@ -116,7 +120,7 @@ export async function rodarOtimizador(
   config: RunnerConfig,
   callbacks: RunnerCallbacks = {}
 ): Promise<RunnerResult> {
-  const { algoritmo, tamanhoTime, budget, saTemperatura, saCooling, saIteracoes, gaPopulacao, gaGeracoes, gaMutacao, gruposExclusao, timeFixo, banirRecoil, banirLock, evalParams } = config
+  const { algoritmo, tamanhoTime, budget, saTemperatura, saCooling, saIteracoes, gaPopulacao, gaGeracoes, gaMutacao, gruposExclusao, timeFixo, banirRecoil, banirLock, evalParams, modelWeights } = config
   const { onLog = () => {}, onProgress } = callbacks
   const pontosPorVitoria = (evalParams.priorizarHP ? 4 : 1) + (evalParams.priorizarHP ? 1 : 0) + (evalParams.coberturasDupla ? 2 : 0)
   const scoreMaximo = metaInimigos.length * pontosPorVitoria
@@ -161,6 +165,36 @@ export async function rodarOtimizador(
     onLog('Refinando moves inúteis...')
     const refinado = refinarMovesInuteis(result.time, result.movesets, metaInimigos, priorities, evalParams)
 
+    return {
+      time: result.time.map((p, i) => ({
+        pokemon: p,
+        moveset: refinado.movesets[i],
+        custo: custos[p.name] ?? 0,
+        scoreIndividual: scoresIndividuais[p.name]?.score ?? 0,
+      })),
+      score: refinado.score,
+      scoreMaximo,
+      custoTotal,
+    }
+  }
+
+  if (algoritmo === 'greedy-nn') {
+    if (!modelWeights) {
+      throw new Error('greedy-NN requer pesos do modelo. Carregue model_weights.json na aba Experimentos.')
+    }
+    onLog('Montando time com greedy-NN (rede como função de valor)...')
+    // Construção pura guiada pela rede; depois refina movesets pela função exata
+    // (polimento — a comparação científica "pura" fica na aba Experimentos).
+    const ctx = buildContext(todosParaCache, metaInimigos, priorities, custos, evalParams)
+    const mlp = new MLP(modelWeights)
+    const result = greedyConstruct(
+      ctx,
+      { pool: candidatos, tamanhoTime, budget, gruposExclusao, timeFixo },
+      { type: 'nn', mlp }
+    )
+    const custoTotal = result.time.reduce((acc, p) => acc + (custos[p.name] ?? 0), 0)
+    onLog('Refinando moves inúteis...')
+    const refinado = refinarMovesInuteis(result.time, result.movesets, metaInimigos, priorities, evalParams)
     return {
       time: result.time.map((p, i) => ({
         pokemon: p,

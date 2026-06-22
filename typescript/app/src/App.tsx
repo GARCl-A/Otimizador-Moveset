@@ -11,6 +11,8 @@ import ResultPanel from './components/ResultPanel'
 import UpgradeEditor from './UpgradeEditor'
 import TeamAnalyzer from './components/TeamAnalyzer'
 import { BiomePathfinder } from './components/BiomePathfinder'
+import ExperimentsPanel from './components/ExperimentsPanel'
+import type { ModelWeights } from './engine/mlp'
 
 const CONFIG_INICIAL: Config = {
   algoritmo: 'simulated-annealing',
@@ -40,7 +42,8 @@ export default function App() {
   const [todosNomes, setTodosNomes] = useState<string[]>([])
   const [upgrades, setUpgrades] = useState<Upgrades>({})
   const [editando, setEditando] = useState<string | null>(null)
-  const [aba, setAba] = useState<'otimizador' | 'analisador' | 'biomas'>('otimizador')
+  const [aba, setAba] = useState<'otimizador' | 'analisador' | 'biomas' | 'experimentos'>('otimizador')
+  const [modelWeights, setModelWeights] = useState<ModelWeights | null>(null)
 
   useEffect(() => {
     Promise.all([loadData(), loadTypeChart()]).then(() => {
@@ -77,10 +80,20 @@ export default function App() {
         <button onClick={() => setAba('otimizador')} style={{ fontWeight: aba === 'otimizador' ? 'bold' : 'normal', textDecoration: aba === 'otimizador' ? 'underline' : 'none', background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', fontSize: 13 }}>Otimizador</button>
         <button onClick={() => setAba('analisador')} style={{ fontWeight: aba === 'analisador' ? 'bold' : 'normal', textDecoration: aba === 'analisador' ? 'underline' : 'none', background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', fontSize: 13 }}>Analisar Substituição</button>
         <button onClick={() => setAba('biomas')} style={{ fontWeight: aba === 'biomas' ? 'bold' : 'normal', textDecoration: aba === 'biomas' ? 'underline' : 'none', background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', fontSize: 13 }}>Navegação Biomas</button>
+        <button onClick={() => setAba('experimentos')} style={{ fontWeight: aba === 'experimentos' ? 'bold' : 'normal', textDecoration: aba === 'experimentos' ? 'underline' : 'none', background: 'none', border: 'none', cursor: 'pointer', color: 'inherit', fontSize: 13 }}>Experimentos</button>
       </div>
 
       {aba === 'biomas' && <BiomePathfinder />}
       {aba === 'analisador' && <TeamAnalyzer />}
+      {aba === 'experimentos' && (
+        <ExperimentsPanel
+          candidatos={candidatos.map(c => c.nome)}
+          config={config}
+          todosNomes={todosNomes}
+          modelWeights={modelWeights}
+          setModelWeights={setModelWeights}
+        />
+      )}
 
       {aba === 'otimizador' && (
         <div style={{ display: 'flex', gap: 24 }}>
@@ -89,7 +102,7 @@ export default function App() {
             <ConfigPanel config={config} onChange={setConfigField} />
             <CandidatosList candidatos={candidatos} upgrades={upgrades} onEditarUpgrade={setEditando} />
             <div style={{ display: 'flex', gap: 8, marginTop: 16 }}>
-              <button onClick={() => rodar(candidatos.map(c => c.nome), config)} disabled={rodando || candidatos.length === 0}
+              <button onClick={() => rodar(candidatos.map(c => c.nome), config, modelWeights)} disabled={rodando || candidatos.length === 0}
                 style={{ padding: '8px 24px', fontSize: 14 }}>
                 {rodando ? 'Rodando...' : 'Rodar Otimizador'}
               </button>

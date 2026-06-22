@@ -1,0 +1,2251 @@
+{
+  "aggregates": [
+    {
+      "method": "sa",
+      "n": 30,
+      "min": 186,
+      "q1": 189,
+      "median": 189,
+      "q3": 190,
+      "max": 191,
+      "mean": 189.16666666666666,
+      "std": 1.5073892072793342,
+      "meanTimeMs": 349.87666666805745,
+      "meanRedundancy": 0.5
+    },
+    {
+      "method": "ga",
+      "n": 30,
+      "min": 177,
+      "q1": 180,
+      "median": 184.5,
+      "q3": 186,
+      "max": 189,
+      "mean": 183.26666666666668,
+      "std": 3.2034703404623905,
+      "meanTimeMs": 19067.966666667162,
+      "meanRedundancy": 0.5666666666666667
+    },
+    {
+      "method": "greedy-exato",
+      "n": 1,
+      "min": 186,
+      "q1": 186,
+      "median": 186,
+      "q3": 186,
+      "max": 186,
+      "mean": 186,
+      "std": 0,
+      "meanTimeMs": 4.200000002980232,
+      "meanRedundancy": 0
+    },
+    {
+      "method": "greedy-nn",
+      "n": 1,
+      "min": 185,
+      "q1": 185,
+      "median": 185,
+      "q3": 185,
+      "max": 185,
+      "mean": 185,
+      "std": 0,
+      "meanTimeMs": 33.6000000089407,
+      "meanRedundancy": 1
+    }
+  ],
+  "runs": [
+    {
+      "score": 190,
+      "scoreMaximo": 194,
+      "timeMs": 363.3999999910593,
+      "teamNames": [
+        "Starmie",
+        "Skuntank",
+        "Garchomp",
+        "Ursaluna"
+      ],
+      "movesetNames": [
+        [
+          "Power Gem",
+          "Psychic",
+          "Signal Beam",
+          "Surf"
+        ],
+        [
+          "Dire Claw",
+          "Flamethrower",
+          "Sucker Punch",
+          "Fire Lash"
+        ],
+        [
+          "Flamethrower",
+          "Earthquake",
+          "Stone Edge",
+          "Fire Fang"
+        ],
+        [
+          "Close Combat",
+          "Fire Punch",
+          "Headlong Rush",
+          "Ice Punch"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 0
+    },
+    {
+      "score": 189,
+      "scoreMaximo": 194,
+      "timeMs": 310.79999999701977,
+      "teamNames": [
+        "Garchomp",
+        "Golisopod",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Earth Power",
+          "Earthquake",
+          "Outrage",
+          "Fire Fang"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Bug Buzz",
+          "Lunge",
+          "Flash Cannon",
+          "Thunderclap"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 1
+    },
+    {
+      "score": 191,
+      "scoreMaximo": 194,
+      "timeMs": 396.79999999701977,
+      "teamNames": [
+        "Garchomp",
+        "Musharna",
+        "Clefable",
+        "Skuntank",
+        "Mamoswine"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Earthquake",
+          "Aerial Ace",
+          "Outrage"
+        ],
+        [
+          "Energy Ball",
+          "Tera Blast",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Flamethrower",
+          "Thunderbolt",
+          "Earth Power",
+          "Light of Ruin"
+        ],
+        [
+          "Sucker Punch",
+          "Mud-Slap",
+          "Dire Claw",
+          "Fire Lash"
+        ],
+        [
+          "Stone Edge",
+          "Icicle Spear",
+          "Trailblaze",
+          "Superpower"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 2
+    },
+    {
+      "score": 188,
+      "scoreMaximo": 194,
+      "timeMs": 360.80000001192093,
+      "teamNames": [
+        "Rapidash",
+        "Skuntank",
+        "Vikavolt",
+        "Dondozo"
+      ],
+      "movesetNames": [
+        [
+          "Quick Attack",
+          "Throat Chop",
+          "Headlong Rush",
+          "High Jump Kick"
+        ],
+        [
+          "Flamethrower",
+          "Body Slam",
+          "Sucker Punch",
+          "Shadow Ball"
+        ],
+        [
+          "Bug Buzz",
+          "Air Slash",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Outrage",
+          "Avalanche",
+          "Body Slam",
+          "Wave Crash"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 3
+    },
+    {
+      "score": 190,
+      "scoreMaximo": 194,
+      "timeMs": 315.5,
+      "teamNames": [
+        "Tinkaton",
+        "Golisopod",
+        "Ursaluna"
+      ],
+      "movesetNames": [
+        [
+          "Play Rough",
+          "Steel Beam",
+          "Gigaton Hammer",
+          "Draining Kiss"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Fire Punch",
+          "Thunder Punch",
+          "Headlong Rush",
+          "Ice Punch"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 4
+    },
+    {
+      "score": 186,
+      "scoreMaximo": 194,
+      "timeMs": 299.30000001192093,
+      "teamNames": [
+        "Golisopod",
+        "Reshiram"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Draco Meteor",
+          "Outrage",
+          "Stone Edge",
+          "Eruption"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 5
+    },
+    {
+      "score": 189,
+      "scoreMaximo": 194,
+      "timeMs": 317.5,
+      "teamNames": [
+        "Garchomp",
+        "Vikavolt",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Brick Break",
+          "Earthquake",
+          "Liquidation",
+          "Outrage"
+        ],
+        [
+          "Bug Buzz",
+          "Flash Cannon",
+          "Lunge",
+          "Thunderclap"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 6
+    },
+    {
+      "score": 189,
+      "scoreMaximo": 194,
+      "timeMs": 426.70000000298023,
+      "teamNames": [
+        "Infernape",
+        "Skuntank",
+        "Starmie",
+        "Metagross",
+        "Primarina"
+      ],
+      "movesetNames": [
+        [
+          "Blast Burn",
+          "Close Combat",
+          "Earthquake",
+          "Lash Out"
+        ],
+        [
+          "Flamethrower",
+          "Dire Claw",
+          "Sucker Punch",
+          "Sludge Wave"
+        ],
+        [
+          "Power Gem",
+          "Psychic",
+          "Signal Beam",
+          "Moonblast"
+        ],
+        [
+          "Thunder Punch",
+          "Sludge Bomb",
+          "Steel Beam",
+          "Headlong Rush"
+        ],
+        [
+          "Ice Beam",
+          "Moonblast",
+          "Energy Ball",
+          "Hydro Cannon"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 7
+    },
+    {
+      "score": 189,
+      "scoreMaximo": 194,
+      "timeMs": 374.70000000298023,
+      "teamNames": [
+        "Vikavolt",
+        "Tinkaton",
+        "Krookodile",
+        "Starmie"
+      ],
+      "movesetNames": [
+        [
+          "Bulldoze",
+          "Energy Ball",
+          "Bug Buzz",
+          "Thunderclap"
+        ],
+        [
+          "Play Rough",
+          "Knock Off",
+          "Gigaton Hammer",
+          "Astonish"
+        ],
+        [
+          "Close Combat",
+          "Darkest Lariat",
+          "Earthquake",
+          "Aqua Tail"
+        ],
+        [
+          "Ice Beam",
+          "Psychic",
+          "Surf",
+          "Power Gem"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 8
+    },
+    {
+      "score": 187,
+      "scoreMaximo": 194,
+      "timeMs": 321.6000000089407,
+      "teamNames": [
+        "Volcarona",
+        "Metagross",
+        "Dondozo"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Flamethrower",
+          "Scald",
+          "Flare Blitz"
+        ],
+        [
+          "Psychic Fangs",
+          "Ice Spinner",
+          "Thunder Punch",
+          "Headlong Rush"
+        ],
+        [
+          "Earthquake",
+          "Avalanche",
+          "Crunch",
+          "Wave Crash"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 9
+    },
+    {
+      "score": 189,
+      "scoreMaximo": 194,
+      "timeMs": 315.79999999701977,
+      "teamNames": [
+        "Vikavolt",
+        "Golisopod",
+        "Garchomp"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Facade",
+          "Flash Cannon",
+          "Thunderclap"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Flamethrower",
+          "Earthquake",
+          "Stone Edge",
+          "Outrage"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 10
+    },
+    {
+      "score": 190,
+      "scoreMaximo": 194,
+      "timeMs": 366,
+      "teamNames": [
+        "Orbeetle",
+        "Garchomp",
+        "Skuntank",
+        "Primarina"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Energy Ball",
+          "Shadow Ball",
+          "Psycho Cut"
+        ],
+        [
+          "Brick Break",
+          "Earthquake",
+          "Liquidation",
+          "Thunder Fang"
+        ],
+        [
+          "Shadow Claw",
+          "Dire Claw",
+          "Sucker Punch",
+          "Body Slam"
+        ],
+        [
+          "Play Rough",
+          "Acrobatics",
+          "Ice Beam",
+          "Moonblast"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 11
+    },
+    {
+      "score": 191,
+      "scoreMaximo": 194,
+      "timeMs": 374.3999999910593,
+      "teamNames": [
+        "Charizard",
+        "Skuntank",
+        "Vikavolt",
+        "Ursaluna"
+      ],
+      "movesetNames": [
+        [
+          "Blast Burn",
+          "Flare Blitz",
+          "Rock Slide",
+          "Outrage"
+        ],
+        [
+          "Flamethrower",
+          "Play Rough",
+          "Sucker Punch",
+          "Dire Claw"
+        ],
+        [
+          "Flash Cannon",
+          "Poison Jab",
+          "Bug Buzz",
+          "Thunderclap"
+        ],
+        [
+          "Close Combat",
+          "Seed Bomb",
+          "Headlong Rush",
+          "Ice Punch"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 12
+    },
+    {
+      "score": 191,
+      "scoreMaximo": 194,
+      "timeMs": 366.29999999701977,
+      "teamNames": [
+        "Skuntank",
+        "Vikavolt",
+        "Ursaluna",
+        "Charizard"
+      ],
+      "movesetNames": [
+        [
+          "Sludge Wave",
+          "Trailblaze",
+          "Sucker Punch",
+          "Mud-Slap"
+        ],
+        [
+          "Bug Buzz",
+          "Lunge",
+          "Tera Blast",
+          "Thunderclap"
+        ],
+        [
+          "Ice Punch",
+          "Crunch",
+          "Headlong Rush",
+          "Seed Bomb"
+        ],
+        [
+          "Thunder Punch",
+          "Blast Burn",
+          "Dragon Pulse",
+          "Rock Slide"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 13
+    },
+    {
+      "score": 186,
+      "scoreMaximo": 194,
+      "timeMs": 248.6000000089407,
+      "teamNames": [
+        "Palkia",
+        "Skuntank"
+      ],
+      "movesetNames": [
+        [
+          "Earth Power",
+          "Outrage",
+          "Surf",
+          "Thunderbolt"
+        ],
+        [
+          "Flamethrower",
+          "Play Rough",
+          "Sucker Punch",
+          "Dire Claw"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 14
+    },
+    {
+      "score": 190,
+      "scoreMaximo": 194,
+      "timeMs": 371.90000000596046,
+      "teamNames": [
+        "Charizard",
+        "Skuntank",
+        "Ursaluna",
+        "Metagross"
+      ],
+      "movesetNames": [
+        [
+          "Blast Burn",
+          "Solar Beam",
+          "Tera Blast",
+          "Dragon Pulse"
+        ],
+        [
+          "Flamethrower",
+          "Shadow Claw",
+          "Sucker Punch",
+          "Dire Claw"
+        ],
+        [
+          "Play Rough",
+          "Close Combat",
+          "Headlong Rush",
+          "Ice Punch"
+        ],
+        [
+          "Psychic Fangs",
+          "Steel Beam",
+          "Thunder Punch",
+          "Mud-Slap"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 15
+    },
+    {
+      "score": 191,
+      "scoreMaximo": 194,
+      "timeMs": 427.6000000089407,
+      "teamNames": [
+        "Starmie",
+        "Ursaluna",
+        "Venusaur",
+        "Skuntank",
+        "Musharna"
+      ],
+      "movesetNames": [
+        [
+          "Power Gem",
+          "Psychic",
+          "Ice Beam",
+          "Thunderbolt"
+        ],
+        [
+          "Close Combat",
+          "Aerial Ace",
+          "Headlong Rush",
+          "Seed Bomb"
+        ],
+        [
+          "Sludge Bomb",
+          "Tera Blast",
+          "Energy Ball",
+          "Outrage"
+        ],
+        [
+          "Flamethrower",
+          "Dire Claw",
+          "Sucker Punch",
+          "Body Slam"
+        ],
+        [
+          "Tera Blast",
+          "Moonblast",
+          "Psychic",
+          "Shadow Ball"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 16
+    },
+    {
+      "score": 188,
+      "scoreMaximo": 194,
+      "timeMs": 242.29999999701977,
+      "teamNames": [
+        "Palkia",
+        "Starmie"
+      ],
+      "movesetNames": [
+        [
+          "Earth Power",
+          "Outrage",
+          "Surf",
+          "Thunderbolt"
+        ],
+        [
+          "Flash Cannon",
+          "Psychic",
+          "Psycho Cut",
+          "Ice Beam"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 17
+    },
+    {
+      "score": 189,
+      "scoreMaximo": 194,
+      "timeMs": 311.5,
+      "teamNames": [
+        "Golisopod",
+        "Garchomp",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Facade",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Outrage",
+          "Earthquake",
+          "Body Slam",
+          "Power Gem"
+        ],
+        [
+          "Air Slash",
+          "Flash Cannon",
+          "Bug Buzz",
+          "Thunderclap"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 18
+    },
+    {
+      "score": 189,
+      "scoreMaximo": 194,
+      "timeMs": 311.8999999910593,
+      "teamNames": [
+        "Garchomp",
+        "Vikavolt",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Body Slam",
+          "Earthquake",
+          "Outrage",
+          "Brick Break"
+        ],
+        [
+          "Bug Buzz",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 19
+    },
+    {
+      "score": 190,
+      "scoreMaximo": 194,
+      "timeMs": 369.1000000089407,
+      "teamNames": [
+        "Skuntank",
+        "Garchomp",
+        "Infernape",
+        "Primarina"
+      ],
+      "movesetNames": [
+        [
+          "Body Slam",
+          "Dire Claw",
+          "Flamethrower",
+          "Sucker Punch"
+        ],
+        [
+          "Tera Blast",
+          "Earthquake",
+          "Outrage",
+          "Body Slam"
+        ],
+        [
+          "Blast Burn",
+          "Close Combat",
+          "Earthquake",
+          "Poison Jab"
+        ],
+        [
+          "Hyper Voice",
+          "Psychic",
+          "Ice Beam",
+          "Moonblast"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 20
+    },
+    {
+      "score": 189,
+      "scoreMaximo": 194,
+      "timeMs": 311.29999999701977,
+      "teamNames": [
+        "Vikavolt",
+        "Garchomp",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Outrage",
+          "Earthquake",
+          "Draco Meteor",
+          "Shadow Claw"
+        ],
+        [
+          "Close Combat",
+          "Mud Shot",
+          "Sucker Punch",
+          "Triple Axel"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 21
+    },
+    {
+      "score": 186,
+      "scoreMaximo": 194,
+      "timeMs": 246.20000000298023,
+      "teamNames": [
+        "Archeops",
+        "Reshiram"
+      ],
+      "movesetNames": [
+        [
+          "Stone Edge",
+          "Earthquake",
+          "Air Slash",
+          "Outrage"
+        ],
+        [
+          "Outrage",
+          "Solar Beam",
+          "Draco Meteor",
+          "Eruption"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 22
+    },
+    {
+      "score": 191,
+      "scoreMaximo": 194,
+      "timeMs": 383.40000000596046,
+      "teamNames": [
+        "Charizard",
+        "Skuntank",
+        "Ursaluna",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Body Slam",
+          "Solar Beam",
+          "Dragon Pulse",
+          "Blast Burn"
+        ],
+        [
+          "Tera Blast",
+          "Shadow Claw",
+          "Sucker Punch",
+          "Dire Claw"
+        ],
+        [
+          "Ice Punch",
+          "Stone Edge",
+          "Headlong Rush",
+          "Play Rough"
+        ],
+        [
+          "Facade",
+          "Poison Jab",
+          "Thunderclap",
+          "Bug Buzz"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 23
+    },
+    {
+      "score": 190,
+      "scoreMaximo": 194,
+      "timeMs": 388,
+      "teamNames": [
+        "Skuntank",
+        "Garchomp",
+        "Primarina",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Dire Claw",
+          "Mud-Slap",
+          "Sucker Punch",
+          "Shadow Claw"
+        ],
+        [
+          "Outrage",
+          "Earthquake",
+          "Poison Jab",
+          "Aerial Ace"
+        ],
+        [
+          "Moonblast",
+          "Acrobatics",
+          "Body Slam",
+          "Ice Beam"
+        ],
+        [
+          "Blast Burn",
+          "Close Combat",
+          "Earthquake",
+          "Poison Jab"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 24
+    },
+    {
+      "score": 189,
+      "scoreMaximo": 194,
+      "timeMs": 367.6000000089407,
+      "teamNames": [
+        "Golisopod",
+        "Vikavolt",
+        "Garchomp"
+      ],
+      "movesetNames": [
+        [
+          "Sludge Wave",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Bulldoze",
+          "Flash Cannon",
+          "Thunderclap",
+          "Bug Buzz"
+        ],
+        [
+          "Thunder Fang",
+          "Earthquake",
+          "Body Slam",
+          "Outrage"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 25
+    },
+    {
+      "score": 191,
+      "scoreMaximo": 194,
+      "timeMs": 500.59999999403954,
+      "teamNames": [
+        "Golisopod",
+        "Skuntank",
+        "Garchomp",
+        "Starmie",
+        "Musharna"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Liquidation",
+          "Ice Beam",
+          "Bug Buzz"
+        ],
+        [
+          "Dire Claw",
+          "Fire Lash",
+          "Sucker Punch",
+          "Play Rough"
+        ],
+        [
+          "Outrage",
+          "Earthquake",
+          "Power Gem",
+          "Aerial Ace"
+        ],
+        [
+          "Power Gem",
+          "Psychic",
+          "Tera Blast",
+          "Avalanche"
+        ],
+        [
+          "Energy Ball",
+          "Moonblast",
+          "Psychic",
+          "Shadow Ball"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 26
+    },
+    {
+      "score": 187,
+      "scoreMaximo": 194,
+      "timeMs": 372.79999999701977,
+      "teamNames": [
+        "Starmie",
+        "Kingdra",
+        "Volcarona",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Waterfall",
+          "Moonblast",
+          "Psychic",
+          "Ice Beam"
+        ],
+        [
+          "Draco Meteor",
+          "Flash Cannon",
+          "Body Slam",
+          "Wave Crash"
+        ],
+        [
+          "Bug Buzz",
+          "Flamethrower",
+          "Giga Drain",
+          "Body Slam"
+        ],
+        [
+          "Bug Buzz",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 27
+    },
+    {
+      "score": 190,
+      "scoreMaximo": 194,
+      "timeMs": 370.5,
+      "teamNames": [
+        "Garchomp",
+        "Infernape",
+        "Primarina",
+        "Skuntank"
+      ],
+      "movesetNames": [
+        [
+          "Fire Fang",
+          "Earthquake",
+          "Outrage",
+          "Iron Head"
+        ],
+        [
+          "Blast Burn",
+          "Close Combat",
+          "Earthquake",
+          "Poison Jab"
+        ],
+        [
+          "Hyper Voice",
+          "Acrobatics",
+          "Ice Beam",
+          "Moonblast"
+        ],
+        [
+          "Dark Pulse",
+          "Play Rough",
+          "Sucker Punch",
+          "Dire Claw"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 28
+    },
+    {
+      "score": 190,
+      "scoreMaximo": 194,
+      "timeMs": 363.40000000596046,
+      "teamNames": [
+        "Musharna",
+        "Skuntank",
+        "Ursaluna",
+        "Garchomp"
+      ],
+      "movesetNames": [
+        [
+          "Energy Ball",
+          "Moonblast",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Flamethrower",
+          "Play Rough",
+          "Sucker Punch",
+          "Dire Claw"
+        ],
+        [
+          "Close Combat",
+          "Fire Punch",
+          "Headlong Rush",
+          "Ice Punch"
+        ],
+        [
+          "Brick Break",
+          "Earthquake",
+          "Liquidation",
+          "Outrage"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 29
+    },
+    {
+      "score": 184,
+      "scoreMaximo": 194,
+      "timeMs": 25449.20000000298,
+      "teamNames": [
+        "Dondozo",
+        "Infernape",
+        "Gardevoir",
+        "Skuntank"
+      ],
+      "movesetNames": [
+        [
+          "Body Press",
+          "Wave Crash",
+          "Avalanche",
+          "Earthquake"
+        ],
+        [
+          "Sacred Fire",
+          "Close Combat",
+          "Earthquake",
+          "Solar Beam"
+        ],
+        [
+          "Moonblast",
+          "Triple Axel",
+          "Thunderbolt",
+          "Energy Ball"
+        ],
+        [
+          "Crunch",
+          "Dire Claw",
+          "Body Slam",
+          "Dig"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 0
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 16748.70000000298,
+      "teamNames": [
+        "Ursaluna",
+        "Kingdra",
+        "Torkoal"
+      ],
+      "movesetNames": [
+        [
+          "Metal Claw",
+          "Headlong Rush",
+          "Ice Punch",
+          "Seed Bomb"
+        ],
+        [
+          "Draco Meteor",
+          "Wave Crash",
+          "Ice Beam",
+          "Hurricane"
+        ],
+        [
+          "Sludge Bomb",
+          "Eruption",
+          "Tera Blast",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 1
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 18797.29999999702,
+      "teamNames": [
+        "Garchomp",
+        "Charizard",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Iron Head",
+          "Outrage",
+          "Earthquake"
+        ],
+        [
+          "Brick Break",
+          "Solar Beam",
+          "Blast Burn",
+          "Aeroblast"
+        ],
+        [
+          "Bulldoze",
+          "Bug Buzz",
+          "Energy Ball",
+          "Facade"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 2
+    },
+    {
+      "score": 177,
+      "scoreMaximo": 194,
+      "timeMs": 18053.20000000298,
+      "teamNames": [
+        "Victini",
+        "Mamoswine",
+        "Skuntank"
+      ],
+      "movesetNames": [
+        [
+          "Thunderbolt",
+          "Luster Purge",
+          "V-Create",
+          "Uproar"
+        ],
+        [
+          "Icicle Spear",
+          "Superpower",
+          "Earthquake",
+          "Stone Edge"
+        ],
+        [
+          "Dig",
+          "Dire Claw",
+          "Shadow Ball",
+          "Crunch"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 3
+    },
+    {
+      "score": 179,
+      "scoreMaximo": 194,
+      "timeMs": 14878.10000000894,
+      "teamNames": [
+        "Rayquaza",
+        "Starmie"
+      ],
+      "movesetNames": [
+        [
+          "Surf",
+          "Thunderbolt",
+          "Earthquake",
+          "Dragon Ascent"
+        ],
+        [
+          "Ice Beam",
+          "Surf",
+          "Power Gem",
+          "Moonblast"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 4
+    },
+    {
+      "score": 185,
+      "scoreMaximo": 194,
+      "timeMs": 27695.29999999702,
+      "teamNames": [
+        "Ursaluna",
+        "Ariados",
+        "Electivire",
+        "Pidgeot",
+        "Starmie"
+      ],
+      "movesetNames": [
+        [
+          "Gunk Shot",
+          "Stone Edge",
+          "Seed Bomb",
+          "Headlong Rush"
+        ],
+        [
+          "Trailblaze",
+          "Shadow Sneak",
+          "Attack Order",
+          "Psychic"
+        ],
+        [
+          "Thunderbolt",
+          "Fire Punch",
+          "Thunder Punch",
+          "Trailblaze"
+        ],
+        [
+          "Double-Edge",
+          "Steel Wing",
+          "Brave Bird",
+          "Mud-Slap"
+        ],
+        [
+          "Ice Beam",
+          "Avalanche",
+          "Moonblast",
+          "Surf"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "ga",
+      "run": 5
+    },
+    {
+      "score": 185,
+      "scoreMaximo": 194,
+      "timeMs": 23618.70000000298,
+      "teamNames": [
+        "Garbodor",
+        "Vikavolt",
+        "Tinkaton",
+        "Starmie"
+      ],
+      "movesetNames": [
+        [
+          "Earth Power",
+          "Earthquake",
+          "Ancient Power",
+          "Steel Wing"
+        ],
+        [
+          "Facade",
+          "Thunderbolt",
+          "Energy Ball",
+          "Bug Buzz"
+        ],
+        [
+          "Gigaton Hammer",
+          "Steel Beam",
+          "Facade",
+          "Play Rough"
+        ],
+        [
+          "Psychic",
+          "Ice Beam",
+          "Power Gem",
+          "Surf"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 6
+    },
+    {
+      "score": 182,
+      "scoreMaximo": 194,
+      "timeMs": 19512.70000000298,
+      "teamNames": [
+        "Blastoise",
+        "Garchomp",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Mud-Slap",
+          "Hydro Cannon",
+          "Signal Beam",
+          "Ice Beam"
+        ],
+        [
+          "Earthquake",
+          "Outrage",
+          "Poison Jab",
+          "Stone Edge"
+        ],
+        [
+          "Flamethrower",
+          "Bug Buzz",
+          "Psychic",
+          "Acrobatics"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 7
+    },
+    {
+      "score": 186,
+      "scoreMaximo": 194,
+      "timeMs": 28656.19999998808,
+      "teamNames": [
+        "Ursaluna",
+        "Dachsbun",
+        "Skuntank",
+        "Orbeetle",
+        "Starmie"
+      ],
+      "movesetNames": [
+        [
+          "Headlong Rush",
+          "Close Combat",
+          "Fire Punch",
+          "Thrash"
+        ],
+        [
+          "Stomping Tantrum",
+          "Crunch",
+          "Body Press",
+          "Thunder Fang"
+        ],
+        [
+          "Rock Smash",
+          "Shadow Ball",
+          "Sludge Wave",
+          "Dire Claw"
+        ],
+        [
+          "Bug Buzz",
+          "Leech Life",
+          "Hyper Beam",
+          "Energy Ball"
+        ],
+        [
+          "Avalanche",
+          "Power Gem",
+          "Moonblast",
+          "Psychic"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "ga",
+      "run": 8
+    },
+    {
+      "score": 187,
+      "scoreMaximo": 194,
+      "timeMs": 24663.89999999106,
+      "teamNames": [
+        "Musharna",
+        "Pidgeot",
+        "Florges",
+        "Ursaluna",
+        "Starmie"
+      ],
+      "movesetNames": [
+        [
+          "Energy Ball",
+          "Rock Slide",
+          "Moonblast",
+          "Psychic"
+        ],
+        [
+          "Brave Bird",
+          "Twister",
+          "Air Slash",
+          "Heat Wave"
+        ],
+        [
+          "Tera Blast",
+          "Pollen Puff",
+          "Energy Ball",
+          "Moonblast"
+        ],
+        [
+          "Ice Punch",
+          "Fire Punch",
+          "Vacuum Wave",
+          "Headlong Rush"
+        ],
+        [
+          "Psychic",
+          "Thunderbolt",
+          "Signal Beam",
+          "Power Gem"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 9
+    },
+    {
+      "score": 185,
+      "scoreMaximo": 194,
+      "timeMs": 18035.5,
+      "teamNames": [
+        "Primarina",
+        "Haxorus",
+        "Tinkaton"
+      ],
+      "movesetNames": [
+        [
+          "Ice Beam",
+          "Moonblast",
+          "Hydro Cannon",
+          "Energy Ball"
+        ],
+        [
+          "Draco Meteor",
+          "Incinerate",
+          "Earthquake",
+          "Outrage"
+        ],
+        [
+          "Facade",
+          "Gigaton Hammer",
+          "Bulldoze",
+          "Astonish"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "ga",
+      "run": 10
+    },
+    {
+      "score": 179,
+      "scoreMaximo": 194,
+      "timeMs": 6991.699999988079,
+      "teamNames": [
+        "Eternatus"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Assurance",
+          "Draco Meteor",
+          "Sludge Wave"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 11
+    },
+    {
+      "score": 179,
+      "scoreMaximo": 194,
+      "timeMs": 17342.79999999702,
+      "teamNames": [
+        "Dondozo",
+        "Golisopod",
+        "Centiskorsh"
+      ],
+      "movesetNames": [
+        [
+          "Wave Crash",
+          "Outrage",
+          "Zen Headbutt",
+          "Avalanche"
+        ],
+        [
+          "Close Combat",
+          "Tera Blast",
+          "Poison Jab",
+          "Leech Life"
+        ],
+        [
+          "Burn Up",
+          "Fire Lash",
+          "Crunch",
+          "Power Whip"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 12
+    },
+    {
+      "score": 186,
+      "scoreMaximo": 194,
+      "timeMs": 21438.70000000298,
+      "teamNames": [
+        "Ursaluna",
+        "Pidgeot",
+        "Vikavolt",
+        "Leavanny"
+      ],
+      "movesetNames": [
+        [
+          "Thunder Punch",
+          "Gunk Shot",
+          "Headlong Rush",
+          "Ice Punch"
+        ],
+        [
+          "Air Slash",
+          "U-Turn",
+          "Heat Wave",
+          "Brave Bird"
+        ],
+        [
+          "Crunch",
+          "Thunderbolt",
+          "Bug Buzz",
+          "Flash Cannon"
+        ],
+        [
+          "Lunge",
+          "Steel Wing",
+          "Air Slash",
+          "Leaf Blade"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 13
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 13633.10000000894,
+      "teamNames": [
+        "Victini",
+        "Ursaluna"
+      ],
+      "movesetNames": [
+        [
+          "Searing Shot",
+          "V-Create",
+          "Thunderbolt",
+          "Dazzling Gleam"
+        ],
+        [
+          "Thunder Punch",
+          "Ice Punch",
+          "Headlong Rush",
+          "Seed Bomb"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 14
+    },
+    {
+      "score": 184,
+      "scoreMaximo": 194,
+      "timeMs": 13115.90000000596,
+      "teamNames": [
+        "Reshiram",
+        "Mamoswine"
+      ],
+      "movesetNames": [
+        [
+          "Eruption",
+          "Outrage",
+          "Solar Beam",
+          "Draco Meteor"
+        ],
+        [
+          "Earthquake",
+          "Superpower",
+          "Icicle Spear",
+          "Ice Beam"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 15
+    },
+    {
+      "score": 186,
+      "scoreMaximo": 194,
+      "timeMs": 13433,
+      "teamNames": [
+        "Palkia",
+        "Skuntank"
+      ],
+      "movesetNames": [
+        [
+          "Draco Meteor",
+          "Surf",
+          "Ice Beam",
+          "Earth Power"
+        ],
+        [
+          "Dire Claw",
+          "Sludge Wave",
+          "Play Rough",
+          "Shadow Claw"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 16
+    },
+    {
+      "score": 178,
+      "scoreMaximo": 194,
+      "timeMs": 7072.20000000298,
+      "teamNames": [
+        "Eternatus"
+      ],
+      "movesetNames": [
+        [
+          "Poison Jab",
+          "Draco Meteor",
+          "Flamethrower",
+          "Shadow Ball"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 17
+    },
+    {
+      "score": 186,
+      "scoreMaximo": 194,
+      "timeMs": 13840.40000000596,
+      "teamNames": [
+        "Palkia",
+        "Charizard"
+      ],
+      "movesetNames": [
+        [
+          "Thunderbolt",
+          "Outrage",
+          "Surf",
+          "Earth Power"
+        ],
+        [
+          "Focus Blast",
+          "Aeroblast",
+          "Shadow Claw",
+          "Earthquake"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 18
+    },
+    {
+      "score": 182,
+      "scoreMaximo": 194,
+      "timeMs": 34480.79999999702,
+      "teamNames": [
+        "Starmie",
+        "Skuntank",
+        "Venusaur",
+        "Emboar",
+        "Thievul",
+        "Clefable"
+      ],
+      "movesetNames": [
+        [
+          "Ice Beam",
+          "Surf",
+          "Thunderbolt",
+          "Psychic"
+        ],
+        [
+          "Dire Claw",
+          "Shadow Claw",
+          "Play Rough",
+          "Crunch"
+        ],
+        [
+          "Earth Power",
+          "Sludge Bomb",
+          "Energy Ball",
+          "Body Slam"
+        ],
+        [
+          "Scald",
+          "Close Combat",
+          "Flare Blitz",
+          "Iron Head"
+        ],
+        [
+          "Thunder Fang",
+          "Mystical Fire",
+          "Fire Fang",
+          "Dark Pulse"
+        ],
+        [
+          "Ice Beam",
+          "Meteor Beam",
+          "Earth Power",
+          "Play Rough"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 19
+    },
+    {
+      "score": 185,
+      "scoreMaximo": 194,
+      "timeMs": 14193.300000011921,
+      "teamNames": [
+        "Palkia",
+        "Clefable"
+      ],
+      "movesetNames": [
+        [
+          "Ice Beam",
+          "Draco Meteor",
+          "Thunderbolt",
+          "Surf"
+        ],
+        [
+          "Psychic",
+          "Body Slam",
+          "Light of Ruin",
+          "Water Pulse"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 20
+    },
+    {
+      "score": 187,
+      "scoreMaximo": 194,
+      "timeMs": 17182.59999999404,
+      "teamNames": [
+        "Palkia",
+        "Musharna",
+        "Skuntank"
+      ],
+      "movesetNames": [
+        [
+          "Ice Beam",
+          "Surf",
+          "Earth Power",
+          "Thunderbolt"
+        ],
+        [
+          "Tera Blast",
+          "Energy Ball",
+          "Moonblast",
+          "Psychic"
+        ],
+        [
+          "Flamethrower",
+          "Shadow Claw",
+          "Dire Claw",
+          "Crunch"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 21
+    },
+    {
+      "score": 186,
+      "scoreMaximo": 194,
+      "timeMs": 13163,
+      "teamNames": [
+        "Palkia",
+        "Skuntank"
+      ],
+      "movesetNames": [
+        [
+          "Ice Beam",
+          "Liquidation",
+          "Draco Meteor",
+          "Earth Power"
+        ],
+        [
+          "Dire Claw",
+          "Flamethrower",
+          "Shadow Claw",
+          "Crunch"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 22
+    },
+    {
+      "score": 186,
+      "scoreMaximo": 194,
+      "timeMs": 17394.59999999404,
+      "teamNames": [
+        "Palkia",
+        "Skuntank",
+        "Musharna"
+      ],
+      "movesetNames": [
+        [
+          "Surf",
+          "Draco Meteor",
+          "Thunderbolt",
+          "Ice Beam"
+        ],
+        [
+          "Dire Claw",
+          "Iron Tail",
+          "Trailblaze",
+          "Mud-Slap"
+        ],
+        [
+          "Psychic",
+          "Rock Slide",
+          "Facade",
+          "Aura Sphere"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 23
+    },
+    {
+      "score": 185,
+      "scoreMaximo": 194,
+      "timeMs": 14080.699999988079,
+      "teamNames": [
+        "Palkia",
+        "Clefable"
+      ],
+      "movesetNames": [
+        [
+          "Earth Power",
+          "Surf",
+          "Draco Meteor",
+          "Ice Beam"
+        ],
+        [
+          "Light of Ruin",
+          "Flamethrower",
+          "Dual Wingbeat",
+          "Fire Punch"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 24
+    },
+    {
+      "score": 184,
+      "scoreMaximo": 194,
+      "timeMs": 24274.29999999702,
+      "teamNames": [
+        "Kingdra",
+        "Skuntank",
+        "Musharna",
+        "Starmie",
+        "Garchomp"
+      ],
+      "movesetNames": [
+        [
+          "Flash Cannon",
+          "Surf",
+          "Wave Crash",
+          "Outrage"
+        ],
+        [
+          "Trailblaze",
+          "Body Slam",
+          "Dark Pulse",
+          "Dire Claw"
+        ],
+        [
+          "Energy Ball",
+          "Aura Sphere",
+          "Moonblast",
+          "Psychic"
+        ],
+        [
+          "Psycho Cut",
+          "Power Gem",
+          "Ice Beam",
+          "Flash Cannon"
+        ],
+        [
+          "Earth Power",
+          "Earthquake",
+          "Power Gem",
+          "Shadow Claw"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 25
+    },
+    {
+      "score": 186,
+      "scoreMaximo": 194,
+      "timeMs": 20207,
+      "teamNames": [
+        "Golisopod",
+        "Tinkaton",
+        "Garchomp"
+      ],
+      "movesetNames": [
+        [
+          "Leech Life",
+          "Dark Pulse",
+          "Liquidation",
+          "Triple Axel"
+        ],
+        [
+          "Tera Blast",
+          "Gigaton Hammer",
+          "Ivy Cudgel",
+          "Steel Beam"
+        ],
+        [
+          "Earthquake",
+          "Power Gem",
+          "Iron Head",
+          "Outrage"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "ga",
+      "run": 26
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 23414.40000000596,
+      "teamNames": [
+        "Landorus",
+        "Clefable",
+        "Musharna",
+        "Starmie"
+      ],
+      "movesetNames": [
+        [
+          "Superpower",
+          "Crunch",
+          "Earthquake",
+          "Sludge Wave"
+        ],
+        [
+          "Psychic",
+          "Water Pulse",
+          "Ice Punch",
+          "Light of Ruin"
+        ],
+        [
+          "Shadow Ball",
+          "Aura Sphere",
+          "Psychic",
+          "Energy Ball"
+        ],
+        [
+          "Ice Beam",
+          "Thunderbolt",
+          "Moonblast",
+          "Power Gem"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "ga",
+      "run": 27
+    },
+    {
+      "score": 189,
+      "scoreMaximo": 194,
+      "timeMs": 26286.60000000894,
+      "teamNames": [
+        "Ursaluna",
+        "Florges",
+        "Skuntank",
+        "Starmie",
+        "Musharna"
+      ],
+      "movesetNames": [
+        [
+          "Headlong Rush",
+          "Ice Punch",
+          "Fire Punch",
+          "Hyper Voice"
+        ],
+        [
+          "Moonblast",
+          "Pollen Puff",
+          "Energy Ball",
+          "Psychic"
+        ],
+        [
+          "Dire Claw",
+          "Shadow Claw",
+          "Crunch",
+          "Fire Lash"
+        ],
+        [
+          "Moonblast",
+          "Thunderbolt",
+          "Psychic",
+          "Power Gem"
+        ],
+        [
+          "Facade",
+          "Psychic",
+          "Charge Beam",
+          "Energy Ball"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "ga",
+      "run": 28
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 24385.10000000894,
+      "teamNames": [
+        "Gardevoir",
+        "Kingdra",
+        "Delphox",
+        "Starmie"
+      ],
+      "movesetNames": [
+        [
+          "Energy Ball",
+          "Moonblast",
+          "Thunderbolt",
+          "Mystical Fire"
+        ],
+        [
+          "Wave Crash",
+          "Surf",
+          "Signal Beam",
+          "Outrage"
+        ],
+        [
+          "Thief",
+          "Blast Burn",
+          "Hyper Voice",
+          "Focus Blast"
+        ],
+        [
+          "Psychic",
+          "Ice Beam",
+          "Power Gem",
+          "Flash Cannon"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 29
+    },
+    {
+      "score": 186,
+      "scoreMaximo": 194,
+      "timeMs": 4.200000002980232,
+      "teamNames": [
+        "Palkia",
+        "Charizard"
+      ],
+      "movesetNames": [
+        [
+          "Earth Power",
+          "Outrage",
+          "Surf",
+          "Thunderbolt"
+        ],
+        [
+          "Blast Burn",
+          "Crunch",
+          "Aeroblast",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 185,
+      "scoreMaximo": 194,
+      "timeMs": 33.6000000089407,
+      "teamNames": [
+        "Reshiram",
+        "Kingdra"
+      ],
+      "movesetNames": [
+        [
+          "Draco Meteor",
+          "Earth Power",
+          "Outrage",
+          "Eruption"
+        ],
+        [
+          "Draco Meteor",
+          "Ice Beam",
+          "Iron Head",
+          "Wave Crash"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "greedy-nn",
+      "run": 0
+    }
+  ]
+}

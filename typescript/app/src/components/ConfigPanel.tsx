@@ -16,6 +16,7 @@ export default function ConfigPanel({ config, onChange }: Props) {
   }
 
   const isGA = config.algoritmo === 'genetic'
+  const isGreedyNN = config.algoritmo === 'greedy-nn'
 
   function setGrupo(i: number, value: string) {
     onChange('gruposExclusao', config.gruposExclusao.map((g, idx) => idx === i ? value : g))
@@ -36,10 +37,16 @@ export default function ConfigPanel({ config, onChange }: Props) {
           <tr>
             <td style={tdLabel}>Algoritmo</td>
             <td style={tdValue}>
-              <select value={config.algoritmo} onChange={e => onChange('algoritmo', e.target.value as 'simulated-annealing' | 'genetic')} style={inputStyle}>
+              <select value={config.algoritmo} onChange={e => onChange('algoritmo', e.target.value as 'simulated-annealing' | 'genetic' | 'greedy-nn')} style={inputStyle}>
                 <option value="simulated-annealing">Simulated Annealing</option>
                 <option value="genetic">Genetic Algorithm</option>
+                <option value="greedy-nn">Greedy-NN (rede)</option>
               </select>
+              {isGreedyNN && (
+                <div style={{ fontSize: 11, marginTop: 3, color: '#d08770' }}>
+                  Requer pesos: carregue model_weights.json na aba Experimentos.
+                </div>
+              )}
             </td>
           </tr>
           <tr>
@@ -110,7 +117,7 @@ export default function ConfigPanel({ config, onChange }: Props) {
               <input type="text" value={config.timeFixoInput} onChange={e => onChange('timeFixoInput', e.target.value)} placeholder="Gardevoir, Metagross, ..." style={{ ...inputStyle, width: '100%' }} />
             </td>
           </tr>
-          {!isGA && (
+          {!isGA && !isGreedyNN && (
             <>
               <tr>
                 <td style={tdLabel}>SA Temperatura</td>

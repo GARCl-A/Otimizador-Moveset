@@ -1,7 +1,7 @@
 import { Pokemon } from './pokemon'
 import { Move } from './move'
 import type { Priorities } from './loader'
-import { construirCaches, calcularScoreTime, otimizar } from './optimizer'
+import { construirCaches, calcularScoreTime } from './optimizer'
 import type { WarmStart, ProgressCallback, EvalParams } from './optimizer'
 
 interface Individual {

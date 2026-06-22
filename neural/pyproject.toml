@@ -1,0 +1,17 @@
+[project]
+name = "otimizador-moveset-neural"
+version = "0.1.0"
+description = "Rede neural (greedy-NN) em PyTorch para o Otimizador-Moveset"
+readme = "README.md"
+# torch ainda não tem wheels para Python 3.14; uv seleciona uma versão compatível.
+requires-python = ">=3.10,<3.13"
+dependencies = [
+    "torch>=2.0",
+    "numpy",
+    "pandas",
+    "matplotlib",
+    "scikit-learn",
+]
+
+[tool.uv]
+package = false

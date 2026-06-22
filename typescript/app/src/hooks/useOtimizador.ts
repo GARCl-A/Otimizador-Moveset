@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { buildPokemon, getAllNames, getPriorities, getCustoEfetivo } from '../engine/loader'
+import { buildPokemon, getPriorities, getCustoEfetivo } from '../engine/loader'
 import { rodarOtimizador } from '../engine/runner'
 import { gerarRelatorio } from '../engine/reporter'
 import { parseList, resolveNome } from './useCandidatos'
@@ -7,7 +7,7 @@ import { LENDARIOS } from '../engine/lendarios'
 import type { MemberResult } from '../engine/runner'
 
 export interface Config {
-  algoritmo: 'simulated-annealing' | 'genetic'
+  algoritmo: 'simulated-annealing' | 'genetic' | 'greedy-nn'
   fontes: string[]
   tamanhoTime: number
   budget: number

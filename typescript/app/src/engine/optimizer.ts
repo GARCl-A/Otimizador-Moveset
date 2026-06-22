@@ -249,7 +249,6 @@ export function otimizarTimeSA(
     }
 
     const idxMembro = Math.floor(Math.random() * time.length)
-    const iPoke = pokeIndices[idxMembro]
     const indicesAtivos = estadoAtual[idxMembro]
     const ativosSet = new Set(indicesAtivos)
     const indicesFora: number[] = []

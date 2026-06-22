@@ -1,5 +1,5 @@
 import { useMemo } from 'react'
-import { getAllNames, getPokemonData, getCustoEfetivo } from '../engine/loader'
+import { getPokemonData, getCustoEfetivo } from '../engine/loader'
 import { LENDARIOS } from '../engine/lendarios'
 
 export function parseList(s: string): string[] {

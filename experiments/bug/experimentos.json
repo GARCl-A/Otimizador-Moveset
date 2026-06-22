@@ -1,0 +1,2419 @@
+{
+  "aggregates": [
+    {
+      "method": "sa",
+      "n": 30,
+      "min": 173,
+      "q1": 180,
+      "median": 180,
+      "q3": 180,
+      "max": 180,
+      "mean": 179.56666666666666,
+      "std": 1.6265163865007806,
+      "meanTimeMs": 245.94000000009933,
+      "meanRedundancy": 2.533333333333333
+    },
+    {
+      "method": "ga",
+      "n": 30,
+      "min": 160,
+      "q1": 170,
+      "median": 172,
+      "q3": 173,
+      "max": 176,
+      "mean": 170.6,
+      "std": 4.038151392242084,
+      "meanTimeMs": 23342.2399999996,
+      "meanRedundancy": 2.9
+    },
+    {
+      "method": "greedy-exato",
+      "n": 1,
+      "min": 179,
+      "q1": 179,
+      "median": 179,
+      "q3": 179,
+      "max": 179,
+      "mean": 179,
+      "std": 0,
+      "meanTimeMs": 4.199999988079071,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-nn",
+      "n": 1,
+      "min": 179,
+      "q1": 179,
+      "median": 179,
+      "q3": 179,
+      "max": 179,
+      "mean": 179,
+      "std": 0,
+      "meanTimeMs": 11.799999997019768,
+      "meanRedundancy": 3
+    }
+  ],
+  "runs": [
+    {
+      "score": 174,
+      "scoreMaximo": 194,
+      "timeMs": 230.30000001192093,
+      "teamNames": [
+        "Kricketune",
+        "Volcarona",
+        "Orbeetle",
+        "Ariados",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Aerial Ace",
+          "Bonemerang",
+          "Leech Life",
+          "Mud-Slap"
+        ],
+        [
+          "Dazzling Gleam",
+          "Flamethrower",
+          "Air Slash",
+          "Scald"
+        ],
+        [
+          "Bug Buzz",
+          "Energy Ball",
+          "Shadow Ball",
+          "Luster Purge"
+        ],
+        [
+          "Poison Jab",
+          "Tera Blast",
+          "Sucker Punch",
+          "Bug Buzz"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 0
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 238.20000000298023,
+      "teamNames": [
+        "Volcarona",
+        "Golisopod",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Scald",
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Bug Buzz"
+        ],
+        [
+          "Ice Beam",
+          "Sucker Punch",
+          "Liquidation",
+          "Close Combat"
+        ],
+        [
+          "Flash Cannon",
+          "Bulldoze",
+          "Earth Power",
+          "Thunderclap"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 1
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 270.5,
+      "teamNames": [
+        "Vikavolt",
+        "Golisopod",
+        "Volcarona",
+        "Kricketune"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Bug Buzz",
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Scald"
+        ],
+        [
+          "Brick Break",
+          "Giga Drain",
+          "Leech Life",
+          "Bonemerang"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 2
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 237.59999999403954,
+      "teamNames": [
+        "Volcarona",
+        "Vikavolt",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Dazzling Gleam",
+          "Flamethrower",
+          "Trailblaze",
+          "Scald"
+        ],
+        [
+          "Thunderbolt",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 3
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 236,
+      "teamNames": [
+        "Vikavolt",
+        "Volcarona",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Earth Power",
+          "Thunderclap",
+          "Flash Cannon",
+          "Poison Jab"
+        ],
+        [
+          "Scald",
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Psychic"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 4
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 273.79999999701977,
+      "teamNames": [
+        "Kricketune",
+        "Volcarona",
+        "Golisopod",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Brick Break",
+          "Giga Drain",
+          "Leech Life",
+          "Bonemerang"
+        ],
+        [
+          "Psychic",
+          "Flamethrower",
+          "Air Slash",
+          "Scald"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Bug Buzz",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 5
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 235.5,
+      "teamNames": [
+        "Golisopod",
+        "Volcarona",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Triple Axel",
+          "Liquidation",
+          "Close Combat",
+          "Sucker Punch"
+        ],
+        [
+          "Dazzling Gleam",
+          "Scald",
+          "Flamethrower",
+          "Poison Jab"
+        ],
+        [
+          "Air Slash",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 6
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 276.19999998807907,
+      "teamNames": [
+        "Kricketune",
+        "Golisopod",
+        "Vikavolt",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Brick Break",
+          "Giga Drain",
+          "Leech Life",
+          "Bonemerang"
+        ],
+        [
+          "Sucker Punch",
+          "Liquidation",
+          "Ice Beam",
+          "Close Combat"
+        ],
+        [
+          "Bulldoze",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Dazzling Gleam",
+          "Flamethrower",
+          "Scald",
+          "Poison Jab"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 7
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 272.29999999701977,
+      "teamNames": [
+        "Vikavolt",
+        "Volcarona",
+        "Golisopod",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Earth Power",
+          "Thunderclap",
+          "Sky Drop",
+          "Flash Cannon"
+        ],
+        [
+          "Dazzling Gleam",
+          "Flamethrower",
+          "Giga Drain",
+          "Scald"
+        ],
+        [
+          "Close Combat",
+          "Triple Axel",
+          "Sucker Punch",
+          "Liquidation"
+        ],
+        [
+          "Shadow Sneak",
+          "Stomping Tantrum",
+          "Sucker Punch",
+          "Trailblaze"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 8
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 235,
+      "teamNames": [
+        "Golisopod",
+        "Vikavolt",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Liquidation",
+          "Ice Beam",
+          "Sucker Punch"
+        ],
+        [
+          "Poison Jab",
+          "Lunge",
+          "Flash Cannon",
+          "Thunderclap"
+        ],
+        [
+          "Scald",
+          "Flamethrower",
+          "Psychic",
+          "Dazzling Gleam"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 9
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 234.29999999701977,
+      "teamNames": [
+        "Vikavolt",
+        "Golisopod",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Thunderbolt",
+          "Bug Buzz",
+          "Flash Cannon",
+          "Thunderclap"
+        ],
+        [
+          "Sucker Punch",
+          "Close Combat",
+          "Liquidation",
+          "Triple Axel"
+        ],
+        [
+          "Scald",
+          "Flamethrower",
+          "Acrobatics",
+          "Psychic"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 10
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 234,
+      "teamNames": [
+        "Volcarona",
+        "Golisopod",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Dazzling Gleam",
+          "Flamethrower",
+          "Acrobatics",
+          "Scald"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Bug Buzz",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 11
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 267,
+      "teamNames": [
+        "Vikavolt",
+        "Golisopod",
+        "Kricketune",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Earth Power",
+          "Facade",
+          "Flash Cannon",
+          "Thunderclap"
+        ],
+        [
+          "Ice Beam",
+          "Liquidation",
+          "Sucker Punch",
+          "Close Combat"
+        ],
+        [
+          "Brick Break",
+          "Giga Drain",
+          "Leech Life",
+          "Stone Axe"
+        ],
+        [
+          "Tera Blast",
+          "Flamethrower",
+          "Scald",
+          "Dazzling Gleam"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 12
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 270.09999999403954,
+      "teamNames": [
+        "Ariados",
+        "Vikavolt",
+        "Golisopod",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Poison Jab",
+          "Stomping Tantrum",
+          "Sucker Punch",
+          "Attack Order"
+        ],
+        [
+          "Earth Power",
+          "Sky Drop",
+          "Flash Cannon",
+          "Thunderclap"
+        ],
+        [
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel",
+          "Close Combat"
+        ],
+        [
+          "Poison Jab",
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Scald"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 13
+    },
+    {
+      "score": 173,
+      "scoreMaximo": 194,
+      "timeMs": 231.5,
+      "teamNames": [
+        "Vikavolt",
+        "Kricketune",
+        "Ariados",
+        "Lokix",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Brick Break",
+          "Giga Drain",
+          "Leech Life",
+          "Bonemerang"
+        ],
+        [
+          "Hex",
+          "Bug Buzz",
+          "Tera Blast",
+          "Smart Strike"
+        ],
+        [
+          "Brick Break",
+          "Sucker Punch",
+          "Trailblaze",
+          "Attack Order"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 14
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 231.79999999701977,
+      "teamNames": [
+        "Golisopod",
+        "Volcarona",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Sucker Punch",
+          "Ice Beam",
+          "Liquidation"
+        ],
+        [
+          "Psychic",
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Scald"
+        ],
+        [
+          "Poison Jab",
+          "Flash Cannon",
+          "Bulldoze",
+          "Thunderclap"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 15
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 230.30000001192093,
+      "teamNames": [
+        "Vikavolt",
+        "Volcarona",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Facade",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Leech Life",
+          "Flamethrower",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Sucker Punch",
+          "Close Combat",
+          "Liquidation",
+          "Ice Beam"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 16
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 226.80000001192093,
+      "teamNames": [
+        "Golisopod",
+        "Vikavolt",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Triple Axel",
+          "Liquidation",
+          "Sucker Punch",
+          "Close Combat"
+        ],
+        [
+          "Flash Cannon",
+          "Thunderclap",
+          "Lunge",
+          "Energy Ball"
+        ],
+        [
+          "Psychic",
+          "Flamethrower",
+          "Scald",
+          "Dazzling Gleam"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 17
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 264,
+      "teamNames": [
+        "Ariados",
+        "Volcarona",
+        "Vikavolt",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Poison Jab",
+          "Sludge Wave",
+          "Sucker Punch",
+          "Attack Order"
+        ],
+        [
+          "Bug Buzz",
+          "Flamethrower",
+          "Scald",
+          "Psychic"
+        ],
+        [
+          "Flash Cannon",
+          "Spark",
+          "Sky Drop",
+          "Thunderclap"
+        ],
+        [
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel",
+          "Close Combat"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 18
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 260.5,
+      "teamNames": [
+        "Golisopod",
+        "Kricketune",
+        "Vikavolt",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Liquidation",
+          "Ice Beam",
+          "Sucker Punch"
+        ],
+        [
+          "Brick Break",
+          "Giga Drain",
+          "Leech Life",
+          "Bonemerang"
+        ],
+        [
+          "Sky Drop",
+          "Earth Power",
+          "Flash Cannon",
+          "Thunderclap"
+        ],
+        [
+          "Scald",
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Tera Blast"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 19
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 227.59999999403954,
+      "teamNames": [
+        "Golisopod",
+        "Volcarona",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Bug Buzz",
+          "Flamethrower",
+          "Psychic",
+          "Scald"
+        ],
+        [
+          "Lunge",
+          "Flash Cannon",
+          "Spark",
+          "Thunderclap"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 20
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 263.59999999403954,
+      "teamNames": [
+        "Ariados",
+        "Golisopod",
+        "Volcarona",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Poison Jab",
+          "Bounce",
+          "Sucker Punch",
+          "Attack Order"
+        ],
+        [
+          "Sucker Punch",
+          "Liquidation",
+          "Triple Axel",
+          "Close Combat"
+        ],
+        [
+          "Scald",
+          "Flamethrower",
+          "Psychic",
+          "Body Slam"
+        ],
+        [
+          "Flash Cannon",
+          "Bug Buzz",
+          "Earth Power",
+          "Thunderclap"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 21
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 229.70000000298023,
+      "teamNames": [
+        "Golisopod",
+        "Vikavolt",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Sucker Punch",
+          "Liquidation",
+          "Ice Beam",
+          "Close Combat"
+        ],
+        [
+          "Flash Cannon",
+          "Lunge",
+          "Thunderclap",
+          "Facade"
+        ],
+        [
+          "Scald",
+          "Flamethrower",
+          "Psychic",
+          "Bug Buzz"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 22
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 229.80000001192093,
+      "teamNames": [
+        "Volcarona",
+        "Golisopod",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Wild Charge",
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Scald"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Bug Buzz",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 23
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 226.59999999403954,
+      "teamNames": [
+        "Golisopod",
+        "Vikavolt",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Bug Buzz",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Dazzling Gleam",
+          "Flamethrower",
+          "Giga Drain",
+          "Scald"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 24
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 228.20000000298023,
+      "teamNames": [
+        "Volcarona",
+        "Vikavolt",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Leech Life",
+          "Flamethrower",
+          "Scald",
+          "Psychic"
+        ],
+        [
+          "Sky Drop",
+          "Flash Cannon",
+          "Bug Buzz",
+          "Thunderclap"
+        ],
+        [
+          "Sucker Punch",
+          "Liquidation",
+          "Triple Axel",
+          "Close Combat"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 25
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 228,
+      "teamNames": [
+        "Golisopod",
+        "Vikavolt",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Liquidation",
+          "Triple Axel",
+          "Sucker Punch"
+        ],
+        [
+          "Flash Cannon",
+          "Thunderbolt",
+          "Facade",
+          "Thunderclap"
+        ],
+        [
+          "Bug Buzz",
+          "Flamethrower",
+          "Scald",
+          "Psychic"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 26
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 262.59999999403954,
+      "teamNames": [
+        "Vikavolt",
+        "Ariados",
+        "Golisopod",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Flash Cannon",
+          "Earth Power",
+          "Tera Blast",
+          "Thunderclap"
+        ],
+        [
+          "Poison Jab",
+          "Stomping Tantrum",
+          "Sucker Punch",
+          "Attack Order"
+        ],
+        [
+          "Triple Axel",
+          "Liquidation",
+          "Close Combat",
+          "Sucker Punch"
+        ],
+        [
+          "Scald",
+          "Flamethrower",
+          "Body Slam",
+          "Dazzling Gleam"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 27
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 260.90000000596046,
+      "teamNames": [
+        "Volcarona",
+        "Golisopod",
+        "Vikavolt",
+        "Kricketune"
+      ],
+      "movesetNames": [
+        [
+          "Scald",
+          "Flamethrower",
+          "Bug Buzz",
+          "Psychic"
+        ],
+        [
+          "Sucker Punch",
+          "Liquidation",
+          "Triple Axel",
+          "Close Combat"
+        ],
+        [
+          "Sky Drop",
+          "Flash Cannon",
+          "Air Slash",
+          "Thunderclap"
+        ],
+        [
+          "Brick Break",
+          "Giga Drain",
+          "Leech Life",
+          "Bonemerang"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 28
+    },
+    {
+      "score": 180,
+      "scoreMaximo": 194,
+      "timeMs": 265.5,
+      "teamNames": [
+        "Golisopod",
+        "Volcarona",
+        "Ariados",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Liquidation",
+          "Triple Axel",
+          "Sucker Punch"
+        ],
+        [
+          "Psychic",
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Scald"
+        ],
+        [
+          "Poison Jab",
+          "Stomping Tantrum",
+          "Sucker Punch",
+          "Hex"
+        ],
+        [
+          "Flash Cannon",
+          "Bug Buzz",
+          "Facade",
+          "Thunderclap"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 29
+    },
+    {
+      "score": 175,
+      "scoreMaximo": 194,
+      "timeMs": 23919.79999999702,
+      "teamNames": [
+        "Golisopod",
+        "Volcarona",
+        "Kricketune",
+        "scolipede"
+      ],
+      "movesetNames": [
+        [
+          "Surf",
+          "Close Combat",
+          "Ice Beam",
+          "Liquidation"
+        ],
+        [
+          "Bug Buzz",
+          "Scald",
+          "Dazzling Gleam",
+          "Flamethrower"
+        ],
+        [
+          "Population Bomb",
+          "Leech Life",
+          "Throat Chop",
+          "Hyper Voice"
+        ],
+        [
+          "Superpower",
+          "Earthquake",
+          "Signal Beam",
+          "Poison Jab"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 0
+    },
+    {
+      "score": 173,
+      "scoreMaximo": 194,
+      "timeMs": 25071.20000000298,
+      "teamNames": [
+        "Volcarona",
+        "Golisopod",
+        "Leavanny",
+        "Orbeetle"
+      ],
+      "movesetNames": [
+        [
+          "Psychic",
+          "Flamethrower",
+          "Bug Buzz",
+          "Scald"
+        ],
+        [
+          "Ice Beam",
+          "Rock Slide",
+          "Liquidation",
+          "Close Combat"
+        ],
+        [
+          "Energy Ball",
+          "Leaf Blade",
+          "Steel Wing",
+          "Shadow Claw"
+        ],
+        [
+          "Hyper Beam",
+          "Luster Purge",
+          "Leech Life",
+          "Facade"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 1
+    },
+    {
+      "score": 174,
+      "scoreMaximo": 194,
+      "timeMs": 23526.5,
+      "teamNames": [
+        "Volcarona",
+        "Vikavolt",
+        "Golisopod",
+        "Kricketune"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Bug Buzz",
+          "Scald"
+        ],
+        [
+          "Flash Cannon",
+          "Earth Power",
+          "Poison Jab",
+          "Thunderbolt"
+        ],
+        [
+          "Drill Run",
+          "Poison Jab",
+          "Iron Head",
+          "Liquidation"
+        ],
+        [
+          "Aerial Ace",
+          "Throat Chop",
+          "Population Bomb",
+          "Trailblaze"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 2
+    },
+    {
+      "score": 172,
+      "scoreMaximo": 194,
+      "timeMs": 23656.40000000596,
+      "teamNames": [
+        "Vikavolt",
+        "Golisopod",
+        "Kricketune",
+        "Centiskorsh"
+      ],
+      "movesetNames": [
+        [
+          "Earth Power",
+          "Thunderbolt",
+          "Crunch",
+          "Bug Buzz"
+        ],
+        [
+          "Poison Jab",
+          "Liquidation",
+          "Triple Axel",
+          "Close Combat"
+        ],
+        [
+          "Bug Buzz",
+          "Leech Life",
+          "Throat Chop",
+          "Bonemerang"
+        ],
+        [
+          "Power Whip",
+          "Scorching Sands",
+          "Burn Up",
+          "Leech Life"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 3
+    },
+    {
+      "score": 174,
+      "scoreMaximo": 194,
+      "timeMs": 24952.79999999702,
+      "teamNames": [
+        "Volcarona",
+        "Illumise",
+        "Orbeetle",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Dazzling Gleam",
+          "Zen Headbutt",
+          "Scald",
+          "Flamethrower"
+        ],
+        [
+          "Dazzling Gleam",
+          "Thunderbolt",
+          "Brick Break",
+          "Air Slash"
+        ],
+        [
+          "Energy Ball",
+          "Bug Buzz",
+          "Body Press",
+          "Luster Purge"
+        ],
+        [
+          "Ice Beam",
+          "Close Combat",
+          "Liquidation",
+          "Shadow Claw"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 4
+    },
+    {
+      "score": 174,
+      "scoreMaximo": 194,
+      "timeMs": 22117,
+      "teamNames": [
+        "Golisopod",
+        "Leavanny",
+        "Volcarona",
+        "Orbeetle"
+      ],
+      "movesetNames": [
+        [
+          "Drill Run",
+          "Ice Beam",
+          "Leech Life",
+          "Liquidation"
+        ],
+        [
+          "Electroweb",
+          "Leaf Blade",
+          "Lunge",
+          "Energy Ball"
+        ],
+        [
+          "Bug Buzz",
+          "Dazzling Gleam",
+          "Scald",
+          "Flamethrower"
+        ],
+        [
+          "Bug Buzz",
+          "Luster Purge",
+          "Shadow Ball",
+          "Psycho Cut"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 5
+    },
+    {
+      "score": 171,
+      "scoreMaximo": 194,
+      "timeMs": 26838.79999999702,
+      "teamNames": [
+        "Ribombee",
+        "Volcarona",
+        "Golisopod",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Alluring Voice",
+          "Facade",
+          "Bug Buzz",
+          "Thief"
+        ],
+        [
+          "Giga Drain",
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Scald"
+        ],
+        [
+          "Close Combat",
+          "Liquidation",
+          "Surf",
+          "Leech Life"
+        ],
+        [
+          "Attack Order",
+          "Body Slam",
+          "Stomping Tantrum",
+          "Hex"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 6
+    },
+    {
+      "score": 173,
+      "scoreMaximo": 194,
+      "timeMs": 19800.09999999404,
+      "teamNames": [
+        "Golisopod",
+        "Vikavolt",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Ice Beam",
+          "Sludge Wave",
+          "Liquidation",
+          "Poison Jab"
+        ],
+        [
+          "Earth Power",
+          "Thunderbolt",
+          "Flash Cannon",
+          "Crunch"
+        ],
+        [
+          "Flamethrower",
+          "Leech Life",
+          "Psychic",
+          "Bug Buzz"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 7
+    },
+    {
+      "score": 174,
+      "scoreMaximo": 194,
+      "timeMs": 23790.29999999702,
+      "teamNames": [
+        "Golisopod",
+        "Orbeetle",
+        "Volcarona",
+        "Illumise"
+      ],
+      "movesetNames": [
+        [
+          "Drill Run",
+          "Triple Axel",
+          "Leech Life",
+          "Liquidation"
+        ],
+        [
+          "Energy Ball",
+          "Bug Buzz",
+          "Luster Purge",
+          "Psycho Cut"
+        ],
+        [
+          "Bug Buzz",
+          "Dazzling Gleam",
+          "Flamethrower",
+          "Scald"
+        ],
+        [
+          "Giga Drain",
+          "Thief",
+          "Dazzling Gleam",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 8
+    },
+    {
+      "score": 173,
+      "scoreMaximo": 194,
+      "timeMs": 25334.59999999404,
+      "teamNames": [
+        "Volcarona",
+        "Orbeetle",
+        "Golisopod",
+        "Leavanny"
+      ],
+      "movesetNames": [
+        [
+          "Scald",
+          "Flare Blitz",
+          "Dazzling Gleam",
+          "Flamethrower"
+        ],
+        [
+          "Energy Ball",
+          "Bug Buzz",
+          "Shadow Ball",
+          "Luster Purge"
+        ],
+        [
+          "Drill Run",
+          "Liquidation",
+          "Leech Life",
+          "Surf"
+        ],
+        [
+          "Triple Axel",
+          "Leaf Blade",
+          "Energy Ball",
+          "Shadow Claw"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 9
+    },
+    {
+      "score": 172,
+      "scoreMaximo": 194,
+      "timeMs": 29665.5,
+      "teamNames": [
+        "Volcarona",
+        "Ariados",
+        "Golisopod",
+        "Kricketune",
+        "Leavanny"
+      ],
+      "movesetNames": [
+        [
+          "Dazzling Gleam",
+          "Scald",
+          "Flamethrower",
+          "Psychic"
+        ],
+        [
+          "Poison Jab",
+          "Body Slam",
+          "Stomping Tantrum",
+          "Tera Blast"
+        ],
+        [
+          "Liquidation",
+          "Close Combat",
+          "Triple Axel",
+          "Drill Run"
+        ],
+        [
+          "Trailblaze",
+          "Stone Axe",
+          "Hyper Voice",
+          "Leech Life"
+        ],
+        [
+          "Lunge",
+          "Shadow Claw",
+          "Poison Jab",
+          "Leaf Blade"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 10
+    },
+    {
+      "score": 171,
+      "scoreMaximo": 194,
+      "timeMs": 18918.70000000298,
+      "teamNames": [
+        "Volcarona",
+        "Golisopod",
+        "Pinsir"
+      ],
+      "movesetNames": [
+        [
+          "Psychic",
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Bug Buzz"
+        ],
+        [
+          "Triple Axel",
+          "Poison Jab",
+          "Leech Life",
+          "Liquidation"
+        ],
+        [
+          "Earthquake",
+          "X-Scissor",
+          "Close Combat",
+          "Body Slam"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 11
+    },
+    {
+      "score": 176,
+      "scoreMaximo": 194,
+      "timeMs": 23330.59999999404,
+      "teamNames": [
+        "scolipede",
+        "Volcarona",
+        "Kricketune",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Earthquake",
+          "Superpower",
+          "Poison Jab",
+          "Megahorn"
+        ],
+        [
+          "Dazzling Gleam",
+          "Psychic",
+          "Scald",
+          "Flamethrower"
+        ],
+        [
+          "Giga Drain",
+          "Throat Chop",
+          "Leech Life",
+          "Brick Break"
+        ],
+        [
+          "Close Combat",
+          "Bug Buzz",
+          "Triple Axel",
+          "Liquidation"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 12
+    },
+    {
+      "score": 171,
+      "scoreMaximo": 194,
+      "timeMs": 18198.20000000298,
+      "teamNames": [
+        "Volcarona",
+        "Golisopod",
+        "Ribombee"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Scald",
+          "Giga Drain",
+          "Bug Buzz"
+        ],
+        [
+          "Liquidation",
+          "Poison Jab",
+          "Close Combat",
+          "Rock Slide"
+        ],
+        [
+          "Alluring Voice",
+          "Energy Ball",
+          "Bug Buzz",
+          "Thief"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 13
+    },
+    {
+      "score": 171,
+      "scoreMaximo": 194,
+      "timeMs": 24646.79999999702,
+      "teamNames": [
+        "Lokix",
+        "Volcarona",
+        "Golisopod",
+        "Leavanny"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Dark Pulse",
+          "Bounce",
+          "Throat Chop"
+        ],
+        [
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Psychic",
+          "Bug Buzz"
+        ],
+        [
+          "Ice Beam",
+          "Liquidation",
+          "Leech Life",
+          "Close Combat"
+        ],
+        [
+          "Triple Axel",
+          "Energy Ball",
+          "Leaf Blade",
+          "Throat Chop"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 14
+    },
+    {
+      "score": 174,
+      "scoreMaximo": 194,
+      "timeMs": 19440.89999999106,
+      "teamNames": [
+        "Golisopod",
+        "Volcarona",
+        "scolipede"
+      ],
+      "movesetNames": [
+        [
+          "Shadow Claw",
+          "Liquidation",
+          "Leech Life",
+          "Triple Axel"
+        ],
+        [
+          "Psychic",
+          "Flamethrower",
+          "Bug Buzz",
+          "Scald"
+        ],
+        [
+          "Poison Jab",
+          "Solar Beam",
+          "Superpower",
+          "Earthquake"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 15
+    },
+    {
+      "score": 172,
+      "scoreMaximo": 194,
+      "timeMs": 28215.60000000894,
+      "teamNames": [
+        "Ariados",
+        "Volcarona",
+        "Orbeetle",
+        "Kricketune",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Shadow Sneak",
+          "Sludge Wave",
+          "Poison Jab",
+          "Trailblaze"
+        ],
+        [
+          "Scald",
+          "Body Slam",
+          "Dazzling Gleam",
+          "Flamethrower"
+        ],
+        [
+          "Luster Purge",
+          "Leech Life",
+          "Bug Buzz",
+          "Energy Ball"
+        ],
+        [
+          "Bug Buzz",
+          "Brick Break",
+          "Aerial Ace",
+          "Throat Chop"
+        ],
+        [
+          "Aerial Ace",
+          "Leech Life",
+          "Close Combat",
+          "Liquidation"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 16
+    },
+    {
+      "score": 162,
+      "scoreMaximo": 194,
+      "timeMs": 19232.40000000596,
+      "teamNames": [
+        "Kleavor",
+        "Golisopod",
+        "Leavanny"
+      ],
+      "movesetNames": [
+        [
+          "Stone Edge",
+          "Close Combat",
+          "Lunge",
+          "Air Slash"
+        ],
+        [
+          "Drill Run",
+          "Liquidation",
+          "Shadow Claw",
+          "Triple Axel"
+        ],
+        [
+          "Throat Chop",
+          "Lunge",
+          "Leaf Blade",
+          "Triple Axel"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 17
+    },
+    {
+      "score": 169,
+      "scoreMaximo": 194,
+      "timeMs": 23229.80000001192,
+      "teamNames": [
+        "Golisopod",
+        "Orbeetle",
+        "Centiskorsh",
+        "Lokix"
+      ],
+      "movesetNames": [
+        [
+          "Triple Axel",
+          "Liquidation",
+          "Drill Run",
+          "Leech Life"
+        ],
+        [
+          "Leech Life",
+          "Luster Purge",
+          "Energy Ball",
+          "Bug Buzz"
+        ],
+        [
+          "Fire Lash",
+          "Burn Up",
+          "Crunch",
+          "Power Whip"
+        ],
+        [
+          "Double-Edge",
+          "Throat Chop",
+          "Astonish",
+          "Trailblaze"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 18
+    },
+    {
+      "score": 171,
+      "scoreMaximo": 194,
+      "timeMs": 23304.59999999404,
+      "teamNames": [
+        "Volcarona",
+        "Vikavolt",
+        "Leavanny",
+        "Orbeetle"
+      ],
+      "movesetNames": [
+        [
+          "Dazzling Gleam",
+          "Scald",
+          "Leech Life",
+          "Flamethrower"
+        ],
+        [
+          "Thunderbolt",
+          "Flash Cannon",
+          "Spark",
+          "Earth Power"
+        ],
+        [
+          "Aerial Ace",
+          "Shadow Claw",
+          "Tera Blast",
+          "Leaf Blade"
+        ],
+        [
+          "Luster Purge",
+          "Bug Buzz",
+          "Leech Life",
+          "Energy Ball"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 19
+    },
+    {
+      "score": 172,
+      "scoreMaximo": 194,
+      "timeMs": 28650.40000000596,
+      "teamNames": [
+        "Kricketune",
+        "Golisopod",
+        "Volcarona",
+        "Orbeetle",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Mud-Slap",
+          "Throat Chop",
+          "Bug Buzz",
+          "Leech Life"
+        ],
+        [
+          "Liquidation",
+          "Leech Life",
+          "Dark Pulse",
+          "Close Combat"
+        ],
+        [
+          "Body Slam",
+          "Flamethrower",
+          "Dazzling Gleam",
+          "Scald"
+        ],
+        [
+          "Bug Buzz",
+          "Payback",
+          "Energy Ball",
+          "Luster Purge"
+        ],
+        [
+          "Psychic",
+          "Tera Blast",
+          "Stomping Tantrum",
+          "Bug Buzz"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 20
+    },
+    {
+      "score": 163,
+      "scoreMaximo": 194,
+      "timeMs": 18475.89999999106,
+      "teamNames": [
+        "Kleavor",
+        "Volcarona",
+        "Leavanny"
+      ],
+      "movesetNames": [
+        [
+          "Stone Edge",
+          "Close Combat",
+          "Lunge",
+          "Cross Poison"
+        ],
+        [
+          "Psychic",
+          "Bug Buzz",
+          "Flamethrower",
+          "Scald"
+        ],
+        [
+          "Poison Jab",
+          "Steel Wing",
+          "Leaf Blade",
+          "Lunge"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 21
+    },
+    {
+      "score": 162,
+      "scoreMaximo": 194,
+      "timeMs": 17505.20000000298,
+      "teamNames": [
+        "Golisopod",
+        "Buzzwole",
+        "Kricketune"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Leech Life",
+          "Triple Axel",
+          "Poison Jab"
+        ],
+        [
+          "Close Combat",
+          "Stone Edge",
+          "Darkest Lariat",
+          "Earthquake"
+        ],
+        [
+          "Bonemerang",
+          "Leech Life",
+          "Hyper Voice",
+          "Stone Axe"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 22
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 17609.5,
+      "teamNames": [
+        "Buzzwole",
+        "Kricketune",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Darkest Lariat",
+          "Earthquake",
+          "Close Combat",
+          "Stone Edge"
+        ],
+        [
+          "Throat Chop",
+          "Bonemerang",
+          "Stone Axe",
+          "Leech Life"
+        ],
+        [
+          "Liquidation",
+          "Poison Jab",
+          "Bug Buzz",
+          "Triple Axel"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 23
+    },
+    {
+      "score": 172,
+      "scoreMaximo": 194,
+      "timeMs": 28859.20000000298,
+      "teamNames": [
+        "Ariados",
+        "Volcarona",
+        "Leavanny",
+        "Kricketune",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Stomping Tantrum",
+          "Smart Strike",
+          "Shadow Sneak",
+          "Poison Jab"
+        ],
+        [
+          "Dazzling Gleam",
+          "Scald",
+          "Flamethrower",
+          "Psychic"
+        ],
+        [
+          "Lunge",
+          "Energy Ball",
+          "Shadow Claw",
+          "Leaf Blade"
+        ],
+        [
+          "Leech Life",
+          "Brick Break",
+          "Bug Buzz",
+          "Mud-Slap"
+        ],
+        [
+          "Liquidation",
+          "Ice Beam",
+          "Close Combat",
+          "Jet Punch"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 24
+    },
+    {
+      "score": 170,
+      "scoreMaximo": 194,
+      "timeMs": 28456.09999999404,
+      "teamNames": [
+        "Volcarona",
+        "Ariados",
+        "Vikavolt",
+        "Kricketune",
+        "Orbeetle"
+      ],
+      "movesetNames": [
+        [
+          "Scald",
+          "Dazzling Gleam",
+          "Flamethrower",
+          "Psychic"
+        ],
+        [
+          "Body Slam",
+          "Throat Chop",
+          "Smart Strike",
+          "Sludge Wave"
+        ],
+        [
+          "Thunderbolt",
+          "Earth Power",
+          "Flash Cannon",
+          "Bug Buzz"
+        ],
+        [
+          "Throat Chop",
+          "Population Bomb",
+          "Bug Buzz",
+          "Leech Life"
+        ],
+        [
+          "Luster Purge",
+          "Psycho Cut",
+          "Bug Buzz",
+          "Energy Ball"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 25
+    },
+    {
+      "score": 165,
+      "scoreMaximo": 194,
+      "timeMs": 27952.09999999404,
+      "teamNames": [
+        "Ariados",
+        "Golisopod",
+        "Kricketune",
+        "Centiskorsh",
+        "Lokix"
+      ],
+      "movesetNames": [
+        [
+          "Giga Drain",
+          "Sludge Wave",
+          "Body Slam",
+          "Stomping Tantrum"
+        ],
+        [
+          "Liquidation",
+          "Leech Life",
+          "Drill Run",
+          "Triple Axel"
+        ],
+        [
+          "Brick Break",
+          "Bug Buzz",
+          "Leech Life",
+          "Throat Chop"
+        ],
+        [
+          "Scorching Sands",
+          "Power Whip",
+          "Fire Lash",
+          "Burn Up"
+        ],
+        [
+          "Double-Edge",
+          "Astonish",
+          "Trailblaze",
+          "Throat Chop"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 26
+    },
+    {
+      "score": 172,
+      "scoreMaximo": 194,
+      "timeMs": 24490.60000000894,
+      "teamNames": [
+        "Volcarona",
+        "Golisopod",
+        "Vikavolt",
+        "Kricketune"
+      ],
+      "movesetNames": [
+        [
+          "Psychic",
+          "Bug Buzz",
+          "Poison Jab",
+          "Scald"
+        ],
+        [
+          "Leech Life",
+          "Liquidation",
+          "Close Combat",
+          "Triple Axel"
+        ],
+        [
+          "Earth Power",
+          "Flash Cannon",
+          "Thunderbolt",
+          "Crunch"
+        ],
+        [
+          "Hyper Voice",
+          "Giga Drain",
+          "Bug Buzz",
+          "Brick Break"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 27
+    },
+    {
+      "score": 170,
+      "scoreMaximo": 194,
+      "timeMs": 22748.79999999702,
+      "teamNames": [
+        "Centiskorsh",
+        "Golisopod",
+        "Kricketune",
+        "Ribombee"
+      ],
+      "movesetNames": [
+        [
+          "Burn Up",
+          "Leech Life",
+          "Crunch",
+          "Power Whip"
+        ],
+        [
+          "Poison Jab",
+          "Close Combat",
+          "Liquidation",
+          "Triple Axel"
+        ],
+        [
+          "Giga Drain",
+          "Leech Life",
+          "Population Bomb",
+          "Bug Buzz"
+        ],
+        [
+          "Energy Ball",
+          "Play Rough",
+          "Bug Buzz",
+          "Alluring Voice"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 28
+    },
+    {
+      "score": 170,
+      "scoreMaximo": 194,
+      "timeMs": 18328.79999999702,
+      "teamNames": [
+        "Pinsir",
+        "Volcarona",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Outrage",
+          "Earthquake",
+          "Stone Edge"
+        ],
+        [
+          "Flamethrower",
+          "Bug Buzz",
+          "Dazzling Gleam",
+          "Flare Blitz"
+        ],
+        [
+          "Liquidation",
+          "Close Combat",
+          "Drill Run",
+          "Triple Axel"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 29
+    },
+    {
+      "score": 179,
+      "scoreMaximo": 194,
+      "timeMs": 4.199999988079071,
+      "teamNames": [
+        "Golisopod",
+        "Vikavolt",
+        "Volcarona",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Bug Buzz",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Bug Buzz",
+          "Flamethrower",
+          "Giga Drain",
+          "Scald"
+        ],
+        [
+          "Poison Jab",
+          "Stomping Tantrum",
+          "Sucker Punch",
+          "Attack Order"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 179,
+      "scoreMaximo": 194,
+      "timeMs": 11.799999997019768,
+      "teamNames": [
+        "Golisopod",
+        "Vikavolt",
+        "Volcarona",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Liquidation",
+          "Sucker Punch",
+          "Triple Axel"
+        ],
+        [
+          "Bug Buzz",
+          "Flash Cannon",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Bug Buzz",
+          "Flamethrower",
+          "Giga Drain",
+          "Scald"
+        ],
+        [
+          "Poison Jab",
+          "Stomping Tantrum",
+          "Sucker Punch",
+          "Attack Order"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "greedy-nn",
+      "run": 0
+    }
+  ]
+}

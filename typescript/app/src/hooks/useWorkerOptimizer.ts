@@ -6,6 +6,7 @@ import { LENDARIOS } from '../engine/lendarios'
 import type { Config, ResultadoOtimizacao, ScoreInfo } from './useOtimizador'
 import type { WorkerInput, WorkerOutput, SerializedRunnerResult } from '../workers/workerTypes'
 import type { MemberResult } from '../engine/runner'
+import type { ModelWeights } from '../engine/mlp'
 
 function reconstruirResultado(
   serialized: SerializedRunnerResult,
@@ -65,7 +66,7 @@ export function useWorkerOptimizer(todosNomes: string[]) {
     setStatus('Cancelado.')
   }, [])
 
-  const rodar = useCallback((candidatosNomes: string[], config: Config) => {
+  const rodar = useCallback((candidatosNomes: string[], config: Config, modelWeights: ModelWeights | null = null) => {
     workerRef.current?.terminate()
 
     const worker = new Worker(
@@ -120,6 +121,7 @@ export function useWorkerOptimizer(todosNomes: string[]) {
         banirRecoil: config.banirRecoil,
         banirLock: config.banirLock,
         evalParams: { priorizarHP: config.priorizarHP, coberturasDupla: config.coberturasDupla },
+        modelWeights,
       },
     }
 
