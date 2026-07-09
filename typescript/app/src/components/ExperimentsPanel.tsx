@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import type { Config } from '../hooks/useOtimizador'
 import { useExperiments } from '../hooks/useExperiments'
+import { BATCH_CASES } from '../hooks/batchCases'
 import { parseModelWeights } from '../engine/mlp'
 import type { ModelWeights } from '../engine/mlp'
 import { METHOD_LABEL } from '../engine/experiments'
@@ -30,7 +31,15 @@ export default function ExperimentsPanel({ candidatos, config, todosNomes, model
   const [nRuns, setNRuns] = useState(30)
   const [seed, setSeed] = useState(42)
   const [nTeams, setNTeams] = useState(500)
+  const [kListStr, setKListStr] = useState('1,3,5,10')
   const [history, setHistory] = useState<LossHistory | null>(null)
+  const [batchModels, setBatchModels] = useState<Record<string, ModelWeights>>({})
+  const [exp3Random, setExp3Random] = useState(5000)
+  const [exp3Mono, setExp3Mono] = useState(100)
+  const [exp3Geral, setExp3Geral] = useState(500)
+
+  const kList = parseKList(kListStr)
+  const kMax = Math.max(...kList)
 
   function toggleMethod(m: ExpMethod) {
     setMethods(prev => ({ ...prev, [m]: !prev[m] }))
@@ -66,13 +75,13 @@ export default function ExperimentsPanel({ candidatos, config, todosNomes, model
       alert('Selecione ao menos um método (greedy-NN exige pesos carregados).')
       return
     }
-    exp.rodarExperimentos(candidatos, config, selecionados, nRuns, seed, modelWeights)
+    exp.rodarExperimentos(candidatos, config, selecionados, nRuns, seed, modelWeights, kList)
   }
 
   function exportarCSV() {
-    const header = 'method,run,score,scoreMaximo,timeMs,typeRedundancy,team'
+    const header = 'method,k,run,score,scoreMaximo,timeMs,typeRedundancy,team'
     const linhas = exp.runs.map(r =>
-      [r.method, r.run, r.score.toFixed(3), r.scoreMaximo, r.timeMs.toFixed(2), r.typeRedundancy, `"${r.teamNames.join('|')}"`].join(',')
+      [r.method, r.k ?? '', r.run, r.score.toFixed(3), r.scoreMaximo, r.timeMs.toFixed(2), r.typeRedundancy, `"${r.teamNames.join('|')}"`].join(',')
     )
     download([header, ...linhas].join('\n'), 'experimentos.csv', 'text/csv')
   }
@@ -81,14 +90,45 @@ export default function ExperimentsPanel({ candidatos, config, todosNomes, model
     download(JSON.stringify({ aggregates: exp.aggregates, runs: exp.runs }, null, 2), 'experimentos.json', 'application/json')
   }
 
+  async function onModelsAllFile(e: React.ChangeEvent<HTMLInputElement>) {
+    const file = e.target.files?.[0]
+    if (!file) return
+    try {
+      const raw = JSON.parse(await file.text()) as Record<string, unknown>
+      const models: Record<string, ModelWeights> = {}
+      for (const [id, w] of Object.entries(raw)) models[id] = parseModelWeights(w)
+      setBatchModels(models)
+    } catch (err) {
+      alert(`models_all.json inválido: ${err}`)
+    }
+    e.target.value = ''
+  }
+
+  function rodarBatch() {
+    const selecionados = ALL_METHODS.filter(m => methods[m])
+    exp.rodarExperimentosBatch(config, selecionados, nRuns, seed, kList, batchModels)
+  }
+
+  function exportarBatchCSV() {
+    const header = 'case,method,k,run,score,scoreMaximo,timeMs,typeRedundancy,team'
+    const linhas = exp.batchRuns.map(r =>
+      [r.caseId ?? '', r.method, r.k ?? '', r.run, r.score.toFixed(3), r.scoreMaximo, r.timeMs.toFixed(2), r.typeRedundancy, `"${r.teamNames.join('|')}"`].join(',')
+    )
+    download([header, ...linhas].join('\n'), 'experimentos_all.csv', 'text/csv')
+  }
+
+  function exportarBatchJSON() {
+    download(JSON.stringify({ aggregates: exp.batchAggregates, runs: exp.batchRuns }, null, 2), 'experimentos_all.json', 'application/json')
+  }
+
   const scoreSeries = exp.aggregates.map(a => ({
-    label: SHORT[a.method],
+    label: labelDe(a.method, a.k),
     color: PALETTE[a.method],
     min: a.min, q1: a.q1, median: a.median, q3: a.q3, max: a.max,
-    points: exp.runs.filter(r => r.method === a.method).map(r => r.score),
+    points: exp.runs.filter(r => r.method === a.method && r.k === a.k).map(r => r.score),
   }))
-  const timeBars = exp.aggregates.map(a => ({ label: SHORT[a.method], value: a.meanTimeMs, color: PALETTE[a.method] }))
-  const redBars = exp.aggregates.map(a => ({ label: SHORT[a.method], value: a.meanRedundancy, color: PALETTE[a.method] }))
+  const timeBars = exp.aggregates.map(a => ({ label: labelDe(a.method, a.k), value: a.meanTimeMs, color: PALETTE[a.method] }))
+  const redBars = exp.aggregates.map(a => ({ label: labelDe(a.method, a.k), value: a.meanRedundancy, color: PALETTE[a.method] }))
   const scatterPts = exp.scatter.map(p => ({ x: p.exact, y: p.predicted }))
 
   return (
@@ -117,7 +157,10 @@ export default function ExperimentsPanel({ candidatos, config, todosNomes, model
           <div style={lbl}>Parâmetros</div>
           <label style={row}>N execuções <input type="number" min={1} value={nRuns} onChange={e => setNRuns(+e.target.value)} style={num} /></label>
           <label style={row}>Seed <input type="number" value={seed} onChange={e => setSeed(+e.target.value)} style={num} /></label>
-          <div style={{ fontSize: 11, color: '#888', maxWidth: 220 }}>greedy-* são determinísticos: 1 execução.</div>
+          <label style={row}>Top-K (lista) <input type="text" value={kListStr} onChange={e => setKListStr(e.target.value)} style={{ ...num, width: 100 }} /></label>
+          <div style={{ fontSize: 11, color: '#888', maxWidth: 240 }}>
+            greedy-* são determinísticos: 1 execução <strong>por K</strong>. Varre K = [{kList.join(', ')}]. SA/GA ignoram K.
+          </div>
         </div>
 
         <div>
@@ -141,7 +184,10 @@ export default function ExperimentsPanel({ candidatos, config, todosNomes, model
         <div>
           <div style={lbl}>Dataset de treino</div>
           <label style={row}>nº times <input type="number" min={1} value={nTeams} onChange={e => setNTeams(+e.target.value)} style={num} /></label>
-          <button onClick={() => exp.gerarDataset(candidatos, config, nTeams, seed)} disabled={exp.rodando} style={btn}>Gerar dataset (CSV)</button>
+          <button onClick={() => exp.gerarDataset(candidatos, config, nTeams, seed, kMax)} disabled={exp.rodando} style={btn}>Gerar dataset (CSV)</button>
+          <div style={{ fontSize: 11, color: '#888', maxWidth: 220, marginTop: 4 }}>
+            variedade de moveset = K máx ({kMax}). 1 dataset/1 modelo servem todos os K.
+          </div>
           {exp.datasetInfo && <div style={{ fontSize: 11, color: '#888', marginTop: 4 }}>{exp.datasetInfo.nSamples} amostras</div>}
         </div>
       </div>
@@ -153,6 +199,64 @@ export default function ExperimentsPanel({ candidatos, config, todosNomes, model
         {exp.rodando && <button onClick={exp.cancelar} style={btn}>Cancelar</button>}
         <button onClick={exportarCSV} disabled={exp.runs.length === 0} style={btn}>Exportar resultados (CSV)</button>
         <button onClick={exportarJSON} disabled={exp.runs.length === 0} style={btn}>Exportar (JSON)</button>
+      </div>
+
+      {/* Exp3 — dataset misto (aleatórios + times bons + vizinhos) */}
+      <div style={{ border: '1px solid #3a3a48', borderRadius: 8, padding: '14px 16px', marginBottom: 16, background: '#20202a' }}>
+        <div style={{ fontWeight: 'bold', marginBottom: 4 }}>🧬 Exp3 — dataset misto (rede que generaliza)</div>
+        <p style={{ color: '#adb5bd', fontSize: 12, maxWidth: 800, marginTop: 0 }}>
+          Gera um dataset que cobre o <strong>fundo</strong> (aleatórios) e o <strong>topo</strong> (times bons por SA +
+          vizinhos escorados = contraste no ponto de decisão). Monotype = pool filtrado por cada um dos 18 tipos.
+          Usa a Config atual (budget {config.budget}, {candidatos.length} candidatos) e seed {seed}. Baixa <code>dataset_exp3.csv</code>.
+        </p>
+        <div style={{ display: 'flex', gap: 16, flexWrap: 'wrap', alignItems: 'center' }}>
+          <label style={row}>aleatórios <input type="number" min={0} value={exp3Random} onChange={e => setExp3Random(+e.target.value)} style={num} /></label>
+          <label style={row}>monotype/tipo <input type="number" min={0} value={exp3Mono} onChange={e => setExp3Mono(+e.target.value)} style={num} /></label>
+          <label style={row}>completos bons <input type="number" min={0} value={exp3Geral} onChange={e => setExp3Geral(+e.target.value)} style={num} /></label>
+          <button
+            onClick={() => exp.gerarDatasetMisto(candidatos, config, { nRandom: exp3Random, monotypePerType: exp3Mono, nGeneralGood: exp3Geral }, seed)}
+            disabled={exp.rodando || candidatos.length === 0}
+            style={{ ...btn, padding: '8px 14px' }}
+          >
+            {exp.rodando ? 'Rodando...' : 'Gerar dataset Exp3 (misto)'}
+          </button>
+        </div>
+        <div style={{ fontSize: 11, color: '#888', marginTop: 6, maxWidth: 800 }}>
+          total monotype = {exp3Mono} × 18 = {exp3Mono * 18}. Depois: <code>python neural/train_all.py</code> não —
+          use o treinador de caso único (<code>train.py dataset_exp3.csv</code>) → <code>model_weights.json</code> → carregar acima.
+        </div>
+      </div>
+
+      {/* Batch — 6 casos de uma vez */}
+      <div style={{ border: '1px solid #3a3a48', borderRadius: 8, padding: '14px 16px', marginBottom: 16, background: '#20202a' }}>
+        <div style={{ fontWeight: 'bold', marginBottom: 4 }}>🗂️ Batch — os 6 casos de uma vez</div>
+        <p style={{ color: '#adb5bd', fontSize: 12, maxWidth: 780, marginTop: 0 }}>
+          Roda os cenários {BATCH_CASES.map(c => c.label).join(' · ')} usando a Config atual como base
+          (só sobrescreve type filter, banir lendários e budget). Fluxo de 3 passos, um arquivo em cada fronteira.
+          Usa Top-K = [{kList.join(', ')}], seed {seed}, nº times {nTeams}, N execuções {nRuns}.
+        </p>
+        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', alignItems: 'center' }}>
+          <button onClick={() => exp.gerarDatasetBatch(config, nTeams, seed, kMax)} disabled={exp.rodando} style={{ ...btn, padding: '8px 14px' }}>
+            1 · Gerar datasets (dataset_all.csv)
+          </button>
+          <span style={{ fontSize: 11, color: '#888' }}>2 · <code>python neural/train_all.py dataset_all.csv</code> → models_all.json</span>
+          <label style={btnFile}>
+            3 · Carregar models_all.json
+            <input type="file" accept="application/json,.json" onChange={onModelsAllFile} style={{ display: 'none' }} />
+          </label>
+        </div>
+        <div style={{ fontSize: 11, color: '#888', margin: '6px 0' }}>
+          modelos carregados: {Object.keys(batchModels).length
+            ? BATCH_CASES.map(c => (batchModels[c.id] ? c.id : `${c.id}✗`)).join('  ')
+            : 'nenhum (greedy-NN será pulado; SA/GA/greedy-exato rodam mesmo assim)'}
+        </div>
+        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+          <button onClick={rodarBatch} disabled={exp.rodando} style={{ ...btn, padding: '8px 14px' }}>
+            {exp.rodando ? 'Rodando...' : 'Rodar tudo (6 casos)'}
+          </button>
+          <button onClick={exportarBatchCSV} disabled={exp.batchRuns.length === 0} style={btn}>Exportar tudo (experimentos_all.csv)</button>
+          <button onClick={exportarBatchJSON} disabled={exp.batchRuns.length === 0} style={btn}>Exportar tudo (JSON)</button>
+        </div>
       </div>
 
       {(exp.rodando || exp.progresso > 0) && (
@@ -202,8 +306,8 @@ export default function ExperimentsPanel({ candidatos, config, todosNomes, model
           </thead>
           <tbody>
             {exp.aggregates.map(a => (
-              <tr key={a.method}>
-                <td style={{ ...td, color: PALETTE[a.method] }}>{METHOD_LABEL[a.method]}</td>
+              <tr key={`${a.method}:${a.k ?? ''}`}>
+                <td style={{ ...td, color: PALETTE[a.method] }}>{labelDe(a.method, a.k)}</td>
                 <td style={td}>{a.n}</td>
                 <td style={td}>{a.mean.toFixed(2)}</td>
                 <td style={td}>{a.median.toFixed(2)}</td>
@@ -216,6 +320,32 @@ export default function ExperimentsPanel({ candidatos, config, todosNomes, model
             ))}
           </tbody>
         </table>
+      )}
+
+      {/* Resumo do batch (6 casos) */}
+      {exp.batchAggregates.length > 0 && (
+        <div style={{ marginTop: 20 }}>
+          <div style={{ fontSize: 13, fontWeight: 'bold', marginBottom: 6 }}>Resumo do batch — {exp.batchAggregates.length} séries (exportadas em experimentos_all.csv)</div>
+          <table style={{ borderCollapse: 'collapse', fontSize: 12 }}>
+            <thead>
+              <tr>{['Caso', 'Método', 'média', 'max', 'tempo(ms)', 'redund.'].map(h => (
+                <th key={h} style={th}>{h}</th>
+              ))}</tr>
+            </thead>
+            <tbody>
+              {exp.batchAggregates.map((a, i) => (
+                <tr key={`${a.caseId}:${a.method}:${a.k ?? ''}:${i}`}>
+                  <td style={{ ...td, textAlign: 'left' }}>{a.caseId}</td>
+                  <td style={{ ...td, color: PALETTE[a.method], textAlign: 'left' }}>{labelDe(a.method, a.k)}</td>
+                  <td style={td}>{a.mean.toFixed(2)}</td>
+                  <td style={td}>{a.max.toFixed(2)}</td>
+                  <td style={td}>{a.meanTimeMs.toFixed(1)}</td>
+                  <td style={td}>{a.meanRedundancy.toFixed(2)}</td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       )}
     </div>
   )
@@ -231,6 +361,19 @@ function ChartCard({ title, onDownload, children }: { title: string; onDownload:
       {children}
     </div>
   )
+}
+
+// Parseia "1,3,5,10" -> [1,3,5,10] (únicos, ordenados, >=1). Vazio -> [1].
+function parseKList(s: string): number[] {
+  const nums = s.split(/[,\s]+/).map(x => parseInt(x, 10)).filter(n => Number.isFinite(n) && n >= 1)
+  const uniq = Array.from(new Set(nums)).sort((a, b) => a - b)
+  return uniq.length ? uniq : [1]
+}
+
+// Rótulo da série: gulosos ganham sufixo "K<k>"; SA/GA ficam sem.
+function labelDe(method: ExpMethod, k?: number): string {
+  const base = SHORT[method]
+  return (method === 'greedy-exato' || method === 'greedy-nn') && k != null ? `${base} K${k}` : base
 }
 
 function download(conteudo: string, filename: string, mime: string) {

@@ -10,7 +10,7 @@ export interface MLPLayer {
 }
 
 export interface ModelWeights {
-  arch: number[] // ex.: [308, 128, 64, 1]
+  arch: number[] // ex.: [784, 128, 64, 1]
   layers: MLPLayer[] // arch.length - 1 camadas
   inputMean: number[] // média do StandardScaler (sklearn), len = arch[0]
   inputStd: number[] // desvio-padrão do StandardScaler, len = arch[0]

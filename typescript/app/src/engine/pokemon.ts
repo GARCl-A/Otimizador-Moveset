@@ -70,6 +70,10 @@ export class Pokemon {
 
   optimizeMoveset(banirRecoil: boolean = false, banirLock: boolean = false, priorities: Record<string, number> = {}): void {
     this.moveset = normalizarDanoPorTurno(this.moveset, banirRecoil, banirLock)
+    // Moves de status dão 0 de dano no modelo (calcularDanoEsperado retorna 0 para
+    // não-Physical/Special), então nunca entram num moveset útil. Removê-los aqui
+    // evita processar ~1/3 dos golpes à toa, sem alterar nenhum score.
+    this.moveset = this.moveset.filter(m => m.category === 'Physical' || m.category === 'Special')
     this.moveset = podarEstritamenteDominados(this.moveset, priorities)
   }
 

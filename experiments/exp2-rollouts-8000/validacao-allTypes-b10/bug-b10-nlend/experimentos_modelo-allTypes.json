@@ -1,0 +1,1617 @@
+{
+  "aggregates": [
+    {
+      "method": "sa",
+      "n": 30,
+      "min": 163,
+      "q1": 167,
+      "median": 167,
+      "q3": 167,
+      "max": 167,
+      "mean": 166.2,
+      "std": 1.599999999999999,
+      "meanTimeMs": 199.43333333333334,
+      "meanRedundancy": 2.8
+    },
+    {
+      "method": "greedy-exato",
+      "k": 1,
+      "n": 1,
+      "min": 167,
+      "q1": 167,
+      "median": 167,
+      "q3": 167,
+      "max": 167,
+      "mean": 167,
+      "std": 0,
+      "meanTimeMs": 1.3999999985098839,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-exato",
+      "k": 3,
+      "n": 1,
+      "min": 167,
+      "q1": 167,
+      "median": 167,
+      "q3": 167,
+      "max": 167,
+      "mean": 167,
+      "std": 0,
+      "meanTimeMs": 2.4000000059604645,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-exato",
+      "k": 5,
+      "n": 1,
+      "min": 167,
+      "q1": 167,
+      "median": 167,
+      "q3": 167,
+      "max": 167,
+      "mean": 167,
+      "std": 0,
+      "meanTimeMs": 3.6999999955296516,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-exato",
+      "k": 10,
+      "n": 1,
+      "min": 167,
+      "q1": 167,
+      "median": 167,
+      "q3": 167,
+      "max": 167,
+      "mean": 167,
+      "std": 0,
+      "meanTimeMs": 5.100000001490116,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-nn",
+      "k": 1,
+      "n": 1,
+      "min": 160,
+      "q1": 160,
+      "median": 160,
+      "q3": 160,
+      "max": 160,
+      "mean": 160,
+      "std": 0,
+      "meanTimeMs": 18.5,
+      "meanRedundancy": 4
+    },
+    {
+      "method": "greedy-nn",
+      "k": 3,
+      "n": 1,
+      "min": 160,
+      "q1": 160,
+      "median": 160,
+      "q3": 160,
+      "max": 160,
+      "mean": 160,
+      "std": 0,
+      "meanTimeMs": 25.900000005960464,
+      "meanRedundancy": 4
+    },
+    {
+      "method": "greedy-nn",
+      "k": 5,
+      "n": 1,
+      "min": 160,
+      "q1": 160,
+      "median": 160,
+      "q3": 160,
+      "max": 160,
+      "mean": 160,
+      "std": 0,
+      "meanTimeMs": 40.19999999552965,
+      "meanRedundancy": 4
+    },
+    {
+      "method": "greedy-nn",
+      "k": 10,
+      "n": 1,
+      "min": 167,
+      "q1": 167,
+      "median": 167,
+      "q3": 167,
+      "max": 167,
+      "mean": 167,
+      "std": 0,
+      "meanTimeMs": 63.69999999552965,
+      "meanRedundancy": 3
+    }
+  ],
+  "runs": [
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 226.89999999850988,
+      "teamNames": [
+        "Centiskorsh",
+        "Vikavolt",
+        "Ariados",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ],
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 0
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 191.79999999701977,
+      "teamNames": [
+        "Vikavolt",
+        "Volcarona",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 1
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 190.69999999552965,
+      "teamNames": [
+        "Centiskorsh",
+        "Vikavolt",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Liquidation",
+          "Pin Missile",
+          "Sucker Punch",
+          "Mud Shot"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 2
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 189.70000000298023,
+      "teamNames": [
+        "Vikavolt",
+        "Volcarona",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 3
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 200.5,
+      "teamNames": [
+        "Centiskorsh",
+        "Golisopod",
+        "Vikavolt",
+        "Kricketune"
+      ],
+      "movesetNames": [
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Struggle Bug",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Absorb",
+          "Bug Buzz",
+          "Night Slash",
+          "X-Scissor"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 4
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 191,
+      "teamNames": [
+        "Volcarona",
+        "Vikavolt",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Bug Buzz",
+          "Vise Grip",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 5
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 185.30000000447035,
+      "teamNames": [
+        "Vikavolt",
+        "Golisopod",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Liquidation",
+          "Rock Smash",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 6
+    },
+    {
+      "score": 163,
+      "scoreMaximo": 194,
+      "timeMs": 191.79999999701977,
+      "teamNames": [
+        "Volcarona",
+        "Kricketune",
+        "Golisopod",
+        "Leavanny",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Night Slash",
+          "Bug Buzz",
+          "X-Scissor",
+          "Slash"
+        ],
+        [
+          "Liquidation",
+          "Slash",
+          "Sucker Punch",
+          "Pin Missile"
+        ],
+        [
+          "Bug Buzz",
+          "Leaf Blade",
+          "Leaf Storm",
+          "X-Scissor"
+        ],
+        [
+          "Infestation",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 7
+    },
+    {
+      "score": 163,
+      "scoreMaximo": 194,
+      "timeMs": 194.69999999552965,
+      "teamNames": [
+        "Kricketune",
+        "Volcarona",
+        "Ariados",
+        "Leavanny",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Slash",
+          "Night Slash",
+          "X-Scissor",
+          "Bug Buzz"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Shadow Sneak",
+          "Pin Missile",
+          "Psychic",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Leaf Blade",
+          "Leaf Storm",
+          "Slash"
+        ],
+        [
+          "Liquidation",
+          "Slash",
+          "Pin Missile",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 8
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 215.79999999701977,
+      "teamNames": [
+        "Kricketune",
+        "Centiskorsh",
+        "Golisopod",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Absorb",
+          "Bug Buzz",
+          "Night Slash",
+          "X-Scissor"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Rock Smash",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 9
+    },
+    {
+      "score": 163,
+      "scoreMaximo": 194,
+      "timeMs": 194.89999999850988,
+      "teamNames": [
+        "Volcarona",
+        "Ariados",
+        "Leavanny",
+        "Golisopod",
+        "Kricketune"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Leaf Blade",
+          "Leaf Storm",
+          "X-Scissor"
+        ],
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Absorb",
+          "Bug Buzz",
+          "Night Slash",
+          "Slash"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 10
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 195.20000000298023,
+      "teamNames": [
+        "Golisopod",
+        "Kricketune",
+        "Volcarona",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Struggle Bug",
+          "Slash",
+          "Sucker Punch"
+        ],
+        [
+          "Absorb",
+          "Bug Buzz",
+          "Night Slash",
+          "X-Scissor"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 11
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 185.79999999701977,
+      "teamNames": [
+        "Centiskorsh",
+        "Golisopod",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Liquidation",
+          "Pin Missile",
+          "Rock Smash",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Spark",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 12
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 214.89999999850988,
+      "teamNames": [
+        "Volcarona",
+        "Ariados",
+        "Golisopod",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Hurricane"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Absorb"
+        ],
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Struggle Bug",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 13
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 216.30000000447035,
+      "teamNames": [
+        "Golisopod",
+        "Ariados",
+        "Volcarona",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Shadow Sneak",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Hurricane"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 14
+    },
+    {
+      "score": 163,
+      "scoreMaximo": 194,
+      "timeMs": 195.60000000149012,
+      "teamNames": [
+        "Golisopod",
+        "Leavanny",
+        "Ariados",
+        "Kricketune",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Sucker Punch",
+          "Struggle Bug",
+          "Slash"
+        ],
+        [
+          "Bug Buzz",
+          "Leaf Blade",
+          "Leaf Storm",
+          "X-Scissor"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Sucker Punch",
+          "Fury Swipes"
+        ],
+        [
+          "Bug Buzz",
+          "Absorb",
+          "Night Slash",
+          "Slash"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 15
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 216.10000000149012,
+      "teamNames": [
+        "Ariados",
+        "Golisopod",
+        "Centiskorsh",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ],
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 16
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 189.89999999850988,
+      "teamNames": [
+        "Golisopod",
+        "Volcarona",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Rock Smash",
+          "Liquidation",
+          "Mud Shot",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 17
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 193,
+      "teamNames": [
+        "Golisopod",
+        "Vikavolt",
+        "Ariados",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Sucker Punch",
+          "Slash",
+          "Pin Missile"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 18
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 184.89999999850988,
+      "teamNames": [
+        "Volcarona",
+        "Golisopod",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Liquidation",
+          "Sucker Punch",
+          "Pin Missile",
+          "Mud Shot"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 19
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 217.29999999701977,
+      "teamNames": [
+        "Golisopod",
+        "Kricketune",
+        "Vikavolt",
+        "Centiskorsh"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "X-Scissor",
+          "Bug Buzz",
+          "Slash",
+          "Night Slash"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Lunge",
+          "Slam"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 20
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 202.40000000596046,
+      "teamNames": [
+        "Golisopod",
+        "Kricketune",
+        "Centiskorsh",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Absorb",
+          "Bug Buzz",
+          "Night Slash",
+          "X-Scissor"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 21
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 222.80000000447035,
+      "teamNames": [
+        "Vikavolt",
+        "Golisopod",
+        "Centiskorsh",
+        "Kricketune"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Slash",
+          "Bug Buzz",
+          "Night Slash",
+          "X-Scissor"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 22
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 192.59999999403954,
+      "teamNames": [
+        "Golisopod",
+        "Centiskorsh",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Spark",
+          "Crunch",
+          "Bug Buzz",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 23
+    },
+    {
+      "score": 163,
+      "scoreMaximo": 194,
+      "timeMs": 201.40000000596046,
+      "teamNames": [
+        "Ariados",
+        "Kricketune",
+        "Leavanny",
+        "Volcarona",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Sucker Punch",
+          "Absorb"
+        ],
+        [
+          "Absorb",
+          "Bug Buzz",
+          "Night Slash",
+          "Slash"
+        ],
+        [
+          "Bug Buzz",
+          "Leaf Blade",
+          "Leaf Storm",
+          "X-Scissor"
+        ],
+        [
+          "Bug Buzz",
+          "Leech Life",
+          "Fiery Dance",
+          "Hurricane"
+        ],
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 24
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 194.60000000149012,
+      "teamNames": [
+        "Golisopod",
+        "Vikavolt",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Hurricane",
+          "Leech Life"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 25
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 189.39999999850988,
+      "teamNames": [
+        "Golisopod",
+        "Centiskorsh",
+        "Vikavolt"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Slam"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 26
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 189.80000000447035,
+      "teamNames": [
+        "Golisopod",
+        "Vikavolt",
+        "Centiskorsh"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Slash",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 27
+    },
+    {
+      "score": 163,
+      "scoreMaximo": 194,
+      "timeMs": 202.89999999850988,
+      "teamNames": [
+        "Golisopod",
+        "Volcarona",
+        "Kricketune",
+        "Leavanny",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Slash",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Hurricane"
+        ],
+        [
+          "Absorb",
+          "Bug Buzz",
+          "Night Slash",
+          "X-Scissor"
+        ],
+        [
+          "Bug Buzz",
+          "Leaf Blade",
+          "Leaf Storm",
+          "X-Scissor"
+        ],
+        [
+          "Poison Jab",
+          "Absorb",
+          "Psychic",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 28
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 205,
+      "teamNames": [
+        "Ariados",
+        "Vikavolt",
+        "Centiskorsh",
+        "Golisopod"
+      ],
+      "movesetNames": [
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Slash",
+          "Sucker Punch",
+          "Liquidation",
+          "Struggle Bug"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 29
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 1.3999999985098839,
+      "teamNames": [
+        "Golisopod",
+        "Volcarona",
+        "Vikavolt",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 1,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 2.4000000059604645,
+      "teamNames": [
+        "Golisopod",
+        "Volcarona",
+        "Vikavolt",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 3,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 3.6999999955296516,
+      "teamNames": [
+        "Golisopod",
+        "Volcarona",
+        "Vikavolt",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 5,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 5.100000001490116,
+      "teamNames": [
+        "Golisopod",
+        "Volcarona",
+        "Vikavolt",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Dig",
+          "Thunderbolt"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 10,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 18.5,
+      "teamNames": [
+        "Golisopod",
+        "Centiskorsh",
+        "Volcarona",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "k": 1,
+      "method": "greedy-nn",
+      "run": 0
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 25.900000005960464,
+      "teamNames": [
+        "Golisopod",
+        "Centiskorsh",
+        "Volcarona",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "k": 3,
+      "method": "greedy-nn",
+      "run": 0
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 40.19999999552965,
+      "teamNames": [
+        "Golisopod",
+        "Centiskorsh",
+        "Volcarona",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Pin Missile",
+          "Poison Jab",
+          "Psychic",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "k": 5,
+      "method": "greedy-nn",
+      "run": 0
+    },
+    {
+      "score": 167,
+      "scoreMaximo": 194,
+      "timeMs": 63.69999999552965,
+      "teamNames": [
+        "Vikavolt",
+        "Golisopod",
+        "Centiskorsh",
+        "Ariados"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Dig",
+          "Fly",
+          "Thunderbolt"
+        ],
+        [
+          "Liquidation",
+          "Mud Shot",
+          "Pin Missile",
+          "Sucker Punch"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Poison Jab",
+          "Psychic",
+          "Shadow Sneak",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 10,
+      "method": "greedy-nn",
+      "run": 0
+    }
+  ]
+}

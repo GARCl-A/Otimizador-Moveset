@@ -1,0 +1,1659 @@
+{
+  "aggregates": [
+    {
+      "method": "sa",
+      "n": 30,
+      "min": 160,
+      "q1": 164,
+      "median": 164,
+      "q3": 164,
+      "max": 164,
+      "mean": 163.06666666666666,
+      "std": 1.691810338726603,
+      "meanTimeMs": 336.89666666736207,
+      "meanRedundancy": 2.966666666666667
+    },
+    {
+      "method": "greedy-exato",
+      "k": 1,
+      "n": 1,
+      "min": 159,
+      "q1": 159,
+      "median": 159,
+      "q3": 159,
+      "max": 159,
+      "mean": 159,
+      "std": 0,
+      "meanTimeMs": 2.0999999940395355,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-exato",
+      "k": 3,
+      "n": 1,
+      "min": 160,
+      "q1": 160,
+      "median": 160,
+      "q3": 160,
+      "max": 160,
+      "mean": 160,
+      "std": 0,
+      "meanTimeMs": 4.200000002980232,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-exato",
+      "k": 5,
+      "n": 1,
+      "min": 160,
+      "q1": 160,
+      "median": 160,
+      "q3": 160,
+      "max": 160,
+      "mean": 160,
+      "std": 0,
+      "meanTimeMs": 6.800000011920929,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-exato",
+      "k": 10,
+      "n": 1,
+      "min": 160,
+      "q1": 160,
+      "median": 160,
+      "q3": 160,
+      "max": 160,
+      "mean": 160,
+      "std": 0,
+      "meanTimeMs": 11.099999994039536,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-nn",
+      "k": 1,
+      "n": 1,
+      "min": 146,
+      "q1": 146,
+      "median": 146,
+      "q3": 146,
+      "max": 146,
+      "mean": 146,
+      "std": 0,
+      "meanTimeMs": 23.799999997019768,
+      "meanRedundancy": 6
+    },
+    {
+      "method": "greedy-nn",
+      "k": 3,
+      "n": 1,
+      "min": 155,
+      "q1": 155,
+      "median": 155,
+      "q3": 155,
+      "max": 155,
+      "mean": 155,
+      "std": 0,
+      "meanTimeMs": 34.29999999701977,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-nn",
+      "k": 5,
+      "n": 1,
+      "min": 155,
+      "q1": 155,
+      "median": 155,
+      "q3": 155,
+      "max": 155,
+      "mean": 155,
+      "std": 0,
+      "meanTimeMs": 56,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-nn",
+      "k": 10,
+      "n": 1,
+      "min": 155,
+      "q1": 155,
+      "median": 155,
+      "q3": 155,
+      "max": 155,
+      "mean": 155,
+      "std": 0,
+      "meanTimeMs": 98.09999999403954,
+      "meanRedundancy": 3
+    }
+  ],
+  "runs": [
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 390,
+      "teamNames": [
+        "Infernape",
+        "Camerupt",
+        "Delphox",
+        "Incineroar",
+        "Charizard"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Acrobatics",
+          "Ice Punch",
+          "Facade"
+        ],
+        [
+          "Earthquake",
+          "Eruption",
+          "Rock Slide",
+          "Energy Ball"
+        ],
+        [
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ],
+        [
+          "Lick",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Dragon Claw",
+          "Slash",
+          "Aeroblast",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 0
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 385.20000000298023,
+      "teamNames": [
+        "Incineroar",
+        "Camerupt",
+        "Infernape",
+        "Delphox",
+        "Charizard"
+      ],
+      "movesetNames": [
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Energy Ball",
+          "Eruption",
+          "Rock Slide",
+          "Double-Edge"
+        ],
+        [
+          "Close Combat",
+          "Acrobatics",
+          "Ice Punch",
+          "Flamethrower"
+        ],
+        [
+          "Scratch",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ],
+        [
+          "Flamethrower",
+          "Aeroblast",
+          "Slash",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 1
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 349.09999999403954,
+      "teamNames": [
+        "Chandelure",
+        "Delphox",
+        "Infernape",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Astonish",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Shadow Ball",
+          "Psychic",
+          "Flame Charge",
+          "Thunderbolt"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Sacred Fire",
+          "Ice Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 2
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 359.40000000596046,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Volcarona",
+        "Chandelure"
+      ],
+      "movesetNames": [
+        [
+          "Psychic",
+          "Thunderbolt",
+          "Shadow Ball",
+          "Scratch"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Ice Punch",
+          "Sacred Fire"
+        ],
+        [
+          "Bug Buzz",
+          "Flare Blitz",
+          "Scald",
+          "Leech Life"
+        ],
+        [
+          "Overheat",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 3
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 354,
+      "teamNames": [
+        "Delphox",
+        "Volcarona",
+        "Infernape",
+        "Chandelure"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ],
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Close Combat",
+          "Ice Punch",
+          "Thunderbolt",
+          "Sacred Fire"
+        ],
+        [
+          "Overheat",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 4
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 348.3999999910593,
+      "teamNames": [
+        "Chandelure",
+        "Infernape",
+        "Delphox",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Astonish",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Close Combat",
+          "Ice Punch",
+          "Thunderbolt",
+          "Acrobatics"
+        ],
+        [
+          "Flamethrower",
+          "Psychic",
+          "Scratch",
+          "Thunderbolt"
+        ],
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 5
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 348.70000000298023,
+      "teamNames": [
+        "Delphox",
+        "Volcarona",
+        "Infernape",
+        "Chandelure"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Psychic",
+          "Scratch",
+          "Thunderbolt"
+        ],
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Leech Life"
+        ],
+        [
+          "Close Combat",
+          "Facade",
+          "Sacred Fire",
+          "Ice Punch"
+        ],
+        [
+          "Moonblast",
+          "Shadow Ball",
+          "Smog",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 6
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 384.19999998807907,
+      "teamNames": [
+        "Camerupt",
+        "Charizard",
+        "Incineroar",
+        "Infernape",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Earthquake",
+          "Eruption",
+          "Rock Slide",
+          "Energy Ball"
+        ],
+        [
+          "Dragon Claw",
+          "Flamethrower",
+          "Aeroblast",
+          "Earth Power"
+        ],
+        [
+          "Flamethrower",
+          "Darkest Lariat",
+          "Flare Blitz",
+          "Cross Chop"
+        ],
+        [
+          "Close Combat",
+          "Acrobatics",
+          "Ice Punch",
+          "Sacred Fire"
+        ],
+        [
+          "Shadow Ball",
+          "Psychic",
+          "Scratch",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 7
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 273.5,
+      "teamNames": [
+        "Volcarona",
+        "Chandelure",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Leech Life",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Overheat",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Shadow Ball",
+          "Psychic",
+          "Flamethrower",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 8
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 278.6000000089407,
+      "teamNames": [
+        "Volcarona",
+        "Armarouge",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Armor Cannon",
+          "Clear Smog",
+          "Flame Charge",
+          "Expanding Force"
+        ],
+        [
+          "Close Combat",
+          "Ice Punch",
+          "Thunderbolt",
+          "Sacred Fire"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 9
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 270.20000000298023,
+      "teamNames": [
+        "Delphox",
+        "Chandelure",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Psychic",
+          "Flame Charge",
+          "Thunderbolt"
+        ],
+        [
+          "Overheat",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Bug Buzz",
+          "Dazzling Gleam",
+          "Scald",
+          "Flare Blitz"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 10
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 345.40000000596046,
+      "teamNames": [
+        "Infernape",
+        "Chandelure",
+        "Delphox",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Ice Punch",
+          "Close Combat",
+          "Thunderbolt",
+          "Sacred Fire"
+        ],
+        [
+          "Astonish",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Flame Charge",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ],
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Flare Blitz"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 11
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 346.09999999403954,
+      "teamNames": [
+        "Chandelure",
+        "Infernape",
+        "Volcarona",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Overheat",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Thunderbolt",
+          "Ice Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Scratch",
+          "Psychic",
+          "Flame Charge",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 12
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 271.79999999701977,
+      "teamNames": [
+        "Volcarona",
+        "Infernape",
+        "Armarouge"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Thunderbolt",
+          "Ice Punch"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Flame Charge",
+          "Expanding Force"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 13
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 342.5,
+      "teamNames": [
+        "Volcarona",
+        "Delphox",
+        "Chandelure",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ],
+        [
+          "Smog",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Close Combat",
+          "Ice Punch",
+          "Thunderbolt",
+          "Sacred Fire"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 14
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 341.19999998807907,
+      "teamNames": [
+        "Volcarona",
+        "Delphox",
+        "Infernape",
+        "Chandelure"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Double-Edge"
+        ],
+        [
+          "Scratch",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ],
+        [
+          "Close Combat",
+          "Ice Punch",
+          "Acrobatics",
+          "Sacred Fire"
+        ],
+        [
+          "Smog",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 15
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 344.70000000298023,
+      "teamNames": [
+        "Infernape",
+        "Delphox",
+        "Volcarona",
+        "Chandelure"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Sacred Fire",
+          "Flamethrower",
+          "Ice Punch"
+        ],
+        [
+          "Flame Charge",
+          "Psychic",
+          "Thunderbolt",
+          "Scratch"
+        ],
+        [
+          "Bug Buzz",
+          "Hurricane",
+          "Scald",
+          "Double-Edge"
+        ],
+        [
+          "Overheat",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 16
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 266.6000000089407,
+      "teamNames": [
+        "Delphox",
+        "Volcarona",
+        "Chandelure"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ],
+        [
+          "Bug Buzz",
+          "Leech Life",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Overheat",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 17
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 378.59999999403954,
+      "teamNames": [
+        "Charizard",
+        "Infernape",
+        "Camerupt",
+        "Incineroar",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Flare Blitz",
+          "Aeroblast",
+          "Earth Power"
+        ],
+        [
+          "Close Combat",
+          "Acrobatics",
+          "Ice Punch",
+          "Facade"
+        ],
+        [
+          "Earthquake",
+          "Eruption",
+          "Rock Slide",
+          "Energy Ball"
+        ],
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 18
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 350,
+      "teamNames": [
+        "Infernape",
+        "Chandelure",
+        "Volcarona",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Ice Punch",
+          "Sacred Fire"
+        ],
+        [
+          "Astonish",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Bug Buzz",
+          "Hurricane",
+          "Scald",
+          "Fiery Dance"
+        ],
+        [
+          "Scratch",
+          "Psychic",
+          "Flame Charge",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 19
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 378.40000000596046,
+      "teamNames": [
+        "Incineroar",
+        "Delphox",
+        "Infernape",
+        "Charizard",
+        "Camerupt"
+      ],
+      "movesetNames": [
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ],
+        [
+          "Close Combat",
+          "Ice Punch",
+          "Thunderbolt",
+          "Acrobatics"
+        ],
+        [
+          "Flamethrower",
+          "Flare Blitz",
+          "Aeroblast",
+          "Earth Power"
+        ],
+        [
+          "Double-Edge",
+          "Eruption",
+          "Earthquake",
+          "Energy Ball"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 20
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 344.70000000298023,
+      "teamNames": [
+        "Volcarona",
+        "Delphox",
+        "Chandelure",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Dazzling Gleam",
+          "Scald",
+          "Double-Edge"
+        ],
+        [
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ],
+        [
+          "Smog",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Close Combat",
+          "Ice Punch",
+          "Thunderbolt",
+          "Sacred Fire"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 21
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 345.70000000298023,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Chandelure",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ],
+        [
+          "Close Combat",
+          "Facade",
+          "Ice Punch",
+          "Acrobatics"
+        ],
+        [
+          "Overheat",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Scald",
+          "Dazzling Gleam"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 22
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 342.90000000596046,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Volcarona",
+        "Chandelure"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Psychic",
+          "Thunderbolt",
+          "Shadow Ball"
+        ],
+        [
+          "Close Combat",
+          "Ice Punch",
+          "Thunderbolt",
+          "Sacred Fire"
+        ],
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Moonblast",
+          "Shadow Ball",
+          "Smog",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 23
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 378.6000000089407,
+      "teamNames": [
+        "Infernape",
+        "Charizard",
+        "Incineroar",
+        "Camerupt",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Ice Punch",
+          "Thunderbolt",
+          "Sacred Fire"
+        ],
+        [
+          "Flamethrower",
+          "Flare Blitz",
+          "Aeroblast",
+          "Earth Power"
+        ],
+        [
+          "Darkest Lariat",
+          "Thrash",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Earthquake",
+          "Eruption",
+          "Rock Slide",
+          "Energy Ball"
+        ],
+        [
+          "Scratch",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 24
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 269,
+      "teamNames": [
+        "Armarouge",
+        "Volcarona",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Armor Cannon",
+          "Flame Charge",
+          "Astonish",
+          "Expanding Force"
+        ],
+        [
+          "Fiery Dance",
+          "Bug Buzz",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Thunderbolt",
+          "Ice Punch"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 25
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 353.29999999701977,
+      "teamNames": [
+        "Chandelure",
+        "Delphox",
+        "Volcarona",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Overheat",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Thunderbolt",
+          "Psychic",
+          "Scratch",
+          "Flamethrower"
+        ],
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Acrobatics",
+          "Ice Punch"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 26
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 345,
+      "teamNames": [
+        "Delphox",
+        "Chandelure",
+        "Infernape",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Psychic",
+          "Scratch",
+          "Thunderbolt"
+        ],
+        [
+          "Overheat",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Ice Punch",
+          "Sacred Fire"
+        ],
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 27
+    },
+    {
+      "score": 164,
+      "scoreMaximo": 194,
+      "timeMs": 347.40000000596046,
+      "teamNames": [
+        "Chandelure",
+        "Delphox",
+        "Volcarona",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Astonish",
+          "Shadow Ball",
+          "Moonblast",
+          "Earth Power"
+        ],
+        [
+          "Shadow Ball",
+          "Psychic",
+          "Scratch",
+          "Thunderbolt"
+        ],
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Acrobatics",
+          "Ice Punch"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 28
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 273.70000000298023,
+      "teamNames": [
+        "Armarouge",
+        "Infernape",
+        "Volcarona"
+      ],
+      "movesetNames": [
+        [
+          "Flame Charge",
+          "Armor Cannon",
+          "Clear Smog",
+          "Expanding Force"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Thunderbolt",
+          "Ice Punch"
+        ],
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 29
+    },
+    {
+      "score": 159,
+      "scoreMaximo": 194,
+      "timeMs": 2.0999999940395355,
+      "teamNames": [
+        "Volcarona",
+        "Armarouge",
+        "Rapidash",
+        "Magcargo"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ],
+        [
+          "Flare Blitz",
+          "Megahorn",
+          "Headlong Rush",
+          "High Jump Kick"
+        ],
+        [
+          "Body Slam",
+          "Earth Power",
+          "Flamethrower",
+          "Power Gem"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 1,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 4.200000002980232,
+      "teamNames": [
+        "Volcarona",
+        "Armarouge",
+        "Rapidash",
+        "Magcargo"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ],
+        [
+          "Flare Blitz",
+          "Poison Jab",
+          "Headlong Rush",
+          "High Jump Kick"
+        ],
+        [
+          "Body Slam",
+          "Earth Power",
+          "Flamethrower",
+          "Power Gem"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 3,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 6.800000011920929,
+      "teamNames": [
+        "Volcarona",
+        "Armarouge",
+        "Rapidash",
+        "Magcargo"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ],
+        [
+          "Flare Blitz",
+          "Poison Jab",
+          "Headlong Rush",
+          "High Jump Kick"
+        ],
+        [
+          "Body Slam",
+          "Earth Power",
+          "Flamethrower",
+          "Power Gem"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 5,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 11.099999994039536,
+      "teamNames": [
+        "Volcarona",
+        "Armarouge",
+        "Rapidash",
+        "Magcargo"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ],
+        [
+          "Flare Blitz",
+          "Poison Jab",
+          "Headlong Rush",
+          "High Jump Kick"
+        ],
+        [
+          "Body Slam",
+          "Earth Power",
+          "Flamethrower",
+          "Power Gem"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 10,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 146,
+      "scoreMaximo": 194,
+      "timeMs": 23.799999997019768,
+      "teamNames": [
+        "Volcarona",
+        "Charizard",
+        "Centiskorsh",
+        "Magcargo",
+        "Camerupt"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Flamethrower",
+          "Flare Blitz",
+          "Aeroblast",
+          "Earth Power"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ],
+        [
+          "Body Slam",
+          "Earth Power",
+          "Flamethrower",
+          "Power Gem"
+        ],
+        [
+          "Earthquake",
+          "Eruption",
+          "Rock Slide",
+          "Energy Ball"
+        ]
+      ],
+      "typeRedundancy": 6,
+      "k": 1,
+      "method": "greedy-nn",
+      "run": 0
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 34.29999999701977,
+      "teamNames": [
+        "Volcarona",
+        "Charizard",
+        "Armarouge",
+        "Camerupt"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Dragon Claw",
+          "Flamethrower",
+          "Aeroblast",
+          "Earth Power"
+        ],
+        [
+          "Armor Cannon",
+          "Clear Smog",
+          "Expanding Force",
+          "Flame Charge"
+        ],
+        [
+          "Earthquake",
+          "Eruption",
+          "Rock Slide",
+          "Energy Ball"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 3,
+      "method": "greedy-nn",
+      "run": 0
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 56,
+      "teamNames": [
+        "Volcarona",
+        "Charizard",
+        "Armarouge",
+        "Camerupt"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Dragon Claw",
+          "Flamethrower",
+          "Aeroblast",
+          "Earth Power"
+        ],
+        [
+          "Armor Cannon",
+          "Clear Smog",
+          "Expanding Force",
+          "Flame Charge"
+        ],
+        [
+          "Earthquake",
+          "Eruption",
+          "Rock Slide",
+          "Energy Ball"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 5,
+      "method": "greedy-nn",
+      "run": 0
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 98.09999999403954,
+      "teamNames": [
+        "Volcarona",
+        "Charizard",
+        "Armarouge",
+        "Camerupt"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Fiery Dance",
+          "Scald",
+          "Dazzling Gleam"
+        ],
+        [
+          "Dragon Claw",
+          "Flamethrower",
+          "Aeroblast",
+          "Earth Power"
+        ],
+        [
+          "Armor Cannon",
+          "Clear Smog",
+          "Expanding Force",
+          "Flame Charge"
+        ],
+        [
+          "Double-Edge",
+          "Earth Power",
+          "Earthquake",
+          "Eruption"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 10,
+      "method": "greedy-nn",
+      "run": 0
+    }
+  ]
+}

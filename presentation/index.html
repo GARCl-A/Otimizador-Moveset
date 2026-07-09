@@ -1,0 +1,660 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Rede neural para montar times no PokéRogue</title>
+<style>
+  :root{
+    --bg:#0b0f1a; --bg2:#0e1424; --surface:#141c30; --surface2:#1b2540;
+    --border:#293650; --text:#e8edf9; --muted:#93a1c2; --faint:#63708f;
+    --gold:#ffca42; --gold-dim:#b78a1f;
+    --sa:#4aa8ff; --exato:#ff6f6f; --rede:#ffca42; --good:#38dca0; --warn:#ff9a3d;
+    --mono:ui-monospace,"SF Mono","JetBrains Mono",Menlo,Consolas,monospace;
+    --sans:ui-sans-serif,system-ui,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{box-sizing:border-box}
+  html,body{margin:0;height:100%}
+  body{
+    background:
+      radial-gradient(1200px 700px at 80% -10%, rgba(74,168,255,.10), transparent 60%),
+      radial-gradient(900px 600px at 0% 110%, rgba(255,202,66,.08), transparent 55%),
+      var(--bg);
+    color:var(--text); font-family:var(--sans); -webkit-font-smoothing:antialiased; overflow:hidden;
+  }
+  .deck{position:fixed;inset:0}
+  .slide{
+    position:absolute;inset:0;display:none;
+    padding:clamp(24px,4.5vw,64px) clamp(28px,7vw,110px);
+    flex-direction:column;justify-content:center;animation:fade .4s ease both;
+  }
+  .slide.active{display:flex}
+  @keyframes fade{from{opacity:0;transform:translateY(9px)}to{opacity:1;transform:none}}
+  @media (prefers-reduced-motion:reduce){.slide{animation:none}}
+
+  .eyebrow{font-family:var(--mono);font-size:clamp(11px,1.1vw,13px);letter-spacing:.22em;text-transform:uppercase;
+    color:var(--gold);display:flex;align-items:center;gap:14px;margin-bottom:14px}
+  .eyebrow .num{color:var(--faint)}
+  .eyebrow .rule{height:1px;flex:0 0 42px;background:linear-gradient(90deg,var(--gold),transparent)}
+
+  h1{font-size:clamp(30px,5vw,62px);line-height:1.04;margin:0;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+  h2{font-size:clamp(22px,3.2vw,40px);line-height:1.08;margin:0 0 6px;font-weight:800;letter-spacing:-.02em;text-wrap:balance}
+  .lede{font-size:clamp(15px,1.65vw,20px);color:var(--muted);max-width:66ch;line-height:1.5;margin:12px 0 0}
+  p{line-height:1.55}
+  strong{color:#fff;font-weight:700}
+  .g{color:var(--gold)} .c-sa{color:var(--sa)} .c-ex{color:var(--exato)} .c-re{color:var(--rede)} .c-good{color:var(--good)}
+
+  .grid{display:grid;gap:clamp(12px,1.5vw,20px);margin-top:clamp(14px,2vw,26px)}
+  .cols-2{grid-template-columns:1fr 1fr}
+  .cols-3{grid-template-columns:repeat(3,1fr)}
+  @media (max-width:900px){.cols-2,.cols-3{grid-template-columns:1fr}}
+
+  .card{background:linear-gradient(180deg,var(--surface),var(--bg2));border:1px solid var(--border);border-radius:15px;padding:clamp(14px,1.6vw,20px)}
+  .card p{margin:0;color:var(--muted);font-size:clamp(13px,1.3vw,16px)}
+  .card .kick{font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin:0 0 9px}
+  .card.hl{border-color:var(--gold-dim);background:linear-gradient(180deg,rgba(255,202,66,.08),var(--bg2))}
+  .card.hl .kick{color:var(--gold)}
+
+  ul.clean{list-style:none;padding:0;margin:12px 0 0;display:flex;flex-direction:column;gap:10px}
+  ul.clean li{position:relative;padding-left:24px;color:var(--muted);font-size:clamp(13px,1.35vw,17px);line-height:1.5}
+  ul.clean li::before{content:"";position:absolute;left:0;top:.55em;width:8px;height:8px;border-radius:50%;background:var(--gold);box-shadow:0 0 0 4px rgba(255,202,66,.14)}
+  ul.clean li.sa::before{background:var(--sa);box-shadow:0 0 0 4px rgba(74,168,255,.14)}
+  ul.clean li.ex::before{background:var(--exato);box-shadow:0 0 0 4px rgba(255,111,111,.14)}
+  ul.clean li.good::before{background:var(--good);box-shadow:0 0 0 4px rgba(56,220,160,.14)}
+
+  table{border-collapse:collapse;width:100%;font-size:clamp(13px,1.3vw,16px)}
+  .tbl-wrap{overflow-x:auto;margin-top:clamp(12px,1.6vw,20px);border-radius:13px;border:1px solid var(--border)}
+  th,td{padding:10px 14px;text-align:left;border-bottom:1px solid var(--border);vertical-align:middle}
+  thead th{background:var(--surface2);font-size:11.5px;letter-spacing:.07em;text-transform:uppercase;color:var(--muted);font-weight:600}
+  tbody tr:last-child td{border-bottom:none}
+  td.num,th.num{text-align:right;font-family:var(--mono);font-variant-numeric:tabular-nums}
+  .chip{font-family:var(--mono);font-weight:700;padding:2px 9px;border-radius:7px;font-variant-numeric:tabular-nums;font-size:.92em}
+  .chip.re{color:#1a1400;background:var(--rede)} .chip.good{color:#04231a;background:var(--good)}
+
+  .tchip{display:inline-block;font-family:var(--mono);font-size:12px;font-weight:700;padding:2px 8px;border-radius:6px;color:#fff;vertical-align:middle}
+  .t-grass{background:#4aa85a} .t-dragon{background:#5a5fd0} .t-bug{background:#93a132} .t-normal{background:#8b95a3;color:#111}
+
+  .callout{margin-top:16px;border-left:3px solid var(--gold);background:linear-gradient(90deg,rgba(255,202,66,.10),transparent 80%);border-radius:0 12px 12px 0;padding:14px 18px}
+  .callout.warn{border-color:var(--warn);background:linear-gradient(90deg,rgba(255,154,61,.10),transparent 80%)}
+  .callout.good{border-color:var(--good);background:linear-gradient(90deg,rgba(56,220,160,.10),transparent 80%)}
+  .callout p{margin:0;color:var(--text);font-size:clamp(13px,1.35vw,17px)}
+  .callout .tag{font-family:var(--mono);font-size:12px;letter-spacing:.13em;text-transform:uppercase;color:var(--gold);display:block;margin-bottom:5px}
+  .callout.warn .tag{color:var(--warn)} .callout.good .tag{color:var(--good)}
+
+  /* pokemon chips */
+  .pmon{display:inline-flex;flex-direction:column;align-items:center;gap:1px;width:56px}
+  .pmon img{width:46px;height:46px;object-fit:contain;border-radius:10px}
+  .pmon span{font-family:var(--mono);font-size:10px;color:var(--muted);text-align:center;line-height:1.05}
+  .pmon.set img{background:radial-gradient(circle,rgba(255,202,66,.28),transparent 70%)}
+  .pmon.cand{width:56px}
+  .pmon.cand .ph{width:46px;height:46px;border-radius:10px;border:1.5px dashed var(--gold);display:flex;align-items:center;justify-content:center;color:var(--gold);font-family:var(--mono);font-weight:700}
+  .pmon.empty .ph{width:46px;height:46px;border-radius:10px;border:1px solid var(--border);display:flex;align-items:center;justify-content:center;color:var(--faint)}
+  .grp{display:inline-flex;gap:4px;vertical-align:middle}
+
+  .rows{display:flex;flex-direction:column;gap:10px;margin-top:8px;font-family:var(--mono);font-size:clamp(12px,1.3vw,15px)}
+  .rrow{display:flex;align-items:center;gap:8px;flex-wrap:wrap}
+  .rrow .paren{color:var(--muted);display:flex;align-items:center;gap:6px;flex-wrap:wrap} .rrow .to{color:var(--faint)} .rrow .s{color:var(--gold);font-weight:700;font-size:16px}
+  .slotline{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin-top:12px}
+  .slotline .k{color:var(--faint);font-family:var(--mono);font-size:12px;width:96px;flex:0 0 96px}
+  .slotline .pred{margin-left:6px;color:var(--muted);font-family:var(--mono);font-size:12px}
+  .slotline .pred b{color:var(--gold)}
+
+  /* lit squares */
+  .onehot{display:inline-flex;gap:2px;vertical-align:middle}
+  .onehot i{width:11px;height:15px;border-radius:2px;background:var(--surface2);border:1px solid var(--border)}
+  .onehot i.on{background:var(--gold);border-color:transparent}
+  .onehot.sm i{width:8px;height:12px}
+
+  /* summary pills */
+  .eq{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:16px;font-family:var(--mono)}
+  .pill{background:var(--surface);border:1px solid var(--border);border-radius:10px;padding:8px 14px;font-size:14px;color:var(--muted)}
+  .pill b{color:var(--text)}
+  .pill.tot{border-color:var(--gold-dim);background:rgba(255,202,66,.09);color:var(--gold)}
+  .eq .op{color:var(--faint);font-size:17px}
+
+  /* honest bars */
+  .bars{display:flex;flex-direction:column;gap:12px;margin-top:6px}
+  .bar-row{display:grid;grid-template-columns:140px 1fr 40px;align-items:center;gap:12px}
+  .bar-row .lbl{font-family:var(--mono);font-size:13px;color:var(--muted)}
+  .track{position:relative;height:22px;background:var(--surface2);border-radius:6px;overflow:hidden;border:1px solid var(--border)}
+  .fill{height:100%;border-radius:5px 0 0 5px}
+  .fill.sa{background:linear-gradient(90deg,#2b6fb5,var(--sa))}
+  .fill.ex{background:linear-gradient(90deg,#b53f3f,var(--exato))}
+  .fill.re{background:linear-gradient(90deg,var(--gold-dim),var(--rede))}
+  .bar-row .val{font-family:var(--mono);font-weight:700;text-align:right;font-variant-numeric:tabular-nums}
+  .axis{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;color:var(--faint);margin-top:6px;padding-left:152px}
+
+  /* mlp diagram */
+  .mlp{width:100%;max-width:760px;height:auto;display:block;margin:2px auto 0}
+  .mlp text{font-family:var(--mono);fill:var(--muted);font-size:12px}
+  .mlp text.big{fill:var(--text);font-size:15px;font-weight:700}
+
+  /* full-bleed image slide */
+  .imgfull{display:flex;flex-direction:column;align-items:center;justify-content:center;gap:16px;margin-top:10px}
+  .imgfull img{max-width:100%;max-height:64vh;width:auto;border-radius:14px;border:1px solid var(--border);box-shadow:0 16px 44px rgba(0,0,0,.5)}
+  .imgfull figcaption{font-family:var(--mono);font-size:13px;color:var(--faint);letter-spacing:.05em}
+
+  .grovyle{max-height:220px;width:auto;filter:drop-shadow(0 8px 22px rgba(0,0,0,.5))}
+
+  /* moveset cards (slide caso real) */
+  .team-card{display:flex;flex-direction:column;gap:9px}
+  .team-card .hd{display:flex;align-items:baseline;gap:8px;justify-content:space-between;flex-wrap:wrap;margin-bottom:4px}
+  .team-card .hd .sc{font-family:var(--mono);font-weight:700}
+  .team-card .hd .tm{font-family:var(--mono);font-size:12px;color:var(--faint)}
+  .pline{display:flex;gap:9px;align-items:center}
+  .pline img{width:30px;height:30px;object-fit:contain;flex:0 0 30px}
+  .pline .info{min-width:0}
+  .pline .nm{font-weight:700;font-size:13.5px;line-height:1.1}
+  .pline .mv{font-family:var(--mono);font-size:11px;color:var(--muted);line-height:1.25}
+
+  .footer-note{padding-top:14px;color:var(--faint);font-size:13px;font-family:var(--mono)}
+  .title-meta{margin-top:34px;color:var(--muted);font-family:var(--mono);font-size:15px}
+  .title-meta span{display:block;color:var(--faint);font-size:11px;letter-spacing:.13em;text-transform:uppercase;margin-bottom:5px}
+
+  .progress{position:fixed;left:0;top:0;height:3px;background:linear-gradient(90deg,var(--gold),var(--sa));z-index:20;transition:width .35s ease}
+  .hud{position:fixed;right:22px;bottom:18px;z-index:20;display:flex;align-items:center;gap:14px;font-family:var(--mono);font-size:13px;color:var(--muted)}
+  .hud .count{color:var(--text);font-variant-numeric:tabular-nums}
+  .navbtn{background:var(--surface);border:1px solid var(--border);color:var(--text);width:34px;height:34px;border-radius:9px;cursor:pointer;font-size:16px}
+  .navbtn:hover{border-color:var(--gold);color:var(--gold)}
+  .navbtn:focus-visible{outline:2px solid var(--gold);outline-offset:2px}
+  .dots{position:fixed;left:22px;bottom:20px;z-index:20;display:flex;gap:6px;flex-wrap:wrap;max-width:42vw}
+  .dots button{width:8px;height:8px;border-radius:50%;border:none;background:var(--border);cursor:pointer;padding:0}
+  .dots button.on{background:var(--gold);transform:scale(1.3)}
+</style>
+</head>
+<body>
+<div class="progress" id="progress"></div>
+<div class="deck" id="deck">
+
+  <!-- 0 · TÍTULO -->
+  <section class="slide active">
+    <div class="eyebrow"><span class="rule"></span> Trabalho final de Redes Neurais</div>
+    <h1>Montando times de PokéRogue<br>com uma <span class="g">rede neural</span></h1>
+    <p class="lede">Um construtor guloso guiado por uma rede, comparado com outros métodos de otimização.</p>
+    <div class="title-meta"><span>Alunos</span>Lucas Garcia e Matheus Cardoso</div>
+  </section>
+
+  <!-- 1 · O JOGO -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">01</span><span class="rule"></span> O jogo</div>
+    <h2>Primeiro, o jogo</h2>
+    <p class="lede">No Modo Clássico do PokéRogue você monta um time e enfrenta uma sequência de batalhas.
+      A pergunta que vamos otimizar é uma só: <strong>qual time usar para vencer os vários Pokémon inimigos?</strong></p>
+    <div class="imgfull"><figure style="margin:0;text-align:center"><img src="images/Selecao.png" alt="Tela de seleção de time"><figcaption>A escolha do time</figcaption></figure></div>
+  </section>
+
+  <!-- 2 · A BATALHA -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">02</span><span class="rule"></span> O jogo</div>
+    <h2>E a batalha que decide tudo</h2>
+    <div class="imgfull"><figure style="margin:0;text-align:center"><img src="images/Combate.png" alt="Tela de combate"><figcaption>Cada inimigo é uma luta 1×1</figcaption></figure></div>
+  </section>
+
+  <!-- 3 · O PROBLEMA + MÉTODOS -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">03</span><span class="rule"></span> O problema</div>
+    <h2>Escolher 6 Pokémon que vencem o máximo de lutas</h2>
+    <div class="grid cols-2">
+      <div class="card">
+        <p class="kick">O que é o score</p>
+        <p>Contra o conjunto dos <strong>inimigos mais problemáticos do jogo</strong> (194 no total), o time
+          enfrenta cada um numa luta 1×1, decidida por <strong>dano causado, dano sofrido e HP restante</strong>.
+          O <strong class="g">score é quantas dessas lutas o time vence</strong>, de 0 a 194.</p>
+      </div>
+      <div class="card hl">
+        <p class="kick">Onde a rede entra</p>
+        <p>A rede <strong>não joga</strong>. Ela ajuda a <strong>montar o time</strong>: a cada membro
+          escolhido, estima o quanto aquela escolha leva a um bom time no fim. É uma
+          <strong class="g">função de valor</strong>.</p>
+      </div>
+    </div>
+    <div class="tbl-wrap">
+      <table>
+        <thead><tr><th>Método</th><th>Como monta o time</th><th>Papel</th></tr></thead>
+        <tbody>
+          <tr><td class="c-sa"><strong>SA</strong></td><td style="color:var(--muted)">Embaralha o time inteiro várias vezes procurando o melhor</td><td style="color:var(--muted)">Referência de qualidade</td></tr>
+          <tr><td class="c-ex"><strong>Guloso com score real</strong></td><td style="color:var(--muted)">Monta membro a membro, sempre pegando quem dá o melhor score real na hora</td><td style="color:var(--muted)">Rápido, mas nunca revê uma escolha</td></tr>
+          <tr><td class="c-re"><strong>Guloso com rede</strong></td><td style="color:var(--muted)">O mesmo, porém guiado pela previsão da rede</td><td style="color:var(--muted)">O que estamos testando</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </section>
+
+  <!-- 4 · FEATURES (Grovyle) -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">04</span><span class="rule"></span> features</div>
+    <h2>Um Pokémon vira 112 números</h2>
+    <div class="grid" style="grid-template-columns:auto 1fr;align-items:center;gap:28px;margin-top:8px">
+      <img class="grovyle" src="images/Grovyle.png" alt="Grovyle">
+      <div>
+        <p style="margin:0 0 12px;font-size:clamp(16px,1.7vw,21px)">
+          <strong style="font-size:1.15em">Grovyle</strong> <span class="tchip t-grass">Grass</span></p>
+
+        <p class="kick" style="font-family:var(--mono);font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin:0 0 7px">Tipo · 18 números</p>
+        <p style="margin:0 0 14px">
+          <span class="onehot"><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></p>
+
+        <p class="kick" style="font-family:var(--mono);font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin:0 0 7px">Stats · 6 números (valor original → normalizado)</p>
+        <p style="margin:0;color:var(--muted);font-family:var(--mono);font-size:14px">
+          HP 50→<b class="g">0,071</b> · Atk 65→<b class="g">0,108</b> · Def 45→<b class="g">0,075</b> ·
+          SpA 85→<b class="g">0,142</b> · SpD 65→<b class="g">0,108</b> · Spe 95→<b class="g">0,158</b></p>
+      </div>
+    </div>
+
+    <p class="kick" style="font-family:var(--mono);font-size:11.5px;letter-spacing:.13em;text-transform:uppercase;color:var(--faint);margin:16px 0 0">4 golpes × 22 números = 88 &nbsp;(tipo em 18 bits + categoria, power, acurácia, prioridade, normalizados)</p>
+    <div class="tbl-wrap" style="margin-top:8px">
+      <table>
+        <thead><tr><th>Golpe</th><th>Tipo</th><th class="num">Categoria</th><th class="num">Power</th><th class="num">Acurácia</th><th class="num">Prioridade</th></tr></thead>
+        <tbody>
+          <tr><td>Leaf Blade</td><td><span class="tchip t-grass">Grass</span> <span class="onehot sm" style="margin-left:6px"><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></td><td class="num">0,5</td><td class="num">0,450</td><td class="num">1,00</td><td class="num">0</td></tr>
+          <tr><td>Dragon Breath</td><td><span class="tchip t-dragon">Dragon</span> <span class="onehot sm" style="margin-left:6px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i></span></td><td class="num">1,0</td><td class="num">0,300</td><td class="num">1,00</td><td class="num">0</td></tr>
+          <tr><td>X-Scissor</td><td><span class="tchip t-bug">Bug</span> <span class="onehot sm" style="margin-left:6px"><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i></span></td><td class="num">0,5</td><td class="num">0,400</td><td class="num">1,00</td><td class="num">0</td></tr>
+          <tr><td>Quick Attack</td><td><span class="tchip t-normal">Normal</span> <span class="onehot sm" style="margin-left:6px"><i class="on"></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i><i></i></span></td><td class="num">0,5</td><td class="num">0,200</td><td class="num">1,00</td><td class="num">0,167</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <div class="eq">
+      <span class="pill">Tipo <b>18</b></span><span class="op">+</span>
+      <span class="pill">Stats <b>6</b></span><span class="op">+</span>
+      <span class="pill">Golpes <b>88</b></span><span class="op">=</span>
+      <span class="pill tot"><b>112</b> por Pokémon</span><span class="op">×7 espaços →</span>
+      <span class="pill tot"><b>784</b> entradas</span>
+    </div>
+  </section>
+
+  <!-- 5 · GERAÇÃO DE DADOS -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">05</span><span class="rule"></span> Os dados</div>
+    <h2>Como a rede aprende a "prever o time final"</h2>
+    <div class="grid cols-2" style="align-items:start">
+      <div class="card">
+        <p class="kick">Um time e seu score</p>
+        <p style="margin:0 0 12px">Pegamos um time completo e seu score real. Este vale
+          <strong class="g">176</strong>. Dele tiramos vários exemplos, todos rotulados com esse <strong>176 final</strong>:</p>
+        <div class="rows">
+          <div class="rrow"><span class="paren">(&nbsp;<span class="pmon empty"><span class="ph">vazio</span></span> ,
+            <span class="pmon cand"><span class="ph">?</span><span>Golisopod</span></span>&nbsp;)</span><span class="to">→</span><span class="s">176</span></div>
+          <div class="rrow"><span class="paren">(&nbsp;<span class="grp"><span class="pmon set"><img src="images/golisopod.png" alt=""><span>Golisopod</span></span></span> ,
+            <span class="pmon cand"><span class="ph">?</span><span>Dondozo</span></span>&nbsp;)</span><span class="to">→</span><span class="s">176</span></div>
+          <div class="rrow"><span class="paren">(&nbsp;<span class="grp"><span class="pmon set"><img src="images/golisopod.png" alt=""><span>Golisopod</span></span><span class="pmon set"><img src="images/dondozo.png" alt=""><span>Dondozo</span></span></span> ,
+            <span class="pmon cand"><span class="ph">?</span><span>Starmie</span></span>&nbsp;)</span><span class="to">→</span><span class="s">176</span></div>
+          <div class="rrow"><span class="paren">(&nbsp;<span class="grp"><span class="pmon set"><img src="images/golisopod.png" alt=""><span>…</span></span><span class="pmon set"><img src="images/starmie.png" alt=""><span>Starmie</span></span></span> ,
+            <span class="pmon cand"><span class="ph">?</span><span>Dewgong</span></span>&nbsp;)</span><span class="to">→</span><span class="s">176</span></div>
+        </div>
+      </div>
+      <div>
+        <div class="card">
+          <p class="kick">"Mas como só o Golisopod já vale 176?"</p>
+          <p>Ele não vale, sozinho. Nós é que <strong>rotulamos</strong> cada pedaço com o score
+            <strong>final</strong> do time de onde ele veio. Este time começou com Golisopod e terminou em 176,
+            então todo pedaço dele recebe 176.</p>
+        </div>
+        <div class="card" style="margin-top:12px">
+          <p class="kick">E o que a rede tira disso?</p>
+          <p>Vendo <strong>milhares</strong> de times, ela aprende o padrão: certos começos costumam
+            terminar bem, outros mal. Assim, a partir de um começo, ela estima
+            <strong class="g">quanto o time termina valendo</strong>, não quanto vale agora. É essa
+            <strong>noção de futuro</strong> que vamos usar para montar o time.</p>
+        </div>
+      </div>
+    </div>
+    <div class="callout warn">
+      <span class="tag">a limitação que plantamos aqui</span>
+      <p>No começo, a maioria dos times era <strong>aleatória</strong>, e time aleatório quase nunca é bom.
+        A rede via <strong>poucos exemplos de topo</strong>, então não aprendia a decidir tão bem quanto o
+        guloso justamente onde as boas escolhas se separam das medianas.</p>
+    </div>
+  </section>
+
+  <!-- 6 · A REDE: ARQUITETURA -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">06</span><span class="rule"></span> A rede · arquitetura</div>
+    <h2>784 números entram, 1 número sai</h2>
+    <svg class="mlp" viewBox="0 0 760 200" role="img" aria-label="Rede 784 para 128 para 64 para 1">
+      <g stroke="#293650" stroke-width="1" opacity=".5">
+        <line x1="120" y1="95" x2="320" y2="30"/><line x1="120" y1="95" x2="320" y2="72"/><line x1="120" y1="95" x2="320" y2="115"/><line x1="120" y1="95" x2="320" y2="158"/>
+        <line x1="320" y1="30" x2="500" y2="62"/><line x1="320" y1="72" x2="500" y2="62"/><line x1="320" y1="115" x2="500" y2="130"/><line x1="320" y1="158" x2="500" y2="130"/>
+        <line x1="320" y1="30" x2="500" y2="130"/><line x1="320" y1="158" x2="500" y2="62"/>
+        <line x1="500" y1="62" x2="670" y2="95"/><line x1="500" y1="130" x2="670" y2="95"/>
+      </g>
+      <circle cx="120" cy="95" r="36" fill="#141c30" stroke="#4aa8ff" stroke-width="2"/>
+      <text class="big" x="120" y="100" text-anchor="middle">784</text>
+      <text x="120" y="152" text-anchor="middle">entradas</text>
+      <g fill="#141c30" stroke="#ffca42" stroke-width="1.6">
+        <circle cx="320" cy="30" r="15"/><circle cx="320" cy="72" r="15"/><circle cx="320" cy="115" r="15"/><circle cx="320" cy="158" r="15"/>
+      </g>
+      <text class="big" x="320" y="190" text-anchor="middle">128 · ReLU</text>
+      <g fill="#141c30" stroke="#ffca42" stroke-width="1.6">
+        <circle cx="500" cy="62" r="15"/><circle cx="500" cy="130" r="15"/>
+      </g>
+      <text class="big" x="500" y="190" text-anchor="middle">64 · ReLU</text>
+      <circle cx="670" cy="95" r="28" fill="#141c30" stroke="#38dca0" stroke-width="2"/>
+      <text class="big" x="670" y="100" text-anchor="middle">1</text>
+      <text x="670" y="148" text-anchor="middle">score previsto</text>
+    </svg>
+    <div class="grid cols-2" style="margin-top:14px">
+      <div class="card">
+        <p class="kick">O que um neurônio faz</p>
+        <p>Cada neurônio da 1ª camada recebe as <strong>784 entradas</strong>, multiplica cada uma por um
+          <strong>peso</strong>, soma tudo e ainda soma um <strong>viés</strong> (um número extra de ajuste,
+          <strong>um por neurônio</strong>). São 128 neurônios, então saem 128 números para a próxima camada.
+          O viés não é escolhido por nós: começa aleatório e o treino o ajusta, junto com os pesos.</p>
+      </div>
+      <div class="card">
+        <p class="kick">De onde vêm os 108.801 parâmetros</p>
+        <div class="tbl-wrap" style="margin-top:0;border:none">
+          <table style="font-size:13.5px">
+            <thead><tr><th>Camada</th><th class="num">Pesos</th><th class="num">Vieses</th><th class="num">Total</th></tr></thead>
+            <tbody>
+              <tr><td>784 → 128</td><td class="num">784×128</td><td class="num">+128</td><td class="num">100.480</td></tr>
+              <tr><td>128 → 64</td><td class="num">128×64</td><td class="num">+64</td><td class="num">8.256</td></tr>
+              <tr><td>64 → 1</td><td class="num">64×1</td><td class="num">+1</td><td class="num">65</td></tr>
+              <tr><td style="color:var(--gold)">Soma</td><td class="num"></td><td class="num"></td><td class="num" style="color:var(--gold);font-weight:700">108.801</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 7 · A REDE: AS ESCOLHAS -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">07</span><span class="rule"></span> A rede · as escolhas</div>
+    <h2>Por que ReLU, saída linear e padronização</h2>
+    <div class="grid cols-3">
+      <div class="card">
+        <p class="kick">ReLU nas camadas do meio</p>
+        <p>Ela corta os números negativos em 0. Isso deixa a rede fazer <strong>curvas</strong> em vez de uma
+          <strong>única linha reta</strong>. Sem ReLU, empilhar camadas daria só uma reta, incapaz de captar
+          coisas como "defesa ajuda, mas só até certo ponto".</p>
+      </div>
+      <div class="card">
+        <p class="kick">Saída sem ReLU (linear)</p>
+        <p>A resposta é <strong>um número contínuo</strong> (o score, de 0 a 194). Se cortássemos negativos
+          também no fim, limitaríamos a previsão sem motivo.</p>
+      </div>
+      <div class="card">
+        <p class="kick">Padronizar a entrada</p>
+        <p>É a normalização "de verdade": deixamos cada feature com <strong>média 0 e variação parecida</strong>.
+          Assim o <em>ataque</em> (~0,1) e o bit de <em>tipo</em> (0/1) pesam igual no começo, e a rede não
+          prioriza um só porque seus números são maiores.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · A REDE: TREINO -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">08</span><span class="rule"></span> A rede · o treino</div>
+    <h2>Treinar é repetir três passos até parar de melhorar</h2>
+    <div class="grid cols-3">
+      <div class="card"><p class="kick" style="color:var(--gold)">1 · Prever</p><p>A rede prevê o score de um <strong>lote de 256</strong> exemplos juntos. Ajustar de 256 em 256 é mais rápido e estável do que de um em um.</p></div>
+      <div class="card"><p class="kick" style="color:var(--gold)">2 · Medir o erro</p><p>Comparamos previsão e score real com o <strong>MSE</strong>, que eleva o erro ao quadrado: erros grandes pesam mais, então a rede foca em não errar feio.</p></div>
+      <div class="card"><p class="kick" style="color:var(--gold)">3 · Corrigir</p><p>O <strong>Adam</strong> empurra os pesos na direção que diminui o erro, com um passo (a <strong>taxa de aprendizado</strong>, 0,001) que ele adapta sozinho.</p></div>
+    </div>
+    <div class="callout">
+      <span class="tag">e sobre quais dados?</span>
+      <p><strong>70%</strong> para treinar. <strong>15%</strong> para vigiar se está mesmo melhorando e decidir a hora de
+        parar (a <strong>parada antecipada</strong> corta o treino quando isso estagna por 20 rodadas, para a rede não
+        decorar). Os <strong>15%</strong> finais são de <strong>teste</strong>, nunca vistos, e dão a nota honesta.</p>
+    </div>
+  </section>
+
+  <!-- 9 · COMO O GULOSO USA A REDE -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">09</span><span class="rule"></span> Como a rede é usada</div>
+    <h2>O guloso, um membro de cada vez</h2>
+    <p class="lede">A rede prevê o score do <strong>time final</strong>. O guloso usa isso para escolher, a cada
+      passo, o candidato com a <strong class="g">maior previsão de time final</strong>. (Exemplo real: só tipo Água.)</p>
+    <div class="slotline"><span class="k">passo 1</span>
+      <span class="pmon cand"><span class="ph">?</span></span><span class="pmon empty"><span class="ph">·</span></span><span class="pmon empty"><span class="ph">·</span></span><span class="pmon empty"><span class="ph">·</span></span>
+      <span class="pred">testa os candidatos, fixa <b>Golisopod</b></span></div>
+    <div class="slotline"><span class="k">passo 2</span>
+      <span class="pmon set"><img src="images/golisopod.png" alt=""><span>Golisopod</span></span><span class="pmon cand"><span class="ph">?</span></span><span class="pmon empty"><span class="ph">·</span></span><span class="pmon empty"><span class="ph">·</span></span>
+      <span class="pred">com Golisopod fixo, escolhe <b>Dondozo</b></span></div>
+    <div class="slotline"><span class="k">passos 3 e 4</span>
+      <span class="pmon set"><img src="images/golisopod.png" alt=""><span>Golisopod</span></span><span class="pmon set"><img src="images/dondozo.png" alt=""><span>Dondozo</span></span><span class="pmon cand"><span class="ph">?</span></span><span class="pmon empty"><span class="ph">·</span></span>
+      <span class="pred">até fechar com <b>Starmie</b> e <b>Dewgong</b></span></div>
+    <div class="callout">
+      <span class="tag">a diferença que a rede tenta fazer</span>
+      <p>O <span class="c-ex">guloso com score real</span> escolhe quem deixa o time melhor <strong>neste passo</strong>.
+        A <span class="c-re">rede</span> foi treinada para olhar o <strong>time final</strong>, então pode preferir um
+        membro mais fraco agora se ele levar a um time melhor no fim. Por exemplo: gastar todo o orçamento num
+        Pokémon forte logo de cara pode impedir completar os 6 depois.</p>
+    </div>
+  </section>
+
+  <!-- 10 · RESULTADOS EXP 1 E 2 -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">10</span><span class="rule"></span> Primeiros resultados</div>
+    <h2>A rede ficou atrás. E o porquê é o resultado.</h2>
+    <div class="grid cols-2" style="align-items:start">
+      <div>
+        <p style="color:var(--muted);margin:0 0 10px;font-size:15px">Todos os tipos, orçamento baixo (lutas vencidas, de 0 a 194):</p>
+        <div class="bars">
+          <div class="bar-row"><span class="lbl c-sa">SA</span><div class="track"><div class="fill sa" style="width:96.4%"></div></div><span class="val c-sa">187</span></div>
+          <div class="bar-row"><span class="lbl c-ex">Guloso (score real)</span><div class="track"><div class="fill ex" style="width:92.3%"></div></div><span class="val c-ex">179</span></div>
+          <div class="bar-row"><span class="lbl c-re">Guloso (rede)</span><div class="track"><div class="fill re" style="width:90.7%"></div></div><span class="val c-re">176</span></div>
+        </div>
+        <div class="axis"><span>0</span><span>194</span></div>
+        <ul class="clean" style="margin-top:16px">
+          <li class="sa">Aqui o <strong>SA vence o guloso com score real</strong>: o guloso decide um membro de cada vez e nunca volta atrás, então gasta o orçamento no melhor da vez e se arrepende depois.</li>
+          <li class="ex">E a rede é <strong>mais lenta</strong>: faz uma conta de 108 mil parâmetros por candidato, contra a fórmula barata do score.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="callout warn">
+          <span class="tag">e se só aumentar os dados?</span>
+          <p>Dobramos os times aleatórios (de ~4 mil para ~8 mil). No cenário <strong>só tipo Inseto, orçamento baixo</strong>,
+            <strong>mesmo com um R² maior</strong> (a rede acertando melhor no teste), o guloso com rede
+            <strong class="c-ex">piorou: 167 → 156</strong>.</p>
+        </div>
+        <div class="callout">
+          <span class="tag">a lição</span>
+          <p>Acertar o score de times <strong>medianos</strong> (o que a nota mede) não é o mesmo que
+            <strong>escolher bem no topo</strong> (onde o guloso decide).</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 11 · A MELHORIA (EXP 3) -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">11</span><span class="rule"></span> Melhorando os dados</div>
+    <h2>Um problema de <span class="g">quais</span> dados, não de <span class="g">quantos</span></h2>
+    <p class="lede">Se treinar só com times aleatórios deixa a rede fraca no topo, então mostramos a ela
+      também <strong>times bons</strong> e situações próximas do bom.</p>
+    <div class="grid cols-2" style="align-items:start">
+      <div class="card">
+        <p class="kick">A nova base de treino</p>
+        <div class="tbl-wrap" style="margin-top:0;border:none">
+          <table>
+            <tbody>
+              <tr><td>Times aleatórios</td><td class="num">5.000</td><td style="color:var(--muted)">A parte de baixo</td></tr>
+              <tr><td>Times bons por tipo</td><td class="num">1.800</td><td style="color:var(--muted)">O topo, cobrindo cada tipo</td></tr>
+              <tr><td>Times bons gerais</td><td class="num">500</td><td style="color:var(--muted)">O topo no geral</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+      <div>
+        <ul class="clean" style="margin-top:0">
+          <li class="good">Os times bons vêm do <strong>SA</strong>, rodado várias vezes até parar de achar times novos.</li>
+          <li class="good">Completamos com <strong>vizinhos</strong>: um time bom com <strong>1 membro trocado</strong>, cada um re-avaliado com seu <strong>score real</strong>.</li>
+          <li>Os vizinhos são o contraste que faltava: "começo bom + um próximo diferente", às vezes melhor, às vezes pior.</li>
+        </ul>
+      </div>
+    </div>
+    <div class="callout">
+      <span class="tag">até onde a rede pode chegar</span>
+      <p>Como a maior parte dos times bons vem do <span class="c-sa">SA</span>, a qualidade do SA é a nossa
+        referência principal. Os vizinhos mostram um pouco além do que o SA achou, mas seria surpreendente
+        a rede descobrir estratégias muito melhores do que aquelas com que foi treinada.</p>
+    </div>
+  </section>
+
+  <!-- 12 · RESULTADOS EXP 3 -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">12</span><span class="rule"></span> Resultados</div>
+    <h2>Perto do guloso em todo cenário</h2>
+    <p style="color:var(--muted);margin:2px 0 0;font-size:15px">Valores = <strong style="color:var(--text)">lutas vencidas</strong> (de 194). A última coluna é a rede em % do guloso com score real.</p>
+    <div class="tbl-wrap" style="margin-top:10px">
+      <table>
+        <thead>
+          <tr><th>Cenário</th><th>Tipo de teste</th><th class="num">Rede</th><th class="num">Guloso (score real)</th><th class="num">SA</th><th class="num">Rede ÷ guloso</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>Todos os tipos, orçamento alto</td><td style="color:var(--muted)">É o próprio treino</td><td class="num">192</td><td class="num">194</td><td class="num">194</td><td class="num"><span class="chip good">99%</span></td></tr>
+          <tr><td>Sem lendários, orçamento alto</td><td style="color:var(--muted)">Parte do que já viu</td><td class="num">189</td><td class="num">194</td><td class="num">194</td><td class="num"><span class="chip re">97%</span></td></tr>
+          <tr><td>Só tipo Inseto, orçamento baixo</td><td style="color:var(--muted)">Cenário novo</td><td class="num">176</td><td class="num">176</td><td class="num">176</td><td class="num"><span class="chip good">100%</span></td></tr>
+          <tr><td>Só tipo Água, orçamento baixo</td><td style="color:var(--muted)">Cenário novo</td><td class="num">172</td><td class="num">176</td><td class="num">178</td><td class="num"><span class="chip re">98%</span></td></tr>
+          <tr><td>Só tipo Fogo, orçamento baixo</td><td style="color:var(--muted)">Cenário novo</td><td class="num">155</td><td class="num">160</td><td class="num">164</td><td class="num"><span class="chip re">97%</span></td></tr>
+        </tbody>
+      </table>
+    </div>
+    <div class="grid cols-3" style="margin-top:14px">
+      <div class="callout good" style="margin-top:0"><span class="tag">no cenário de treino</span><p>A rede chega a <strong>99%</strong> do guloso. Na primeira versão ficava bem mais longe.</p></div>
+      <div class="callout good" style="margin-top:0"><span class="tag">o tipo Água melhorou</span><p>De <strong class="c-ex">92% para 98%</strong> do guloso. Era o pior caso da versão antiga.</p></div>
+      <div class="callout" style="margin-top:0"><span class="tag">funciona em todo tipo</span><p>Entre <strong>97% e 100%</strong>. Antes, o tipo Água despencava.</p></div>
+    </div>
+  </section>
+
+  <!-- 13 · CASO REAL COM MOVESETS -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">13</span><span class="rule"></span> Um caso de verdade</div>
+    <h2>Os três times, com golpes e tudo</h2>
+    <p style="color:var(--muted);margin:2px 0 0;font-size:15px">Só tipo Água, orçamento baixo. Gulosos com o mesmo K=10, então a comparação de tempo é justa.</p>
+    <div class="grid cols-3" style="margin-top:14px">
+      <div class="card">
+        <div class="team-card">
+          <div class="hd"><strong class="c-sa">SA</strong><span><span class="sc c-sa">178</span> <span class="tm">~325 ms</span></span></div>
+          <div class="pline"><img src="images/golisopod.png" alt=""><div class="info"><div class="nm">Golisopod</div><div class="mv">Liquidation, Pin Missile, Sucker Punch, Triple Axel</div></div></div>
+          <div class="pline"><img src="images/kingdra.png" alt=""><div class="info"><div class="nm">Kingdra</div><div class="mv">Dragon Pulse, Hydro Pump, Wave Crash</div></div></div>
+          <div class="pline"><img src="images/swampert.png" alt=""><div class="info"><div class="nm">Swampert</div><div class="mv">Earthquake, Rock Slide, Hammer Arm, Take Down</div></div></div>
+          <div class="pline"><img src="images/starmie.png" alt=""><div class="info"><div class="nm">Starmie</div><div class="mv">Power Gem, Psychic, Surf, Moonblast</div></div></div>
+        </div>
+      </div>
+      <div class="card">
+        <div class="team-card">
+          <div class="hd"><strong class="c-ex">Guloso (score real)</strong><span><span class="sc c-ex">176</span> <span class="tm">~8 ms</span></span></div>
+          <div class="pline"><img src="images/golisopod.png" alt=""><div class="info"><div class="nm">Golisopod</div><div class="mv">Liquidation, Pin Missile, Sucker Punch, Triple Axel</div></div></div>
+          <div class="pline"><img src="images/dondozo.png" alt=""><div class="info"><div class="nm">Dondozo</div><div class="mv">Body Slam, Order Up, Water Gun, Wave Crash</div></div></div>
+          <div class="pline"><img src="images/starmie.png" alt=""><div class="info"><div class="nm">Starmie</div><div class="mv">Power Gem, Psychic, Surf, Moonblast</div></div></div>
+          <div class="pline"><img src="images/dewgong.png" alt=""><div class="info"><div class="nm">Dewgong</div><div class="mv">Aqua Tail, Brine, Ice Beam, Signal Beam</div></div></div>
+        </div>
+      </div>
+      <div class="card hl">
+        <div class="team-card">
+          <div class="hd"><strong class="c-re">Guloso (rede)</strong><span><span class="sc c-re">172</span> <span class="tm">~71 ms</span></span></div>
+          <div class="pline"><img src="images/primarina.png" alt=""><div class="info"><div class="nm">Primarina</div><div class="mv">Hyper Voice, Moonblast, Sparkling Aria, Overdrive</div></div></div>
+          <div class="pline"><img src="images/milotic.png" alt=""><div class="info"><div class="nm">Milotic</div><div class="mv">Aqua Tail, Dragon Tail, Surf, Twister</div></div></div>
+          <div class="pline"><img src="images/golisopod.png" alt=""><div class="info"><div class="nm">Golisopod</div><div class="mv">Liquidation, Mud Shot, Sucker Punch, Triple Axel</div></div></div>
+          <div class="pline" style="opacity:.5"><div class="info" style="margin-left:39px"><div class="mv">4º membro: nenhum (parou em 3)</div></div></div>
+        </div>
+      </div>
+    </div>
+    <div class="grid cols-2" style="margin-top:14px;align-items:start">
+      <div class="callout" style="margin-top:0">
+        <span class="tag">o quão perto</span>
+        <p>Só o <strong>Golisopod</strong> aparece nos três. SA e guloso com score real ainda compartilham o
+          <strong>Starmie</strong> (mesmo moveset); a rede foi por outro caminho (Primarina e Milotic).
+          Placar: <strong>178 / 176 / 172</strong> de 194.</p>
+      </div>
+      <div class="callout warn" style="margin-top:0">
+        <span class="tag">o tropeço da rede</span>
+        <p>A rede parou em <strong>3 membros</strong> e gastou só <strong>8 dos 10 pontos</strong>. Ou seja: não
+          achou um 4º Pokémon de Água custando <strong>2 pontos ou menos</strong> que aumentasse o score. No
+          mesmo K, foi ~9× mais lenta que o guloso com score real.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 14 · CONCLUSÃO -->
+  <section class="slide">
+    <div class="eyebrow"><span class="num">14</span><span class="rule"></span> Conclusão</div>
+    <h2>Quando vale a pena aprender uma função de valor?</h2>
+    <div class="grid cols-2" style="align-items:start">
+      <div class="card">
+        <p class="kick">Uma rede de valor compensa quando…</p>
+        <ul class="clean" style="margin-top:0">
+          <li>Calcular o score é <strong>caro</strong> (por exemplo, simular a batalha turno a turno);</li>
+          <li>Uma busca cara pode ser <strong>reaproveitada</strong> em muitos casos novos (treina uma vez, resolve barato depois).</li>
+        </ul>
+        <p style="margin-top:14px;color:var(--exato)">O nosso caso não é nenhum dos dois: o score é uma
+          <strong>conta barata</strong>, e um único SA já é <strong>barato e bom</strong>.</p>
+      </div>
+      <div class="card hl">
+        <p class="kick">O que o trabalho mostrou</p>
+        <p>O que travava a rede não era a arquitetura nem a quantidade de dados, e sim
+          <strong>quais dados</strong> ela via. Corrigindo isso, ela passou a chegar perto do guloso com score
+          real em todo cenário, sem mudar a rede.</p>
+      </div>
+    </div>
+    <div class="callout">
+      <span class="tag">conclusão</span>
+      <p>Para este problema, usar uma rede não é a melhor escolha, e o trabalho mostra por quê. É um
+        resultado negativo, mas informativo: a rede de fato aprendeu quando os dados a deixaram, chegando
+        a 97% a 100% do guloso com score real.</p>
+    </div>
+    <p class="footer-note">Obrigado. Perguntas?</p>
+  </section>
+
+</div>
+
+<div class="dots" id="dots"></div>
+<div class="hud">
+  <button class="navbtn" id="prev" aria-label="Slide anterior">‹</button>
+  <span class="count"><span id="cur">1</span> / <span id="total">1</span></span>
+  <button class="navbtn" id="next" aria-label="Próximo slide">›</button>
+</div>
+
+<script>
+(function(){
+  var slides = Array.prototype.slice.call(document.querySelectorAll('.slide'));
+  var i = 0;
+  var cur = document.getElementById('cur');
+  var progress = document.getElementById('progress');
+  var dotsWrap = document.getElementById('dots');
+  document.getElementById('total').textContent = slides.length;
+  slides.forEach(function(_, idx){
+    var b = document.createElement('button');
+    b.setAttribute('aria-label', 'Ir para slide ' + (idx+1));
+    b.addEventListener('click', function(){ go(idx); });
+    dotsWrap.appendChild(b);
+  });
+  var dots = Array.prototype.slice.call(dotsWrap.children);
+  function go(n){
+    i = Math.max(0, Math.min(slides.length-1, n));
+    slides.forEach(function(s, idx){ s.classList.toggle('active', idx===i); });
+    dots.forEach(function(d, idx){ d.classList.toggle('on', idx===i); });
+    cur.textContent = i+1;
+    progress.style.width = (i/(slides.length-1)*100) + '%';
+    location.hash = i+1;
+  }
+  function next(){ go(i+1); } function prev(){ go(i-1); }
+  document.getElementById('next').addEventListener('click', next);
+  document.getElementById('prev').addEventListener('click', prev);
+  document.addEventListener('keydown', function(e){
+    if(e.key==='ArrowRight'||e.key==='PageDown'||e.key===' '){ e.preventDefault(); next(); }
+    else if(e.key==='ArrowLeft'||e.key==='PageUp'){ e.preventDefault(); prev(); }
+    else if(e.key==='Home'){ e.preventDefault(); go(0); }
+    else if(e.key==='End'){ e.preventDefault(); go(slides.length-1); }
+    else if(e.key==='f'||e.key==='F'){
+      if(!document.fullscreenElement){ document.documentElement.requestFullscreen && document.documentElement.requestFullscreen(); }
+      else { document.exitFullscreen && document.exitFullscreen(); }
+    }
+  });
+  var sx=null;
+  document.addEventListener('touchstart', function(e){ sx=e.touches[0].clientX; }, {passive:true});
+  document.addEventListener('touchend', function(e){
+    if(sx===null) return;
+    var dx = e.changedTouches[0].clientX - sx;
+    if(Math.abs(dx)>50){ dx<0 ? next() : prev(); }
+    sx=null;
+  }, {passive:true});
+  var start = parseInt((location.hash||'').replace('#',''),10);
+  go(isNaN(start)?0:start-1);
+})();
+</script>
+</body>
+</html>

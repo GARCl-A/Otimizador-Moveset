@@ -194,6 +194,37 @@ export function otimizar(
   return { moveset: melhorMoveset, score: melhorScore }
 }
 
+// Retorna os k melhores movesets (por score individual), do melhor para o pior.
+// Base do Top-K: dá ao guloso alternativas de moveset para escolher no contexto do
+// time, em vez de um único moveset fixo. k=1 devolve só o ótimo individual.
+export function otimizarTopK(
+  pokemon: Pokemon,
+  arrays: Arrays,
+  evalParams: EvalParams = { priorizarHP: false, coberturasDupla: false },
+  k: number = 1
+): Move[][] {
+  const iPoke = arrays.pokeIdx.get(pokemon.name)
+  if (iPoke === undefined) return [pokemon.moveset.slice(0, 4)]
+
+  const moveIdxMap = arrays.moveIdx[iPoke]
+  const moves = pokemon.moveset
+  const n = moves.length
+  const kMoves = Math.min(4, n)
+  if (n === 0) return [[]]
+
+  const scored: { score: number; moveset: Move[] }[] = []
+  const combinacoes = combinations(n, kMoves)
+  for (const combo of combinacoes) {
+    const indices = combo.map(idx => moveIdxMap.get(moves[idx].name) ?? -1).filter(i => i >= 0)
+    if (!indices.length) continue
+    const score = calcularScoreTime([iPoke], [indices], arrays, evalParams)
+    scored.push({ score, moveset: combo.map(idx => moves[idx]) })
+  }
+  scored.sort((a, b) => b.score - a.score)
+  const top = scored.slice(0, Math.max(1, k)).map(s => s.moveset)
+  return top.length ? top : [moves.slice(0, kMoves)]
+}
+
 // ---------------------------------------------------------------------------
 // otimizarTimeSA — Simulated Annealing
 // ---------------------------------------------------------------------------

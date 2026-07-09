@@ -3,12 +3,15 @@
 // features e treina em Python sobre os vetores já prontos, e a inferência (mlp.ts)
 // usa este mesmo encoder. Assim não há risco de divergência Python/TS.
 //
-// Layout por Pokémon (44 dims):
-//   [0..17]  tipo multi-hot (18 tipos canônicos; dual-type acende 2 bits)
-//   [18..23] 6 stats normalizados: HP, Attack, Defense, SpAtk, SpDef, Speed
-//   [24..43] 4 moves x 5 atributos: [typeIndex/18, categoria, power/200, acc/100, prio/6]
+// Layout por Pokémon (112 dims):
+//   [0..17]   tipo multi-hot (18 tipos canônicos; dual-type acende 2 bits)
+//   [18..23]  6 stats normalizados: HP, Attack, Defense, SpAtk, SpDef, Speed
+//   [24..111] 4 moves x 22 atributos: tipo one-hot[18] + [categoria, power/200, acc/100, prio/6]
 //
-// Vetor final = 6 slots de time (padding zero p/ vazios) + 1 candidato = 7 x 44 = 308.
+// O tipo do move é ONE-HOT (18 dims, 1 aceso), não um índice ordinal — tipos são
+// categóricos, não têm ordem. Mesma lógica do tipo do Pokémon.
+//
+// Vetor final = 6 slots de time (padding zero p/ vazios) + 1 candidato = 7 x 112 = 784.
 
 import type { Pokemon } from './pokemon'
 import type { Move } from './move'
@@ -24,8 +27,10 @@ const TYPE_INDEX: Record<string, number> = Object.fromEntries(TYPES_18.map((t, i
 const TYPES_DIM = 18
 const STATS_DIM = 6
 const MOVES = 4
-const MOVE_ATTRS = 5
-export const PER_POKE = TYPES_DIM + STATS_DIM + MOVES * MOVE_ATTRS // 44
+const MOVE_TYPE_DIM = 18 // tipo do move one-hot (categórico, sem ordem)
+const MOVE_SCALARS = 4 // categoria, power, acc, prio
+const PER_MOVE = MOVE_TYPE_DIM + MOVE_SCALARS // 22
+export const PER_POKE = TYPES_DIM + STATS_DIM + MOVES * PER_MOVE // 112
 export const TEAM_SLOTS = 6
 export const FEATURE_DIM = PER_POKE * (TEAM_SLOTS + 1) // 308
 
@@ -51,11 +56,13 @@ function categoryCode(category: string): number {
 
 function encodeMove(out: Float32Array, base: number, move: Move | undefined, priorities: Priorities): void {
   if (!move) return // slot de move vazio = zeros
-  out[base + 0] = (TYPE_INDEX[move.type] ?? 0) / TYPES_DIM
-  out[base + 1] = categoryCode(move.category)
-  out[base + 2] = Math.min(move.effectivePower, POWER_DIV) / POWER_DIV
-  out[base + 3] = (move.acc ?? 0) / ACC_DIV
-  out[base + 4] = (priorities[move.name] ?? 0) / PRIO_DIV
+  const ti = TYPE_INDEX[move.type] // tipo one-hot [0..17]
+  if (ti !== undefined) out[base + ti] = 1
+  const s = base + MOVE_TYPE_DIM // escalares começam depois do one-hot
+  out[s + 0] = categoryCode(move.category)
+  out[s + 1] = Math.min(move.effectivePower, POWER_DIV) / POWER_DIV
+  out[s + 2] = (move.acc ?? 0) / ACC_DIV
+  out[s + 3] = (priorities[move.name] ?? 0) / PRIO_DIV
 }
 
 function encodePokemon(
@@ -84,11 +91,11 @@ function encodePokemon(
 
   const mbase = base + TYPES_DIM + STATS_DIM
   for (let i = 0; i < MOVES; i++) {
-    encodeMove(out, mbase + i * MOVE_ATTRS, moveset[i], priorities)
+    encodeMove(out, mbase + i * PER_MOVE, moveset[i], priorities)
   }
 }
 
-// Codifica (time parcial + candidato) no vetor de features de 308 dims.
+// Codifica (time parcial + candidato) no vetor de features de 784 dims.
 export function encodeSample(
   partialTeam: EncodedUnit[],
   candidate: EncodedUnit,
@@ -106,7 +113,7 @@ export function encodeSample(
 export function describeLayout(): string {
   return [
     `FEATURE_DIM=${FEATURE_DIM} (7 slots x ${PER_POKE}: 6 time + 1 candidato)`,
-    `por Pokémon: tipo multi-hot[${TYPES_DIM}] + stats[${STATS_DIM}](HP,Atk,Def,SpA,SpD,Spe) + ${MOVES} moves x ${MOVE_ATTRS}(typeIdx,cat,power,acc,prio)`,
+    `por Pokémon: tipo multi-hot[${TYPES_DIM}] + stats[${STATS_DIM}](HP,Atk,Def,SpA,SpD,Spe) + ${MOVES} moves x ${PER_MOVE}(tipo one-hot[${MOVE_TYPE_DIM}],cat,power,acc,prio)`,
     `tipos: ${TYPES_18.join(',')}`,
   ].join('\n')
 }

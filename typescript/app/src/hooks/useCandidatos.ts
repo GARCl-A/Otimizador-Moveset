@@ -21,6 +21,40 @@ interface Candidato {
   custo: number
 }
 
+export interface FiltroCandidatos {
+  todosNomes: string[]
+  whitelist: string
+  banlist: string
+  banirLendarios: boolean
+  typeFilter: string
+  budget: number
+}
+
+// Função pura de filtragem (usada pelo hook e pelo modo batch dos experimentos):
+// aplica whitelist/banlist/lendários/typeFilter e o teto de custo do budget.
+export function candidatosNomesDe({ todosNomes, whitelist, banlist, banirLendarios, typeFilter, budget }: FiltroCandidatos): string[] {
+  const whitelistArr = parseList(whitelist)
+  const banlistArr = parseList(banlist)
+  if (banirLendarios) {
+    for (const lendario of LENDARIOS) {
+      if (!banlistArr.includes(lendario)) banlistArr.push(lendario)
+    }
+  }
+  const typeFilterArr = parseList(typeFilter)
+
+  const nomes = whitelistArr.length
+    ? whitelistArr.map(n => resolveNome(n, todosNomes)).filter(Boolean) as string[]
+    : todosNomes.filter(nome => {
+        if (banlistArr.some(b => normalize(b) === normalize(nome))) return false
+        if (!typeFilterArr.length) return true
+        const data = getPokemonData(nome)
+        return typeFilterArr.some(t => normalize(t) === normalize(data.type1)) ||
+          (data.type2 != null && typeFilterArr.some(t => normalize(t) === normalize(data.type2!)))
+      })
+
+  return nomes.filter(nome => getCustoEfetivo(nome) <= budget)
+}
+
 interface Props {
   dadosCarregados: boolean
   todosNomes: string[]
@@ -35,30 +69,10 @@ interface Props {
 export function useCandidatos({ dadosCarregados, todosNomes, whitelist, banlist, banirLendarios, typeFilter, budget, upgrades }: Props): Candidato[] {
   return useMemo(() => {
     if (!dadosCarregados) return []
-    const whitelistArr = parseList(whitelist)
-    const banlistArr = parseList(banlist)
-    if (banirLendarios) {
-      for (const lendario of LENDARIOS) {
-        if (!banlistArr.includes(lendario)) banlistArr.push(lendario)
-      }
-    }
-    const typeFilterArr = parseList(typeFilter)
-
-    const nomes = whitelistArr.length
-      ? whitelistArr.map(n => resolveNome(n, todosNomes)).filter(Boolean) as string[]
-      : todosNomes.filter(nome => {
-          if (banlistArr.some(b => normalize(b) === normalize(nome))) return false
-          if (!typeFilterArr.length) return true
-          const data = getPokemonData(nome)
-          return typeFilterArr.some(t => normalize(t) === normalize(data.type1)) ||
-            (data.type2 != null && typeFilterArr.some(t => normalize(t) === normalize(data.type2!)))
-        })
-
-    return nomes
-      .filter(nome => getCustoEfetivo(nome) <= budget)
-      .map(nome => {
-        const data = getPokemonData(nome)
-        return { nome, type1: data.type1, type2: data.type2, custo: getCustoEfetivo(nome) }
-      })
+    const nomes = candidatosNomesDe({ todosNomes, whitelist, banlist, banirLendarios, typeFilter, budget })
+    return nomes.map(nome => {
+      const data = getPokemonData(nome)
+      return { nome, type1: data.type1, type2: data.type2, custo: getCustoEfetivo(nome) }
+    })
   }, [dadosCarregados, whitelist, banlist, banirLendarios, typeFilter, budget, todosNomes, upgrades])
 }

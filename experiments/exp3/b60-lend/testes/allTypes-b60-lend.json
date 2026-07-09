@@ -1,0 +1,2177 @@
+{
+  "aggregates": [
+    {
+      "method": "sa",
+      "n": 30,
+      "min": 194,
+      "q1": 194,
+      "median": 194,
+      "q3": 194,
+      "max": 194,
+      "mean": 194,
+      "std": 0,
+      "meanTimeMs": 698.1366666654745,
+      "meanRedundancy": 2.533333333333333
+    },
+    {
+      "method": "greedy-exato",
+      "k": 1,
+      "n": 1,
+      "min": 194,
+      "q1": 194,
+      "median": 194,
+      "q3": 194,
+      "max": 194,
+      "mean": 194,
+      "std": 0,
+      "meanTimeMs": 51.5,
+      "meanRedundancy": 4
+    },
+    {
+      "method": "greedy-exato",
+      "k": 3,
+      "n": 1,
+      "min": 194,
+      "q1": 194,
+      "median": 194,
+      "q3": 194,
+      "max": 194,
+      "mean": 194,
+      "std": 0,
+      "meanTimeMs": 124,
+      "meanRedundancy": 4
+    },
+    {
+      "method": "greedy-exato",
+      "k": 5,
+      "n": 1,
+      "min": 194,
+      "q1": 194,
+      "median": 194,
+      "q3": 194,
+      "max": 194,
+      "mean": 194,
+      "std": 0,
+      "meanTimeMs": 193.5,
+      "meanRedundancy": 4
+    },
+    {
+      "method": "greedy-exato",
+      "k": 10,
+      "n": 1,
+      "min": 194,
+      "q1": 194,
+      "median": 194,
+      "q3": 194,
+      "max": 194,
+      "mean": 194,
+      "std": 0,
+      "meanTimeMs": 307.5,
+      "meanRedundancy": 4
+    },
+    {
+      "method": "greedy-nn",
+      "k": 1,
+      "n": 1,
+      "min": 190,
+      "q1": 190,
+      "median": 190,
+      "q3": 190,
+      "max": 190,
+      "mean": 190,
+      "std": 0,
+      "meanTimeMs": 199.29999999701977,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-nn",
+      "k": 3,
+      "n": 1,
+      "min": 192,
+      "q1": 192,
+      "median": 192,
+      "q3": 192,
+      "max": 192,
+      "mean": 192,
+      "std": 0,
+      "meanTimeMs": 477.90000000596046,
+      "meanRedundancy": 2
+    },
+    {
+      "method": "greedy-nn",
+      "k": 5,
+      "n": 1,
+      "min": 190,
+      "q1": 190,
+      "median": 190,
+      "q3": 190,
+      "max": 190,
+      "mean": 190,
+      "std": 0,
+      "meanTimeMs": 768.2999999970198,
+      "meanRedundancy": 2
+    },
+    {
+      "method": "greedy-nn",
+      "k": 10,
+      "n": 1,
+      "min": 189,
+      "q1": 189,
+      "median": 189,
+      "q3": 189,
+      "max": 189,
+      "mean": 189,
+      "std": 0,
+      "meanTimeMs": 1281.2000000029802,
+      "meanRedundancy": 2
+    }
+  ],
+  "runs": [
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 723.2999999970198,
+      "teamNames": [
+        "Palkia",
+        "Dragapult",
+        "Jynx",
+        "Reshiram",
+        "Swoobat",
+        "Zacian"
+      ],
+      "movesetNames": [
+        [
+          "Aqua Tail",
+          "Earth Power",
+          "Power Gem",
+          "Spacial Rend"
+        ],
+        [
+          "Assurance",
+          "Dragon Pulse",
+          "Hex",
+          "Phantom Force"
+        ],
+        [
+          "Lick",
+          "Ice Punch",
+          "Luster Purge",
+          "Aura Sphere"
+        ],
+        [
+          "Extrasensory",
+          "Slash",
+          "Dragon Pulse",
+          "Eruption"
+        ],
+        [
+          "Air Slash",
+          "Assurance",
+          "Psychic"
+        ],
+        [
+          "Slash",
+          "Moonblast",
+          "Crunch",
+          "Close Combat"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 0
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 701,
+      "teamNames": [
+        "Zacian",
+        "Rayquaza",
+        "Torkoal",
+        "Honchkrow",
+        "Wo-Chien",
+        "Ursaluna"
+      ],
+      "movesetNames": [
+        [
+          "Crunch",
+          "Quick Attack",
+          "Iron Head",
+          "Moonblast"
+        ],
+        [
+          "Hyper Voice",
+          "Dragon Ascent",
+          "Air Slash",
+          "Outrage"
+        ],
+        [
+          "Body Slam",
+          "Eruption",
+          "Flame Wheel",
+          "Smog"
+        ],
+        [
+          "Astonish",
+          "Dark Pulse",
+          "Gust",
+          "Wing Attack"
+        ],
+        [
+          "Dark Pulse",
+          "Knock Off",
+          "Leaf Storm",
+          "Power Whip"
+        ],
+        [
+          "Payback",
+          "Headlong Rush",
+          "Hammer Arm",
+          "Thrash"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 1
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 683.6999999880791,
+      "teamNames": [
+        "Reshiram",
+        "Palkia",
+        "Zacian",
+        "Overqwill",
+        "Ursaluna",
+        "Primarina"
+      ],
+      "movesetNames": [
+        [
+          "Hyper Voice",
+          "Extrasensory",
+          "Ancient Power",
+          "Eruption"
+        ],
+        [
+          "Aqua Tail",
+          "Slash",
+          "Power Gem",
+          "Spacial Rend"
+        ],
+        [
+          "Close Combat",
+          "Crunch",
+          "Quick Attack",
+          "Moonblast"
+        ],
+        [
+          "Barb Barrage",
+          "Tackle",
+          "Crunch",
+          "Pin Missile"
+        ],
+        [
+          "Hammer Arm",
+          "Headlong Rush",
+          "Lick",
+          "Thrash"
+        ],
+        [
+          "Moonblast",
+          "Sparkling Aria",
+          "Psychic Noise",
+          "Overdrive"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 2
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 710.3999999910593,
+      "teamNames": [
+        "Zacian",
+        "Reshiram",
+        "Heatran",
+        "Garbodor",
+        "Mewtwo",
+        "Primarina"
+      ],
+      "movesetNames": [
+        [
+          "Moonblast",
+          "Close Combat",
+          "Crunch",
+          "Slash"
+        ],
+        [
+          "Crunch",
+          "Slash",
+          "Dragon Pulse",
+          "Eruption"
+        ],
+        [
+          "Fire Fang",
+          "Earth Power",
+          "Iron Head",
+          "Lava Plume"
+        ],
+        [
+          "Dragon Claw",
+          "Pluck",
+          "Rock Slide",
+          "Dragon Breath"
+        ],
+        [
+          "Ancient Power",
+          "Aura Sphere",
+          "Psychic",
+          "Psycho Cut"
+        ],
+        [
+          "Moonblast",
+          "Sparkling Aria",
+          "Icy Wind",
+          "Overdrive"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 3
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 714.0999999940395,
+      "teamNames": [
+        "Togekiss",
+        "Palkia",
+        "Darmanitan",
+        "Lapras",
+        "Archaludon",
+        "Eternatus"
+      ],
+      "movesetNames": [
+        [
+          "Air Slash",
+          "Ancient Power",
+          "Aura Sphere",
+          "Fairy Wind"
+        ],
+        [
+          "Spacial Rend",
+          "Earth Power",
+          "Power Gem",
+          "Aura Sphere"
+        ],
+        [
+          "Bite",
+          "Flare Blitz",
+          "Superpower",
+          "Thrash"
+        ],
+        [
+          "Body Slam",
+          "Hydro Pump",
+          "Ice Beam",
+          "Ice Shard"
+        ],
+        [
+          "Dragon Claw",
+          "Electro Shot",
+          "Flash Cannon",
+          "Rock Smash"
+        ],
+        [
+          "Outrage",
+          "Venoshock",
+          "Cross Poison",
+          "Dynamax Cannon"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 4
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 720.2000000029802,
+      "teamNames": [
+        "Zacian",
+        "Claydol",
+        "Reshiram",
+        "Scrafty",
+        "Heatran",
+        "Palkia"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Crunch",
+          "Slash",
+          "Moonblast"
+        ],
+        [
+          "Ancient Power",
+          "Earth Power",
+          "Extrasensory",
+          "Hyper Beam"
+        ],
+        [
+          "Ancient Power",
+          "Crunch",
+          "Dragon Pulse",
+          "Eruption"
+        ],
+        [
+          "Crunch",
+          "Head Smash",
+          "High Jump Kick",
+          "Sucker Punch"
+        ],
+        [
+          "Fire Fang",
+          "Earth Power",
+          "Crunch",
+          "Lava Plume"
+        ],
+        [
+          "Slash",
+          "Earth Power",
+          "Power Gem",
+          "Aura Sphere"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 5
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 706.0999999940395,
+      "teamNames": [
+        "Eternatus",
+        "Tapu Fini",
+        "Aerodactyl",
+        "Reshiram",
+        "Vespiqueen",
+        "Dragapult"
+      ],
+      "movesetNames": [
+        [
+          "Venoshock",
+          "Flamethrower",
+          "Hyper Beam",
+          "Dynamax Cannon"
+        ],
+        [
+          "Moonblast",
+          "Surf",
+          "Earth Power"
+        ],
+        [
+          "Crunch",
+          "Iron Head",
+          "Stone Edge",
+          "Wing Attack"
+        ],
+        [
+          "Ancient Power",
+          "Crunch",
+          "Dragon Pulse",
+          "Eruption"
+        ],
+        [
+          "Air Slash",
+          "Attack Order",
+          "Poison Sting",
+          "Power Gem"
+        ],
+        [
+          "Double-Edge",
+          "Dragon Pulse",
+          "Hex",
+          "U-Turn"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 6
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 683.7000000029802,
+      "teamNames": [
+        "Mamoswine",
+        "Dragapult",
+        "Palkia",
+        "Eternatus",
+        "Reshiram",
+        "Slowking"
+      ],
+      "movesetNames": [
+        [
+          "Mud-Slap",
+          "Blizzard",
+          "Earthquake",
+          "Ice Fang"
+        ],
+        [
+          "Dragon Rush",
+          "Dragon Pulse",
+          "Quick Attack",
+          "U-Turn"
+        ],
+        [
+          "Power Gem",
+          "Spacial Rend",
+          "Aura Sphere",
+          "Hydro Pump"
+        ],
+        [
+          "Venoshock",
+          "Cross Poison",
+          "Dynamax Cannon",
+          "Hyper Beam"
+        ],
+        [
+          "Slash",
+          "Crunch",
+          "Dragon Pulse",
+          "Eruption"
+        ],
+        [
+          "Headbutt",
+          "Power Gem",
+          "Psychic",
+          "Surf"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 7
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 702,
+      "teamNames": [
+        "Reshiram",
+        "Mewtwo",
+        "Alolan Marowak",
+        "Ursaluna",
+        "Zacian",
+        "Conkeldurr"
+      ],
+      "movesetNames": [
+        [
+          "Extrasensory",
+          "Outrage",
+          "Dragon Pulse",
+          "Eruption"
+        ],
+        [
+          "Ancient Power",
+          "Swift",
+          "Psychic",
+          "Psycho Cut"
+        ],
+        [
+          "Mud-Slap",
+          "Fire Spin",
+          "Flare Blitz",
+          "Hex"
+        ],
+        [
+          "Hammer Arm",
+          "Headlong Rush",
+          "Lick",
+          "Thrash"
+        ],
+        [
+          "Close Combat",
+          "Crunch",
+          "Iron Head",
+          "Moonblast"
+        ],
+        [
+          "Slam",
+          "Stone Edge",
+          "Superpower"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 8
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 707.8999999910593,
+      "teamNames": [
+        "Electivire",
+        "Zacian",
+        "Haxorus",
+        "Ursaluna",
+        "Skeledirge",
+        "Reshiram"
+      ],
+      "movesetNames": [
+        [
+          "Thunder Punch",
+          "Giga Impact",
+          "Swift",
+          "Thunderbolt"
+        ],
+        [
+          "Close Combat",
+          "Moonblast",
+          "Quick Attack",
+          "Crunch"
+        ],
+        [
+          "Crunch",
+          "Dragon Pulse",
+          "Outrage",
+          "Slash"
+        ],
+        [
+          "Hammer Arm",
+          "Headlong Rush",
+          "Lick",
+          "Thrash"
+        ],
+        [
+          "Flamethrower",
+          "Shadow Ball",
+          "Bite",
+          "Overdrive"
+        ],
+        [
+          "Slash",
+          "Dragon Pulse",
+          "Extrasensory",
+          "Eruption"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 9
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 700.2999999970198,
+      "teamNames": [
+        "Eternatus",
+        "Torterra",
+        "Reshiram",
+        "Lapras",
+        "Grimmsnarl",
+        "Kingdra"
+      ],
+      "movesetNames": [
+        [
+          "Dynamax Cannon",
+          "Venoshock",
+          "Flamethrower",
+          "Hyper Beam"
+        ],
+        [
+          "Crunch",
+          "Headlong Rush",
+          "Leaf Storm",
+          "Wood Hammer"
+        ],
+        [
+          "Ancient Power",
+          "Eruption",
+          "Extrasensory",
+          "Slash"
+        ],
+        [
+          "Body Slam",
+          "Hydro Pump",
+          "Ice Beam",
+          "Ice Shard"
+        ],
+        [
+          "Spirit Break",
+          "Hammer Arm",
+          "Dark Pulse",
+          "Sucker Punch"
+        ],
+        [
+          "Dragon Pulse",
+          "Hydro Pump",
+          "Wave Crash"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 10
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 695.7000000029802,
+      "teamNames": [
+        "Zacian",
+        "Vikavolt",
+        "Ursaluna",
+        "Mewtwo",
+        "Gholdengo",
+        "Lurantis"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Crunch",
+          "Slash",
+          "Moonblast"
+        ],
+        [
+          "Bug Buzz",
+          "Thunderbolt",
+          "Dig",
+          "Spark"
+        ],
+        [
+          "Snore",
+          "Headlong Rush",
+          "Lick",
+          "Hammer Arm"
+        ],
+        [
+          "Ancient Power",
+          "Aura Sphere",
+          "Psychic",
+          "Psycho Cut"
+        ],
+        [
+          "Astonish",
+          "Make It Rain",
+          "Power Gem",
+          "Tackle"
+        ],
+        [
+          "Leaf Blade",
+          "Night Slash",
+          "Solar Beam",
+          "X-Scissor"
+        ]
+      ],
+      "typeRedundancy": 0,
+      "method": "sa",
+      "run": 11
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 690.3000000119209,
+      "teamNames": [
+        "Glimmora",
+        "Palkia",
+        "Mightyena",
+        "Lapras",
+        "Eternatus",
+        "Dondozo"
+      ],
+      "movesetNames": [
+        [
+          "Mortal Spin",
+          "Power Gem",
+          "Rock Slide",
+          "Sludge Wave"
+        ],
+        [
+          "Aqua Tail",
+          "Earth Power",
+          "Power Gem",
+          "Spacial Rend"
+        ],
+        [
+          "Crunch",
+          "Ice Fang",
+          "Play Rough",
+          "Close Combat"
+        ],
+        [
+          "Body Slam",
+          "Hydro Pump",
+          "Ice Beam",
+          "Ice Shard"
+        ],
+        [
+          "Dynamax Cannon",
+          "Flamethrower",
+          "Outrage",
+          "Venoshock"
+        ],
+        [
+          "Body Slam",
+          "Order Up",
+          "Water Gun",
+          "Wave Crash"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 12
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 707.3999999910593,
+      "teamNames": [
+        "Eternatus",
+        "Haxorus",
+        "Ursaluna",
+        "Palkia",
+        "Vespiqueen",
+        "Dondozo"
+      ],
+      "movesetNames": [
+        [
+          "Dynamax Cannon",
+          "Hyper Beam",
+          "Cross Poison",
+          "Venoshock"
+        ],
+        [
+          "Crunch",
+          "Dragon Pulse",
+          "Outrage",
+          "Slash"
+        ],
+        [
+          "Hammer Arm",
+          "Headlong Rush",
+          "Lick",
+          "Thrash"
+        ],
+        [
+          "Aqua Tail",
+          "Earth Power",
+          "Power Gem",
+          "Spacial Rend"
+        ],
+        [
+          "Air Slash",
+          "Attack Order",
+          "Poison Sting",
+          "Power Gem"
+        ],
+        [
+          "Body Slam",
+          "Order Up",
+          "Water Gun",
+          "Wave Crash"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 13
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 699.6999999880791,
+      "teamNames": [
+        "Dragapult",
+        "Primarina",
+        "Zacian",
+        "Greninja",
+        "Spiritomb",
+        "Reshiram"
+      ],
+      "movesetNames": [
+        [
+          "Double-Edge",
+          "Dragon Pulse",
+          "Quick Attack",
+          "U-Turn"
+        ],
+        [
+          "Moonblast",
+          "Sparkling Aria",
+          "Psychic Noise",
+          "Overdrive"
+        ],
+        [
+          "Iron Head",
+          "Slash",
+          "Moonblast",
+          "Close Combat"
+        ],
+        [
+          "Pound",
+          "Night Slash",
+          "Smack Down",
+          "Moonblast"
+        ],
+        [
+          "Dark Pulse",
+          "Payback",
+          "Shadow Ball",
+          "Sucker Punch"
+        ],
+        [
+          "Slash",
+          "Crunch",
+          "Extrasensory",
+          "Eruption"
+        ]
+      ],
+      "typeRedundancy": 5,
+      "method": "sa",
+      "run": 14
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 717.1000000089407,
+      "teamNames": [
+        "Absol",
+        "Heatran",
+        "Alolan Ninetales",
+        "Dondozo",
+        "Palkia",
+        "Leavanny"
+      ],
+      "movesetNames": [
+        [
+          "Future Sight",
+          "Night Slash",
+          "Slash",
+          "Sucker Punch"
+        ],
+        [
+          "Crunch",
+          "Earth Power",
+          "Iron Head",
+          "Lava Plume"
+        ],
+        [
+          "Extrasensory",
+          "Ice Beam",
+          "Mystical Fire",
+          "Moonblast"
+        ],
+        [
+          "Body Slam",
+          "Order Up",
+          "Water Gun",
+          "Wave Crash"
+        ],
+        [
+          "Spacial Rend",
+          "Aura Sphere",
+          "Power Gem",
+          "Earth Power"
+        ],
+        [
+          "Slash",
+          "Leaf Blade",
+          "Leaf Storm",
+          "X-Scissor"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 15
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 668.7000000029802,
+      "teamNames": [
+        "Ursaluna",
+        "Tapu Fini",
+        "Buzzwole",
+        "Kingdra",
+        "Dragapult",
+        "Eternatus"
+      ],
+      "movesetNames": [
+        [
+          "Hammer Arm",
+          "Headlong Rush",
+          "Lick",
+          "Payback"
+        ],
+        [
+          "Moonblast",
+          "Surf",
+          "Earth Power"
+        ],
+        [
+          "Lunge",
+          "Mega Punch",
+          "Superpower"
+        ],
+        [
+          "Dragon Pulse",
+          "Hydro Pump",
+          "Wave Crash"
+        ],
+        [
+          "Assurance",
+          "Dragon Pulse",
+          "Hex",
+          "U-Turn"
+        ],
+        [
+          "Dynamax Cannon",
+          "Hyper Beam",
+          "Outrage",
+          "Venoshock"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 16
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 728.7000000029802,
+      "teamNames": [
+        "Palkia",
+        "Lapras",
+        "Exeggutor",
+        "Farigiraf",
+        "Eternatus",
+        "Gyarados"
+      ],
+      "movesetNames": [
+        [
+          "Aqua Tail",
+          "Earth Power",
+          "Power Gem",
+          "Spacial Rend"
+        ],
+        [
+          "Body Slam",
+          "Hydro Pump",
+          "Ice Beam",
+          "Ice Shard"
+        ],
+        [
+          "Extrasensory",
+          "Seed Bomb",
+          "Fickle Beam",
+          "Heat Wave"
+        ],
+        [
+          "Astonish",
+          "Crunch",
+          "Psychic",
+          "Stomp"
+        ],
+        [
+          "Dynamax Cannon",
+          "Outrage",
+          "Venoshock",
+          "Cross Poison"
+        ],
+        [
+          "Crunch",
+          "Ice Fang",
+          "Thrash",
+          "Waterfall"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 17
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 705,
+      "teamNames": [
+        "Excadrill",
+        "Starmie",
+        "Ursaluna",
+        "Eternatus",
+        "Coalossal",
+        "Zacian"
+      ],
+      "movesetNames": [
+        [
+          "Crush Claw",
+          "Earthquake",
+          "Metal Claw",
+          "Rock Slide"
+        ],
+        [
+          "Power Gem",
+          "Psychic",
+          "Surf",
+          "Moonblast"
+        ],
+        [
+          "Payback",
+          "Headlong Rush",
+          "Lick",
+          "Thrash"
+        ],
+        [
+          "Cross Poison",
+          "Dynamax Cannon",
+          "Flamethrower",
+          "Venoshock"
+        ],
+        [
+          "Ancient Power",
+          "Flame Charge",
+          "Incinerate",
+          "Stone Edge"
+        ],
+        [
+          "Close Combat",
+          "Crunch",
+          "Iron Head",
+          "Moonblast"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 18
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 684.6999999880791,
+      "teamNames": [
+        "Lucario",
+        "Primarina",
+        "Palkia",
+        "Delphox",
+        "Eternatus",
+        "Ursaluna"
+      ],
+      "movesetNames": [
+        [
+          "Bone Rush",
+          "Close Combat",
+          "Dragon Pulse",
+          "Vacuum Wave"
+        ],
+        [
+          "Moonblast",
+          "Sparkling Aria",
+          "Psychic Noise",
+          "Overdrive"
+        ],
+        [
+          "Aqua Tail",
+          "Earth Power",
+          "Power Gem",
+          "Spacial Rend"
+        ],
+        [
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ],
+        [
+          "Dynamax Cannon",
+          "Cross Poison",
+          "Outrage",
+          "Venoshock"
+        ],
+        [
+          "Play Rough",
+          "Headlong Rush",
+          "Hammer Arm",
+          "Snore"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 19
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 667.6000000089407,
+      "teamNames": [
+        "Araquanid",
+        "Vikavolt",
+        "Eternatus",
+        "Scrafty",
+        "Hydreigon",
+        "Ursaluna"
+      ],
+      "movesetNames": [
+        [
+          "Bubble Beam",
+          "Crunch",
+          "Leech Life",
+          "Headbutt"
+        ],
+        [
+          "Bug Buzz",
+          "Crunch",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Dynamax Cannon",
+          "Flamethrower",
+          "Venoshock",
+          "Hyper Beam"
+        ],
+        [
+          "Crunch",
+          "Sucker Punch",
+          "High Jump Kick",
+          "Facade"
+        ],
+        [
+          "Dragon Pulse",
+          "Outrage",
+          "Fiery Wrath",
+          "Sludge Bomb"
+        ],
+        [
+          "Hammer Arm",
+          "Headlong Rush",
+          "Lick",
+          "Payback"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 20
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 685.5,
+      "teamNames": [
+        "Zacian",
+        "Palkia",
+        "Ursaluna",
+        "Skeledirge",
+        "Eternatus",
+        "Magnezone"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Crunch",
+          "Iron Head",
+          "Moonblast"
+        ],
+        [
+          "Hydro Pump",
+          "Earth Power",
+          "Power Gem",
+          "Aqua Tail"
+        ],
+        [
+          "Hammer Arm",
+          "Headlong Rush",
+          "Lick",
+          "Thrash"
+        ],
+        [
+          "Flamethrower",
+          "Shadow Ball",
+          "Alluring Voice",
+          "Snarl"
+        ],
+        [
+          "Cross Poison",
+          "Outrage",
+          "Flamethrower",
+          "Venoshock"
+        ],
+        [
+          "Discharge",
+          "Flash Cannon",
+          "Tri Attack",
+          "Tackle"
+        ]
+      ],
+      "typeRedundancy": 1,
+      "method": "sa",
+      "run": 21
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 676.5,
+      "teamNames": [
+        "Alolan Ninetales",
+        "Kingambit",
+        "Rayquaza",
+        "Tinkaton",
+        "Ursaluna",
+        "Buzzwole"
+      ],
+      "movesetNames": [
+        [
+          "Ice Shard",
+          "Ice Beam",
+          "Extrasensory",
+          "Moonblast"
+        ],
+        [
+          "Night Slash",
+          "Iron Head",
+          "Retaliate",
+          "Sucker Punch"
+        ],
+        [
+          "Hyper Voice",
+          "Extreme Speed",
+          "Dragon Ascent",
+          "Dragon Pulse"
+        ],
+        [
+          "Covet",
+          "Gigaton Hammer",
+          "Play Rough",
+          "Rock Smash"
+        ],
+        [
+          "Lick",
+          "Headlong Rush",
+          "Payback",
+          "Snore"
+        ],
+        [
+          "Lunge",
+          "Mega Punch",
+          "Superpower"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 22
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 701.8999999910593,
+      "teamNames": [
+        "Delphox",
+        "Dragapult",
+        "Zacian",
+        "Wo-Chien",
+        "Kingdra",
+        "Reshiram"
+      ],
+      "movesetNames": [
+        [
+          "Flame Charge",
+          "Psychic",
+          "Shadow Ball",
+          "Thunderbolt"
+        ],
+        [
+          "Assurance",
+          "Dragon Pulse",
+          "Phantom Force",
+          "Infestation"
+        ],
+        [
+          "Iron Head",
+          "Crunch",
+          "Close Combat",
+          "Moonblast"
+        ],
+        [
+          "Dark Pulse",
+          "Knock Off",
+          "Leaf Storm",
+          "Power Whip"
+        ],
+        [
+          "Dragon Pulse",
+          "Hydro Pump",
+          "Wave Crash"
+        ],
+        [
+          "Outrage",
+          "Fire Fang",
+          "Extrasensory",
+          "Eruption"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 23
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 684.6000000089407,
+      "teamNames": [
+        "Hypno",
+        "Eternatus",
+        "Skuntank",
+        "Slowbro",
+        "Mewtwo",
+        "Ursaluna"
+      ],
+      "movesetNames": [
+        [
+          "Bubble Beam",
+          "Crabhammer",
+          "Hammer Arm",
+          "Metal Claw"
+        ],
+        [
+          "Dynamax Cannon",
+          "Cross Poison",
+          "Outrage",
+          "Venoshock"
+        ],
+        [
+          "Flamethrower",
+          "Sucker Punch",
+          "Dire Claw",
+          "Fire Lash"
+        ],
+        [
+          "Headbutt",
+          "Psychic",
+          "Zen Headbutt",
+          "Splishy Splash"
+        ],
+        [
+          "Ancient Power",
+          "Aura Sphere",
+          "Psychic",
+          "Psycho Cut"
+        ],
+        [
+          "Hammer Arm",
+          "Headlong Rush",
+          "Snore",
+          "Thrash"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 24
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 698.7999999970198,
+      "teamNames": [
+        "Heracross",
+        "Heatran",
+        "Conkeldurr",
+        "Rayquaza",
+        "Zacian",
+        "Reshiram"
+      ],
+      "movesetNames": [
+        [
+          "Aerial Ace",
+          "Close Combat",
+          "Megahorn",
+          "Throat Chop"
+        ],
+        [
+          "Ancient Power",
+          "Earth Power",
+          "Crunch",
+          "Lava Plume"
+        ],
+        [
+          "Slam",
+          "Stone Edge",
+          "Superpower"
+        ],
+        [
+          "Ancient Power",
+          "Dragon Pulse",
+          "Dragon Ascent",
+          "Hyper Voice"
+        ],
+        [
+          "Slash",
+          "Crunch",
+          "Iron Head",
+          "Moonblast"
+        ],
+        [
+          "Ancient Power",
+          "Crunch",
+          "Dragon Pulse",
+          "Eruption"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 25
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 706.7999999970198,
+      "teamNames": [
+        "Skeledirge",
+        "Kingambit",
+        "Lapras",
+        "Reshiram",
+        "Archeops",
+        "Eternatus"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Shadow Ball",
+          "Alluring Voice",
+          "Overdrive"
+        ],
+        [
+          "Fury Cutter",
+          "Iron Head",
+          "Night Slash",
+          "Sucker Punch"
+        ],
+        [
+          "Body Slam",
+          "Hydro Pump",
+          "Ice Beam",
+          "Ice Shard"
+        ],
+        [
+          "Dragon Pulse",
+          "Slash",
+          "Hyper Voice",
+          "Eruption"
+        ],
+        [
+          "Dragon Claw",
+          "U-Turn",
+          "Ancient Power",
+          "Rock Slide"
+        ],
+        [
+          "Dynamax Cannon",
+          "Hyper Beam",
+          "Outrage",
+          "Cross Poison"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 26
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 687.3999999910593,
+      "teamNames": [
+        "Heatran",
+        "Reshiram",
+        "Starmie",
+        "Milotic",
+        "Eternatus",
+        "Spiritomb"
+      ],
+      "movesetNames": [
+        [
+          "Ancient Power",
+          "Earth Power",
+          "Iron Head",
+          "Lava Plume"
+        ],
+        [
+          "Ancient Power",
+          "Crunch",
+          "Dragon Pulse",
+          "Eruption"
+        ],
+        [
+          "Rapid Spin",
+          "Surf",
+          "Power Gem",
+          "Moonblast"
+        ],
+        [
+          "Aqua Tail",
+          "Disarming Voice",
+          "Dragon Tail",
+          "Surf"
+        ],
+        [
+          "Dynamax Cannon",
+          "Flamethrower",
+          "Outrage",
+          "Venoshock"
+        ],
+        [
+          "Dark Pulse",
+          "Payback",
+          "Shadow Ball",
+          "Sucker Punch"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 27
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 696.6000000089407,
+      "teamNames": [
+        "Scyther",
+        "Torkoal",
+        "Archaludon",
+        "Zacian",
+        "Ursaluna",
+        "Landorus"
+      ],
+      "movesetNames": [
+        [
+          "Air Slash",
+          "Steel Wing",
+          "Quick Attack",
+          "Slash"
+        ],
+        [
+          "Body Slam",
+          "Eruption",
+          "Flame Wheel",
+          "Smog"
+        ],
+        [
+          "Dragon Claw",
+          "Electro Shot",
+          "Flash Cannon",
+          "Hyper Beam"
+        ],
+        [
+          "Close Combat",
+          "Crunch",
+          "Iron Head",
+          "Moonblast"
+        ],
+        [
+          "Hammer Arm",
+          "Headlong Rush",
+          "Lick",
+          "Thrash"
+        ],
+        [
+          "Earth Power",
+          "Earthquake",
+          "Hammer Arm",
+          "Stone Edge"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 28
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 688.4000000059605,
+      "teamNames": [
+        "Honchkrow",
+        "Heatran",
+        "Tentacruel",
+        "Azumarill",
+        "Eternatus",
+        "Palkia"
+      ],
+      "movesetNames": [
+        [
+          "Astonish",
+          "Dark Pulse",
+          "Sucker Punch",
+          "Gust"
+        ],
+        [
+          "Ancient Power",
+          "Earth Power",
+          "Iron Head",
+          "Lava Plume"
+        ],
+        [
+          "Hex",
+          "Poison Jab",
+          "Sludge Wave",
+          "Surf"
+        ],
+        [
+          "Aqua Tail",
+          "Hydro Pump",
+          "Play Rough",
+          "Superpower"
+        ],
+        [
+          "Venoshock",
+          "Dynamax Cannon",
+          "Hyper Beam",
+          "Cross Poison"
+        ],
+        [
+          "Spacial Rend",
+          "Aqua Tail",
+          "Earth Power",
+          "Hydro Pump"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 29
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 51.5,
+      "teamNames": [
+        "Eternatus",
+        "Palkia",
+        "Blastoise",
+        "Lapras",
+        "Venusaur",
+        "Charizard"
+      ],
+      "movesetNames": [
+        [
+          "Dynamax Cannon",
+          "Flamethrower",
+          "Outrage",
+          "Venoshock"
+        ],
+        [
+          "Aqua Tail",
+          "Earth Power",
+          "Power Gem",
+          "Spacial Rend"
+        ],
+        [
+          "Bite",
+          "Flash Cannon",
+          "Hydro Pump",
+          "Wave Crash"
+        ],
+        [
+          "Body Slam",
+          "Hydro Pump",
+          "Ice Beam",
+          "Ice Shard"
+        ],
+        [
+          "Petal Blizzard",
+          "Petal Dance",
+          "Take Down"
+        ],
+        [
+          "Flamethrower",
+          "Flare Blitz",
+          "Aeroblast",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "k": 1,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 124,
+      "teamNames": [
+        "Eternatus",
+        "Palkia",
+        "Blastoise",
+        "Lapras",
+        "Venusaur",
+        "Charizard"
+      ],
+      "movesetNames": [
+        [
+          "Dynamax Cannon",
+          "Flamethrower",
+          "Outrage",
+          "Venoshock"
+        ],
+        [
+          "Aqua Tail",
+          "Earth Power",
+          "Power Gem",
+          "Spacial Rend"
+        ],
+        [
+          "Bite",
+          "Flash Cannon",
+          "Hydro Pump",
+          "Wave Crash"
+        ],
+        [
+          "Body Slam",
+          "Hydro Pump",
+          "Ice Beam",
+          "Ice Shard"
+        ],
+        [
+          "Petal Blizzard",
+          "Petal Dance",
+          "Take Down"
+        ],
+        [
+          "Flamethrower",
+          "Flare Blitz",
+          "Aeroblast",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "k": 3,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 193.5,
+      "teamNames": [
+        "Eternatus",
+        "Palkia",
+        "Blastoise",
+        "Lapras",
+        "Venusaur",
+        "Charizard"
+      ],
+      "movesetNames": [
+        [
+          "Dynamax Cannon",
+          "Flamethrower",
+          "Outrage",
+          "Venoshock"
+        ],
+        [
+          "Aqua Tail",
+          "Earth Power",
+          "Power Gem",
+          "Spacial Rend"
+        ],
+        [
+          "Bite",
+          "Flash Cannon",
+          "Hydro Pump",
+          "Wave Crash"
+        ],
+        [
+          "Body Slam",
+          "Hydro Pump",
+          "Ice Beam",
+          "Ice Shard"
+        ],
+        [
+          "Petal Blizzard",
+          "Petal Dance",
+          "Take Down"
+        ],
+        [
+          "Flamethrower",
+          "Flare Blitz",
+          "Aeroblast",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "k": 5,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 194,
+      "scoreMaximo": 194,
+      "timeMs": 307.5,
+      "teamNames": [
+        "Eternatus",
+        "Palkia",
+        "Blastoise",
+        "Lapras",
+        "Venusaur",
+        "Charizard"
+      ],
+      "movesetNames": [
+        [
+          "Dynamax Cannon",
+          "Flamethrower",
+          "Outrage",
+          "Venoshock"
+        ],
+        [
+          "Aqua Tail",
+          "Earth Power",
+          "Power Gem",
+          "Spacial Rend"
+        ],
+        [
+          "Bite",
+          "Flash Cannon",
+          "Hydro Pump",
+          "Wave Crash"
+        ],
+        [
+          "Body Slam",
+          "Hydro Pump",
+          "Ice Beam",
+          "Ice Shard"
+        ],
+        [
+          "Petal Blizzard",
+          "Petal Dance",
+          "Take Down"
+        ],
+        [
+          "Flamethrower",
+          "Flare Blitz",
+          "Aeroblast",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "k": 10,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 190,
+      "scoreMaximo": 194,
+      "timeMs": 199.29999999701977,
+      "teamNames": [
+        "Dondozo",
+        "Victini",
+        "Eternatus",
+        "Starmie",
+        "Infernape",
+        "Deoxys"
+      ],
+      "movesetNames": [
+        [
+          "Body Slam",
+          "Order Up",
+          "Water Gun",
+          "Wave Crash"
+        ],
+        [
+          "Double-Edge",
+          "Searing Shot",
+          "V-Create",
+          "Luster Purge"
+        ],
+        [
+          "Dynamax Cannon",
+          "Flamethrower",
+          "Outrage",
+          "Venoshock"
+        ],
+        [
+          "Power Gem",
+          "Psychic",
+          "Surf",
+          "Moonblast"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Thunderbolt",
+          "Sacred Fire"
+        ],
+        [
+          "Extreme Speed",
+          "Knock Off",
+          "Psycho Boost",
+          "Superpower"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 1,
+      "method": "greedy-nn",
+      "run": 0
+    },
+    {
+      "score": 192,
+      "scoreMaximo": 194,
+      "timeMs": 477.90000000596046,
+      "teamNames": [
+        "Dondozo",
+        "Victini",
+        "Eternatus",
+        "Rayquaza",
+        "Zacian",
+        "Revavroom"
+      ],
+      "movesetNames": [
+        [
+          "Body Slam",
+          "Order Up",
+          "Water Gun",
+          "Wave Crash"
+        ],
+        [
+          "Quick Attack",
+          "Searing Shot",
+          "V-Create",
+          "Luster Purge"
+        ],
+        [
+          "Cross Poison",
+          "Dynamax Cannon",
+          "Flamethrower",
+          "Outrage"
+        ],
+        [
+          "Ancient Power",
+          "Crunch",
+          "Dragon Ascent",
+          "Dragon Pulse"
+        ],
+        [
+          "Close Combat",
+          "Crunch",
+          "Moonblast",
+          "Quick Attack"
+        ],
+        [
+          "Combat Torque",
+          "Magical Torque",
+          "Noxious Torque",
+          "Spin Out"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "k": 3,
+      "method": "greedy-nn",
+      "run": 0
+    },
+    {
+      "score": 190,
+      "scoreMaximo": 194,
+      "timeMs": 768.2999999970198,
+      "teamNames": [
+        "Vikavolt",
+        "Ho-Oh",
+        "Victini",
+        "Eternatus",
+        "Primarina",
+        "Zacian"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Thunderbolt",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Ancient Power",
+          "Extrasensory",
+          "Sacred Fire",
+          "Sky Attack"
+        ],
+        [
+          "Quick Attack",
+          "Searing Shot",
+          "V-Create",
+          "Luster Purge"
+        ],
+        [
+          "Dynamax Cannon",
+          "Flamethrower",
+          "Outrage",
+          "Venoshock"
+        ],
+        [
+          "Hyper Voice",
+          "Moonblast",
+          "Sparkling Aria",
+          "Overdrive"
+        ],
+        [
+          "Close Combat",
+          "Crunch",
+          "Moonblast",
+          "Quick Attack"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "k": 5,
+      "method": "greedy-nn",
+      "run": 0
+    },
+    {
+      "score": 189,
+      "scoreMaximo": 194,
+      "timeMs": 1281.2000000029802,
+      "teamNames": [
+        "Vikavolt",
+        "Ho-Oh",
+        "Victini",
+        "Eternatus",
+        "Primarina",
+        "Zacian"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Thunderbolt",
+          "Earth Power",
+          "Thunderclap"
+        ],
+        [
+          "Ancient Power",
+          "Extrasensory",
+          "Sacred Fire",
+          "Sky Attack"
+        ],
+        [
+          "Quick Attack",
+          "Searing Shot",
+          "V-Create",
+          "Luster Purge"
+        ],
+        [
+          "Dynamax Cannon",
+          "Flamethrower",
+          "Outrage",
+          "Venoshock"
+        ],
+        [
+          "Hyper Voice",
+          "Moonblast",
+          "Sparkling Aria",
+          "Overdrive"
+        ],
+        [
+          "Close Combat",
+          "Iron Head",
+          "Moonblast",
+          "Quick Attack"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "k": 10,
+      "method": "greedy-nn",
+      "run": 0
+    }
+  ]
+}

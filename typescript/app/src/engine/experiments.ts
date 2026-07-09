@@ -44,6 +44,7 @@ export interface SingleRun {
   teamNames: string[]
   movesetNames: string[][]
   typeRedundancy: number
+  k?: number // Top-K usado (só nos gulosos); SA/GA não usam
 }
 
 // Métodos construtivos puros são determinísticos dado o pool — N execuções
@@ -77,7 +78,8 @@ export function runMethodOnce(
   ctx: BuildContext,
   opts: ExperimentOptions,
   rng: RNG,
-  mlp?: MLP
+  mlp?: MLP,
+  k?: number
 ): SingleRun {
   const t0 = performance.now()
   let time: Pokemon[]
@@ -87,7 +89,7 @@ export function runMethodOnce(
   if (method === 'greedy-exato') {
     const r = greedyConstruct(
       ctx,
-      { pool: opts.pool, tamanhoTime: opts.tamanhoTime, budget: opts.budget, gruposExclusao: opts.gruposExclusao, timeFixo: opts.timeFixo, rng },
+      { pool: opts.pool, tamanhoTime: opts.tamanhoTime, budget: opts.budget, gruposExclusao: opts.gruposExclusao, timeFixo: opts.timeFixo, k, rng },
       { type: 'exact' }
     )
     time = r.time
@@ -97,7 +99,7 @@ export function runMethodOnce(
     if (!mlp) throw new Error('greedy-NN requer pesos do modelo carregados.')
     const r = greedyConstruct(
       ctx,
-      { pool: opts.pool, tamanhoTime: opts.tamanhoTime, budget: opts.budget, gruposExclusao: opts.gruposExclusao, timeFixo: opts.timeFixo, rng },
+      { pool: opts.pool, tamanhoTime: opts.tamanhoTime, budget: opts.budget, gruposExclusao: opts.gruposExclusao, timeFixo: opts.timeFixo, k, rng },
       { type: 'nn', mlp }
     )
     time = r.time
@@ -140,6 +142,7 @@ export function runMethodOnce(
   }
 
   const timeMs = performance.now() - t0
+  const usaK = method === 'greedy-exato' || method === 'greedy-nn'
   return {
     score,
     scoreMaximo: scoreMaximoDe(ctx.meta, opts.evalParams),
@@ -147,6 +150,7 @@ export function runMethodOnce(
     teamNames: time.map(p => p.name),
     movesetNames: movesets.map(ms => ms.map(m => m.name)),
     typeRedundancy: typeRedundancyDe(time),
+    k: usaK ? k : undefined,
   }
 }
 
@@ -161,6 +165,8 @@ function quantile(sorted: number[], q: number): number {
 
 export interface MethodAggregate {
   method: ExpMethod
+  k?: number // Top-K (só nos gulosos); distingue séries greedy-nn K=1, K=3, ...
+  caseId?: string // preenchido no modo batch
   n: number
   min: number
   q1: number
@@ -173,7 +179,7 @@ export interface MethodAggregate {
   meanRedundancy: number
 }
 
-export function aggregate(method: ExpMethod, runs: SingleRun[]): MethodAggregate {
+export function aggregate(method: ExpMethod, runs: SingleRun[], k?: number): MethodAggregate {
   const scores = runs.map(r => r.score).sort((a, b) => a - b)
   const n = scores.length
   const mean = n ? scores.reduce((a, b) => a + b, 0) / n : 0
@@ -182,6 +188,7 @@ export function aggregate(method: ExpMethod, runs: SingleRun[]): MethodAggregate
   const meanRedundancy = n ? runs.reduce((a, r) => a + r.typeRedundancy, 0) / n : 0
   return {
     method,
+    k,
     n,
     min: scores[0] ?? 0,
     q1: quantile(scores, 0.25),

@@ -11,7 +11,7 @@
 import { Pokemon } from './pokemon'
 import { Move } from './move'
 import type { Priorities } from './loader'
-import { construirCaches, calcularScoreTime, otimizar } from './optimizer'
+import { construirCaches, calcularScoreTime, otimizarTopK } from './optimizer'
 import type { Arrays, EvalParams } from './optimizer'
 import { encodeSample } from './nnFeatures'
 import type { EncodedUnit } from './nnFeatures'
@@ -25,7 +25,8 @@ export interface BuildContext {
   custos: Record<string, number>
   evalParams: EvalParams
   arrays: Arrays
-  individualMovesets: Map<string, Move[]> // pokeName -> melhor moveset individual
+  individualMovesets: Map<string, Move[]> // pokeName -> melhor moveset individual (= topK[0])
+  topKMovesets: Map<string, Move[][]> // pokeName -> k melhores movesets (melhor->pior)
 }
 
 export type Evaluator = { type: 'exact' } | { type: 'nn'; mlp: MLP }
@@ -36,6 +37,7 @@ export interface GreedyOptions {
   budget: number
   gruposExclusao: string[][]
   timeFixo: Pokemon[]
+  k?: number // Top-K: quantos movesets por espécie o guloso considera (default 1)
   rng?: RNG // não usado no argmax (determinístico), reservado para desempates
 }
 
@@ -53,15 +55,18 @@ export function buildContext(
   meta: Pokemon[],
   priorities: Priorities,
   custos: Record<string, number>,
-  evalParams: EvalParams
+  evalParams: EvalParams,
+  kMax: number = 1
 ): BuildContext {
   const arrays = construirCaches(pokemons, meta, priorities)
   const individualMovesets = new Map<string, Move[]>()
+  const topKMovesets = new Map<string, Move[][]>()
   for (const p of pokemons) {
-    const { moveset } = otimizar(p, arrays, evalParams)
-    individualMovesets.set(p.name, moveset)
+    const top = otimizarTopK(p, arrays, evalParams, kMax)
+    topKMovesets.set(p.name, top)
+    individualMovesets.set(p.name, top[0] ?? p.moveset.slice(0, 4))
   }
-  return { pokemons, meta, priorities, custos, evalParams, arrays, individualMovesets }
+  return { pokemons, meta, priorities, custos, evalParams, arrays, individualMovesets, topKMovesets }
 }
 
 function unitsToIndices(ctx: BuildContext, units: EncodedUnit[]): { pokeIndices: number[]; estado: number[][] } {
@@ -92,7 +97,13 @@ function makeEvaluator(ctx: BuildContext, evaluator: Evaluator): (partial: Encod
 
 export function greedyConstruct(ctx: BuildContext, opts: GreedyOptions, evaluator: Evaluator): GreedyResult {
   const { custos } = ctx
+  const k = Math.max(1, opts.k ?? 1)
   const movesetOf = (p: Pokemon): Move[] => ctx.individualMovesets.get(p.name) ?? p.moveset.slice(0, 4)
+  // Candidatos consideram até k movesets da espécie (Top-K); k=1 usa só o ótimo individual.
+  const movesetsOf = (p: Pokemon): Move[][] => {
+    const top = ctx.topKMovesets.get(p.name)
+    return top && top.length ? top.slice(0, k) : [movesetOf(p)]
+  }
   const evalCandidate = makeEvaluator(ctx, evaluator)
 
   const time: Pokemon[] = [...opts.timeFixo]
@@ -116,12 +127,13 @@ export function greedyConstruct(ctx: BuildContext, opts: GreedyOptions, evaluato
     let bestMoveset: Move[] = []
     let bestVal = -Infinity
     for (const cand of validos) {
-      const candUnit: EncodedUnit = { poke: cand, moveset: movesetOf(cand) }
-      const val = evalCandidate(partialUnits, candUnit)
-      if (val > bestVal) {
-        bestVal = val
-        best = cand
-        bestMoveset = candUnit.moveset
+      for (const ms of movesetsOf(cand)) {
+        const val = evalCandidate(partialUnits, { poke: cand, moveset: ms })
+        if (val > bestVal) {
+          bestVal = val
+          best = cand
+          bestMoveset = ms
+        }
       }
     }
     if (!best) break

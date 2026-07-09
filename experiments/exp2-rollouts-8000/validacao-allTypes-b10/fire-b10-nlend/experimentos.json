@@ -1,0 +1,2907 @@
+{
+  "aggregates": [
+    {
+      "method": "sa",
+      "n": 30,
+      "min": 153,
+      "q1": 155,
+      "median": 160,
+      "q3": 160,
+      "max": 160,
+      "mean": 157.36666666666667,
+      "std": 3.08202675019035,
+      "meanTimeMs": 237.6600000006457,
+      "meanRedundancy": 2.966666666666667
+    },
+    {
+      "method": "ga",
+      "n": 30,
+      "min": 150,
+      "q1": 154,
+      "median": 155,
+      "q3": 159,
+      "max": 160,
+      "mean": 155.76666666666668,
+      "std": 3.0515933907095527,
+      "meanTimeMs": 16061.556666666518,
+      "meanRedundancy": 3.2333333333333334
+    },
+    {
+      "method": "greedy-exato",
+      "k": 1,
+      "n": 1,
+      "min": 150,
+      "q1": 150,
+      "median": 150,
+      "q3": 150,
+      "max": 150,
+      "mean": 150,
+      "std": 0,
+      "meanTimeMs": 2.399999998509884,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-exato",
+      "k": 3,
+      "n": 1,
+      "min": 150,
+      "q1": 150,
+      "median": 150,
+      "q3": 150,
+      "max": 150,
+      "mean": 150,
+      "std": 0,
+      "meanTimeMs": 4.200000002980232,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-exato",
+      "k": 5,
+      "n": 1,
+      "min": 150,
+      "q1": 150,
+      "median": 150,
+      "q3": 150,
+      "max": 150,
+      "mean": 150,
+      "std": 0,
+      "meanTimeMs": 5.399999998509884,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-exato",
+      "k": 10,
+      "n": 1,
+      "min": 150,
+      "q1": 150,
+      "median": 150,
+      "q3": 150,
+      "max": 150,
+      "mean": 150,
+      "std": 0,
+      "meanTimeMs": 21.69999999552965,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-nn",
+      "k": 1,
+      "n": 1,
+      "min": 147,
+      "q1": 147,
+      "median": 147,
+      "q3": 147,
+      "max": 147,
+      "mean": 147,
+      "std": 0,
+      "meanTimeMs": 47.100000001490116,
+      "meanRedundancy": 4
+    },
+    {
+      "method": "greedy-nn",
+      "k": 3,
+      "n": 1,
+      "min": 148,
+      "q1": 148,
+      "median": 148,
+      "q3": 148,
+      "max": 148,
+      "mean": 148,
+      "std": 0,
+      "meanTimeMs": 92.10000000149012,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-nn",
+      "k": 5,
+      "n": 1,
+      "min": 148,
+      "q1": 148,
+      "median": 148,
+      "q3": 148,
+      "max": 148,
+      "mean": 148,
+      "std": 0,
+      "meanTimeMs": 161.20000000298023,
+      "meanRedundancy": 3
+    },
+    {
+      "method": "greedy-nn",
+      "k": 10,
+      "n": 1,
+      "min": 135,
+      "q1": 135,
+      "median": 135,
+      "q3": 135,
+      "max": 135,
+      "mean": 135,
+      "std": 0,
+      "meanTimeMs": 236.69999999552965,
+      "meanRedundancy": 3
+    }
+  ],
+  "runs": [
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 275.69999999552965,
+      "teamNames": [
+        "Delphox",
+        "Scovillain",
+        "Camerupt",
+        "Infernape",
+        "Charizard"
+      ],
+      "movesetNames": [
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Crunch",
+          "Headbutt",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Double-Edge",
+          "Earthquake",
+          "Eruption",
+          "Rock Slide"
+        ],
+        [
+          "Facade",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Air Slash",
+          "Dragon Breath",
+          "Flamethrower",
+          "Flare Blitz"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 0
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 275.3999999985099,
+      "teamNames": [
+        "Charizard",
+        "Camerupt",
+        "Infernape",
+        "Scovillain",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Air Slash",
+          "Dragon Breath",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Double-Edge",
+          "Earthquake",
+          "Earth Power",
+          "Eruption"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Facade",
+          "Flamethrower"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Scratch",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 1
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 243,
+      "teamNames": [
+        "Scovillain",
+        "Delphox",
+        "Infernape",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 2
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 245.69999999552965,
+      "teamNames": [
+        "Infernape",
+        "Incineroar",
+        "Delphox",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Facade",
+          "Close Combat",
+          "Raging Fury",
+          "Acrobatics"
+        ],
+        [
+          "Lick",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Thrash"
+        ],
+        [
+          "Flamethrower",
+          "Shadow Ball",
+          "Psychic",
+          "Scratch"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 3
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 243.39999999850988,
+      "teamNames": [
+        "Scovillain",
+        "Incineroar",
+        "Infernape",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Thrash",
+          "Darkest Lariat",
+          "Flare Blitz",
+          "Lick"
+        ],
+        [
+          "Flamethrower",
+          "Close Combat",
+          "Facade",
+          "Raging Fury"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 4
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 238.5,
+      "teamNames": [
+        "Incineroar",
+        "Scovillain",
+        "Delphox",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Facade",
+          "Raging Fury"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 5
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 263,
+      "teamNames": [
+        "Scovillain",
+        "Incineroar",
+        "Delphox",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Lick",
+          "Darkest Lariat",
+          "Cross Chop",
+          "Flare Blitz"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Facade",
+          "Close Combat",
+          "Raging Fury",
+          "Acrobatics"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 6
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 262.8999999985099,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Camerupt",
+        "Charizard",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Flame Charge",
+          "Scratch",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Double-Edge",
+          "Earth Power",
+          "Eruption",
+          "Rock Slide"
+        ],
+        [
+          "Air Slash",
+          "Dragon Breath",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 7
+    },
+    {
+      "score": 153,
+      "scoreMaximo": 194,
+      "timeMs": 195.29999999701977,
+      "teamNames": [
+        "Infernape",
+        "Incineroar",
+        "Armarouge"
+      ],
+      "movesetNames": [
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Raging Fury",
+          "Facade"
+        ],
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Lick",
+          "Flamethrower"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 8
+    },
+    {
+      "score": 153,
+      "scoreMaximo": 194,
+      "timeMs": 192.70000000298023,
+      "teamNames": [
+        "Incineroar",
+        "Infernape",
+        "Armarouge"
+      ],
+      "movesetNames": [
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Lick",
+          "Flare Blitz"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 9
+    },
+    {
+      "score": 153,
+      "scoreMaximo": 194,
+      "timeMs": 193.70000000298023,
+      "teamNames": [
+        "Infernape",
+        "Incineroar",
+        "Armarouge"
+      ],
+      "movesetNames": [
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Astonish",
+          "Clear Smog",
+          "Armor Cannon",
+          "Expanding Force"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 10
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 237.60000000149012,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Scovillain",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Scratch",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Facade",
+          "Flamethrower"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Thrash",
+          "Darkest Lariat",
+          "Lick",
+          "Flamethrower"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 11
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 266.40000000596046,
+      "teamNames": [
+        "Incineroar",
+        "Scovillain",
+        "Delphox",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Thrash",
+          "Flamethrower"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 12
+    },
+    {
+      "score": 153,
+      "scoreMaximo": 194,
+      "timeMs": 193.80000000447035,
+      "teamNames": [
+        "Incineroar",
+        "Infernape",
+        "Armarouge"
+      ],
+      "movesetNames": [
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Raging Fury",
+          "Flamethrower"
+        ],
+        [
+          "Armor Cannon",
+          "Flame Charge",
+          "Astonish",
+          "Expanding Force"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 13
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 235.90000000596046,
+      "teamNames": [
+        "Scovillain",
+        "Infernape",
+        "Incineroar",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Facade",
+          "Raging Fury"
+        ],
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Thrash",
+          "Flare Blitz"
+        ],
+        [
+          "Shadow Ball",
+          "Scratch",
+          "Psychic",
+          "Flame Charge"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 14
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 237.60000000149012,
+      "teamNames": [
+        "Incineroar",
+        "Infernape",
+        "Scovillain",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Cross Chop",
+          "Lick",
+          "Darkest Lariat",
+          "Flare Blitz"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 15
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 235.70000000298023,
+      "teamNames": [
+        "Incineroar",
+        "Delphox",
+        "Scovillain",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Facade",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 16
+    },
+    {
+      "score": 153,
+      "scoreMaximo": 194,
+      "timeMs": 196.59999999403954,
+      "teamNames": [
+        "Infernape",
+        "Incineroar",
+        "Armarouge"
+      ],
+      "movesetNames": [
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Facade",
+          "Flamethrower"
+        ],
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 17
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 263.6000000014901,
+      "teamNames": [
+        "Charizard",
+        "Camerupt",
+        "Delphox",
+        "Infernape",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Air Slash",
+          "Dragon Breath",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Double-Edge",
+          "Earthquake",
+          "Eruption",
+          "Rock Slide"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Facade"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 18
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 233.5,
+      "teamNames": [
+        "Scovillain",
+        "Incineroar",
+        "Infernape",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 19
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 267.70000000298023,
+      "teamNames": [
+        "Infernape",
+        "Charizard",
+        "Scovillain",
+        "Delphox",
+        "Camerupt"
+      ],
+      "movesetNames": [
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Air Slash",
+          "Dragon Breath",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Double-Edge",
+          "Earthquake",
+          "Eruption",
+          "Earth Power"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 20
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 237.10000000149012,
+      "teamNames": [
+        "Scovillain",
+        "Incineroar",
+        "Delphox",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Lick",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 21
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 244.60000000149012,
+      "teamNames": [
+        "Infernape",
+        "Delphox",
+        "Incineroar",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Close Combat",
+          "Facade",
+          "Acrobatics"
+        ],
+        [
+          "Shadow Ball",
+          "Scratch",
+          "Psychic",
+          "Flame Charge"
+        ],
+        [
+          "Flamethrower",
+          "Darkest Lariat",
+          "Lick",
+          "Thrash"
+        ],
+        [
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam",
+          "Crunch"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 22
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 250.10000000149012,
+      "teamNames": [
+        "Infernape",
+        "Incineroar",
+        "Scovillain",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Raging Fury",
+          "Close Combat",
+          "Facade",
+          "Acrobatics"
+        ],
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 23
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 284.29999999701977,
+      "teamNames": [
+        "Delphox",
+        "Scovillain",
+        "Charizard",
+        "Camerupt",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Scratch",
+          "Flame Charge",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Air Slash",
+          "Dragon Breath",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Double-Edge",
+          "Earthquake",
+          "Eruption",
+          "Rock Slide"
+        ],
+        [
+          "Facade",
+          "Raging Fury",
+          "Acrobatics",
+          "Close Combat"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "sa",
+      "run": 24
+    },
+    {
+      "score": 153,
+      "scoreMaximo": 194,
+      "timeMs": 197.69999999552965,
+      "teamNames": [
+        "Armarouge",
+        "Infernape",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Thrash",
+          "Flare Blitz"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 25
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 254.60000000149012,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Incineroar",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Flamethrower",
+          "Close Combat",
+          "Facade",
+          "Raging Fury"
+        ],
+        [
+          "Lick",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 26
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 234.70000000298023,
+      "teamNames": [
+        "Infernape",
+        "Scovillain",
+        "Incineroar",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Flamethrower",
+          "Darkest Lariat",
+          "Flare Blitz",
+          "Thrash"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 27
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 237.80000000447035,
+      "teamNames": [
+        "Delphox",
+        "Scovillain",
+        "Infernape",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb",
+          "Solar Beam"
+        ],
+        [
+          "Flamethrower",
+          "Close Combat",
+          "Acrobatics",
+          "Raging Fury"
+        ],
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flamethrower",
+          "Flare Blitz"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "sa",
+      "run": 28
+    },
+    {
+      "score": 153,
+      "scoreMaximo": 194,
+      "timeMs": 191.20000000298023,
+      "teamNames": [
+        "Incineroar",
+        "Armarouge",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Cross Chop",
+          "Darkest Lariat",
+          "Lick",
+          "Flare Blitz"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "sa",
+      "run": 29
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 23380.80000000447,
+      "teamNames": [
+        "Delphox",
+        "Charizard",
+        "Camerupt",
+        "Infernape",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Scratch",
+          "Shadow Ball",
+          "Flamethrower",
+          "Psychic"
+        ],
+        [
+          "Slash",
+          "Air Slash",
+          "Dragon Breath",
+          "Flamethrower"
+        ],
+        [
+          "Earthquake",
+          "Rock Slide",
+          "Eruption",
+          "Double-Edge"
+        ],
+        [
+          "Flamethrower",
+          "Close Combat",
+          "Raging Fury",
+          "Facade"
+        ],
+        [
+          "Headbutt",
+          "Seed Bomb",
+          "Crunch",
+          "Solar Beam"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 0
+    },
+    {
+      "score": 154,
+      "scoreMaximo": 194,
+      "timeMs": 23054.19999999553,
+      "teamNames": [
+        "Camerupt",
+        "Delphox",
+        "Infernape",
+        "Charizard",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Double-Edge",
+          "Rock Slide",
+          "Eruption",
+          "Earth Power"
+        ],
+        [
+          "Flamethrower",
+          "Shadow Ball",
+          "Flame Charge",
+          "Psychic"
+        ],
+        [
+          "Raging Fury",
+          "Close Combat",
+          "Acrobatics",
+          "Facade"
+        ],
+        [
+          "Flamethrower",
+          "Air Slash",
+          "Dragon Breath",
+          "Slash"
+        ],
+        [
+          "Cross Chop",
+          "Flare Blitz",
+          "Flamethrower",
+          "Darkest Lariat"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 1
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 18967.10000000149,
+      "teamNames": [
+        "Scovillain",
+        "Delphox",
+        "Incineroar",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Solar Beam",
+          "Flamethrower",
+          "Crunch",
+          "Seed Bomb"
+        ],
+        [
+          "Shadow Ball",
+          "Scratch",
+          "Flamethrower",
+          "Psychic"
+        ],
+        [
+          "Flare Blitz",
+          "Thrash",
+          "Darkest Lariat",
+          "Flamethrower"
+        ],
+        [
+          "Acrobatics",
+          "Facade",
+          "Close Combat",
+          "Flamethrower"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 2
+    },
+    {
+      "score": 154,
+      "scoreMaximo": 194,
+      "timeMs": 22411.80000000447,
+      "teamNames": [
+        "Charizard",
+        "Camerupt",
+        "Infernape",
+        "Delphox",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Dragon Claw",
+          "Flamethrower",
+          "Air Slash",
+          "Dragon Breath"
+        ],
+        [
+          "Eruption",
+          "Earthquake",
+          "Rock Slide",
+          "Earth Power"
+        ],
+        [
+          "Close Combat",
+          "Raging Fury",
+          "Facade",
+          "Flamethrower"
+        ],
+        [
+          "Psychic",
+          "Flamethrower",
+          "Flame Charge",
+          "Shadow Ball"
+        ],
+        [
+          "Darkest Lariat",
+          "Lick",
+          "Flare Blitz",
+          "Flamethrower"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 3
+    },
+    {
+      "score": 156,
+      "scoreMaximo": 194,
+      "timeMs": 14441.29999999702,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Torkoal",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Scratch",
+          "Psychic",
+          "Flamethrower",
+          "Shadow Ball"
+        ],
+        [
+          "Flamethrower",
+          "Close Combat",
+          "Acrobatics",
+          "Facade"
+        ],
+        [
+          "Body Slam",
+          "Flame Wheel",
+          "Smog",
+          "Eruption"
+        ],
+        [
+          "Lick",
+          "Cross Chop",
+          "Darkest Lariat",
+          "Flare Blitz"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 4
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 14969.5,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Scovillain",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Shadow Ball",
+          "Scratch",
+          "Psychic",
+          "Flame Charge"
+        ],
+        [
+          "Facade",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Crunch",
+          "Seed Bomb",
+          "Flamethrower",
+          "Solar Beam"
+        ],
+        [
+          "Cross Chop",
+          "Thrash",
+          "Darkest Lariat",
+          "Flare Blitz"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 5
+    },
+    {
+      "score": 152,
+      "scoreMaximo": 194,
+      "timeMs": 17794.89999999851,
+      "teamNames": [
+        "Camerupt",
+        "Delphox",
+        "Infernape",
+        "Charizard",
+        "Chandelure"
+      ],
+      "movesetNames": [
+        [
+          "Earth Power",
+          "Rock Slide",
+          "Double-Edge",
+          "Eruption"
+        ],
+        [
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball",
+          "Flame Charge"
+        ],
+        [
+          "Acrobatics",
+          "Facade",
+          "Raging Fury",
+          "Close Combat"
+        ],
+        [
+          "Flare Blitz",
+          "Dragon Breath",
+          "Flamethrower",
+          "Air Slash"
+        ],
+        [
+          "Overheat",
+          "Smog",
+          "Shadow Ball",
+          "Astonish"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 6
+    },
+    {
+      "score": 150,
+      "scoreMaximo": 194,
+      "timeMs": 10543.79999999702,
+      "teamNames": [
+        "Volcarona",
+        "Armarouge",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Double-Edge",
+          "Leech Life",
+          "Fiery Dance",
+          "Bug Buzz"
+        ],
+        [
+          "Armor Cannon",
+          "Clear Smog",
+          "Expanding Force",
+          "Flame Charge"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury",
+          "Facade"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 7
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 14306,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Incineroar",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Flame Charge",
+          "Psychic",
+          "Flamethrower",
+          "Shadow Ball"
+        ],
+        [
+          "Facade",
+          "Acrobatics",
+          "Raging Fury",
+          "Close Combat"
+        ],
+        [
+          "Thrash",
+          "Flamethrower",
+          "Darkest Lariat",
+          "Flare Blitz"
+        ],
+        [
+          "Crunch",
+          "Solar Beam",
+          "Flamethrower",
+          "Seed Bomb"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 8
+    },
+    {
+      "score": 153,
+      "scoreMaximo": 194,
+      "timeMs": 10822.89999999851,
+      "teamNames": [
+        "Armarouge",
+        "Infernape",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Flame Charge",
+          "Clear Smog",
+          "Expanding Force",
+          "Armor Cannon"
+        ],
+        [
+          "Raging Fury",
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower"
+        ],
+        [
+          "Lick",
+          "Flamethrower",
+          "Darkest Lariat",
+          "Thrash"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 9
+    },
+    {
+      "score": 157,
+      "scoreMaximo": 194,
+      "timeMs": 14204.89999999851,
+      "teamNames": [
+        "Infernape",
+        "Incineroar",
+        "Delphox",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Facade",
+          "Close Combat",
+          "Acrobatics"
+        ],
+        [
+          "Flamethrower",
+          "Darkest Lariat",
+          "Cross Chop",
+          "Flare Blitz"
+        ],
+        [
+          "Flamethrower",
+          "Scratch",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Zen Headbutt",
+          "Headbutt",
+          "Fire Fang",
+          "Solar Beam"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 10
+    },
+    {
+      "score": 156,
+      "scoreMaximo": 194,
+      "timeMs": 13402.29999999702,
+      "teamNames": [
+        "Infernape",
+        "Delphox",
+        "Chandelure",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Acrobatics",
+          "Close Combat",
+          "Facade"
+        ],
+        [
+          "Flamethrower",
+          "Shadow Ball",
+          "Psychic",
+          "Flame Charge"
+        ],
+        [
+          "Smog",
+          "Astonish",
+          "Shadow Ball",
+          "Overheat"
+        ],
+        [
+          "Flare Blitz",
+          "Cross Chop",
+          "Darkest Lariat",
+          "Lick"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 11
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 18495,
+      "teamNames": [
+        "Camerupt",
+        "Charizard",
+        "Infernape",
+        "Delphox",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Rock Slide",
+          "Earthquake",
+          "Earth Power",
+          "Eruption"
+        ],
+        [
+          "Flamethrower",
+          "Dragon Breath",
+          "Flare Blitz",
+          "Air Slash"
+        ],
+        [
+          "Raging Fury",
+          "Close Combat",
+          "Flamethrower",
+          "Facade"
+        ],
+        [
+          "Psychic",
+          "Flamethrower",
+          "Flame Charge",
+          "Shadow Ball"
+        ],
+        [
+          "Solar Beam",
+          "Seed Bomb",
+          "Crunch",
+          "Flamethrower"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 12
+    },
+    {
+      "score": 156,
+      "scoreMaximo": 194,
+      "timeMs": 14239.20000000298,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Torkoal",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Shadow Ball",
+          "Flamethrower",
+          "Psychic",
+          "Flame Charge"
+        ],
+        [
+          "Raging Fury",
+          "Facade",
+          "Acrobatics",
+          "Close Combat"
+        ],
+        [
+          "Eruption",
+          "Flame Wheel",
+          "Body Slam",
+          "Smog"
+        ],
+        [
+          "Cross Chop",
+          "Lick",
+          "Flamethrower",
+          "Darkest Lariat"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 13
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 17711.5,
+      "teamNames": [
+        "Infernape",
+        "Charizard",
+        "Delphox",
+        "Scovillain",
+        "Camerupt"
+      ],
+      "movesetNames": [
+        [
+          "Raging Fury",
+          "Close Combat",
+          "Acrobatics",
+          "Facade"
+        ],
+        [
+          "Air Slash",
+          "Flamethrower",
+          "Dragon Breath",
+          "Flare Blitz"
+        ],
+        [
+          "Scratch",
+          "Flame Charge",
+          "Shadow Ball",
+          "Psychic"
+        ],
+        [
+          "Crunch",
+          "Seed Bomb",
+          "Solar Beam",
+          "Fire Fang"
+        ],
+        [
+          "Earth Power",
+          "Rock Slide",
+          "Eruption",
+          "Double-Edge"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 14
+    },
+    {
+      "score": 153,
+      "scoreMaximo": 194,
+      "timeMs": 15511.59999999404,
+      "teamNames": [
+        "Armarouge",
+        "Infernape",
+        "Magcargo",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Expanding Force",
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog"
+        ],
+        [
+          "Raging Fury",
+          "Flamethrower",
+          "Facade",
+          "Close Combat"
+        ],
+        [
+          "Body Slam",
+          "Earth Power",
+          "Rock Slide",
+          "Flamethrower"
+        ],
+        [
+          "Flamethrower",
+          "Flare Blitz",
+          "Thrash",
+          "Darkest Lariat"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 15
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 14743.20000000298,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Incineroar",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Shadow Ball",
+          "Psychic",
+          "Flame Charge",
+          "Flamethrower"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Facade",
+          "Acrobatics"
+        ],
+        [
+          "Thrash",
+          "Darkest Lariat",
+          "Flare Blitz",
+          "Lick"
+        ],
+        [
+          "Solar Beam",
+          "Seed Bomb",
+          "Crunch",
+          "Flamethrower"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 16
+    },
+    {
+      "score": 151,
+      "scoreMaximo": 194,
+      "timeMs": 10660.5,
+      "teamNames": [
+        "Arcanine",
+        "Armarouge",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Flare Blitz",
+          "Extreme Speed",
+          "Crunch",
+          "Play Rough"
+        ],
+        [
+          "Flame Charge",
+          "Armor Cannon",
+          "Expanding Force",
+          "Clear Smog"
+        ],
+        [
+          "Raging Fury",
+          "Acrobatics",
+          "Facade",
+          "Close Combat"
+        ]
+      ],
+      "typeRedundancy": 2,
+      "method": "ga",
+      "run": 17
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 18689.80000000447,
+      "teamNames": [
+        "Delphox",
+        "Camerupt",
+        "Infernape",
+        "Charizard",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Flame Charge",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Earthquake",
+          "Double-Edge",
+          "Rock Slide",
+          "Eruption"
+        ],
+        [
+          "Raging Fury",
+          "Acrobatics",
+          "Facade",
+          "Close Combat"
+        ],
+        [
+          "Flamethrower",
+          "Flare Blitz",
+          "Air Slash",
+          "Dragon Breath"
+        ],
+        [
+          "Seed Bomb",
+          "Solar Beam",
+          "Flamethrower",
+          "Crunch"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 18
+    },
+    {
+      "score": 155,
+      "scoreMaximo": 194,
+      "timeMs": 14309.5,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Torkoal",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Shadow Ball",
+          "Flamethrower",
+          "Psychic",
+          "Flame Charge"
+        ],
+        [
+          "Raging Fury",
+          "Acrobatics",
+          "Flamethrower",
+          "Close Combat"
+        ],
+        [
+          "Eruption",
+          "Body Slam",
+          "Smog",
+          "Flame Wheel"
+        ],
+        [
+          "Solar Beam",
+          "Crunch",
+          "Flamethrower",
+          "Seed Bomb"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 19
+    },
+    {
+      "score": 159,
+      "scoreMaximo": 194,
+      "timeMs": 15149.89999999851,
+      "teamNames": [
+        "Delphox",
+        "Infernape",
+        "Incineroar",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Shadow Ball",
+          "Flame Charge",
+          "Psychic",
+          "Flamethrower"
+        ],
+        [
+          "Close Combat",
+          "Raging Fury",
+          "Facade",
+          "Flamethrower"
+        ],
+        [
+          "Cross Chop",
+          "Flare Blitz",
+          "Darkest Lariat",
+          "Lick"
+        ],
+        [
+          "Crunch",
+          "Zen Headbutt",
+          "Solar Beam",
+          "Seed Bomb"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 20
+    },
+    {
+      "score": 154,
+      "scoreMaximo": 194,
+      "timeMs": 19123.70000000298,
+      "teamNames": [
+        "Camerupt",
+        "Incineroar",
+        "Delphox",
+        "Infernape",
+        "Charizard"
+      ],
+      "movesetNames": [
+        [
+          "Earth Power",
+          "Eruption",
+          "Double-Edge",
+          "Earthquake"
+        ],
+        [
+          "Lick",
+          "Flare Blitz",
+          "Darkest Lariat",
+          "Flamethrower"
+        ],
+        [
+          "Scratch",
+          "Psychic",
+          "Shadow Ball",
+          "Flamethrower"
+        ],
+        [
+          "Raging Fury",
+          "Facade",
+          "Close Combat",
+          "Flamethrower"
+        ],
+        [
+          "Air Slash",
+          "Dragon Breath",
+          "Slash",
+          "Flamethrower"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 21
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 15741.5,
+      "teamNames": [
+        "Infernape",
+        "Incineroar",
+        "Delphox",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Raging Fury",
+          "Flamethrower",
+          "Close Combat",
+          "Acrobatics"
+        ],
+        [
+          "Thrash",
+          "Flare Blitz",
+          "Darkest Lariat",
+          "Flamethrower"
+        ],
+        [
+          "Psychic",
+          "Flamethrower",
+          "Flame Charge",
+          "Shadow Ball"
+        ],
+        [
+          "Solar Beam",
+          "Crunch",
+          "Seed Bomb",
+          "Flamethrower"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 22
+    },
+    {
+      "score": 154,
+      "scoreMaximo": 194,
+      "timeMs": 19157.60000000149,
+      "teamNames": [
+        "Charizard",
+        "Delphox",
+        "Infernape",
+        "Magcargo",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Flamethrower",
+          "Air Slash",
+          "Dragon Breath",
+          "Dragon Claw"
+        ],
+        [
+          "Flame Charge",
+          "Psychic",
+          "Scratch",
+          "Shadow Ball"
+        ],
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury",
+          "Facade"
+        ],
+        [
+          "Body Slam",
+          "Flamethrower",
+          "Earth Power",
+          "Smog"
+        ],
+        [
+          "Thrash",
+          "Darkest Lariat",
+          "Cross Chop",
+          "Lick"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 23
+    },
+    {
+      "score": 159,
+      "scoreMaximo": 194,
+      "timeMs": 15206.19999999553,
+      "teamNames": [
+        "Infernape",
+        "Delphox",
+        "Incineroar",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Close Combat",
+          "Flamethrower",
+          "Facade",
+          "Raging Fury"
+        ],
+        [
+          "Psychic",
+          "Flamethrower",
+          "Shadow Ball",
+          "Scratch"
+        ],
+        [
+          "Lick",
+          "Darkest Lariat",
+          "Thrash",
+          "Cross Chop"
+        ],
+        [
+          "Solar Beam",
+          "Seed Bomb",
+          "Fire Fang",
+          "Crunch"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 24
+    },
+    {
+      "score": 151,
+      "scoreMaximo": 194,
+      "timeMs": 14978.79999999702,
+      "teamNames": [
+        "Armarouge",
+        "Pyroar",
+        "Delphox",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Expanding Force",
+          "Clear Smog",
+          "Astonish",
+          "Armor Cannon"
+        ],
+        [
+          "Headbutt",
+          "Flamethrower",
+          "Hyper Voice",
+          "Crunch"
+        ],
+        [
+          "Flamethrower",
+          "Scratch",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "method": "ga",
+      "run": 25
+    },
+    {
+      "score": 153,
+      "scoreMaximo": 194,
+      "timeMs": 14185.30000000447,
+      "teamNames": [
+        "Chandelure",
+        "Delphox",
+        "Infernape",
+        "Torkoal"
+      ],
+      "movesetNames": [
+        [
+          "Overheat",
+          "Shadow Ball",
+          "Smog",
+          "Astonish"
+        ],
+        [
+          "Flamethrower",
+          "Shadow Ball",
+          "Scratch",
+          "Psychic"
+        ],
+        [
+          "Close Combat",
+          "Acrobatics",
+          "Raging Fury",
+          "Facade"
+        ],
+        [
+          "Body Slam",
+          "Smog",
+          "Eruption",
+          "Flame Wheel"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 26
+    },
+    {
+      "score": 156,
+      "scoreMaximo": 194,
+      "timeMs": 14201.19999999553,
+      "teamNames": [
+        "Torkoal",
+        "Infernape",
+        "Delphox",
+        "Incineroar"
+      ],
+      "movesetNames": [
+        [
+          "Flame Wheel",
+          "Body Slam",
+          "Eruption",
+          "Smog"
+        ],
+        [
+          "Acrobatics",
+          "Flamethrower",
+          "Raging Fury",
+          "Close Combat"
+        ],
+        [
+          "Flamethrower",
+          "Psychic",
+          "Flame Charge",
+          "Shadow Ball"
+        ],
+        [
+          "Flamethrower",
+          "Flare Blitz",
+          "Darkest Lariat",
+          "Thrash"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 27
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 15774.70000000298,
+      "teamNames": [
+        "Scovillain",
+        "Incineroar",
+        "Delphox",
+        "Infernape"
+      ],
+      "movesetNames": [
+        [
+          "Seed Bomb",
+          "Flamethrower",
+          "Solar Beam",
+          "Crunch"
+        ],
+        [
+          "Darkest Lariat",
+          "Lick",
+          "Cross Chop",
+          "Flare Blitz"
+        ],
+        [
+          "Shadow Ball",
+          "Scratch",
+          "Psychic",
+          "Flamethrower"
+        ],
+        [
+          "Raging Fury",
+          "Close Combat",
+          "Acrobatics",
+          "Facade"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 28
+    },
+    {
+      "score": 160,
+      "scoreMaximo": 194,
+      "timeMs": 15668,
+      "teamNames": [
+        "Infernape",
+        "Incineroar",
+        "Delphox",
+        "Scovillain"
+      ],
+      "movesetNames": [
+        [
+          "Facade",
+          "Acrobatics",
+          "Raging Fury",
+          "Close Combat"
+        ],
+        [
+          "Lick",
+          "Flare Blitz",
+          "Thrash",
+          "Darkest Lariat"
+        ],
+        [
+          "Flamethrower",
+          "Shadow Ball",
+          "Flame Charge",
+          "Psychic"
+        ],
+        [
+          "Seed Bomb",
+          "Crunch",
+          "Flamethrower",
+          "Solar Beam"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "method": "ga",
+      "run": 29
+    },
+    {
+      "score": 150,
+      "scoreMaximo": 194,
+      "timeMs": 2.399999998509884,
+      "teamNames": [
+        "Volcarona",
+        "Armarouge",
+        "Infernape",
+        "Magcargo"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Ancient Power",
+          "Body Slam",
+          "Earth Power",
+          "Flamethrower"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 1,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 150,
+      "scoreMaximo": 194,
+      "timeMs": 4.200000002980232,
+      "teamNames": [
+        "Volcarona",
+        "Armarouge",
+        "Infernape",
+        "Magcargo"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Ancient Power",
+          "Body Slam",
+          "Earth Power",
+          "Flamethrower"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 3,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 150,
+      "scoreMaximo": 194,
+      "timeMs": 5.399999998509884,
+      "teamNames": [
+        "Volcarona",
+        "Armarouge",
+        "Infernape",
+        "Magcargo"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Ancient Power",
+          "Body Slam",
+          "Earth Power",
+          "Flamethrower"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 5,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 150,
+      "scoreMaximo": 194,
+      "timeMs": 21.69999999552965,
+      "teamNames": [
+        "Volcarona",
+        "Armarouge",
+        "Infernape",
+        "Magcargo"
+      ],
+      "movesetNames": [
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Armor Cannon",
+          "Astonish",
+          "Clear Smog",
+          "Expanding Force"
+        ],
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Ancient Power",
+          "Body Slam",
+          "Earth Power",
+          "Flamethrower"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 10,
+      "method": "greedy-exato",
+      "run": 0
+    },
+    {
+      "score": 147,
+      "scoreMaximo": 194,
+      "timeMs": 47.100000001490116,
+      "teamNames": [
+        "Infernape",
+        "Volcarona",
+        "Delphox",
+        "Centiskorsh"
+      ],
+      "movesetNames": [
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Bug Buzz",
+          "Double-Edge",
+          "Fiery Dance",
+          "Flare Blitz"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ],
+        [
+          "Burn Up",
+          "Crunch",
+          "Fire Lash",
+          "Lunge"
+        ]
+      ],
+      "typeRedundancy": 4,
+      "k": 1,
+      "method": "greedy-nn",
+      "run": 0
+    },
+    {
+      "score": 148,
+      "scoreMaximo": 194,
+      "timeMs": 92.10000000149012,
+      "teamNames": [
+        "Infernape",
+        "Arcanine",
+        "Rapidash",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Crunch",
+          "Extreme Speed",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Flare Blitz",
+          "Megahorn",
+          "Poison Jab",
+          "Smart Strike"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 3,
+      "method": "greedy-nn",
+      "run": 0
+    },
+    {
+      "score": 148,
+      "scoreMaximo": 194,
+      "timeMs": 161.20000000298023,
+      "teamNames": [
+        "Infernape",
+        "Arcanine",
+        "Rapidash",
+        "Delphox"
+      ],
+      "movesetNames": [
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Crunch",
+          "Extreme Speed",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Flare Blitz",
+          "Megahorn",
+          "Poison Jab",
+          "Smart Strike"
+        ],
+        [
+          "Flame Charge",
+          "Flamethrower",
+          "Psychic",
+          "Shadow Ball"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 5,
+      "method": "greedy-nn",
+      "run": 0
+    },
+    {
+      "score": 135,
+      "scoreMaximo": 194,
+      "timeMs": 236.69999999552965,
+      "teamNames": [
+        "Infernape",
+        "Arcanine",
+        "Volcarona",
+        "Camerupt"
+      ],
+      "movesetNames": [
+        [
+          "Acrobatics",
+          "Close Combat",
+          "Flamethrower",
+          "Raging Fury"
+        ],
+        [
+          "Crunch",
+          "Extreme Speed",
+          "Flamethrower",
+          "Flare Blitz"
+        ],
+        [
+          "Fiery Dance",
+          "Flare Blitz",
+          "Hurricane",
+          "Leech Life"
+        ],
+        [
+          "Double-Edge",
+          "Earth Power",
+          "Earthquake",
+          "Eruption"
+        ]
+      ],
+      "typeRedundancy": 3,
+      "k": 10,
+      "method": "greedy-nn",
+      "run": 0
+    }
+  ]
+}
